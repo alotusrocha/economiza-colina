@@ -89,7 +89,7 @@ const CATEGORIES = [
 ];
 
 const PRODUCTS = [
-  // --- OFERTAS COM VÁRIAS REFERÊNCIAS ---
+  // --- AÇOUGUE & CARNES ---
   {
     id: 'p1',
     name: 'Contrafilé Bovino Resfriado Friboi (Peça/Pedaço kg)',
@@ -112,6 +112,40 @@ const PRODUCTS = [
     featured: true,
     discountTag: 'App Assaí R$ 49,90/kg'
   },
+  {
+    id: 'p19',
+    name: 'Petisco de Frango Temperado Copacol Congelado 1kg',
+    category: 'acougue',
+    unit: '1kg',
+    image: 'https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=400&auto=format&fit=crop&q=80',
+    encarteId: 3,
+    offerMarketId: 'atacadao',
+    offerPrice: 16.90,
+    validity: 'Atacadão BR-101',
+    prices: {
+      atacadao: 16.90 // APENAS ATACADÃO
+    },
+    featured: true,
+    discountTag: '📌 Exclusivo Atacadão'
+  },
+  {
+    id: 'p20',
+    name: 'Hambúrguer Misto Congelado Texas Burger Seara 672g',
+    category: 'acougue',
+    unit: '672g',
+    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 11.90,
+    validity: 'Válido 07/08 a 08/08',
+    prices: {
+      assai: 11.90 // APENAS ASSAÍ
+    },
+    featured: false,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+
+  // --- MERCEARIA & MATINAIS ---
   {
     id: 'p2',
     name: 'Arroz Branco Tipo 1 Puro Grão 5kg',
@@ -201,22 +235,22 @@ const PRODUCTS = [
     discountTag: 'Especial Dia dos Pais'
   },
 
-  // --- OFERTAS COM APENAS UM SUPERMERCADO COMO REFERÊNCIA DE PREÇO (MUITO IMPORTANTE!) ---
+  // --- LIMPEZA & CASA (OFERTAS 1 SUPERMERCADO) ---
   {
     id: 'p15',
     name: 'Amaciante Concentrado Downy 1L (Perfuma e Premia)',
     category: 'limpeza',
     unit: '1L',
     image: 'https://images.unsplash.com/photo-1585837575652-267c041d77d4?w=400&auto=format&fit=crop&q=80',
-    encarteId: 7, // Extrabom Pág 9
+    encarteId: 7,
     offerMarketId: 'extrabom',
     offerPrice: 18.99,
     validity: 'Válido até 12/08',
     prices: {
-      extrabom: 18.99 // APENAS EXTRABOM COMO REFERÊNCIA
+      extrabom: 18.99 // APENAS EXTRABOM
     },
     featured: true,
-    discountTag: 'Referência Única: Extrabom'
+    discountTag: '📌 Exclusivo Extrabom'
   },
   {
     id: 'p16',
@@ -224,31 +258,33 @@ const PRODUCTS = [
     category: 'limpeza',
     unit: '3L',
     image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400&auto=format&fit=crop&q=80',
-    encarteId: 7, // Extrabom Pág 9
+    encarteId: 7,
     offerMarketId: 'extrabom',
     offerPrice: 34.90,
     validity: 'Válido até 12/08',
     prices: {
-      extrabom: 34.90 // APENAS EXTRABOM COMO REFERÊNCIA
+      extrabom: 34.90 // APENAS EXTRABOM
     },
     featured: true,
-    discountTag: 'Referência Única: Extrabom'
+    discountTag: '📌 Exclusivo Extrabom'
   },
+
+  // --- BEBIDAS & CERVEJAS (OFERTAS 1 SUPERMERCADO) ---
   {
     id: 'p17',
     name: 'Whisky Escocês Chivas Regal 12Y 750ml',
     category: 'bebidas',
     unit: '750ml',
     image: 'assets/cerveja.png',
-    encarteId: 6, // Carone Destilados
+    encarteId: 6,
     offerMarketId: 'carone',
     offerPrice: 99.90,
     validity: 'Válido 03/08 a 09/08',
     prices: {
-      carone: 99.90 // APENAS CARONE COMO REFERÊNCIA
+      carone: 99.90 // APENAS CARONE
     },
     featured: true,
-    discountTag: 'Referência Única: Carone'
+    discountTag: '📌 Exclusivo Carone'
   },
   {
     id: 'p18',
@@ -256,47 +292,83 @@ const PRODUCTS = [
     category: 'bebidas',
     unit: '750ml',
     image: 'assets/cerveja.png',
-    encarteId: 6, // Carone Destilados
+    encarteId: 6,
     offerMarketId: 'carone',
     offerPrice: 89.90,
     validity: 'Válido 03/08 a 09/08',
     prices: {
-      carone: 89.90 // APENAS CARONE COMO REFERÊNCIA
+      carone: 89.90 // APENAS CARONE
     },
     featured: false,
-    discountTag: 'Referência Única: Carone'
+    discountTag: '📌 Exclusivo Carone'
   },
+
+  // --- HORTIFRÚTI & FRUTAS (OFERTAS 1 SUPERMERCADO) ---
   {
-    id: 'p19',
-    name: 'Petisco de Frango Temperado Copacol Congelado 1kg',
-    category: 'acougue',
-    unit: '1kg',
-    image: 'https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=400&auto=format&fit=crop&q=80',
-    encarteId: 3, // Atacadão BR-101
-    offerMarketId: 'atacadao',
-    offerPrice: 16.90,
-    validity: 'Atacadão BR-101',
+    id: 'p21',
+    name: 'Banana Prata Selecionada (kg)',
+    category: 'hortifruti',
+    unit: 'kg',
+    image: 'https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&auto=format&fit=crop&q=80',
+    encarteId: 5,
+    offerMarketId: 'perim',
+    offerPrice: 3.99,
+    validity: 'Feira Perim 07/08',
     prices: {
-      atacadao: 16.90 // APENAS ATACADÃO COMO REFERÊNCIA
+      perim: 3.99 // APENAS PERIM
     },
-    featured: false,
-    discountTag: 'Referência Única: Atacadão'
+    featured: true,
+    discountTag: '📌 Exclusivo Perim'
   },
   {
-    id: 'p20',
-    name: 'Hambúrguer Misto Congelado Texas Burger Seara 672g',
-    category: 'acougue',
-    unit: '672g',
-    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop&q=80',
-    encarteId: 2, // Assaí Pág 2
+    id: 'p22',
+    name: 'Tomate Longa Vida de Primeira (kg)',
+    category: 'hortifruti',
+    unit: 'kg',
+    image: 'assets/tomate.png',
+    encarteId: 7,
+    offerMarketId: 'extrabom',
+    offerPrice: 4.98,
+    validity: 'Feira Extrabom',
+    prices: {
+      extrabom: 4.98 // APENAS EXTRABOM
+    },
+    featured: false,
+    discountTag: '📌 Exclusivo Extrabom'
+  },
+
+  // --- LATICÍNIOS & FRIOS (OFERTAS 1 SUPERMERCADO) ---
+  {
+    id: 'p23',
+    name: 'Queijo Mussarela Peça ou Pedaço kg',
+    category: 'laticinios',
+    unit: 'kg',
+    image: 'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
     offerMarketId: 'assai',
-    offerPrice: 11.90,
+    offerPrice: 27.90,
     validity: 'Válido 07/08 a 08/08',
     prices: {
-      assai: 11.90 // APENAS ASSAÍ COMO REFERÊNCIA
+      assai: 27.90 // APENAS ASSAÍ
+    },
+    featured: true,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+  {
+    id: 'p24',
+    name: 'Leite UHT Integral Italac 1L',
+    category: 'laticinios',
+    unit: '1L',
+    image: 'https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&auto=format&fit=crop&q=80',
+    encarteId: 4,
+    offerMarketId: 'atacadao',
+    offerPrice: 4.19,
+    validity: 'Super Sexta Atacadão',
+    prices: {
+      atacadao: 4.19 // APENAS ATACADÃO
     },
     featured: false,
-    discountTag: 'Referência Única: Assaí'
+    discountTag: '📌 Exclusivo Atacadão'
   }
 ];
 

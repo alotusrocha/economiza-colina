@@ -158,12 +158,12 @@ function renderProducts() {
     } else {
       // Produto com APENAS UM supermercado como referência
       html += `
-        <div class="comp-row">
-          <span class="comp-market">🏆 ${lowestMarket.name.split(' ')[0]}</span>
-          <span class="comp-price lowest">R$ ${lowestPrice.toFixed(2)}</span>
+        <div class="comp-row" style="background: #fef3c7; border-radius: 6px; padding: 6px 8px; margin: 4px 0;">
+          <span class="comp-market" style="color: #92400e; font-weight: 700;">⭐ Oferta Única: ${lowestMarket.name.split(' ')[0]}</span>
+          <span class="comp-price lowest" style="font-size: 1rem;">R$ ${lowestPrice.toFixed(2)}</span>
         </div>
-        <div style="margin-top: 8px; font-size: 0.74rem; color: #475569; background: white; padding: 6px; border-radius: 6px; border: 1px dashed #cbd5e1; text-align: center;">
-          💡 Única loja com este produto anunciado hoje. Viu em outro lugar? Clique em <strong>"+ Publicar Oferta"</strong>!
+        <div style="margin-top: 8px; font-size: 0.74rem; color: #78350f; background: #fffbeb; padding: 8px; border-radius: 6px; border: 1px dashed #f59e0b; text-align: center;">
+          📢 <strong>Única loja com este item anunciado hoje.</strong> Viu em outro mercado? Clique em <strong>"+ Publicar Oferta"</strong>!
         </div>
       `;
     }
