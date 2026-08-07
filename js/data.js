@@ -89,7 +89,363 @@ const CATEGORIES = [
 ];
 
 const PRODUCTS = [
-  // --- AÇOUGUE & CARNES ---
+  // ==========================================
+  // --- ASSAÍ ATACADISTA (OFERTAS DO ENCARTE OFICIAL) ---
+  // ==========================================
+  {
+    id: 'assai_1',
+    name: 'Lasanha Congelada Sadia Sabores 600g',
+    category: 'laticinios',
+    unit: '600g',
+    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 13.90,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 13.90 },
+    featured: true,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+  {
+    id: 'assai_2',
+    name: 'Salsicha para Hot-Dog Congelada Seara 5kg',
+    category: 'acougue',
+    unit: '5kg',
+    image: 'https://images.unsplash.com/photo-1627042637241-15b026607212?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 37.45,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 37.45 },
+    featured: false,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+  {
+    id: 'assai_3',
+    name: 'Margarina com ou sem Sal Qualy Pote 500g',
+    category: 'laticinios',
+    unit: '500g',
+    image: 'https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 8.99,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 8.99, extrabom: 10.90, carone: 11.50 },
+    featured: true,
+    discountTag: 'Qualy 500g R$ 8,99'
+  },
+  {
+    id: 'assai_4',
+    name: 'Hambúrguer Misto Congelado Texas Burger Seara 672g',
+    category: 'acougue',
+    unit: '672g',
+    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 11.90,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 11.90 },
+    featured: false,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+  {
+    id: 'assai_5',
+    name: 'Iogurte Líquido Porto Alegre Sabores PET 1.25kg',
+    category: 'laticinios',
+    unit: '1.25kg',
+    image: 'https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 9.90,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 9.90 },
+    featured: false,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+  {
+    id: 'assai_6',
+    name: 'Farinha de Mandioca Branca/Amarela Tipo 1 Ana 1kg',
+    category: 'mercearia',
+    unit: '1kg',
+    image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 3.69,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 3.69 },
+    featured: false,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+  {
+    id: 'assai_7',
+    name: 'Macarrão Instantâneo Lámen Nissin Sabores 85g',
+    category: 'mercearia',
+    unit: '85g',
+    image: 'https://images.unsplash.com/photo-1612927601601-6638404737ce?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 1.99,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 1.99, extrabom: 2.39, atacadao: 2.19 },
+    featured: true,
+    discountTag: 'App Assaí R$ 1,99'
+  },
+  {
+    id: 'assai_8',
+    name: 'Bebida Láctea Nescau Nestlé TP 180ml',
+    category: 'laticinios',
+    unit: '180ml',
+    image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 1.69,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 1.69 },
+    featured: false,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+  {
+    id: 'assai_9',
+    name: 'Milho-Verde Predilecta Lata 170g',
+    category: 'mercearia',
+    unit: '170g',
+    image: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 2.49,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 2.49, atacadao: 2.79, carone: 2.99 },
+    featured: false,
+    discountTag: 'Predilecta R$ 2,49'
+  },
+  {
+    id: 'assai_10',
+    name: 'Maionese Hellmann\'s Pack 2x500g',
+    category: 'mercearia',
+    unit: 'pack 2x500g',
+    image: 'https://images.unsplash.com/photo-1528751014936-863e6e7a319c?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 16.90,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 16.90 },
+    featured: true,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+  {
+    id: 'assai_11',
+    name: 'Cerveja Amstel Lager Latão 473ml',
+    category: 'bebidas',
+    unit: '473ml',
+    image: 'assets/cerveja.png',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 3.89,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 3.89, atacadao: 3.99, extrabom: 4.49, carone: 4.39 },
+    featured: true,
+    discountTag: 'App Assaí R$ 3,89'
+  },
+  {
+    id: 'assai_12',
+    name: 'Cerveja Antarctica Original Latão 473ml',
+    category: 'bebidas',
+    unit: '473ml',
+    image: 'assets/cerveja.png',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 4.49,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 4.49, atacadao: 4.69, carone: 4.99 },
+    featured: true,
+    discountTag: 'App Assaí R$ 4,49'
+  },
+  {
+    id: 'assai_13',
+    name: 'Cerveja Amstel Ultra Lager Lata 269ml',
+    category: 'bebidas',
+    unit: '269ml',
+    image: 'assets/cerveja.png',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 3.49,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 3.49 },
+    featured: false,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+  {
+    id: 'assai_14',
+    name: 'Cerveja Spaten Latão 473ml',
+    category: 'bebidas',
+    unit: '473ml',
+    image: 'assets/cerveja.png',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 4.49,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 4.49, atacadao: 4.59, carone: 4.89, perim: 4.99 },
+    featured: true,
+    discountTag: 'App Assaí R$ 4,49'
+  },
+  {
+    id: 'assai_15',
+    name: 'Vinho Tinto Suave Pérgola PET 1.45L',
+    category: 'bebidas',
+    unit: '1.45L',
+    image: 'assets/cerveja.png',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 22.90,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 22.90 },
+    featured: false,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+  {
+    id: 'assai_16',
+    name: 'Gin Dry Cat Tipos Garrafa 750ml',
+    category: 'bebidas',
+    unit: '750ml',
+    image: 'assets/cerveja.png',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 58.90,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 58.90 },
+    featured: false,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+  {
+    id: 'assai_17',
+    name: 'Refrigerante Guaraná Coroa PET 600ml',
+    category: 'bebidas',
+    unit: '600ml',
+    image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 1.99,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 1.99 },
+    featured: false,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+  {
+    id: 'assai_18',
+    name: 'Refresco Dafruta Sabores TP 1L',
+    category: 'bebidas',
+    unit: '1L',
+    image: 'https://images.unsplash.com/photo-1613478223719-2ab802602423?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 3.19,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 3.19 },
+    featured: false,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+  {
+    id: 'assai_19',
+    name: 'Bebida Energética Daly Sabores PET 2L',
+    category: 'bebidas',
+    unit: '2L',
+    image: 'https://images.unsplash.com/photo-1622543925917-763c34d1a86e?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 9.79,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 9.79 },
+    featured: false,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+  {
+    id: 'assai_20',
+    name: 'Água Mineral Sem Gás Klas PET 500ml',
+    category: 'bebidas',
+    unit: '500ml',
+    image: 'https://images.unsplash.com/photo-1548839140-29a749e1bc4e?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 0.79,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 0.79, atacadao: 0.89 },
+    featured: false,
+    discountTag: 'PET 500ml R$ 0,79'
+  },
+  {
+    id: 'assai_21',
+    name: 'Detergente Líquido Barra Fragrâncias Frasco 500ml',
+    category: 'limpeza',
+    unit: '500ml',
+    image: 'https://images.unsplash.com/photo-1585837575652-267c041d77d4?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 1.29,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 1.29, extrabom: 1.59, atacadao: 1.49 },
+    featured: true,
+    discountTag: 'App Assaí R$ 1,29'
+  },
+  {
+    id: 'assai_22',
+    name: 'Lava-Roupas Líquido Tudo em Um Ápyce Galão 5L',
+    category: 'limpeza',
+    unit: '5L',
+    image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 14.95,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 14.95 },
+    featured: true,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+  {
+    id: 'assai_23',
+    name: 'Lava-Roupas em Pó Surf Tipos Bag 2.4kg',
+    category: 'limpeza',
+    unit: '2.4kg',
+    image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 18.95,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 18.95, extrabom: 22.90, carone: 21.90 },
+    featured: true,
+    discountTag: 'Bag 2,4kg R$ 18,95'
+  },
+  {
+    id: 'assai_24',
+    name: 'Fralda Descartável Hiper Huggies Pacote',
+    category: 'higiene',
+    unit: 'pacote',
+    image: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 49.90,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 49.90, carone: 54.90 },
+    featured: true,
+    discountTag: 'App Assaí R$ 49,90'
+  },
+  {
+    id: 'assai_25',
+    name: 'Papel Higiênico Folha Dupla Olé 12 Rolo (L12 P11)',
+    category: 'higiene',
+    unit: '12 rolos',
+    image: 'https://images.unsplash.com/photo-1584556812952-905ffd0c611a?w=400&auto=format&fit=crop&q=80',
+    encarteId: 2,
+    offerMarketId: 'assai',
+    offerPrice: 6.99,
+    validity: 'Válido 07/08 a 08/08',
+    prices: { assai: 6.99 },
+    featured: false,
+    discountTag: '📌 Exclusivo Assaí'
+  },
+
+  // ==========================================
+  // --- OUTRAS OFERTAS DE OUTROS ENCARTES ---
+  // ==========================================
   {
     id: 'p1',
     name: 'Contrafilé Bovino Resfriado Friboi (Peça/Pedaço kg)',
@@ -100,52 +456,10 @@ const PRODUCTS = [
     offerMarketId: 'assai',
     offerPrice: 49.90,
     validity: 'Válido 07/08 a 08/08',
-    prices: {
-      assai: 49.90,
-      atacadao: 52.90,
-      extrabom: 59.90,
-      carone: 58.90,
-      perim: 62.50,
-      ok_super: 53.90,
-      epa: 67.90
-    },
+    prices: { assai: 49.90, atacadao: 52.90, extrabom: 59.90, carone: 58.90, perim: 62.50, ok_super: 53.90, epa: 67.90 },
     featured: true,
     discountTag: 'App Assaí R$ 49,90/kg'
   },
-  {
-    id: 'p19',
-    name: 'Petisco de Frango Temperado Copacol Congelado 1kg',
-    category: 'acougue',
-    unit: '1kg',
-    image: 'https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=400&auto=format&fit=crop&q=80',
-    encarteId: 3,
-    offerMarketId: 'atacadao',
-    offerPrice: 16.90,
-    validity: 'Atacadão BR-101',
-    prices: {
-      atacadao: 16.90 // APENAS ATACADÃO
-    },
-    featured: true,
-    discountTag: '📌 Exclusivo Atacadão'
-  },
-  {
-    id: 'p20',
-    name: 'Hambúrguer Misto Congelado Texas Burger Seara 672g',
-    category: 'acougue',
-    unit: '672g',
-    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop&q=80',
-    encarteId: 2,
-    offerMarketId: 'assai',
-    offerPrice: 11.90,
-    validity: 'Válido 07/08 a 08/08',
-    prices: {
-      assai: 11.90 // APENAS ASSAÍ
-    },
-    featured: false,
-    discountTag: '📌 Exclusivo Assaí'
-  },
-
-  // --- MERCEARIA & MATINAIS ---
   {
     id: 'p2',
     name: 'Arroz Branco Tipo 1 Puro Grão 5kg',
@@ -156,15 +470,7 @@ const PRODUCTS = [
     offerMarketId: 'assai',
     offerPrice: 15.79,
     validity: 'Válido 07/08 a 08/08',
-    prices: {
-      assai: 15.79,
-      atacadao: 18.90,
-      extrabom: 22.90,
-      carone: 23.50,
-      perim: 24.90,
-      ok_super: 19.20,
-      epa: 25.90
-    },
+    prices: { assai: 15.79, atacadao: 18.90, extrabom: 22.90, carone: 23.50, perim: 24.90, ok_super: 19.20, epa: 25.90 },
     featured: true,
     discountTag: 'Mega Preço R$ 15,79'
   },
@@ -178,17 +484,23 @@ const PRODUCTS = [
     offerMarketId: 'atacadao',
     offerPrice: 8.99,
     validity: 'Super Sexta 07/08',
-    prices: {
-      atacadao: 8.99,
-      assai: 8.69,
-      extrabom: 12.89,
-      carone: 11.90,
-      perim: 12.50,
-      ok_super: 9.50,
-      epa: 13.80
-    },
+    prices: { atacadao: 8.99, assai: 8.69, extrabom: 12.89, carone: 11.90, perim: 12.50, ok_super: 9.50, epa: 13.80 },
     featured: true,
     discountTag: 'Super Sexta Atacadão'
+  },
+  {
+    id: 'p19',
+    name: 'Petisco de Frango Temperado Copacol Congelado 1kg',
+    category: 'acougue',
+    unit: '1kg',
+    image: 'https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=400&auto=format&fit=crop&q=80',
+    encarteId: 3,
+    offerMarketId: 'atacadao',
+    offerPrice: 16.90,
+    validity: 'Oferta da Semana',
+    prices: { atacadao: 16.90 },
+    featured: true,
+    discountTag: '📌 Exclusivo Atacadão'
   },
   {
     id: 'p4',
@@ -200,15 +512,7 @@ const PRODUCTS = [
     offerMarketId: 'carone',
     offerPrice: 24.98,
     validity: 'Válido 07/08 a 08/08',
-    prices: {
-      carone: 24.98,
-      extrabom: 28.90,
-      perim: 29.90,
-      atacadao: 25.90,
-      assai: 25.50,
-      ok_super: 26.90,
-      epa: 29.99
-    },
+    prices: { carone: 24.98, extrabom: 28.90, perim: 29.90, atacadao: 25.90, assai: 25.50, ok_super: 26.90, epa: 29.99 },
     featured: false,
     discountTag: 'Clube Carone R$ 24,98'
   },
@@ -222,20 +526,10 @@ const PRODUCTS = [
     offerMarketId: 'carone',
     offerPrice: 11.99,
     validity: 'Válido 07/08 a 08/08',
-    prices: {
-      carone: 11.99,
-      extrabom: 13.98,
-      perim: 14.50,
-      atacadao: 12.50,
-      assai: 12.30,
-      ok_super: 12.90,
-      epa: 14.90
-    },
+    prices: { carone: 11.99, extrabom: 13.98, perim: 14.50, atacadao: 12.50, assai: 12.30, ok_super: 12.90, epa: 14.90 },
     featured: true,
     discountTag: 'Especial Dia dos Pais'
   },
-
-  // --- LIMPEZA & CASA (OFERTAS 1 SUPERMERCADO) ---
   {
     id: 'p15',
     name: 'Amaciante Concentrado Downy 1L (Perfuma e Premia)',
@@ -246,9 +540,7 @@ const PRODUCTS = [
     offerMarketId: 'extrabom',
     offerPrice: 18.99,
     validity: 'Válido até 12/08',
-    prices: {
-      extrabom: 18.99 // APENAS EXTRABOM
-    },
+    prices: { extrabom: 18.99 },
     featured: true,
     discountTag: '📌 Exclusivo Extrabom'
   },
@@ -262,14 +554,10 @@ const PRODUCTS = [
     offerMarketId: 'extrabom',
     offerPrice: 34.90,
     validity: 'Válido até 12/08',
-    prices: {
-      extrabom: 34.90 // APENAS EXTRABOM
-    },
+    prices: { extrabom: 34.90 },
     featured: true,
     discountTag: '📌 Exclusivo Extrabom'
   },
-
-  // --- BEBIDAS & CERVEJAS (OFERTAS 1 SUPERMERCADO) ---
   {
     id: 'p17',
     name: 'Whisky Escocês Chivas Regal 12Y 750ml',
@@ -280,9 +568,7 @@ const PRODUCTS = [
     offerMarketId: 'carone',
     offerPrice: 99.90,
     validity: 'Válido 03/08 a 09/08',
-    prices: {
-      carone: 99.90 // APENAS CARONE
-    },
+    prices: { carone: 99.90 },
     featured: true,
     discountTag: '📌 Exclusivo Carone'
   },
@@ -296,14 +582,10 @@ const PRODUCTS = [
     offerMarketId: 'carone',
     offerPrice: 89.90,
     validity: 'Válido 03/08 a 09/08',
-    prices: {
-      carone: 89.90 // APENAS CARONE
-    },
+    prices: { carone: 89.90 },
     featured: false,
     discountTag: '📌 Exclusivo Carone'
   },
-
-  // --- HORTIFRÚTI & FRUTAS (OFERTAS 1 SUPERMERCADO) ---
   {
     id: 'p21',
     name: 'Banana Prata Selecionada (kg)',
@@ -314,9 +596,7 @@ const PRODUCTS = [
     offerMarketId: 'perim',
     offerPrice: 3.99,
     validity: 'Feira Perim 07/08',
-    prices: {
-      perim: 3.99 // APENAS PERIM
-    },
+    prices: { perim: 3.99 },
     featured: true,
     discountTag: '📌 Exclusivo Perim'
   },
@@ -330,29 +610,9 @@ const PRODUCTS = [
     offerMarketId: 'extrabom',
     offerPrice: 4.98,
     validity: 'Feira Extrabom',
-    prices: {
-      extrabom: 4.98 // APENAS EXTRABOM
-    },
+    prices: { extrabom: 4.98 },
     featured: false,
     discountTag: '📌 Exclusivo Extrabom'
-  },
-
-  // --- LATICÍNIOS & FRIOS (OFERTAS 1 SUPERMERCADO) ---
-  {
-    id: 'p23',
-    name: 'Queijo Mussarela Peça ou Pedaço kg',
-    category: 'laticinios',
-    unit: 'kg',
-    image: 'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=400&auto=format&fit=crop&q=80',
-    encarteId: 2,
-    offerMarketId: 'assai',
-    offerPrice: 27.90,
-    validity: 'Válido 07/08 a 08/08',
-    prices: {
-      assai: 27.90 // APENAS ASSAÍ
-    },
-    featured: true,
-    discountTag: '📌 Exclusivo Assaí'
   },
   {
     id: 'p24',
@@ -364,9 +624,7 @@ const PRODUCTS = [
     offerMarketId: 'atacadao',
     offerPrice: 4.19,
     validity: 'Super Sexta Atacadão',
-    prices: {
-      atacadao: 4.19 // APENAS ATACADÃO
-    },
+    prices: { atacadao: 4.19 },
     featured: false,
     discountTag: '📌 Exclusivo Atacadão'
   }
