@@ -503,38 +503,48 @@ body {
 
 .card-top-badges {
   position: absolute;
-  top: 12px;
-  left: 12px;
-  right: 12px;
+  top: 10px;
+  left: 10px;
+  right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 6px;
   z-index: 5;
+  pointer-events: none;
+}
+
+.card-top-badges > * {
+  pointer-events: auto;
 }
 
 .tag-discount {
   background: var(--accent);
   color: #000;
   font-weight: 800;
-  font-size: 0.72rem;
-  padding: 4px 10px;
-  border-radius: 20px;
-  box-shadow: var(--shadow-sm);
+  font-size: 0.68rem;
+  padding: 4px 8px;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
   text-transform: uppercase;
+  line-height: 1.1;
+  max-width: 65%;
 }
 
 .tag-encarte {
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(15, 23, 42, 0.88);
   backdrop-filter: blur(4px);
   color: white;
   font-weight: 600;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   padding: 4px 8px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 4px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .tag-encarte:hover {
@@ -921,38 +931,39 @@ body {
 }
 
 .product-icon-box {
-  height: 130px;
+  min-height: 165px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   border-bottom: 1px solid var(--border-color);
-  padding: 16px;
+  padding: 52px 14px 14px;
   position: relative;
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .product-icon-symbol {
-  font-size: 3.2rem;
+  font-size: 2.7rem;
   line-height: 1;
   margin-bottom: 6px;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.12));
   transition: transform 0.2s ease;
 }
 
 .product-card:hover .product-icon-symbol {
-  transform: scale(1.18) rotate(-4deg);
+  transform: scale(1.15) rotate(-4deg);
 }
 
 .product-icon-label {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.6px;
-  background: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.5px;
+  background: rgba(255, 255, 255, 0.85);
   padding: 3px 10px;
   border-radius: 12px;
   backdrop-filter: blur(4px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
 .cart-item-row {
