@@ -64,6 +64,15 @@ const SUPERMARKETS = [
     color: '#d62828',
     distance: '1.4 km',
     isLocal: false
+  },
+  {
+    id: 'casagrande',
+    name: 'Rede Casagrande Supermercados',
+    location: 'Serra / Civit (Av. Talma Rodrigues)',
+    badge: 'Imediações',
+    color: '#16a34a',
+    distance: '2.1 km',
+    isLocal: false
   }
 ];
 
@@ -77,7 +86,9 @@ const ENCARTES = [
   { id: 7, file: 'WhatsApp Image 2026-08-07 at 09.15.47.jpeg', title: 'Carone: Especial Ofertas Dia dos Pais', market: 'carone', validity: 'Válido 07/08 a 08/08' },
   { id: 8, file: 'WhatsApp Image 2026-08-07 at 13.00.42.jpeg', title: 'Carone: Especial Destilados Dia dos Pais', market: 'carone', validity: 'Válido 03/08 a 09/08' },
   { id: 9, file: 'WhatsApp Image 2026-08-07 at 11.02.07.jpeg', title: 'Carone: Batata, Calabresa Sadia & Comfort', market: 'carone', validity: 'Válido 07/08 a 08/08' },
-  { id: 10, file: 'WhatsApp Image 2026-08-04 at 07.00.43.jpeg', title: 'Carone: Especial Azeite Andorinha Extra Virgem', market: 'carone', validity: 'Válido 04/08 a 09/08' }
+  { id: 10, file: 'WhatsApp Image 2026-08-04 at 07.00.43.jpeg', title: 'Carone: Especial Azeite Andorinha Extra Virgem', market: 'carone', validity: 'Válido 04/08 a 09/08' },
+  { id: 11, file: 'oferta-pagina-1.png', title: 'Rede Casagrande: Encarte Semanal Matinais & Açougue', market: 'casagrande', validity: 'Válido 07/08 a 11/08' },
+  { id: 12, file: 'oferta-pagina-2.png', title: 'Rede Casagrande: Feira, Bebidas & Mercearia Imbatível', market: 'casagrande', validity: 'Válido 07/08 a 11/08' }
 ];
 
 const CATEGORIES = [
@@ -1045,9 +1056,97 @@ const PRODUCTS = [
     offerMarketId: 'assai',
     offerPrice: 6.99,
     validity: 'Válido 07/08 a 08/08',
-    prices: { assai: 6.99 },
+    prices: { assai: 6.99, casagrande: 7.49 },
     featured: false,
     discountTag: 'App Assaí R$ 6,99'
+  },
+
+  // ==========================================
+  // --- REDE CASAGRANDE SUPERMERCADOS ---
+  // ==========================================
+  {
+    id: 'casa_1',
+    name: 'Arroz Tipo 1 Sepé / Tio João Pacote 5kg',
+    category: 'mercearia',
+    unit: '5kg',
+    image: '',
+    encarteId: 11,
+    offerMarketId: 'casagrande',
+    offerPrice: 23.90,
+    validity: 'Válido 07/08 a 11/08',
+    prices: { casagrande: 23.90, assai: 24.90, extrabom: 25.90, atacadao: 24.49 },
+    featured: true,
+    discountTag: 'Clube Casagrande R$ 23,90'
+  },
+  {
+    id: 'casa_2',
+    name: 'Leite UHT Integral Selita / Veneza 1L',
+    category: 'laticinios',
+    unit: '1L',
+    image: '',
+    encarteId: 11,
+    offerMarketId: 'casagrande',
+    offerPrice: 4.39,
+    validity: 'Válido 07/08 a 11/08',
+    prices: { casagrande: 4.39, carone: 4.79, extrabom: 4.89, perim: 4.99 },
+    featured: true,
+    discountTag: 'Oferta Casagrande R$ 4,39'
+  },
+  {
+    id: 'casa_3',
+    name: 'Acém Bovino Fresco Pedaço kg',
+    category: 'acougue',
+    unit: 'kg',
+    image: '',
+    encarteId: 11,
+    offerMarketId: 'casagrande',
+    offerPrice: 28.90,
+    validity: 'Válido 07/08 a 11/08',
+    prices: { casagrande: 28.90, extrabom: 31.90, carone: 32.90 },
+    featured: true,
+    discountTag: 'Açougue Casagrande R$ 28,90/kg'
+  },
+  {
+    id: 'casa_4',
+    name: 'Linguiça Toscana Perdigão kg',
+    category: 'acougue',
+    unit: 'kg',
+    image: '',
+    encarteId: 11,
+    offerMarketId: 'casagrande',
+    offerPrice: 16.90,
+    validity: 'Válido 07/08 a 11/08',
+    prices: { casagrande: 16.90, extrabom: 17.98, ok_super: 17.90 },
+    featured: false,
+    discountTag: 'Clube Casagrande R$ 16,90/kg'
+  },
+  {
+    id: 'casa_5',
+    name: 'Cerveja Brahma Chopp Latão 473ml',
+    category: 'bebidas',
+    unit: '473ml',
+    image: '',
+    encarteId: 12,
+    offerMarketId: 'casagrande',
+    offerPrice: 3.69,
+    validity: 'Válido 07/08 a 11/08',
+    prices: { casagrande: 3.69, assai: 3.79, atacadao: 3.89, extrabom: 4.29 },
+    featured: true,
+    discountTag: 'Ofertão Cerveja R$ 3,69'
+  },
+  {
+    id: 'casa_6',
+    name: 'Biscoito Recheado Passatempo Nestlé 130g',
+    category: 'mercearia',
+    unit: '130g',
+    image: '',
+    encarteId: 12,
+    offerMarketId: 'casagrande',
+    offerPrice: 2.19,
+    validity: 'Válido 07/08 a 11/08',
+    prices: { casagrande: 2.19, extrabom: 2.49, carone: 2.59 },
+    featured: false,
+    discountTag: 'Casagrande R$ 2,19'
   }
 ];
 
