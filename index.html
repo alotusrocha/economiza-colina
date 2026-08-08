@@ -110,6 +110,53 @@
   <!-- Main Content Area -->
   <main class="container">
 
+    <!-- Smart Shopping List Optimizer Section -->
+    <section style="margin: 20px 0 24px;" aria-label="Otimizador de Lista de Compras do Cliente">
+      <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 20px; padding: 24px; color: white; box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.25); border: 1px solid #334155;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+          <div>
+            <h2 style="font-size: 1.35rem; font-weight: 800; color: #f8fafc; display: flex; align-items: center; gap: 8px;">
+              <span>📝</span> Cole ou Digite sua Lista de Compras
+            </h2>
+            <p style="font-size: 0.86rem; color: #94a3b8; margin-top: 4px;">
+              O sistema analisa sua lista, busca os menores preços nos supermercados de Colina de Laranjeiras e calcula se é melhor comprar tudo em 1 só lugar ou dividir em 2 lojas!
+            </p>
+          </div>
+          <span style="background: rgba(16, 185, 129, 0.2); color: #34d399; font-weight: 800; font-size: 0.78rem; padding: 6px 12px; border-radius: 20px; border: 1px solid rgba(52, 211, 153, 0.3);">
+            ✨ Comparador Inteligente de Lista
+          </span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 20px;" class="list-optimizer-grid">
+          <!-- Input Column -->
+          <div>
+            <label for="listTextarea" style="font-size: 0.82rem; font-weight: 700; color: #cbd5e1; display: block; margin-bottom: 8px;">
+              Digite ou cole os produtos da sua lista:
+            </label>
+            <textarea id="listTextarea" rows="6" placeholder="Exemplo:&#10;Arroz 5kg&#10;Feijão preto&#10;Café&#10;Contrafilé&#10;Cerveja Amstel&#10;Sabão em pó&#10;Leite" style="width: 100%; background: #020617; border: 1px solid #334155; border-radius: 12px; padding: 12px; color: #f8fafc; font-size: 0.9rem; resize: vertical; font-family: inherit; box-sizing: border-box; outline: none;"></textarea>
+
+            <div style="display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap;">
+              <button id="btnOptimizeList" onclick="optimizeShoppingList()" style="flex: 1; background: linear-gradient(135deg, #e63946 0%, #d62828 100%); color: white; border: none; font-weight: 800; padding: 12px 18px; border-radius: 12px; cursor: pointer; font-size: 0.92rem; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3); transition: transform 0.2s;">
+                <span>⚡ Analisar e Comparar Minha Lista</span>
+              </button>
+              <button onclick="fillExampleList()" style="background: rgba(255, 255, 255, 0.1); color: #cbd5e1; border: 1px solid #475569; font-weight: 700; padding: 12px 14px; border-radius: 12px; cursor: pointer; font-size: 0.82rem; white-space: nowrap;">
+                📋 Carregar Exemplo
+              </button>
+            </div>
+          </div>
+
+          <!-- Results Column -->
+          <div id="listOptimizationResults" style="background: #020617; border: 1px solid #1e293b; border-radius: 12px; padding: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center;">
+            <div style="text-align: center; color: #64748b;">
+              <div style="font-size: 2.2rem; margin-bottom: 8px;">🛒</div>
+              <div style="font-weight: 700; font-size: 0.95rem; color: #94a3b8;">Aguardando sua lista de compras</div>
+              <div style="font-size: 0.8rem; margin-top: 4px;">Digite ou cole seus itens ao lado e clique em "Analisar e Comparar Minha Lista".</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Categories Filter Bar -->
     <section aria-label="Filtro de Categorias">
       <div class="category-bar" id="categoriesBar">

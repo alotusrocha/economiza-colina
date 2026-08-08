@@ -430,3 +430,220 @@ function getProductIconConfig(product) {
   // Padrão
   return { icon: '🏷️', label: 'Oferta Catalogada', bg: 'linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%)', border: '#cbd5e1', textColor: '#334155' };
 }
+
+// ==========================================
+// --- OTIMIZADOR INTELIGENTE DE LISTA DE COMPRAS ---
+// ==========================================
+
+function fillExampleList() {
+  const textarea = document.getElementById('listTextarea');
+  if (textarea) {
+    textarea.value = `Arroz 5kg\nFeijão Preto\nCafé\nContrafilé\nCerveja Amstel\nSabão em pó\nAzeite\nLeite\nFralda Huggies`;
+    optimizeShoppingList();
+  }
+}
+
+function optimizeShoppingList() {
+  const textarea = document.getElementById('listTextarea');
+  const resultsContainer = document.getElementById('listOptimizationResults');
+
+  if (!textarea || !resultsContainer) return;
+  const text = textarea.value.trim();
+
+  if (!text) {
+    cart.showToast('Por favor, digite ou cole sua lista de compras!');
+    return;
+  }
+
+  // 1. Separar linhas ou vírgulas da lista informada
+  const rawLines = text.split(/[\n,]+/).map(s => s.trim()).filter(s => s.length > 0);
+
+  if (rawLines.length === 0) return;
+
+  const matchedProducts = [];
+  const unmatchedItems = [];
+
+  // 2. Buscar o produto mais próximo na base de dados
+  rawLines.forEach(line => {
+    const cleanLine = line.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const tokens = cleanLine.split(/\s+/).filter(w => w.length > 2);
+
+    let bestProduct = null;
+    let maxMatches = 0;
+
+    PRODUCTS.forEach(product => {
+      const prodNameClean = product.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      const catClean = product.category.toLowerCase();
+      
+      let matches = 0;
+      tokens.forEach(token => {
+        if (prodNameClean.includes(token) || catClean.includes(token)) {
+          matches += 2;
+        }
+      });
+
+      if (matches > maxMatches) {
+        maxMatches = matches;
+        bestProduct = product;
+      }
+    });
+
+    if (bestProduct && maxMatches >= 2) {
+      if (!matchedProducts.some(mp => mp.product.id === bestProduct.id)) {
+        matchedProducts.push({
+          userQuery: line,
+          product: bestProduct
+        });
+      }
+    } else {
+      unmatchedItems.push(line);
+    }
+  });
+
+  if (matchedProducts.length === 0) {
+    resultsContainer.innerHTML = `
+      <div style="text-align: center; color: #ef4444; padding: 20px;">
+        <div style="font-size: 2rem; margin-bottom: 8px;">⚠️</div>
+        <div style="font-weight: 800; font-size: 1rem;">Nenhum produto correspondente encontrado</div>
+        <div style="font-size: 0.82rem; color: #94a3b8; margin-top: 6px;">
+          Não encontramos ofertas nos encartes atuais para os itens informados. Tente termos genéricos como "Arroz", "Feijão", "Contrafilé", "Cerveja", "Café".
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  // 3. Calcular totais por Supermercado
+  const marketTotals = {};
+  SUPERMARKETS.forEach(m => {
+    marketTotals[m.id] = {
+      market: m,
+      totalSum: 0,
+      availableCount: 0,
+      items: []
+    };
+  });
+
+  // Para a Rota Inteligente de Maior Economia (Dividindo ou em 1 Loja):
+  const bestMultiRoute = [];
+
+  matchedProducts.forEach(({ userQuery, product }) => {
+    const priceEntries = Object.entries(product.prices);
+    const sortedPrices = priceEntries.sort((a, b) => a[1] - b[1]);
+    const [bestMarketId, bestPrice] = sortedPrices[0];
+    const bestMarketObj = SUPERMARKETS.find(m => m.id === bestMarketId) || SUPERMARKETS[0];
+
+    bestMultiRoute.push({
+      userQuery,
+      product,
+      market: bestMarketObj,
+      price: bestPrice
+    });
+
+    // Somar total para cada mercado
+    SUPERMARKETS.forEach(m => {
+      if (product.prices[m.id] !== undefined) {
+        marketTotals[m.id].totalSum += product.prices[m.id];
+        marketTotals[m.id].availableCount += 1;
+        marketTotals[m.id].items.push({ product, price: product.prices[m.id] });
+      }
+    });
+  });
+
+  const sortedMarkets = Object.values(marketTotals)
+    .filter(mt => mt.availableCount > 0)
+    .sort((a, b) => (b.availableCount - a.availableCount) || (a.totalSum - b.totalSum));
+
+  const bestSingleMarket = sortedMarkets[0];
+
+  // Agrupar Rota de Maior Economia por supermercado
+  const multiGrouped = {};
+  let multiTotalSum = 0;
+  bestMultiRoute.forEach(item => {
+    multiTotalSum += item.price;
+    const mId = item.market.id;
+    if (!multiGrouped[mId]) {
+      multiGrouped[mId] = { market: item.market, items: [] };
+    }
+    multiGrouped[mId].items.push(item);
+  });
+
+  const multiMarketsUsed = Object.values(multiGrouped);
+
+  // 4. Renderizar Resultado Formatado e Atraente
+  let resHtml = `
+    <div style="color: white; text-align: left;">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1e293b; padding-bottom: 10px; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+        <span style="font-size: 0.85rem; font-weight: 800; color: #38bdf8;">
+          🎯 ${matchedProducts.length} de ${rawLines.length} itens encontrados nos encartes
+        </span>
+        <button onclick="addMatchedListToCart(${JSON.stringify(matchedProducts.map(m => m.product.id)).replace(/"/g, '&quot;')})" style="background: #10b981; color: white; border: none; font-size: 0.76rem; font-weight: 800; padding: 6px 12px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; gap: 4px;">
+          🛒 Adicionar Todos à Cesta
+        </button>
+      </div>
+  `;
+
+  // Alerta de itens não encontrados
+  if (unmatchedItems.length > 0) {
+    resHtml += `
+      <div style="background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; padding: 8px 12px; margin-bottom: 12px; font-size: 0.78rem; color: #fca5a5;">
+        <strong>⚠️ Itens não identificados nos encartes de hoje (${unmatchedItems.length}):</strong> ${unmatchedItems.join(', ')}.
+        <br><span style="color: #cbd5e1; font-size: 0.74rem;">Dica: Você encontrará esses itens no setor de mercearia do <strong>${bestSingleMarket.market.name}</strong> ou <strong>Extrabom</strong>.</span>
+      </div>
+    `;
+  }
+
+  // OPÇÃO 1: Rota de Economia Máxima
+  resHtml += `
+    <div style="background: linear-gradient(135deg, #065f46 0%, #047857 100%); border-radius: 10px; padding: 12px; margin-bottom: 12px; border: 1px solid #10b981;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-weight: 800; font-size: 0.88rem; color: #a7f3d0; display: flex; align-items: center; gap: 6px;">
+          🏆 1. Rota de Economia Imbatível ${multiMarketsUsed.length > 1 ? `(Dividindo em ${multiMarketsUsed.length} Lojas)` : '(Loja Única)'}
+        </span>
+        <span style="font-size: 1.1rem; font-weight: 900; color: #ffffff;">R$ ${multiTotalSum.toFixed(2)}</span>
+      </div>
+      <div style="font-size: 0.78rem; color: #ecfdf5; margin-top: 6px;">
+  `;
+
+  multiMarketsUsed.forEach(grp => {
+    resHtml += `
+      <div style="margin-top: 4px; padding: 4px 8px; background: rgba(0,0,0,0.25); border-radius: 6px;">
+        📍 <strong>Ir ao ${grp.market.name}:</strong> ${grp.items.map(i => `${i.product.name.split(' ')[0]} (R$ ${i.price.toFixed(2)})`).join(', ')}
+      </div>
+    `;
+  });
+
+  resHtml += `
+      </div>
+    </div>
+  `;
+
+  // OPÇÃO 2: Compra em 1 Único Supermercado (Praticidade)
+  resHtml += `
+    <div style="background: #0f172a; border-radius: 10px; padding: 12px; border: 1px solid #334155;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-weight: 800; font-size: 0.84rem; color: #f8fafc; display: flex; align-items: center; gap: 6px;">
+          🛍️ 2. Fazer Tudo em 1 Só Lugar: <strong>${bestSingleMarket.market.name}</strong>
+        </span>
+        <span style="font-size: 1rem; font-weight: 800; color: #34d399;">
+          R$ ${bestSingleMarket.totalSum.toFixed(2)}
+        </span>
+      </div>
+      <div style="font-size: 0.74rem; color: #94a3b8; margin-top: 4px;">
+        Possui ${bestSingleMarket.availableCount} de ${matchedProducts.length} itens da sua lista com oferta catalogada.
+      </div>
+    </div>
+  `;
+
+  resHtml += `</div>`;
+  resultsContainer.innerHTML = resHtml;
+}
+
+function addMatchedListToCart(productIds) {
+  let count = 0;
+  productIds.forEach(id => {
+    cart.addItem(id);
+    count++;
+  });
+  cart.showToast(`✨ ${count} itens da sua lista foram adicionados à Cesta de Compras!`);
+}
