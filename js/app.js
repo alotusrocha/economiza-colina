@@ -91,6 +91,8 @@ function renderProducts() {
     const avgPrice = priceEntries.reduce((sum, [, val]) => sum + val, 0) / priceEntries.length;
     const savingsPercent = Math.round(((avgPrice - lowestPrice) / avgPrice) * 100);
 
+    const iconConfig = getProductIconConfig(product);
+
     html += `
       <div class="product-card">
         <div class="card-top-badges">
@@ -100,8 +102,9 @@ function renderProducts() {
           </span>
         </div>
 
-        <div class="product-img-box">
-          <img src="${product.image}" alt="${product.name}" loading="lazy">
+        <div class="product-icon-box" style="background: ${iconConfig.bg}; border-color: ${iconConfig.border};">
+          <span class="product-icon-symbol">${iconConfig.icon}</span>
+          <span class="product-icon-label" style="color: ${iconConfig.textColor};">${iconConfig.label}</span>
         </div>
 
         <div class="product-details">
@@ -351,4 +354,79 @@ function submitCommunityTip(e) {
   renderProducts();
   closeTipModal();
   document.getElementById('tipForm').reset();
+}
+
+// Mapeamento Inteligente de Ícones Padronizados por Categoria / Tipo de Item
+function getProductIconConfig(product) {
+  const name = product.name.toLowerCase();
+  const cat = product.category;
+
+  // 1. Azeites & Óleos
+  if (name.includes('azeite')) {
+    return { icon: '🫒', label: 'Azeite & Oliva', bg: 'linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%)', border: '#a7f3d0', textColor: '#065f46' };
+  }
+  if (name.includes('óleo') || name.includes('oleo')) {
+    return { icon: '🌻', label: 'Óleo de Cozinha', bg: 'linear-gradient(135deg, #fef9c3 0%, #fef08a 100%)', border: '#fde047', textColor: '#854d0e' };
+  }
+
+  // 2. Carnes & Aves
+  if (name.includes('frango') || name.includes('sassami') || name.includes('coxa') || name.includes('aves') || name.includes('costelinha de fgo') || name.includes('coxinha asa')) {
+    return { icon: '🍗', label: 'Aves & Frango', bg: 'linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%)', border: '#fdba74', textColor: '#9a3412' };
+  }
+  if (cat === 'acougue' || name.includes('contrafilé') || name.includes('picanha') || name.includes('mignon') || name.includes('lagarto') || name.includes('bacon') || name.includes('salsicha') || name.includes('linguiça') || name.includes('hambúrguer') || name.includes('suína')) {
+    return { icon: '🥩', label: 'Carne Bovina/Suína', bg: 'linear-gradient(135deg, #fee2e2 0%, #fecaca 100%)', border: '#fca5a5', textColor: '#991b1b' };
+  }
+
+  // 3. Hortifrúti
+  if (name.includes('banana') || name.includes('mamão') || name.includes('fruta')) {
+    return { icon: '🍎', label: 'Frutas Frescas', bg: 'linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)', border: '#fcd34d', textColor: '#78350f' };
+  }
+  if (cat === 'hortifruti' || name.includes('tomate') || name.includes('batata') || name.includes('cebola') || name.includes('verdura')) {
+    return { icon: '🥦', label: 'Verduras & Legumes', bg: 'linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%)', border: '#86efac', textColor: '#166534' };
+  }
+
+  // 4. Bebidas
+  if (name.includes('cerveja') || name.includes('chopp') || name.includes('lager') || name.includes('spaten') || name.includes('amstel') || name.includes('heineken') || name.includes('antarctica')) {
+    return { icon: '🍺', label: 'Cerveja & Chopp', bg: 'linear-gradient(135deg, #fef9c3 0%, #fef08a 100%)', border: '#fde047', textColor: '#854d0e' };
+  }
+  if (name.includes('whisky') || name.includes('uisque') || name.includes('gin') || name.includes('vodka') || name.includes('vinho') || name.includes('chivas') || name.includes('beefeater') || name.includes('ballantine') || name.includes('jameson') || name.includes('glenlivet')) {
+    return { icon: '🥃', label: 'Wísquis & Destilados', bg: 'linear-gradient(135deg, #fef3c7 0%, #fcd34d 100%)', border: '#f59e0b', textColor: '#78350f' };
+  }
+  if (cat === 'bebidas' || name.includes('refrigerante') || name.includes('suco') || name.includes('néctar') || name.includes('energético') || name.includes('água') || name.includes('guaraná') || name.includes('dafruta')) {
+    return { icon: '🥤', label: 'Bebidas & Sucos', bg: 'linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%)', border: '#7dd3fc', textColor: '#075985' };
+  }
+
+  // 5. Grãos & Matinais
+  if (name.includes('arroz') || name.includes('feijão') || name.includes('farinha') || name.includes('açúcar')) {
+    return { icon: '🌾', label: 'Grãos & Cereais', bg: 'linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)', border: '#fcd34d', textColor: '#78350f' };
+  }
+  if (name.includes('café') || name.includes('toddy') || name.includes('nescau')) {
+    return { icon: '☕', label: 'Café & Matinais', bg: 'linear-gradient(135deg, #f5f5f4 0%, #e7e5e4 100%)', border: '#d6d3d1', textColor: '#44403c' };
+  }
+  if (name.includes('maionese') || name.includes('molho') || name.includes('requeijão') || name.includes('milho') || name.includes('azeitona')) {
+    return { icon: '🥫', label: 'Molhos & Condimentos', bg: 'linear-gradient(135deg, #fef9c3 0%, #fef08a 100%)', border: '#fde047', textColor: '#713f12' };
+  }
+
+  // 6. Laticínios
+  if (cat === 'laticinios' || name.includes('leite') || name.includes('queijo') || name.includes('margarina') || name.includes('manteiga') || name.includes('iogurte') || name.includes('lasanha') || name.includes('whey')) {
+    return { icon: '🧀', label: 'Laticínios & Frios', bg: 'linear-gradient(135deg, #fef9c3 0%, #fef08a 100%)', border: '#fde047', textColor: '#854d0e' };
+  }
+
+  // 7. Doces
+  if (name.includes('chocolate') || name.includes('bombom') || name.includes('bis') || name.includes('biscoito') || name.includes('doce') || name.includes('rosquinha') || name.includes('wafer')) {
+    return { icon: '🍫', label: 'Doces & Chocolates', bg: 'linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%)', border: '#f472b6', textColor: '#831843' };
+  }
+
+  // 8. Limpeza
+  if (cat === 'limpeza' || name.includes('sabão') || name.includes('amaciante') || name.includes('detergente') || name.includes('omo') || name.includes('tixan') || name.includes('downy') || name.includes('ariel') || name.includes('comfort') || name.includes('ápyce') || name.includes('surf') || name.includes('limpador') || name.includes('esponja') || name.includes('razzo')) {
+    return { icon: '🧹', label: 'Limpeza & Casa', bg: 'linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%)', border: '#38bdf8', textColor: '#0369a1' };
+  }
+
+  // 9. Higiene
+  if (cat === 'higiene' || name.includes('fralda') || name.includes('papel') || name.includes('creme dental') || name.includes('shampoo') || name.includes('pampers') || name.includes('huggies') || name.includes('colgate') || name.includes('nivea') || name.includes('gillette') || name.includes('always')) {
+    return { icon: '🧴', label: 'Higiene & Perfumaria', bg: 'linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%)', border: '#d8b4fe', textColor: '#6b21a8' };
+  }
+
+  // Padrão
+  return { icon: '🏷️', label: 'Oferta Catalogada', bg: 'linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%)', border: '#cbd5e1', textColor: '#334155' };
 }
