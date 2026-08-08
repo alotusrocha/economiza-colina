@@ -87,8 +87,8 @@ const ENCARTES = [
   { id: 8, file: 'WhatsApp Image 2026-08-07 at 13.00.42.jpeg', title: 'Carone: Especial Destilados Dia dos Pais', market: 'carone', validity: 'Válido 03/08 a 09/08' },
   { id: 9, file: 'WhatsApp Image 2026-08-07 at 11.02.07.jpeg', title: 'Carone: Batata, Calabresa Sadia & Comfort', market: 'carone', validity: 'Válido 07/08 a 08/08' },
   { id: 10, file: 'WhatsApp Image 2026-08-04 at 07.00.43.jpeg', title: 'Carone: Especial Azeite Andorinha Extra Virgem', market: 'carone', validity: 'Válido 04/08 a 09/08' },
-  { id: 11, file: 'oferta-pagina-1.png', title: 'Rede Casagrande: Encarte Semanal Matinais & Açougue', market: 'casagrande', validity: 'Válido 07/08 a 11/08' },
-  { id: 12, file: 'oferta-pagina-2.png', title: 'Rede Casagrande: Feira, Bebidas & Mercearia Imbatível', market: 'casagrande', validity: 'Válido 07/08 a 11/08' }
+  { id: 11, file: 'casagrande-pagina-1.png', title: 'Rede Casagrande: Encarte Semanal Matinais & Açougue', market: 'casagrande', validity: 'Válido 01/08 a 09/08' },
+  { id: 12, file: 'casagrande-pagina-2.png', title: 'Rede Casagrande: Feira, Bebidas & Mercearia Imbatível', market: 'casagrande', validity: 'Válido 07/08 a 11/08' }
 ];
 
 const CATEGORIES = [
