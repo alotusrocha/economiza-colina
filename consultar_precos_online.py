@@ -53,6 +53,7 @@ SUPERMARKETS = {
     'casagrande': {'name': 'Rede Casagrande', 'badge': 'Bairro Barcelona', 'location': 'Bairro Barcelona'},
     'bh': {'name': 'Supermercados BH', 'badge': 'Laranjeiras', 'location': 'Laranjeiras'},
     'assai': {'name': 'Assaí Atacadista', 'badge': 'Atacarejo', 'location': 'Laranjeiras / Civit'},
+    'atacadao': {'name': 'Atacadão Serra', 'badge': 'Atacarejo No Bairro', 'location': 'Colina de Laranjeiras (BR-101)'},
     'atacado_vem': {'name': 'Atacado Vem', 'badge': 'Atacarejo No Bairro', 'location': 'Serra (Rod. Norte-Sul)'}
 }
 

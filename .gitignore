@@ -1,0 +1,4 @@
+scratch/
+*.bak
+.env
+__pycache__/
