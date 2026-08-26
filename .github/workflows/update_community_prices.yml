@@ -1,0 +1,51 @@
+name: Atualizar Preços e Processar Fotos da Comunidade
+
+on:
+  schedule:
+    # Executa automaticamente 2 vezes ao dia (às 08:00 e às 18:00 UTC)
+    - cron: '0 8,18 * * *'
+  workflow_dispatch:
+    # Permite acionamento manual a qualquer momento no GitHub Actions UI
+
+jobs:
+  process_and_sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Checkout do Repositório
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: 2. Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 3. Instalar Dependências
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install google-generativeai pillow
+
+      - name: 4. Processar Fotos de Preço da Comunidade
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python processar_fotos_comunidade.py
+
+      - name: 5. Recapitulando e Gerando Catálogo Atualizado
+        run: |
+          python scratch/generate_data.py
+
+      - name: 6. Commit e Push no GitHub se houver alterações
+        run: |
+          git config --global user.name "Economiza Colina Bot"
+          git config --global user.email "bot@economizacolina.com.br"
+          git add .
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "bot: atualiza preços e catálogo reportados pela comunidade"
+            git push
+          else
+            echo "Nenhuma alteração de preço detectada nesta execução."
+          fi

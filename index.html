@@ -251,15 +251,17 @@
       </div>
 
       <div class="modal-body">
-        <form id="tipForm" onsubmit="submitCommunityTip(event)">
+        <form id="tipForm" name="ofertas-comunidade" method="POST" data-netlify="true" enctype="multipart/form-data" onsubmit="submitCommunityTip(event)">
+          <input type="hidden" name="form-name" value="ofertas-comunidade">
+
           <div style="margin-bottom: 14px;">
             <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Seu Nome (Morador):</label>
-            <input type="text" id="tipAuthor" placeholder="Ex: Rodrigo S. - Colina" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;" required>
+            <input type="text" id="tipAuthor" name="author" placeholder="Ex: Rodrigo S. - Colina" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;" required>
           </div>
 
           <div style="margin-bottom: 14px;">
             <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Supermercado:</label>
-            <select id="tipMarket" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;">
+            <select id="tipMarket" name="market" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;">
               <option value="Extrabom Colina">Extrabom (Shopping Montserrat)</option>
               <option value="Supermercados Carone Colina">Supermercados Carone (Colina de Laranjeiras)</option>
               <option value="Perim Laranjeiras">Perim (Laranjeiras)</option>
@@ -270,13 +272,22 @@
             </select>
           </div>
 
-          <div style="margin-bottom: 18px;">
-            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Qual a oferta que você viu?</label>
-            <textarea id="tipText" rows="3" placeholder="Ex: Coxão mole tá R$ 29,90/kg no Carone agora a tarde!" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;" required></textarea>
+          <div style="margin-bottom: 14px;">
+            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">📸 Tirar Foto da Etiqueta / Preço no Mercado (Opcional):</label>
+            <input type="file" id="tipPhoto" name="photo" accept="image/*" capture="environment" onchange="previewTipPhoto(event)" style="width: 100%; padding: 8px; background: #f8fafc; border-radius: 8px; border: 1px dashed #059669; font-size: 0.84rem;">
+            <div id="photoPreviewContainer" style="display: none; margin-top: 8px; text-align: center;">
+              <img id="photoPreviewImg" src="" alt="Pré-visualização da etiqueta" style="max-height: 140px; border-radius: 8px; border: 2px solid #10b981; margin-top: 4px;">
+              <div style="font-size: 0.75rem; color: #059669; font-weight: 700; margin-top: 2px;">✓ Foto da etiqueta pronta para leitura automática!</div>
+            </div>
           </div>
 
-          <button type="submit" style="width: 100%; background: #10b981; color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 700; cursor: pointer;">
-            📢 Publicar para a Comunidade
+          <div style="margin-bottom: 18px;">
+            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Qual a oferta / detalhes que você viu?</label>
+            <textarea id="tipText" name="text" rows="3" placeholder="Ex: Coxão mole tá R$ 29,90/kg no Carone agora a tarde!"></textarea>
+          </div>
+
+          <button type="submit" style="width: 100%; background: linear-gradient(135deg, #10b981 0%, #047857 100%); color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <span>📸 Publicar Foto / Oferta para o Bairro</span>
           </button>
         </form>
       </div>

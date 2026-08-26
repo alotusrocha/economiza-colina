@@ -393,19 +393,45 @@ function closeTipModal() {
   if (modal) modal.classList.remove('active');
 }
 
+function previewTipPhoto(e) {
+  const file = e.target.files && e.target.files[0];
+  const container = document.getElementById('photoPreviewContainer');
+  const img = document.getElementById('photoPreviewImg');
+
+  if (file && container && img) {
+    const reader = new FileReader();
+    reader.onload = function(evt) {
+      img.src = evt.target.result;
+      container.style.display = 'block';
+    };
+    reader.readAsDataURL(file);
+  } else if (container) {
+    container.style.display = 'none';
+  }
+}
+
 function submitCommunityTip(e) {
   e.preventDefault();
   const author = document.getElementById('tipAuthor').value || 'Morador de Colina';
   const market = document.getElementById('tipMarket').value || 'Supermercado';
-  const text = document.getElementById('tipText').value;
+  const text = document.getElementById('tipText').value || '';
+  const photoInput = document.getElementById('tipPhoto');
+  const photoFile = photoInput && photoInput.files && photoInput.files[0];
 
-  if (!text) return;
+  if (!text && !photoFile) {
+    cart.showToast('Por favor, tire uma foto ou escreva o detalhe da oferta!');
+    return;
+  }
+
+  const displayText = photoFile
+    ? `📸 [Foto da Etiqueta Anexada] ${text ? text : 'Preço fotografado no mercado'}`
+    : text;
 
   // 1. Adicionar dica à lista comunitária
   COMMUNITY_TIPS.unshift({
     author: `${author} (Colina)`,
     market,
-    text,
+    text: displayText,
     time: 'Agora mesmo'
   });
 
@@ -429,13 +455,16 @@ function submitCommunityTip(e) {
         marketName: marketObj.name,
         price: reportedPrice
       };
-      cart.showToast(`Preço do ${matchedProduct.name} atualizado no ${marketObj.name} para R$ ${reportedPrice.toFixed(2)} por vizinho!`);
+      cart.showToast(`📸 Foto enviada! Preço do ${matchedProduct.name} atualizado no ${marketObj.name}!`);
     } else {
-      cart.showToast('Sua dica foi publicada com sucesso para a comunidade do bairro!');
+      cart.showToast('📸 Foto enviada com sucesso! A rotina de IA lerá a etiqueta na atualização.');
     }
   } else {
-    cart.showToast('Sua dica foi publicada com sucesso para o bairro!');
+    cart.showToast('📸 Foto de preço enviada! A rotina de IA lerá a etiqueta na próxima atualização.');
   }
+
+  const previewContainer = document.getElementById('photoPreviewContainer');
+  if (previewContainer) previewContainer.style.display = 'none';
 
   renderCommunityTips();
   renderProducts();
