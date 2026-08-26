@@ -49,7 +49,7 @@ except ImportError:
 
 SUPERMARKETS = {
     'extrabom': {'name': 'Extrabom Supermercados', 'badge': 'No Bairro', 'location': 'Colina de Laranjeiras'},
-    'carone': {'name': 'Carone Supermercados', 'badge': 'Laranjeiras', 'location': 'Laranjeiras'},
+    'carone': {'name': 'Supermercados Carone', 'badge': 'No Bairro', 'location': 'Colina de Laranjeiras'},
     'casagrande': {'name': 'Rede Casagrande', 'badge': 'Bairro Barcelona', 'location': 'Bairro Barcelona'},
     'bh': {'name': 'Supermercados BH', 'badge': 'Laranjeiras', 'location': 'Laranjeiras'},
     'assai': {'name': 'Assaí Atacadista', 'badge': 'Atacarejo', 'location': 'Laranjeiras / Civit'},
