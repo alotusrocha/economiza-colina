@@ -52,12 +52,19 @@ function renderCategories() {
   container.innerHTML = html;
 }
 
+const STOP_WORDS = new Set(['de', 'da', 'do', 'das', 'dos', 'com', 'em', 'para', 'por', 'e', 'a', 'o', 'um', 'uma', 'kg', 'g', 'ml', 'l', 'un', 'unid', 'unidade']);
+
 function normalizeString(str) {
   return (str || '')
     .toLowerCase()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .trim();
+}
+
+function onSearchInput(val) {
+  searchQuery = val || '';
+  renderProducts();
 }
 
 // Renderização da Grid de Produtos e Comparador de Preços
@@ -67,7 +74,9 @@ function renderProducts() {
   if (!container) return;
 
   const normQuery = normalizeString(searchQuery);
-  const queryTokens = normQuery.split(/\s+/).filter(t => t.length > 0);
+  const rawTokens = normQuery.split(/\s+/).filter(t => t.length > 0);
+  const mainTokens = rawTokens.filter(t => !STOP_WORDS.has(t));
+  const queryTokens = mainTokens.length > 0 ? mainTokens : rawTokens;
 
   let filtered = PRODUCTS.filter(product => {
     const matchesCategory = currentCategory === 'all' || product.category === currentCategory;
@@ -272,10 +281,13 @@ function getCategoryName(catId) {
   return c ? c.name : catId;
 }
 
-function executeSearch() {
+function executeSearch(e) {
+  if (e && e.preventDefault) {
+    e.preventDefault();
+  }
   const searchInput = document.getElementById('searchInput');
   if (searchInput) {
-    searchQuery = searchInput.value;
+    searchQuery = searchInput.value || '';
     if (searchQuery.trim()) {
       currentCategory = 'all';
       renderCategories();
@@ -283,6 +295,7 @@ function executeSearch() {
     renderProducts();
     scrollToProducts();
   }
+  return false;
 }
 
 function scrollToProducts() {

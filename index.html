@@ -67,12 +67,12 @@
         <p class="hero-subtitle">Compare ofertas dos encartes locais e descubra onde a sua cesta de compras sai mais barata em Colina de Laranjeiras e Laranjeiras.</p>
 
         <!-- Search Bar -->
-        <div class="search-box-wrapper">
-          <input type="text" class="search-input" id="searchInput" placeholder="Pesquise por produto (ex: Contrafilé, Arroz, Café, Detergente, Leite...)" aria-label="Pesquisar ofertas de produtos">
-          <button class="search-btn" id="btnSearchSubmit">
+        <form class="search-box-wrapper" id="searchForm" onsubmit="executeSearch(event); return false;">
+          <input type="text" class="search-input" id="searchInput" placeholder="Pesquise por produto (ex: Polpa de Tomate, Contrafilé, Arroz, Café, Detergente...)" aria-label="Pesquisar ofertas de produtos" oninput="onSearchInput(this.value)">
+          <button type="submit" class="search-btn" id="btnSearchSubmit" onclick="executeSearch(event)">
             🔍 Pesquisar Ofertas
           </button>
-        </div>
+        </form>
 
         <!-- Supermarkets Quick Filter Chips -->
         <div class="market-chips" id="marketChipsContainer">
