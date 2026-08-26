@@ -52,29 +52,54 @@ function renderCategories() {
   container.innerHTML = html;
 }
 
+function normalizeString(str) {
+  return (str || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .trim();
+}
+
 // Renderização da Grid de Produtos e Comparador de Preços
 function renderProducts() {
   const container = document.getElementById('productsGrid');
   const countEl = document.getElementById('productCount');
   if (!container) return;
 
+  const normQuery = normalizeString(searchQuery);
+  const queryTokens = normQuery.split(/\s+/).filter(t => t.length > 0);
+
   let filtered = PRODUCTS.filter(product => {
     const matchesCategory = currentCategory === 'all' || product.category === currentCategory;
     const matchesMarket = currentMarket === 'all' || product.prices[currentMarket] !== undefined;
-    const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase());
+
+    let matchesSearch = true;
+    if (queryTokens.length > 0) {
+      const normName = normalizeString(product.name);
+      const normCategory = normalizeString(getCategoryName(product.category));
+      matchesSearch = queryTokens.every(token => normName.includes(token) || normCategory.includes(token));
+    }
+
     return matchesCategory && matchesMarket && matchesSearch;
   });
 
   if (countEl) {
-    countEl.textContent = `${filtered.length} ofertas encontradas`;
+    if (searchQuery.trim()) {
+      countEl.textContent = `${filtered.length} ofertas encontradas para "${searchQuery.trim()}"`;
+    } else {
+      countEl.textContent = `${filtered.length} ofertas encontradas`;
+    }
   }
 
   if (filtered.length === 0) {
     container.innerHTML = `
-      <div style="grid-column: 1 / -1; text-align: center; padding: 50px 20px; background: white; border-radius: 16px;">
+      <div style="grid-column: 1 / -1; text-align: center; padding: 50px 20px; background: white; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
         <div style="font-size: 3rem; margin-bottom: 12px;">🔍</div>
-        <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 6px;">Nenhum produto encontrado</h3>
-        <p style="color: #64748b; font-size: 0.9rem;">Tente pesquisar com outro termo ou limpar os filtros de categoria e supermercado.</p>
+        <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 6px;">Nenhum produto encontrado${searchQuery.trim() ? ` para "${searchQuery.trim()}"` : ''}</h3>
+        <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 16px;">Tente pesquisar com outro termo ou limpar os filtros de categoria e supermercado.</p>
+        <button onclick="clearSearchFilters()" style="background: #10b981; color: white; border: none; padding: 10px 20px; border-radius: 10px; font-weight: 700; cursor: pointer;">
+          🔄 Limpar Busca e Mostrar Todas as Ofertas
+        </button>
       </div>
     `;
     return;
@@ -247,13 +272,62 @@ function getCategoryName(catId) {
   return c ? c.name : catId;
 }
 
+function executeSearch() {
+  const searchInput = document.getElementById('searchInput');
+  if (searchInput) {
+    searchQuery = searchInput.value;
+    if (searchQuery.trim()) {
+      currentCategory = 'all';
+      renderCategories();
+    }
+    renderProducts();
+    scrollToProducts();
+  }
+}
+
+function scrollToProducts() {
+  const section = document.getElementById('productsGrid');
+  if (section) {
+    const yOffset = -100;
+    const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+}
+
+function clearSearchFilters() {
+  searchQuery = '';
+  const searchInput = document.getElementById('searchInput');
+  if (searchInput) searchInput.value = '';
+  currentCategory = 'all';
+  currentMarket = 'all';
+  renderSupermarketChips();
+  renderCategories();
+  renderProducts();
+}
+
 // Event Listeners
 function setupEventListeners() {
   const searchInput = document.getElementById('searchInput');
+  const btnSearchSubmit = document.getElementById('btnSearchSubmit');
+
   if (searchInput) {
     searchInput.addEventListener('input', (e) => {
       searchQuery = e.target.value;
       renderProducts();
+    });
+
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        executeSearch();
+      }
+    });
+  }
+
+  if (btnSearchSubmit) {
+    btnSearchSubmit.addEventListener('click', (e) => {
+      e.preventDefault();
+      executeSearch();
     });
   }
 }

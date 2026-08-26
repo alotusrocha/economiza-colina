@@ -14,12 +14,12 @@ const SUPERMARKETS = [
   },
   {
     "id": "carone",
-    "name": "Carone Supermercados",
-    "location": "Laranjeiras (Av. Central)",
-    "badge": "Laranjeiras",
+    "name": "Supermercados Carone",
+    "location": "Colina de Laranjeiras",
+    "badge": "No Bairro",
     "color": "#0077b6",
-    "distance": "1.2 km",
-    "isLocal": false
+    "distance": "0.6 km",
+    "isLocal": true
   },
   {
     "id": "casagrande",
