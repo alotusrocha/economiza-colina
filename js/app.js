@@ -599,32 +599,50 @@ function optimizeShoppingList() {
   const matchedProducts = [];
   const unmatchedItems = [];
 
+  const STOP_WORDS_SET = new Set(['de', 'da', 'do', 'das', 'dos', 'com', 'em', 'para', 'por', 'e', 'a', 'o', 'um', 'uma', 'kg', 'g', 'ml', 'l', 'un', 'unid']);
+
   // 2. Buscar o produto mais próximo na base de dados
   rawLines.forEach(line => {
-    const cleanLine = line.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    const tokens = cleanLine.split(/\s+/).filter(w => w.length > 2);
+    const cleanLine = line.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+    const tokens = cleanLine.split(/\s+/).filter(w => w.length >= 2 && !STOP_WORDS_SET.has(w));
 
     let bestProduct = null;
-    let maxMatches = 0;
+    let maxScore = 0;
 
-    PRODUCTS.forEach(product => {
-      const prodNameClean = product.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-      const catClean = product.category.toLowerCase();
-      
-      let matches = 0;
-      tokens.forEach(token => {
-        if (prodNameClean.includes(token) || catClean.includes(token)) {
-          matches += 2;
+    if (tokens.length > 0) {
+      PRODUCTS.forEach(product => {
+        const prodNameClean = product.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        const catClean = product.category.toLowerCase();
+
+        let score = 0;
+        let matchedTokenCount = 0;
+
+        tokens.forEach(token => {
+          const wordRegex = new RegExp(`\\b${token}\\b`, 'i');
+          if (wordRegex.test(prodNameClean)) {
+            score += 10;
+            matchedTokenCount++;
+          } else if (token.length >= 4 && prodNameClean.includes(token)) {
+            score += 4;
+            matchedTokenCount++;
+          } else if (catClean.includes(token)) {
+            score += 1;
+          }
+        });
+
+        if (prodNameClean.includes(cleanLine)) {
+          score += 15;
+        }
+
+        const minTokensNeeded = Math.ceil(tokens.length * 0.6);
+        if (matchedTokenCount >= minTokensNeeded && score > maxScore && score >= 10) {
+          maxScore = score;
+          bestProduct = product;
         }
       });
+    }
 
-      if (matches > maxMatches) {
-        maxMatches = matches;
-        bestProduct = product;
-      }
-    });
-
-    if (bestProduct && maxMatches >= 2) {
+    if (bestProduct) {
       if (!matchedProducts.some(mp => mp.product.id === bestProduct.id)) {
         matchedProducts.push({
           userQuery: line,

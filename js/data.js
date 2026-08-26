@@ -1551,5 +1551,43 @@ const PRODUCTS = [
     },
     "featured": true,
     "discountTag": "Oferta Carone Viva a Itália | R$ 129,00"
+  },
+  {
+    "id": "car_9",
+    "name": "Papel Higiênico Neve Folha Dupla 12 Unidades",
+    "category": "higiene",
+    "unit": "12 un",
+    "image": "https://images.unsplash.com/photo-1584556812952-905ffd0c611a?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 4,
+    "offerMarketId": "carone",
+    "offerPrice": 18.9,
+    "validity": "Válido 25/08 a 05/09/2026",
+    "prices": {
+      "carone": 18.9,
+      "extrabom": 21.9,
+      "atacadao": 19.9,
+      "assai": 19.5
+    },
+    "featured": true,
+    "discountTag": "Oferta Carone | R$ 18,90"
+  },
+  {
+    "id": "car_10",
+    "name": "Desodorizador de Ambiente Bom Ar Aerossol 360ml",
+    "category": "limpeza",
+    "unit": "360ml",
+    "image": "https://images.unsplash.com/photo-1585832770485-e68a5fcfad72?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 4,
+    "offerMarketId": "carone",
+    "offerPrice": 12.9,
+    "validity": "Válido 25/08 a 05/09/2026",
+    "prices": {
+      "carone": 12.9,
+      "extrabom": 14.9,
+      "atacadao": 13.5,
+      "bh": 13.9
+    },
+    "featured": true,
+    "discountTag": "Oferta Carone | R$ 12,90"
   }
 ];
