@@ -5,7 +5,8 @@
 const SUPERMARKETS = [
   {
     "id": "extrabom",
-    "name": "Extrabom Supermercados",
+    "name": "Extrabom",
+    "shortName": "Extrabom",
     "location": "Colina de Laranjeiras (Shopping Montserrat)",
     "badge": "No Bairro",
     "color": "#e63946",
@@ -14,7 +15,8 @@ const SUPERMARKETS = [
   },
   {
     "id": "carone",
-    "name": "Supermercados Carone",
+    "name": "Carone",
+    "shortName": "Carone",
     "location": "Colina de Laranjeiras",
     "badge": "No Bairro",
     "color": "#0077b6",

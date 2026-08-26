@@ -62,6 +62,20 @@ function normalizeString(str) {
     .trim();
 }
 
+function getMarketShortName(mInfo) {
+  if (!mInfo) return 'Supermercado';
+  if (mInfo.shortName) return mInfo.shortName;
+  const name = mInfo.name;
+  if (name.toLowerCase().includes('carone')) return 'Carone';
+  if (name.toLowerCase().includes('extrabom')) return 'Extrabom';
+  if (name.toLowerCase().includes('casagrande')) return 'Casagrande';
+  if (name.toLowerCase().includes('bh')) return 'BH';
+  if (name.toLowerCase().includes('assai') || name.toLowerCase().includes('assaí')) return 'Assaí';
+  if (name.toLowerCase().includes('atacadao') || name.toLowerCase().includes('atacadão')) return 'Atacadão';
+  if (name.toLowerCase().includes('atacado vem')) return 'Atacado Vem';
+  return name.replace(/^Supermercados?\s+/i, '').replace(/\s+Supermercados?$/i, '').split(' ')[0];
+}
+
 function onSearchInput(val) {
   searchQuery = val || '';
   renderProducts();
@@ -178,7 +192,7 @@ function renderProducts() {
         html += `
           <div class="comp-row">
             <span class="comp-market">
-              ${mInfo ? mInfo.name.split(' ')[0] : mId}
+              ${mInfo ? getMarketShortName(mInfo) : mId}
               ${isReported ? '<span style="font-size: 0.65rem; background: #fbbf24; color: black; padding: 1px 4px; border-radius: 4px; font-weight: 800;">📸 Vizinho</span>' : ''}
             </span>
             <span class="comp-price ${isLowest ? 'lowest' : ''}">R$ ${price.toFixed(2)}</span>
