@@ -117,6 +117,20 @@ const ENCARTES = [
     "title": "Rede Casagrande: Encarte Semanal Matinais & Açougue",
     "market": "casagrande",
     "validity": "Válido 21/08 a 28/08/2026"
+  },
+  {
+    "id": 8,
+    "file": "WhatsApp Image 2026-08-26 at 11.30.44.jpeg",
+    "title": "Carone: Viva a Itália (Polpas, Pesto & Massas)",
+    "market": "carone",
+    "validity": "Válido 26/08 a 05/09/2026"
+  },
+  {
+    "id": 9,
+    "file": "WhatsApp Image 2026-08-26 at 11.31.16.jpeg",
+    "title": "Carone: Viva a Itália (Azeites & Vinhos Especial)",
+    "market": "carone",
+    "validity": "Válido 26/08 a 05/09/2026"
   }
 ];
 
@@ -1383,5 +1397,157 @@ const PRODUCTS = [
     },
     "featured": false,
     "discountTag": "App R$ 14,90 | Cartão R$ 13,20 | Varejo R$ 17,90"
+  },
+  {
+    "id": "car_1",
+    "name": "Polpa de Tomate Davia 680g",
+    "category": "mercearia",
+    "unit": "680g",
+    "image": "https://images.unsplash.com/photo-1546548970-71785318a17b?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 8,
+    "offerMarketId": "carone",
+    "offerPrice": 11.98,
+    "validity": "Válido 26/08 a 05/09/2026",
+    "prices": {
+      "carone": 11.98,
+      "extrabom": 13.99,
+      "atacadao": 12.5,
+      "assai": 12.9
+    },
+    "featured": true,
+    "discountTag": "Oferta Carone Viva a Itália | R$ 11,98"
+  },
+  {
+    "id": "car_2",
+    "name": "Molho Pesto Filippo Berio 190g",
+    "category": "mercearia",
+    "unit": "190g",
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 8,
+    "offerMarketId": "carone",
+    "offerPrice": 17.98,
+    "validity": "Válido 26/08 a 05/09/2026",
+    "prices": {
+      "carone": 17.98,
+      "extrabom": 21.9,
+      "atacadao": 18.9,
+      "bh": 19.5
+    },
+    "featured": true,
+    "discountTag": "Oferta Carone Viva a Itália | R$ 17,98"
+  },
+  {
+    "id": "car_3",
+    "name": "Tomate Pelado Rosso Gargano Pomadore 400g",
+    "category": "mercearia",
+    "unit": "400g",
+    "image": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 8,
+    "offerMarketId": "carone",
+    "offerPrice": 7.79,
+    "validity": "Válido 26/08 a 05/09/2026",
+    "prices": {
+      "carone": 7.79,
+      "extrabom": 9.99,
+      "atacadao": 8.5,
+      "casagrande": 8.9
+    },
+    "featured": true,
+    "discountTag": "Oferta Carone Viva a Itália | R$ 7,79"
+  },
+  {
+    "id": "car_4",
+    "name": "Massas Antico Molino Molisano Cortes 500g",
+    "category": "mercearia",
+    "unit": "500g",
+    "image": "https://images.unsplash.com/photo-1621996346565-e3d5d6281276?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 8,
+    "offerMarketId": "carone",
+    "offerPrice": 7.79,
+    "validity": "Válido 26/08 a 05/09/2026",
+    "prices": {
+      "carone": 7.79,
+      "extrabom": 9.5,
+      "atacadao": 8.2,
+      "bh": 8.9
+    },
+    "featured": true,
+    "discountTag": "Oferta Carone Viva a Itália | R$ 7,79"
+  },
+  {
+    "id": "car_5",
+    "name": "Azeite Italiano Extra Virgem Capone 500ml",
+    "category": "mercearia",
+    "unit": "500ml",
+    "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 9,
+    "offerMarketId": "carone",
+    "offerPrice": 29.98,
+    "validity": "Válido 26/08 a 05/09/2026",
+    "prices": {
+      "carone": 29.98,
+      "extrabom": 35.9,
+      "atacadao": 31.9,
+      "assai": 32.5
+    },
+    "featured": true,
+    "discountTag": "Oferta Carone Viva a Itália | R$ 29,98"
+  },
+  {
+    "id": "car_6",
+    "name": "Vinho Tinto Italiano Santa Lara Toscana 750ml",
+    "category": "bebidas",
+    "unit": "750ml",
+    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 9,
+    "offerMarketId": "carone",
+    "offerPrice": 84.9,
+    "validity": "Válido 26/08 a 05/09/2026",
+    "prices": {
+      "carone": 84.9,
+      "extrabom": 99.0,
+      "atacadao": 89.9,
+      "casagrande": 94.0
+    },
+    "featured": true,
+    "discountTag": "Oferta Carone Viva a Itália | R$ 84,90"
+  },
+  {
+    "id": "car_7",
+    "name": "Vinho Tinto Italiano Santa Lara Chianti 750ml",
+    "category": "bebidas",
+    "unit": "750ml",
+    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 9,
+    "offerMarketId": "carone",
+    "offerPrice": 72.9,
+    "validity": "Válido 26/08 a 05/09/2026",
+    "prices": {
+      "carone": 72.9,
+      "extrabom": 85.0,
+      "atacadao": 75.9,
+      "bh": 79.9
+    },
+    "featured": true,
+    "discountTag": "Oferta Carone Viva a Itália | R$ 72,90"
+  },
+  {
+    "id": "car_8",
+    "name": "Vinho Tinto Italiano La Scala Segreta Primitivo Di Manduria 750ml",
+    "category": "bebidas",
+    "unit": "750ml",
+    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 9,
+    "offerMarketId": "carone",
+    "offerPrice": 129.0,
+    "validity": "Válido 26/08 a 05/09/2026",
+    "prices": {
+      "carone": 129.0,
+      "extrabom": 149.0,
+      "atacadao": 135.0,
+      "assai": 139.0
+    },
+    "featured": true,
+    "discountTag": "Oferta Carone Viva a Itália | R$ 129,00"
   }
 ];

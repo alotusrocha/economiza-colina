@@ -463,21 +463,27 @@ function getProductIconConfig(product) {
   if (name.includes('cerveja') || name.includes('chopp') || name.includes('lager') || name.includes('spaten') || name.includes('amstel') || name.includes('heineken') || name.includes('antarctica')) {
     return { icon: '🍺', label: 'Cerveja & Chopp', bg: 'linear-gradient(135deg, #fef9c3 0%, #fef08a 100%)', border: '#fde047', textColor: '#854d0e' };
   }
-  if (name.includes('whisky') || name.includes('uisque') || name.includes('gin') || name.includes('vodka') || name.includes('vinho') || name.includes('chivas') || name.includes('beefeater') || name.includes('ballantine') || name.includes('jameson') || name.includes('glenlivet')) {
+  if (name.includes('vinho')) {
+    return { icon: '🍷', label: 'Vinhos & Especialidades', bg: 'linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%)', border: '#f472b6', textColor: '#831843' };
+  }
+  if (name.includes('whisky') || name.includes('uisque') || name.includes('gin') || name.includes('vodka') || name.includes('chivas') || name.includes('beefeater') || name.includes('ballantine') || name.includes('jameson') || name.includes('glenlivet')) {
     return { icon: '🥃', label: 'Wísquis & Destilados', bg: 'linear-gradient(135deg, #fef3c7 0%, #fcd34d 100%)', border: '#f59e0b', textColor: '#78350f' };
   }
   if (cat === 'bebidas' || name.includes('refrigerante') || name.includes('suco') || name.includes('néctar') || name.includes('energético') || name.includes('água') || name.includes('guaraná') || name.includes('dafruta')) {
     return { icon: '🥤', label: 'Bebidas & Sucos', bg: 'linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%)', border: '#7dd3fc', textColor: '#075985' };
   }
 
-  // 5. Grãos & Matinais
+  // 5. Grãos, Massas & Matinais
+  if (name.includes('massa') || name.includes('macarrão') || name.includes('espaguete')) {
+    return { icon: '🍝', label: 'Massas & Pastas', bg: 'linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%)', border: '#fdba74', textColor: '#9a3412' };
+  }
   if (name.includes('arroz') || name.includes('feijão') || name.includes('farinha') || name.includes('açúcar')) {
     return { icon: '🌾', label: 'Grãos & Cereais', bg: 'linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)', border: '#fcd34d', textColor: '#78350f' };
   }
   if (name.includes('café') || name.includes('toddy') || name.includes('nescau')) {
     return { icon: '☕', label: 'Café & Matinais', bg: 'linear-gradient(135deg, #f5f5f4 0%, #e7e5e4 100%)', border: '#d6d3d1', textColor: '#44403c' };
   }
-  if (name.includes('maionese') || name.includes('molho') || name.includes('requeijão') || name.includes('milho') || name.includes('azeitona')) {
+  if (name.includes('maionese') || name.includes('molho') || name.includes('pesto') || name.includes('polpa') || name.includes('requeijão') || name.includes('milho') || name.includes('azeitona')) {
     return { icon: '🥫', label: 'Molhos & Condimentos', bg: 'linear-gradient(135deg, #fef9c3 0%, #fef08a 100%)', border: '#fde047', textColor: '#713f12' };
   }
 
