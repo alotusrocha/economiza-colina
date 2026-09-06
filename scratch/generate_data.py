@@ -114,7 +114,11 @@ encartes = [
   { "id": 31, "file": "bh-30-anos-pagina-4.png", "title": "Supermercados BH: Higiene, Limpeza & Bazar (Omo, Dove, Pampers)", "market": "bh", "validity": "Válido até 15/09/2026" },
 
   # Atacadão BR-101 (Colina de Laranjeiras) - Ofertas Linha Apti
-  { "id": 32, "file": "atacadao-apti-setembro-2026.jpg", "title": "Atacadão Colina BR-101: Especial Linha Apti (Doces, Achocolatados & Amidos)", "market": "atacadao", "validity": "Válido 04/09 a 13/09/2026" }
+  { "id": 32, "file": "atacadao-apti-setembro-2026.jpg", "title": "Atacadão Colina BR-101: Especial Linha Apti (Doces, Achocolatados & Amidos)", "market": "atacadao", "validity": "Válido 04/09 a 13/09/2026" },
+
+  # Rede Casagrande (Barcelona) - Encarte de Ofertas 24/08 a 05/09/2026
+  { "id": 33, "file": "casagrande-setembro-pagina-1.png", "title": "Rede Casagrande Barcelona: Ofertas Semanais (Carnes, Laticínios, Matinais & Bebidas)", "market": "casagrande", "validity": "Válido 24/08 a 05/09/2026" },
+  { "id": 34, "file": "casagrande-setembro-pagina-2.png", "title": "Rede Casagrande Barcelona: Frango, Mercearia, Vinhos & Linha Unilever", "market": "casagrande", "validity": "Válido 24/08 a 05/09/2026" }
 ]
 
 categories = [
@@ -1503,6 +1507,208 @@ products = [
     },
     "featured": True,
     "discountTag": "Oferta Atacadão Apti | R$ 0,99"
+  },
+
+  # REDE CASAGRANDE BARCELONA - OFERTAS SETEMBRO 2026 (24/08 a 05/09/2026)
+  {
+    "id": "cg_set_1",
+    "name": "Picanha Bovina Friboi Resfriada kg",
+    "category": "acougue",
+    "unit": "1kg",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 33,
+    "offerMarketId": "casagrande",
+    "offerPrice": 49.99,
+    "validity": "Válido 24/08 a 05/09/2026",
+    "prices": {
+      "casagrande": 49.99,
+      "extrabom": 54.90,
+      "carone": 56.90,
+      "bh": 52.90,
+      "atacadao": 51.90
+    },
+    "featured": True,
+    "discountTag": "Oferta Casagrande Barcelona | R$ 49,99"
+  },
+  {
+    "id": "cg_set_2",
+    "name": "Bisteca Suína Palmali Congelada kg",
+    "category": "acougue",
+    "unit": "1kg",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 33,
+    "offerMarketId": "casagrande",
+    "offerPrice": 17.98,
+    "validity": "Válido 24/08 a 05/09/2026",
+    "prices": {
+      "casagrande": 17.98,
+      "extrabom": 18.90,
+      "carone": 19.90,
+      "bh": 18.49,
+      "atacadao": 17.90
+    },
+    "featured": True,
+    "discountTag": "Oferta Casagrande Barcelona | R$ 17,98"
+  },
+  {
+    "id": "cg_set_3",
+    "name": "Maionese Heinz Galinha Caipira Pote 400g",
+    "category": "mercearia",
+    "unit": "400g",
+    "image": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 33,
+    "offerMarketId": "casagrande",
+    "offerPrice": 10.98,
+    "validity": "Válido 24/08 a 05/09/2026",
+    "prices": {
+      "casagrande": 10.98,
+      "extrabom": 12.90,
+      "carone": 13.50,
+      "bh": 11.90,
+      "atacadao": 11.49
+    },
+    "featured": True,
+    "discountTag": "Oferta Casagrande Barcelona | R$ 10,98"
+  },
+  {
+    "id": "cg_set_4",
+    "name": "Ketchup Heinz Frasco PET 1,033kg",
+    "category": "mercearia",
+    "unit": "1,033kg",
+    "image": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 33,
+    "offerMarketId": "casagrande",
+    "offerPrice": 17.98,
+    "validity": "Válido 24/08 a 05/09/2026",
+    "prices": {
+      "casagrande": 17.98,
+      "extrabom": 19.90,
+      "carone": 21.90,
+      "bh": 18.90,
+      "atacadao": 18.50
+    },
+    "featured": True,
+    "discountTag": "Oferta Casagrande Barcelona | R$ 17,98"
+  },
+  {
+    "id": "cg_set_5",
+    "name": "Queijo Mussarela Davaca Fatiado 150g",
+    "category": "laticinios",
+    "unit": "150g",
+    "image": "https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 33,
+    "offerMarketId": "casagrande",
+    "offerPrice": 8.98,
+    "validity": "Válido 24/08 a 05/09/2026",
+    "prices": {
+      "casagrande": 8.98,
+      "extrabom": 9.90,
+      "carone": 10.50,
+      "bh": 9.49,
+      "atacadao": 9.20
+    },
+    "featured": True,
+    "discountTag": "Oferta Casagrande Barcelona | R$ 8,98"
+  },
+  {
+    "id": "cg_set_6",
+    "name": "Coxa e Sobrecoxa de Frango Kifrango Congelada 1kg",
+    "category": "acougue",
+    "unit": "1kg",
+    "image": "https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 34,
+    "offerMarketId": "casagrande",
+    "offerPrice": 9.90,
+    "validity": "Válido 24/08 a 05/09/2026",
+    "prices": {
+      "casagrande": 9.90,
+      "extrabom": 10.90,
+      "carone": 11.90,
+      "bh": 10.49,
+      "atacadao": 9.98
+    },
+    "featured": True,
+    "discountTag": "Oferta Casagrande Barcelona | R$ 9,90"
+  },
+  {
+    "id": "cg_set_7",
+    "name": "Margarina Delícia com Sal Pote 1kg",
+    "category": "laticinios",
+    "unit": "1kg",
+    "image": "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 34,
+    "offerMarketId": "casagrande",
+    "offerPrice": 13.99,
+    "validity": "Válido 24/08 a 05/09/2026",
+    "prices": {
+      "casagrande": 13.99,
+      "extrabom": 15.90,
+      "carone": 16.90,
+      "bh": 14.90,
+      "atacadao": 14.50
+    },
+    "featured": True,
+    "discountTag": "Oferta Casagrande Barcelona | R$ 13,99"
+  },
+  {
+    "id": "cg_set_8",
+    "name": "Batata Ruffles Vários Sabores Pacote 115g",
+    "category": "mercearia",
+    "unit": "115g",
+    "image": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 34,
+    "offerMarketId": "casagrande",
+    "offerPrice": 9.99,
+    "validity": "Válido 24/08 a 05/09/2026",
+    "prices": {
+      "casagrande": 9.99,
+      "extrabom": 11.90,
+      "carone": 12.50,
+      "bh": 10.90,
+      "atacadao": 10.50
+    },
+    "featured": True,
+    "discountTag": "Oferta Casagrande Barcelona | R$ 9,99"
+  },
+  {
+    "id": "cg_set_9",
+    "name": "Salgadinho Doritos Nacho ou Sweet Chili Pacote 120g",
+    "category": "mercearia",
+    "unit": "120g",
+    "image": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 34,
+    "offerMarketId": "casagrande",
+    "offerPrice": 10.99,
+    "validity": "Válido 24/08 a 05/09/2026",
+    "prices": {
+      "casagrande": 10.99,
+      "extrabom": 12.90,
+      "carone": 13.50,
+      "bh": 11.90,
+      "atacadao": 11.50
+    },
+    "featured": True,
+    "discountTag": "Oferta Casagrande Barcelona | R$ 10,99"
+  },
+  {
+    "id": "cg_set_10",
+    "name": "Detergente Líquido Brilhante Delicadeza Galão 3 Litros",
+    "category": "limpeza",
+    "unit": "3L",
+    "image": "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=400&auto=format&fit=crop&q=80",
+    "encarteId": 34,
+    "offerMarketId": "casagrande",
+    "offerPrice": 29.98,
+    "validity": "Válido 24/08 a 05/09/2026",
+    "prices": {
+      "casagrande": 29.98,
+      "extrabom": 34.90,
+      "carone": 36.90,
+      "bh": 31.90,
+      "atacadao": 30.90
+    },
+    "featured": True,
+    "discountTag": "Oferta Unilever Casagrande | R$ 29,98"
   }
 ]
 
