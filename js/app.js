@@ -183,17 +183,30 @@ function renderProducts() {
     `;
 
     if (sortedPrices.length > 1) {
-      // Exibir até 4 principais concorrentes
-      sortedPrices.slice(0, 4).forEach(([mId, price]) => {
+      // Exibir todos os supermercados comparados para este produto
+      let displayPrices = sortedPrices;
+
+      // Se o usuário filtrou por um mercado específico (ex: Carone), garante destaque e primeira posição
+      if (currentMarket !== 'all') {
+        const selectedEntry = sortedPrices.find(([mId]) => mId === currentMarket);
+        const otherEntries = sortedPrices.filter(([mId]) => mId !== currentMarket);
+        if (selectedEntry) {
+          displayPrices = [selectedEntry, ...otherEntries];
+        }
+      }
+
+      displayPrices.forEach(([mId, price]) => {
         const mInfo = SUPERMARKETS.find(m => m.id === mId);
         const isLowest = mId === lowestMarketId;
+        const isSelected = mId === currentMarket;
         const isReported = product.communityReported && product.communityReported.marketName === (mInfo ? mInfo.name : '');
 
         html += `
-          <div class="comp-row">
+          <div class="comp-row ${isSelected ? 'selected-market-row' : ''}" style="${isSelected ? 'background: rgba(0, 119, 182, 0.1); border-left: 3px solid #0077b6; padding-left: 6px;' : ''}">
             <span class="comp-market">
               ${mInfo ? getMarketShortName(mInfo) : mId}
-              ${isReported ? '<span style="font-size: 0.65rem; background: #fbbf24; color: black; padding: 1px 4px; border-radius: 4px; font-weight: 800;">📸 Vizinho</span>' : ''}
+              ${isLowest ? '<span style="font-size: 0.65rem; background: #10b981; color: white; padding: 1px 5px; border-radius: 4px; font-weight: 800; margin-left: 4px;">Menor Preço</span>' : ''}
+              ${isReported ? '<span style="font-size: 0.65rem; background: #fbbf24; color: black; padding: 1px 4px; border-radius: 4px; font-weight: 800; margin-left: 4px;">📸 Vizinho</span>' : ''}
             </span>
             <span class="comp-price ${isLowest ? 'lowest' : ''}">R$ ${price.toFixed(2)}</span>
           </div>

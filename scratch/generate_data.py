@@ -210,7 +210,7 @@ products = [
     "offerMarketId": "atacadao",
     "offerPrice": 3.59,
     "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 3.59, "extrabom": 4.99, "casagrande": 4.50, "bh": 4.19, "atacado_vem": 3.89 },
+    "prices": { "atacadao": 3.59, "extrabom": 4.99, "casagrande": 4.50, "bh": 4.19, "atacado_vem": 3.89, "carone": 4.69 },
     "featured": False,
     "discountTag": "App R$ 3,59 | Cartão R$ 3,19 | Varejo R$ 3,99"
   },
@@ -1214,7 +1214,8 @@ products = [
     "prices": {
       "bh": 15.98,
       "extrabom": 17.80,
-      "atacadao": 16.50
+      "atacadao": 16.50,
+      "carone": 16.90
     },
     "featured": True,
     "discountTag": "Oferta BH 30 Anos | R$ 15,98"
@@ -1250,7 +1251,8 @@ products = [
     "prices": {
       "bh": 23.98,
       "extrabom": 24.98,
-      "atacadao": 23.90
+      "atacadao": 23.90,
+      "carone": 24.90
     },
     "featured": True,
     "discountTag": "Oferta BH 30 Anos | R$ 23,98"
@@ -1286,7 +1288,8 @@ products = [
     "prices": {
       "bh": 6.98,
       "extrabom": 8.98,
-      "atacadao": 7.50
+      "atacadao": 7.50,
+      "carone": 7.98
     },
     "featured": True,
     "discountTag": "Oferta BH Perecíveis | R$ 6,98"
@@ -1304,7 +1307,8 @@ products = [
     "prices": {
       "bh": 4.98,
       "extrabom": 6.98,
-      "atacadao": 5.49
+      "atacadao": 5.49,
+      "carone": 5.79
     },
     "featured": True,
     "discountTag": "Oferta BH Cargill | R$ 4,98"
@@ -1322,7 +1326,8 @@ products = [
     "prices": {
       "bh": 45.98,
       "extrabom": 49.90,
-      "atacadao": 46.90
+      "atacadao": 46.90,
+      "carone": 47.90
     },
     "featured": True,
     "discountTag": "Oferta BH Bombons | R$ 45,98"
@@ -1340,7 +1345,8 @@ products = [
     "prices": {
       "bh": 45.90,
       "extrabom": 48.90,
-      "atacadao": 46.50
+      "atacadao": 46.50,
+      "carone": 47.50
     },
     "featured": True,
     "discountTag": "Oferta BH Bombons | R$ 45,90"
@@ -1358,7 +1364,8 @@ products = [
     "prices": {
       "bh": 3.99,
       "extrabom": 4.35,
-      "atacadao": 4.19
+      "atacadao": 4.19,
+      "carone": 4.29
     },
     "featured": True,
     "discountTag": "Pack Ambev BH | R$ 3,99 un"
@@ -1376,7 +1383,8 @@ products = [
     "prices": {
       "bh": 29.98,
       "extrabom": 35.90,
-      "atacadao": 31.90
+      "atacadao": 31.90,
+      "carone": 32.90
     },
     "featured": True,
     "discountTag": "Oferta Unilever BH | R$ 29,98"
@@ -1394,7 +1402,8 @@ products = [
     "prices": {
       "bh": 78.90,
       "extrabom": 85.90,
-      "atacadao": 79.90
+      "atacadao": 79.90,
+      "carone": 82.90
     },
     "featured": True,
     "discountTag": "Oferta BH Bebê | R$ 78,90"
@@ -1414,7 +1423,8 @@ products = [
     "prices": {
       "atacadao": 8.99,
       "bh": 9.98,
-      "extrabom": 10.50
+      "extrabom": 10.50,
+      "carone": 9.90
     },
     "featured": True,
     "discountTag": "Oferta Atacadão Apti | R$ 8,99"
@@ -1450,7 +1460,8 @@ products = [
     "prices": {
       "atacadao": 15.90,
       "bh": 17.90,
-      "extrabom": 18.50
+      "extrabom": 18.50,
+      "carone": 16.90
     },
     "featured": True,
     "discountTag": "Oferta Atacadão Apti | R$ 15,90"
@@ -1468,7 +1479,8 @@ products = [
     "prices": {
       "atacadao": 2.89,
       "extrabom": 3.98,
-      "bh": 3.49
+      "bh": 3.49,
+      "carone": 3.29
     },
     "featured": True,
     "discountTag": "Oferta Atacadão Apti | R$ 2,89"
@@ -1486,7 +1498,8 @@ products = [
     "prices": {
       "atacadao": 0.99,
       "bh": 1.49,
-      "extrabom": 1.39
+      "extrabom": 1.39,
+      "carone": 1.19
     },
     "featured": True,
     "discountTag": "Oferta Atacadão Apti | R$ 0,99"
