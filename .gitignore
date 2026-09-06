@@ -1,4 +1,6 @@
-scratch/
+scratch/*
+!scratch/generate_data.py
 *.bak
 .env
 __pycache__/
+

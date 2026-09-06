@@ -7,18 +7,21 @@ on:
   workflow_dispatch:
     # Permite acionamento manual a qualquer momento no GitHub Actions UI
 
+permissions:
+  contents: write
+
 jobs:
   process_and_sync:
     runs-on: ubuntu-latest
 
     steps:
       - name: 1. Checkout do Repositório
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: 2. Configurar Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
@@ -26,7 +29,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          pip install google-generativeai pillow
 
       - name: 4. Processar Fotos de Preço da Comunidade
         env:
@@ -49,3 +51,4 @@ jobs:
           else
             echo "Nenhuma alteração de preço detectada nesta execução."
           fi
+

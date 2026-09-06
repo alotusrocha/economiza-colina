@@ -23,9 +23,10 @@ import os
 import re
 import sys
 import json
-import shutil
 import glob
+import shutil
 import argparse
+import subprocess
 from datetime import datetime
 
 # Encodings UTF-8 no Windows
@@ -48,9 +49,10 @@ try:
 except ImportError:
     HAS_GENAI = False
 
-UPLOADS_DIR = r"uploads/comunidade"
-PROCESSED_DIR = r"uploads/comunidade/processados"
-GENERATE_SCRIPT = r"scratch/generate_data.py"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+UPLOADS_DIR = os.path.join(BASE_DIR, "uploads", "comunidade")
+PROCESSED_DIR = os.path.join(UPLOADS_DIR, "processados")
+GENERATE_SCRIPT = os.path.join(BASE_DIR, "scratch", "generate_data.py")
 
 PROMPT_ETIQUETA = """
 Você é um especialista em OCR e leitura de etiquetas de preços de supermercados brasileiros.
@@ -144,7 +146,7 @@ def run_community_photo_pipeline(dry_run=False, api_key=None):
     if not dry_run and len(extracted_items) > 0:
         # Re-executar o gerador do catálogo
         if os.path.exists(GENERATE_SCRIPT):
-            os.system(f"python {GENERATE_SCRIPT}")
+            subprocess.run([sys.executable, GENERATE_SCRIPT], check=True)
             print("✅ Base de dados e js/data.js recarregados com sucesso!")
 
 def main():
