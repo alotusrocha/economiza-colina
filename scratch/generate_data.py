@@ -70,77 +70,122 @@ supermarkets = [
 ]
 
 encartes = [
-  # Atacadão BR-101 (Colina de Laranjeiras)
-  { "id": 1, "file": "WhatsApp Image 2026-08-25 at 07.13.29.jpeg", "title": "Atacadão BR-101: Hortifrúti & Açougue", "market": "atacadao", "validity": "Válido 25/08 a 31/08/2026" },
-  { "id": 2, "file": "WhatsApp Image 2026-08-25 at 07.13.30.jpeg", "title": "Atacadão BR-101: Frios, Resfriados, Congelados & Mercearia", "market": "atacadao", "validity": "Válido 25/08 a 31/08/2026" },
-  { "id": 3, "file": "WhatsApp Image 2026-08-25 at 07.13.30 (1).jpeg", "title": "Atacadão BR-101: Bomboniere & Bebidas", "market": "atacadao", "validity": "Válido 25/08 a 31/08/2026" },
-  { "id": 4, "file": "WhatsApp Image 2026-08-25 at 07.13.31.jpeg", "title": "Atacadão BR-101: Limpeza, Higiene, Bazar & Pet Shop", "market": "atacadao", "validity": "Válido 25/08 a 31/08/2026" },
-
-  # Supermercados Extrabom (Colina de Laranjeiras - Shopping Montserrat)
-  { "id": 5, "file": "oferta-pagina-1.png", "title": "Extrabom Colina: Capa & Ofertas Clube Extrabom (Carnes)", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-  { "id": 6, "file": "oferta-pagina-2.png", "title": "Extrabom Colina: Hortifrúti & Padaria Especial", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-  { "id": 7, "file": "oferta-pagina-3.png", "title": "Extrabom Colina: Laticínios, Queijos & Frios", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-  { "id": 8, "file": "oferta-pagina-4.png", "title": "Extrabom Colina: Mercearia & Grãos da Cesta Básica", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-  { "id": 9, "file": "oferta-pagina-5.png", "title": "Extrabom Colina: Bebidas & Cervejas Geladas", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-  { "id": 10, "file": "oferta-pagina-6.png", "title": "Extrabom Colina: Bebidas Quentes, Sucos & Refrigerantes", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-  { "id": 11, "file": "oferta-pagina-7.png", "title": "Extrabom Colina: Produtos de Limpeza & Lavanderia", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-  { "id": 12, "file": "oferta-pagina-8.png", "title": "Extrabom Colina: Higiene Pessoal & Perfumaria", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-  { "id": 13, "file": "oferta-pagina-9.png", "title": "Extrabom Colina: Bazar & Utilidades Domésticas", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-  { "id": 14, "file": "oferta-pagina-10.png", "title": "Extrabom Colina: Congelados & Sorvetes", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-  { "id": 15, "file": "oferta-pagina-11.png", "title": "Extrabom Colina: Biscoitos, Snacks & Matinais", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-  { "id": 16, "file": "oferta-pagina-12.png", "title": "Extrabom Colina: Frios & Embutidos Fatiados", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-  { "id": 17, "file": "oferta-pagina-13.png", "title": "Extrabom Colina: Pet Shop & Ração", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-  { "id": 18, "file": "oferta-pagina-14.png", "title": "Extrabom Colina: Especial Churrasco & Cortes Nobres", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-  { "id": 19, "file": "oferta-pagina-15.png", "title": "Extrabom Colina: Ofertas Fim de Semana", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-  { "id": 20, "file": "oferta-pagina-16.png", "title": "Extrabom Colina: Feirão Hortifrúti", "market": "extrabom", "validity": "Válido 20/08 a 27/08/2026" },
-
-  # Assaí Atacadista (Valparaíso / Civit Serra)
-  { "id": 21, "file": "campanha-169512-cluster-541-pagina-1.jpeg", "title": "Assaí Valparaíso: Acelera com Preço Baixo (Capa & Carnes)", "market": "assai", "validity": "Válido 22/08 a 28/08/2026" },
-  { "id": 22, "file": "campanha-169512-cluster-541-pagina-2.jpeg", "title": "Assaí Valparaíso: Mercearia, Bebidas & Frios em Atacado", "market": "assai", "validity": "Válido 22/08 a 28/08/2026" },
-
-  # Supermercados Carone Mall (Colina de Laranjeiras)
-  { "id": 23, "file": "WhatsApp Image 2026-08-26 at 11.30.44.jpeg", "title": "Carone Mall: Festival Viva a Itália (Polpas, Pesto & Massas)", "market": "carone", "validity": "Válido 26/08 a 05/09/2026" },
-  { "id": 24, "file": "WhatsApp Image 2026-08-26 at 11.31.16.jpeg", "title": "Carone Mall: Festival Viva a Itália (Azeites & Vinhos Importados)", "market": "carone", "validity": "Válido 26/08 a 05/09/2026" },
-  { "id": 25, "file": "WhatsApp Image 2026-08-26 at 11.31.16 (1).jpeg", "title": "Carone Mall: Festival Viva a Itália (Queijos Especiais & Frios)", "market": "carone", "validity": "Válido 26/08 a 05/09/2026" },
-
-  # Rede Casagrande (Barcelona)
-  { "id": 26, "file": "casagrande-pagina-1.png", "title": "Rede Casagrande Barcelona: Encarte Semanal Matinais & Açougue", "market": "casagrande", "validity": "Válido 21/08 a 28/08/2026" },
-  { "id": 27, "file": "casagrande-pagina-2.png", "title": "Rede Casagrande Barcelona: Hortifrúti, Limpeza & Bebidas", "market": "casagrande", "validity": "Válido 21/08 a 28/08/2026" },
-
-  # Supermercados BH (Laranjeiras) - Encarte de Aniversário 30 Anos (Setembro 2026)
-  { "id": 28, "file": "bh-30-anos-pagina-1.jpg", "title": "Supermercados BH: 30 Anos O Dobro de Prêmios (Sadia, Perdigão, Nestlé & Itambé)", "market": "bh", "validity": "Válido até 15/09/2026" },
-  { "id": 29, "file": "bh-30-anos-pagina-2.png", "title": "Supermercados BH: Perecíveis, Açougue, Queijos & Cargill", "market": "bh", "validity": "Válido até 15/09/2026" },
-  { "id": 30, "file": "bh-30-anos-pagina-3.jpg", "title": "Supermercados BH: Mercearia, Matinais, Bombons & Cervejas", "market": "bh", "validity": "Válido até 15/09/2026" },
-  { "id": 31, "file": "bh-30-anos-pagina-4.png", "title": "Supermercados BH: Higiene, Limpeza & Bazar (Omo, Dove, Pampers)", "market": "bh", "validity": "Válido até 15/09/2026" },
-
-  # Atacadão BR-101 (Colina de Laranjeiras) - Ofertas Linha Apti
-  { "id": 32, "file": "atacadao-apti-setembro-2026.jpg", "title": "Atacadão Colina BR-101: Especial Linha Apti (Doces, Achocolatados & Amidos)", "market": "atacadao", "validity": "Válido 04/09 a 13/09/2026" },
-
-  # Rede Casagrande (Barcelona) - Encarte de Ofertas 24/08 a 05/09/2026
-  { "id": 33, "file": "casagrande-setembro-pagina-1.png", "title": "Rede Casagrande Barcelona: Ofertas Semanais (Carnes, Laticínios, Matinais & Bebidas)", "market": "casagrande", "validity": "Válido 24/08 a 05/09/2026" },
-  { "id": 34, "file": "casagrande-setembro-pagina-2.png", "title": "Rede Casagrande Barcelona: Frango, Mercearia, Vinhos & Linha Unilever", "market": "casagrande", "validity": "Válido 24/08 a 05/09/2026" },
-  # Atacadão BR-101 (Colina de Laranjeiras) - Festival Perfumaria & Limpeza (01/09 a 10/09/2026)
-  { "id": 35, "file": "WhatsApp Image 2026-09-07 at 07.43.38.jpeg", "title": "Atacadão Colina: Festival Perfumaria & Limpeza - Capa (P&G, Colgate, Unilever & Ypê)", "market": "atacadao", "validity": "Válido 01/09 a 10/09/2026" },
-  { "id": 36, "file": "WhatsApp Image 2026-09-07 at 07.43.49.jpeg", "title": "Atacadão Colina: Festival Perfumaria & Limpeza - Pág 2 (Softys, Reckitt, Santher, Nivea, SC Johnson, Skala & Huggies)", "market": "atacadao", "validity": "Válido 01/09 a 10/09/2026" },
-  { "id": 37, "file": "WhatsApp Image 2026-09-07 at 07.43.51.jpeg", "title": "Atacadão Colina: Festival Perfumaria & Limpeza - Pág 3 (L'Oréal, Johnson's, MPR, Baston, Gtex & Uau)", "market": "atacadao", "validity": "Válido 01/09 a 10/09/2026" },
-  { "id": 38, "file": "WhatsApp Image 2026-09-07 at 07.43.52.jpeg", "title": "Atacadão Colina: Festival Perfumaria & Limpeza - Banner Promocional", "market": "atacadao", "validity": "Válido 01/09 a 10/09/2026" },
-  { "id": 39, "file": "WhatsApp Image 2026-09-07 at 07.43.55.jpeg", "title": "Atacadão Colina: Festival Perfumaria & Limpeza - Pág 4 (Flora, Baruel, Scotch-Brite, Suzano, Maxton, Bombril & Coty)", "market": "atacadao", "validity": "Válido 01/09 a 10/09/2026" }
-
+  {
+    "id": 1,
+    "file": "bh-30-anos-pagina-1.jpg",
+    "title": "Supermercados BH: 30 Anos O Dobro de Prêmios (Sadia, Perdigão, Nestlé & Itambé)",
+    "market": "bh",
+    "validity": "Válido até 15/09/2026"
+  },
+  {
+    "id": 2,
+    "file": "bh-30-anos-pagina-2.png",
+    "title": "Supermercados BH: Perecíveis, Açougue, Queijos & Cargill",
+    "market": "bh",
+    "validity": "Válido até 15/09/2026"
+  },
+  {
+    "id": 3,
+    "file": "bh-30-anos-pagina-3.jpg",
+    "title": "Supermercados BH: Mercearia, Matinais, Bombons & Cervejas",
+    "market": "bh",
+    "validity": "Válido até 15/09/2026"
+  },
+  {
+    "id": 4,
+    "file": "bh-30-anos-pagina-4.png",
+    "title": "Supermercados BH: Higiene, Limpeza & Bazar (Omo, Dove, Pampers)",
+    "market": "bh",
+    "validity": "Válido até 15/09/2026"
+  },
+  {
+    "id": 5,
+    "file": "atacadao-apti-setembro-2026.jpg",
+    "title": "Atacadão Colina BR-101: Especial Linha Apti (Doces, Achocolatados & Amidos)",
+    "market": "atacadao",
+    "validity": "Válido 04/09 a 13/09/2026"
+  },
+  {
+    "id": 6,
+    "file": "WhatsApp Image 2026-09-07 at 07.43.38.jpeg",
+    "title": "Atacadão Colina: Festival Perfumaria & Limpeza - Capa (P&G, Colgate, Unilever & Ypê)",
+    "market": "atacadao",
+    "validity": "Válido 01/09 a 10/09/2026"
+  },
+  {
+    "id": 7,
+    "file": "WhatsApp Image 2026-09-07 at 07.43.49.jpeg",
+    "title": "Atacadão Colina: Festival Perfumaria & Limpeza - Pág 2 (Softys, Reckitt, Santher, Nivea, SC Johnson, Skala & Huggies)",
+    "market": "atacadao",
+    "validity": "Válido 01/09 a 10/09/2026"
+  },
+  {
+    "id": 8,
+    "file": "WhatsApp Image 2026-09-07 at 07.43.51.jpeg",
+    "title": "Atacadão Colina: Festival Perfumaria & Limpeza - Pág 3 (L'Oréal, Johnson's, MPR, Baston, Gtex & Uau)",
+    "market": "atacadao",
+    "validity": "Válido 01/09 a 10/09/2026"
+  },
+  {
+    "id": 9,
+    "file": "WhatsApp Image 2026-09-07 at 07.43.52.jpeg",
+    "title": "Atacadão Colina: Festival Perfumaria & Limpeza - Banner Promocional",
+    "market": "atacadao",
+    "validity": "Válido 01/09 a 10/09/2026"
+  },
+  {
+    "id": 10,
+    "file": "WhatsApp Image 2026-09-07 at 07.43.55.jpeg",
+    "title": "Atacadão Colina: Festival Perfumaria & Limpeza - Pág 4 (Flora, Baruel, Scotch-Brite, Suzano, Maxton, Bombril & Coty)",
+    "market": "atacadao",
+    "validity": "Válido 01/09 a 10/09/2026"
+  }
 ]
 
 categories = [
-  { "id": "all", "name": "Todas as Ofertas", "icon": "🏷️" },
-  { "id": "acougue", "name": "Açougue & Carnes", "icon": "🥩" },
-  { "id": "hortifruti", "name": "Hortifrúti & Frutas", "icon": "🥦" },
-  { "id": "laticinios", "name": "Laticínios & Frios", "icon": "🧀" },
-  { "id": "mercearia", "name": "Mercearia & Matinais", "icon": "🌾" },
-  { "id": "bebidas", "name": "Bebidas & Cervejas", "icon": "🥤" },
-  { "id": "limpeza", "name": "Limpeza & Casa", "icon": "🧹" },
-  { "id": "higiene", "name": "Higiene & Perfumaria", "icon": "🧴" }
+  {
+    "id": "all",
+    "name": "Todas as Ofertas",
+    "icon": "🏷️"
+  },
+  {
+    "id": "acougue",
+    "name": "Açougue & Carnes",
+    "icon": "🥩"
+  },
+  {
+    "id": "hortifruti",
+    "name": "Hortifrúti & Frutas",
+    "icon": "🥦"
+  },
+  {
+    "id": "laticinios",
+    "name": "Laticínios & Frios",
+    "icon": "🧀"
+  },
+  {
+    "id": "mercearia",
+    "name": "Mercearia & Matinais",
+    "icon": "🌾"
+  },
+  {
+    "id": "bebidas",
+    "name": "Bebidas & Cervejas",
+    "icon": "🥤"
+  },
+  {
+    "id": "limpeza",
+    "name": "Limpeza & Casa",
+    "icon": "🧹"
+  },
+  {
+    "id": "higiene",
+    "name": "Higiene & Perfumaria",
+    "icon": "🧴"
+  }
 ]
 
 products = [
-  # PAGE 1 - HORTIFRÚTI & AÇOUGUE
   {
     "id": "atc_1",
     "name": "Ovo Branco Grande (Bandeja com 30 un)",
@@ -150,10 +195,16 @@ products = [
     "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 13.99,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 13.99, "extrabom": 16.90, "carone": 17.50, "assai": 14.50, "atacado_vem": 14.90 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 13.99,
+      "extrabom": 16.9,
+      "carone": 17.5,
+      "assai": 14.5,
+      "atacado_vem": 14.9
+    },
     "featured": True,
-    "discountTag": "App R$ 13,99 | Cartão R$ 12,59 | Varejo R$ 14,99"
+    "discountTag": "Menor preço no Atacadão | R$ 13,99"
   },
   {
     "id": "atc_2",
@@ -163,11 +214,17 @@ products = [
     "image": "assets/tomate.png",
     "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 14.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 14.90, "extrabom": 21.90, "carone": 22.50, "casagrande": 20.90, "bh": 18.90 },
+    "offerPrice": 14.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 14.9,
+      "extrabom": 21.9,
+      "carone": 22.5,
+      "casagrande": 20.9,
+      "bh": 18.9
+    },
     "featured": True,
-    "discountTag": "App R$ 14,90 | Cartão R$ 13,29 | Varejo R$ 16,90"
+    "discountTag": "Menor preço no Atacadão | R$ 14,90"
   },
   {
     "id": "atc_3",
@@ -178,10 +235,16 @@ products = [
     "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 4.99,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 4.99, "extrabom": 7.99, "carone": 7.50, "bh": 6.49, "assai": 5.49 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 4.99,
+      "extrabom": 7.99,
+      "carone": 7.5,
+      "bh": 6.49,
+      "assai": 5.49
+    },
     "featured": True,
-    "discountTag": "App R$ 4,99 | Cartão R$ 4,49 | Varejo R$ 5,99"
+    "discountTag": "Menor preço no Atacadão | R$ 4,99"
   },
   {
     "id": "atc_4",
@@ -192,10 +255,16 @@ products = [
     "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 5.99,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 5.99, "extrabom": 7.99, "carone": 8.20, "casagrande": 7.49, "atacado_vem": 6.50 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 5.99,
+      "extrabom": 7.99,
+      "carone": 8.2,
+      "casagrande": 7.49,
+      "atacado_vem": 6.5
+    },
     "featured": True,
-    "discountTag": "App R$ 5,99 | Cartão R$ 5,29 | Varejo R$ 6,99"
+    "discountTag": "Menor preço no Atacadão | R$ 5,99"
   },
   {
     "id": "atc_5",
@@ -206,10 +275,16 @@ products = [
     "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 4.99,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 4.99, "extrabom": 6.99, "carone": 7.10, "bh": 5.99, "assai": 5.29 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 4.99,
+      "extrabom": 6.99,
+      "carone": 7.1,
+      "bh": 5.99,
+      "assai": 5.29
+    },
     "featured": False,
-    "discountTag": "App R$ 4,99 | Cartão R$ 4,49 | Varejo R$ 5,99"
+    "discountTag": "Menor preço no Atacadão | R$ 4,99"
   },
   {
     "id": "atc_6",
@@ -220,10 +295,17 @@ products = [
     "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 3.59,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 3.59, "extrabom": 4.99, "casagrande": 4.50, "bh": 4.19, "atacado_vem": 3.89, "carone": 4.69 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 3.59,
+      "extrabom": 4.99,
+      "casagrande": 4.5,
+      "bh": 4.19,
+      "atacado_vem": 3.89,
+      "carone": 4.69
+    },
     "featured": False,
-    "discountTag": "App R$ 3,59 | Cartão R$ 3,19 | Varejo R$ 3,99"
+    "discountTag": "Menor preço no Atacadão | R$ 3,59"
   },
   {
     "id": "atc_7",
@@ -233,11 +315,17 @@ products = [
     "image": "assets/carne.png",
     "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 54.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 54.90, "extrabom": 58.90, "carone": 62.90, "assai": 55.90, "casagrande": 59.90 },
+    "offerPrice": 54.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 54.9,
+      "extrabom": 58.9,
+      "carone": 62.9,
+      "assai": 55.9,
+      "casagrande": 59.9
+    },
     "featured": True,
-    "discountTag": "App R$ 54,90 | Cartão R$ 49,90 | Varejo R$ 56,90"
+    "discountTag": "Menor preço no Atacadão | R$ 54,90"
   },
   {
     "id": "atc_8",
@@ -247,11 +335,17 @@ products = [
     "image": "assets/contrafile.png",
     "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 45.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 45.90, "extrabom": 49.90, "carone": 52.90, "bh": 47.90, "atacado_vem": 46.90 },
+    "offerPrice": 45.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 45.9,
+      "extrabom": 49.9,
+      "carone": 52.9,
+      "bh": 47.9,
+      "atacado_vem": 46.9
+    },
     "featured": True,
-    "discountTag": "App R$ 45,90 | Cartão R$ 40,90 | Varejo R$ 47,90"
+    "discountTag": "Menor preço no Atacadão | R$ 45,90"
   },
   {
     "id": "atc_9",
@@ -262,10 +356,16 @@ products = [
     "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 15.98,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 15.98, "extrabom": 18.98, "carone": 19.90, "assai": 16.90, "atacado_vem": 16.49 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 15.98,
+      "extrabom": 18.98,
+      "carone": 19.9,
+      "assai": 16.9,
+      "atacado_vem": 16.49
+    },
     "featured": True,
-    "discountTag": "App R$ 15,98 | Cartão R$ 14,48 | Varejo R$ 16,98"
+    "discountTag": "Menor preço no Atacadão | R$ 15,98"
   },
   {
     "id": "atc_10",
@@ -275,11 +375,17 @@ products = [
     "image": "assets/frango.png",
     "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 10.50,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 10.50, "extrabom": 13.90, "carone": 14.50, "casagrande": 12.90, "bh": 11.90 },
+    "offerPrice": 10.5,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 10.5,
+      "extrabom": 13.9,
+      "carone": 14.5,
+      "casagrande": 12.9,
+      "bh": 11.9
+    },
     "featured": False,
-    "discountTag": "App R$ 10,50 | Cartão R$ 9,50 | Varejo R$ 11,50"
+    "discountTag": "Menor preço no Atacadão | R$ 10,50"
   },
   {
     "id": "atc_11",
@@ -290,10 +396,16 @@ products = [
     "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 8.99,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 8.99, "extrabom": 10.99, "carone": 11.90, "assai": 9.90, "bh": 9.49 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 8.99,
+      "extrabom": 10.99,
+      "carone": 11.9,
+      "assai": 9.9,
+      "bh": 9.49
+    },
     "featured": False,
-    "discountTag": "App R$ 8,99 | Cartão R$ 7,99 | Varejo R$ 9,99"
+    "discountTag": "Menor preço no Atacadão | R$ 8,99"
   },
   {
     "id": "atc_12",
@@ -303,11 +415,17 @@ products = [
     "image": "assets/carne.png",
     "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 31.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 31.90, "extrabom": 38.90, "carone": 39.90, "casagrande": 36.90, "atacado_vem": 33.90 },
+    "offerPrice": 31.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 31.9,
+      "extrabom": 38.9,
+      "carone": 39.9,
+      "casagrande": 36.9,
+      "atacado_vem": 33.9
+    },
     "featured": False,
-    "discountTag": "App R$ 31,90 | Cartão R$ 28,90 | Varejo R$ 37,90"
+    "discountTag": "Menor preço no Atacadão | R$ 31,90"
   },
   {
     "id": "atc_13",
@@ -317,11 +435,17 @@ products = [
     "image": "assets/carne.png",
     "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 31.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 31.90, "extrabom": 37.90, "carone": 38.90, "bh": 34.90, "assai": 32.90 },
+    "offerPrice": 31.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 31.9,
+      "extrabom": 37.9,
+      "carone": 38.9,
+      "bh": 34.9,
+      "assai": 32.9
+    },
     "featured": False,
-    "discountTag": "App R$ 31,90 | Cartão R$ 28,90 | Varejo R$ 36,90"
+    "discountTag": "Menor preço no Atacadão | R$ 31,90"
   },
   {
     "id": "atc_14",
@@ -331,11 +455,17 @@ products = [
     "image": "assets/carne.png",
     "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 51.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 51.90, "extrabom": 53.90, "carone": 58.90, "casagrande": 54.90, "atacado_vem": 52.90 },
+    "offerPrice": 51.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 51.9,
+      "extrabom": 53.9,
+      "carone": 58.9,
+      "casagrande": 54.9,
+      "atacado_vem": 52.9
+    },
     "featured": True,
-    "discountTag": "App R$ 51,90 | Cartão R$ 46,90 | Varejo R$ 52,90"
+    "discountTag": "Menor preço no Atacadão | R$ 51,90"
   },
   {
     "id": "atc_15",
@@ -345,27 +475,37 @@ products = [
     "image": "assets/carne.png",
     "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 49.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 49.90, "extrabom": 54.90, "carone": 59.90, "assai": 51.90, "bh": 52.90 },
+    "offerPrice": 49.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 49.9,
+      "extrabom": 54.9,
+      "carone": 59.9,
+      "assai": 51.9,
+      "bh": 52.9
+    },
     "featured": False,
-    "discountTag": "App R$ 49,90 | Cartão R$ 44,90 | Varejo R$ 52,90"
+    "discountTag": "Menor preço no Atacadão | R$ 49,90"
   },
-
-  # PAGE 2 - FRIOS, RESFRIADOS, CONGELADOS & MERCEARIA
   {
     "id": "atc_16",
     "name": "Batata Pré-Frita Prime Fries Congelada 2kg",
     "category": "laticinios",
     "unit": "2kg",
     "image": "assets/tomate.png",
-    "encarteId": 2,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 16.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 16.90, "extrabom": 21.90, "carone": 22.90, "casagrande": 19.90, "atacado_vem": 17.90 },
+    "offerPrice": 16.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 16.9,
+      "extrabom": 21.9,
+      "carone": 22.9,
+      "casagrande": 19.9,
+      "atacado_vem": 17.9
+    },
     "featured": True,
-    "discountTag": "App R$ 16,90 | Cartão R$ 14,90 | Varejo R$ 17,90"
+    "discountTag": "Menor preço no Atacadão | R$ 16,90"
   },
   {
     "id": "atc_17",
@@ -373,13 +513,19 @@ products = [
     "category": "laticinios",
     "unit": "1.25kg",
     "image": "assets/itens.jpeg",
-    "encarteId": 2,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 15.99,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 15.99, "extrabom": 17.99, "carone": 18.90, "bh": 16.90, "assai": 16.50 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 15.99,
+      "extrabom": 17.99,
+      "carone": 18.9,
+      "bh": 16.9,
+      "assai": 16.5
+    },
     "featured": False,
-    "discountTag": "App R$ 15,99 | Cartão R$ 14,49 | Varejo R$ 16,99"
+    "discountTag": "Menor preço no Atacadão | R$ 15,99"
   },
   {
     "id": "atc_18",
@@ -387,13 +533,19 @@ products = [
     "category": "laticinios",
     "unit": "540g",
     "image": "assets/itens.jpeg",
-    "encarteId": 2,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 9.99,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 9.99, "extrabom": 13.49, "carone": 13.90, "casagrande": 11.90, "atacado_vem": 10.50 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 9.99,
+      "extrabom": 13.49,
+      "carone": 13.9,
+      "casagrande": 11.9,
+      "atacado_vem": 10.5
+    },
     "featured": False,
-    "discountTag": "App R$ 9,99 | Cartão R$ 8,99 | Varejo R$ 10,99"
+    "discountTag": "Menor preço no Atacadão | R$ 9,99"
   },
   {
     "id": "atc_19",
@@ -401,13 +553,19 @@ products = [
     "category": "laticinios",
     "unit": "6x80g",
     "image": "assets/limpeza.png",
-    "encarteId": 2,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 6.99,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 6.99, "extrabom": 8.49, "carone": 8.99, "bh": 7.49, "assai": 7.20 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 6.99,
+      "extrabom": 8.49,
+      "carone": 8.99,
+      "bh": 7.49,
+      "assai": 7.2
+    },
     "featured": False,
-    "discountTag": "App R$ 6,99 | Cartão R$ 6,19 | Varejo R$ 7,99"
+    "discountTag": "Menor preço no Atacadão | R$ 6,99"
   },
   {
     "id": "atc_20",
@@ -415,13 +573,19 @@ products = [
     "category": "laticinios",
     "unit": "3kg",
     "image": "assets/carne.png",
-    "encarteId": 2,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 26.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 26.90, "extrabom": 29.90, "carone": 32.90, "casagrande": 28.90, "atacado_vem": 27.50 },
+    "offerPrice": 26.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 26.9,
+      "extrabom": 29.9,
+      "carone": 32.9,
+      "casagrande": 28.9,
+      "atacado_vem": 27.5
+    },
     "featured": False,
-    "discountTag": "App R$ 26,90 | Cartão R$ 23,90 | Varejo R$ 27,90"
+    "discountTag": "Menor preço no Atacadão | R$ 26,90"
   },
   {
     "id": "atc_21",
@@ -429,13 +593,19 @@ products = [
     "category": "laticinios",
     "unit": "kg",
     "image": "assets/itens.jpeg",
-    "encarteId": 2,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 14.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 14.90, "extrabom": 18.90, "carone": 19.50, "bh": 16.90, "assai": 15.90 },
+    "offerPrice": 14.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 14.9,
+      "extrabom": 18.9,
+      "carone": 19.5,
+      "bh": 16.9,
+      "assai": 15.9
+    },
     "featured": True,
-    "discountTag": "App R$ 14,90 | Cartão R$ 13,50 | Varejo R$ 16,90"
+    "discountTag": "Menor preço no Atacadão | R$ 14,90"
   },
   {
     "id": "atc_22",
@@ -443,13 +613,19 @@ products = [
     "category": "mercearia",
     "unit": "5kg",
     "image": "assets/arroz.png",
-    "encarteId": 2,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 17.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 17.90, "extrabom": 18.90, "carone": 21.90, "assai": 18.50, "atacado_vem": 18.20 },
+    "offerPrice": 17.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 17.9,
+      "extrabom": 18.9,
+      "carone": 21.9,
+      "assai": 18.5,
+      "atacado_vem": 18.2
+    },
     "featured": True,
-    "discountTag": "App R$ 17,90 | Cartão R$ 15,90 | Varejo R$ 18,40"
+    "discountTag": "Menor preço no Atacadão | R$ 17,90"
   },
   {
     "id": "atc_23",
@@ -457,13 +633,19 @@ products = [
     "category": "mercearia",
     "unit": "5kg",
     "image": "assets/arroz.png",
-    "encarteId": 2,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 11.79,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 11.79, "extrabom": 12.29, "carone": 13.50, "casagrande": 12.49, "bh": 11.99 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 11.79,
+      "extrabom": 12.29,
+      "carone": 13.5,
+      "casagrande": 12.49,
+      "bh": 11.99
+    },
     "featured": True,
-    "discountTag": "App R$ 11,79 | Cartão R$ 10,59 | Varejo R$ 11,99"
+    "discountTag": "Menor preço no Atacadão | R$ 11,79"
   },
   {
     "id": "atc_24",
@@ -471,13 +653,19 @@ products = [
     "category": "laticinios",
     "unit": "1L",
     "image": "assets/itens.jpeg",
-    "encarteId": 2,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 4.69,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 4.69, "extrabom": 5.19, "carone": 5.49, "casagrande": 4.99, "bh": 4.79 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 4.69,
+      "extrabom": 5.19,
+      "carone": 5.49,
+      "casagrande": 4.99,
+      "bh": 4.79
+    },
     "featured": True,
-    "discountTag": "App R$ 4,69 | Cartão R$ 4,19 | Varejo R$ 4,89"
+    "discountTag": "Menor preço no Atacadão | R$ 4,69"
   },
   {
     "id": "atc_25",
@@ -485,13 +673,19 @@ products = [
     "category": "mercearia",
     "unit": "14.5kg",
     "image": "assets/arroz.png",
-    "encarteId": 2,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 179.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 179.90, "extrabom": 199.90, "carone": 209.00, "assai": 185.00, "atacado_vem": 182.00 },
+    "offerPrice": 179.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 179.9,
+      "extrabom": 199.9,
+      "carone": 209.0,
+      "assai": 185.0,
+      "atacado_vem": 182.0
+    },
     "featured": False,
-    "discountTag": "App R$ 179,90 | Cartão R$ 159,90 | Varejo R$ 189,90"
+    "discountTag": "Menor preço no Atacadão | R$ 179,90"
   },
   {
     "id": "atc_26",
@@ -499,13 +693,19 @@ products = [
     "category": "mercearia",
     "unit": "500ml",
     "image": "assets/arroz.png",
-    "encarteId": 2,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 29.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 29.90, "extrabom": 31.90, "carone": 35.90, "casagrande": 32.90, "bh": 30.90 },
+    "offerPrice": 29.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 29.9,
+      "extrabom": 31.9,
+      "carone": 35.9,
+      "casagrande": 32.9,
+      "bh": 30.9
+    },
     "featured": True,
-    "discountTag": "App R$ 29,90 | Cartão R$ 26,90 | Varejo R$ 30,90"
+    "discountTag": "Menor preço no Atacadão | R$ 29,90"
   },
   {
     "id": "atc_27",
@@ -513,13 +713,19 @@ products = [
     "category": "mercearia",
     "unit": "500g",
     "image": "assets/itens.jpeg",
-    "encarteId": 2,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 2.39,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 2.39, "extrabom": 2.69, "carone": 2.99, "bh": 2.50, "assai": 2.45 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 2.39,
+      "extrabom": 2.69,
+      "carone": 2.99,
+      "bh": 2.5,
+      "assai": 2.45
+    },
     "featured": False,
-    "discountTag": "App R$ 2,39 | Cartão R$ 2,19 | Varejo R$ 2,49"
+    "discountTag": "Menor preço no Atacadão | R$ 2,39"
   },
   {
     "id": "atc_28",
@@ -527,13 +733,19 @@ products = [
     "category": "mercearia",
     "unit": "800g",
     "image": "assets/itens.jpeg",
-    "encarteId": 2,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 15.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 15.90, "extrabom": 21.90, "carone": 22.90, "casagrande": 18.90, "atacado_vem": 16.50 },
+    "offerPrice": 15.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 15.9,
+      "extrabom": 21.9,
+      "carone": 22.9,
+      "casagrande": 18.9,
+      "atacado_vem": 16.5
+    },
     "featured": False,
-    "discountTag": "App R$ 15,90 | Cartão R$ 14,20 | Varejo R$ 17,90"
+    "discountTag": "Menor preço no Atacadão | R$ 15,90"
   },
   {
     "id": "atc_29",
@@ -541,13 +753,19 @@ products = [
     "category": "mercearia",
     "unit": "150g",
     "image": "assets/itens.jpeg",
-    "encarteId": 2,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 5.99,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 5.99, "extrabom": 7.99, "carone": 8.50, "bh": 6.99, "assai": 6.20 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 5.99,
+      "extrabom": 7.99,
+      "carone": 8.5,
+      "bh": 6.99,
+      "assai": 6.2
+    },
     "featured": False,
-    "discountTag": "App R$ 5,99 | Cartão R$ 5,29 | Varejo R$ 6,99"
+    "discountTag": "Menor preço no Atacadão | R$ 5,99"
   },
   {
     "id": "atc_30",
@@ -555,29 +773,39 @@ products = [
     "category": "mercearia",
     "unit": "390g",
     "image": "assets/itens.jpeg",
-    "encarteId": 2,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 1.99,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 1.99, "extrabom": 4.49, "carone": 4.90, "casagrande": 3.50, "atacado_vem": 2.20 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 1.99,
+      "extrabom": 4.49,
+      "carone": 4.9,
+      "casagrande": 3.5,
+      "atacado_vem": 2.2
+    },
     "featured": False,
-    "discountTag": "App R$ 1,99 | Cartão R$ 1,79 | Varejo R$ 2,49"
+    "discountTag": "Menor preço no Atacadão | R$ 1,99"
   },
-
-  # PAGE 3 - BOMBONIERE & BEBIDAS
   {
     "id": "atc_31",
     "name": "Bebida Láctea Nescau Pack 9x180ml",
     "category": "mercearia",
     "unit": "9x180ml",
     "image": "assets/itens.jpeg",
-    "encarteId": 3,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 15.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 15.90, "extrabom": 17.90, "carone": 18.90, "assai": 16.50, "bh": 16.20 },
+    "offerPrice": 15.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 15.9,
+      "extrabom": 17.9,
+      "carone": 18.9,
+      "assai": 16.5,
+      "bh": 16.2
+    },
     "featured": True,
-    "discountTag": "App R$ 15,90 | Cartão R$ 14,20 | Varejo R$ 16,90"
+    "discountTag": "Menor preço no Atacadão | R$ 15,90"
   },
   {
     "id": "atc_32",
@@ -585,13 +813,19 @@ products = [
     "category": "mercearia",
     "unit": "270g",
     "image": "assets/itens.jpeg",
-    "encarteId": 3,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 8.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 8.90, "extrabom": 11.90, "carone": 12.50, "casagrande": 10.90, "atacado_vem": 9.50 },
+    "offerPrice": 8.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 8.9,
+      "extrabom": 11.9,
+      "carone": 12.5,
+      "casagrande": 10.9,
+      "atacado_vem": 9.5
+    },
     "featured": False,
-    "discountTag": "App R$ 8,90 | Cartão R$ 7,90 | Varejo R$ 10,90"
+    "discountTag": "Menor preço no Atacadão | R$ 8,90"
   },
   {
     "id": "atc_33",
@@ -599,13 +833,19 @@ products = [
     "category": "laticinios",
     "unit": "395g",
     "image": "assets/itens.jpeg",
-    "encarteId": 3,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 7.95,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 7.95, "extrabom": 8.99, "carone": 9.50, "bh": 8.49, "assai": 8.20 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 7.95,
+      "extrabom": 8.99,
+      "carone": 9.5,
+      "bh": 8.49,
+      "assai": 8.2
+    },
     "featured": True,
-    "discountTag": "App R$ 7,95 | Cartão R$ 7,05 | Varejo R$ 8,95"
+    "discountTag": "Menor preço no Atacadão | R$ 7,95"
   },
   {
     "id": "atc_34",
@@ -613,13 +853,19 @@ products = [
     "category": "mercearia",
     "unit": "7 un",
     "image": "assets/itens.jpeg",
-    "encarteId": 3,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 23.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 23.90, "extrabom": 30.99, "carone": 32.90, "casagrande": 27.90, "atacado_vem": 24.90 },
+    "offerPrice": 23.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 23.9,
+      "extrabom": 30.99,
+      "carone": 32.9,
+      "casagrande": 27.9,
+      "atacado_vem": 24.9
+    },
     "featured": True,
-    "discountTag": "App R$ 23,90 | Cartão R$ 21,50 | Varejo R$ 24,99"
+    "discountTag": "Menor preço no Atacadão | R$ 23,90"
   },
   {
     "id": "atc_35",
@@ -627,13 +873,19 @@ products = [
     "category": "mercearia",
     "unit": "48.3g",
     "image": "assets/itens.jpeg",
-    "encarteId": 3,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 8.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 8.90, "extrabom": 11.90, "carone": 12.50, "bh": 9.90, "assai": 9.20 },
+    "offerPrice": 8.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 8.9,
+      "extrabom": 11.9,
+      "carone": 12.5,
+      "bh": 9.9,
+      "assai": 9.2
+    },
     "featured": False,
-    "discountTag": "App R$ 8,90 | Cartão R$ 7,90 | Varejo R$ 9,90"
+    "discountTag": "Menor preço no Atacadão | R$ 8,90"
   },
   {
     "id": "atc_36",
@@ -641,13 +893,19 @@ products = [
     "category": "mercearia",
     "unit": "25g",
     "image": "assets/itens.jpeg",
-    "encarteId": 3,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 1.79,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 1.79, "extrabom": 2.19, "carone": 2.49, "casagrande": 2.00, "atacado_vem": 1.89 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 1.79,
+      "extrabom": 2.19,
+      "carone": 2.49,
+      "casagrande": 2.0,
+      "atacado_vem": 1.89
+    },
     "featured": False,
-    "discountTag": "App R$ 1,79 | Cartão R$ 1,59 | Varejo R$ 1,99"
+    "discountTag": "Menor preço no Atacadão | R$ 1,79"
   },
   {
     "id": "atc_37",
@@ -655,13 +913,19 @@ products = [
     "category": "bebidas",
     "unit": "998ml",
     "image": "assets/cerveja.png",
-    "encarteId": 3,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 54.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 54.90, "extrabom": 69.90, "carone": 72.90, "assai": 57.90, "bh": 59.90 },
+    "offerPrice": 54.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 54.9,
+      "extrabom": 69.9,
+      "carone": 72.9,
+      "assai": 57.9,
+      "bh": 59.9
+    },
     "featured": True,
-    "discountTag": "App R$ 54,90 | Cartão R$ 49,90 | Varejo R$ 59,90"
+    "discountTag": "Menor preço no Atacadão | R$ 54,90"
   },
   {
     "id": "atc_38",
@@ -669,13 +933,19 @@ products = [
     "category": "bebidas",
     "unit": "1.5L",
     "image": "assets/cerveja.png",
-    "encarteId": 3,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 10.99,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 10.99, "extrabom": 12.99, "carone": 13.90, "casagrande": 11.99, "atacado_vem": 11.50 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 10.99,
+      "extrabom": 12.99,
+      "carone": 13.9,
+      "casagrande": 11.99,
+      "atacado_vem": 11.5
+    },
     "featured": False,
-    "discountTag": "App R$ 10,99 | Cartão R$ 9,99 | Varejo R$ 11,99"
+    "discountTag": "Menor preço no Atacadão | R$ 10,99"
   },
   {
     "id": "atc_39",
@@ -683,13 +953,19 @@ products = [
     "category": "bebidas",
     "unit": "550ml",
     "image": "assets/limpeza.png",
-    "encarteId": 3,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 4.19,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 4.19, "extrabom": 4.79, "carone": 4.99, "bh": 4.39, "assai": 4.29 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 4.19,
+      "extrabom": 4.79,
+      "carone": 4.99,
+      "bh": 4.39,
+      "assai": 4.29
+    },
     "featured": False,
-    "discountTag": "App R$ 4,19 | Cartão R$ 3,79 | Varejo R$ 4,59"
+    "discountTag": "Menor preço no Atacadão | R$ 4,19"
   },
   {
     "id": "atc_40",
@@ -697,13 +973,19 @@ products = [
     "category": "bebidas",
     "unit": "269ml",
     "image": "assets/limpeza.png",
-    "encarteId": 3,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 2.99,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 2.99, "extrabom": 3.29, "carone": 3.49, "casagrande": 3.19, "atacado_vem": 3.09 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 2.99,
+      "extrabom": 3.29,
+      "carone": 3.49,
+      "casagrande": 3.19,
+      "atacado_vem": 3.09
+    },
     "featured": True,
-    "discountTag": "App R$ 2,99 | Cartão R$ 2,69 | Varejo R$ 3,19"
+    "discountTag": "Menor preço no Atacadão | R$ 2,99"
   },
   {
     "id": "atc_41",
@@ -711,13 +993,19 @@ products = [
     "category": "bebidas",
     "unit": "600ml",
     "image": "assets/cerveja.png",
-    "encarteId": 3,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 4.49,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 4.49, "extrabom": 4.99, "carone": 5.29, "bh": 4.79, "assai": 4.59 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 4.49,
+      "extrabom": 4.99,
+      "carone": 5.29,
+      "bh": 4.79,
+      "assai": 4.59
+    },
     "featured": False,
-    "discountTag": "App R$ 4,49 | Cartão R$ 3,99 | Varejo R$ 4,89"
+    "discountTag": "Menor preço no Atacadão | R$ 4,49"
   },
   {
     "id": "atc_42",
@@ -725,13 +1013,19 @@ products = [
     "category": "bebidas",
     "unit": "1.35L",
     "image": "assets/cerveja.png",
-    "encarteId": 3,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 11.99,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 11.99, "extrabom": 13.99, "carone": 14.90, "casagrande": 12.90, "atacado_vem": 12.49 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 11.99,
+      "extrabom": 13.99,
+      "carone": 14.9,
+      "casagrande": 12.9,
+      "atacado_vem": 12.49
+    },
     "featured": False,
-    "discountTag": "App R$ 11,99 | Cartão R$ 10,79 | Varejo R$ 12,99"
+    "discountTag": "Menor preço no Atacadão | R$ 11,99"
   },
   {
     "id": "atc_43",
@@ -739,13 +1033,19 @@ products = [
     "category": "bebidas",
     "unit": "500ml",
     "image": "assets/cerveja.png",
-    "encarteId": 3,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 4.39,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 4.39, "extrabom": 4.99, "carone": 5.49, "bh": 4.69, "assai": 4.49 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 4.39,
+      "extrabom": 4.99,
+      "carone": 5.49,
+      "bh": 4.69,
+      "assai": 4.49
+    },
     "featured": False,
-    "discountTag": "App R$ 4,39 | Cartão R$ 3,99 | Varejo R$ 4,79"
+    "discountTag": "Menor preço no Atacadão | R$ 4,39"
   },
   {
     "id": "atc_44",
@@ -753,13 +1053,19 @@ products = [
     "category": "bebidas",
     "unit": "450ml",
     "image": "assets/cerveja.png",
-    "encarteId": 3,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 1.89,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 1.89, "extrabom": 2.69, "carone": 2.89, "casagrande": 2.20, "atacado_vem": 1.99 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 1.89,
+      "extrabom": 2.69,
+      "carone": 2.89,
+      "casagrande": 2.2,
+      "atacado_vem": 1.99
+    },
     "featured": False,
-    "discountTag": "App R$ 1,89 | Cartão R$ 1,69 | Varejo R$ 1,99"
+    "discountTag": "Menor preço no Atacadão | R$ 1,89"
   },
   {
     "id": "atc_45",
@@ -767,29 +1073,39 @@ products = [
     "category": "bebidas",
     "unit": "290ml",
     "image": "assets/cerveja.png",
-    "encarteId": 3,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 1.05,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 1.05, "extrabom": 1.29, "carone": 1.49, "bh": 1.19, "assai": 1.10 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 1.05,
+      "extrabom": 1.29,
+      "carone": 1.49,
+      "bh": 1.19,
+      "assai": 1.1
+    },
     "featured": False,
-    "discountTag": "App R$ 1,05 | Cartão R$ 0,95 | Varejo R$ 1,15"
+    "discountTag": "Menor preço no Atacadão | R$ 1,05"
   },
-
-  # PAGE 4 - LIMPEZA, HIGIENE, BAZAR & PET SHOP
   {
     "id": "atc_46",
     "name": "Lava Roupas em Pó Tixan Maciez / Primavera 2,4kg",
     "category": "limpeza",
     "unit": "2.4kg",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 17.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 17.90, "extrabom": 19.90, "carone": 21.90, "casagrande": 18.90, "atacado_vem": 18.20 },
+    "offerPrice": 17.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 17.9,
+      "extrabom": 19.9,
+      "carone": 21.9,
+      "casagrande": 18.9,
+      "atacado_vem": 18.2
+    },
     "featured": True,
-    "discountTag": "App R$ 17,90 | Cartão R$ 15,90 | Varejo R$ 18,50"
+    "discountTag": "Menor preço no Atacadão | R$ 17,90"
   },
   {
     "id": "atc_47",
@@ -797,13 +1113,19 @@ products = [
     "category": "limpeza",
     "unit": "900ml",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 9.75,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 9.75, "extrabom": 10.79, "carone": 11.90, "bh": 10.20, "assai": 9.90 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 9.75,
+      "extrabom": 10.79,
+      "carone": 11.9,
+      "bh": 10.2,
+      "assai": 9.9
+    },
     "featured": False,
-    "discountTag": "App R$ 9,75 | Cartão R$ 8,75 | Varejo R$ 10,19"
+    "discountTag": "Menor preço no Atacadão | R$ 9,75"
   },
   {
     "id": "atc_48",
@@ -811,13 +1133,19 @@ products = [
     "category": "limpeza",
     "unit": "1L",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 1.99,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 1.99, "extrabom": 2.35, "carone": 2.59, "casagrande": 2.20, "atacado_vem": 2.05 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 1.99,
+      "extrabom": 2.35,
+      "carone": 2.59,
+      "casagrande": 2.2,
+      "atacado_vem": 2.05
+    },
     "featured": False,
-    "discountTag": "App R$ 1,99 | Cartão R$ 1,79 | Varejo R$ 2,15"
+    "discountTag": "Menor preço no Atacadão | R$ 1,99"
   },
   {
     "id": "atc_49",
@@ -825,13 +1153,19 @@ products = [
     "category": "limpeza",
     "unit": "45g",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 1.39,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 1.39, "extrabom": 1.59, "carone": 1.79, "bh": 1.49, "assai": 1.42 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 1.39,
+      "extrabom": 1.59,
+      "carone": 1.79,
+      "bh": 1.49,
+      "assai": 1.42
+    },
     "featured": False,
-    "discountTag": "App R$ 1,39 | Cartão R$ 1,29 | Varejo R$ 1,45"
+    "discountTag": "Menor preço no Atacadão | R$ 1,39"
   },
   {
     "id": "atc_50",
@@ -839,13 +1173,19 @@ products = [
     "category": "limpeza",
     "unit": "2L",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 4.49,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 4.49, "extrabom": 5.69, "carone": 6.29, "casagrande": 5.20, "atacado_vem": 4.79 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 4.49,
+      "extrabom": 5.69,
+      "carone": 6.29,
+      "casagrande": 5.2,
+      "atacado_vem": 4.79
+    },
     "featured": False,
-    "discountTag": "App R$ 4,49 | Cartão R$ 3,99 | Varejo R$ 4,99"
+    "discountTag": "Menor preço no Atacadão | R$ 4,49"
   },
   {
     "id": "atc_51",
@@ -853,13 +1193,19 @@ products = [
     "category": "limpeza",
     "unit": "unidade",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 0.89,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 0.89, "extrabom": 1.39, "carone": 1.49, "bh": 0.99, "assai": 0.95 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 0.89,
+      "extrabom": 1.39,
+      "carone": 1.49,
+      "bh": 0.99,
+      "assai": 0.95
+    },
     "featured": False,
-    "discountTag": "App R$ 0,89 | Cartão R$ 0,79 | Varejo R$ 1,09"
+    "discountTag": "Menor preço no Atacadão | R$ 0,89"
   },
   {
     "id": "atc_52",
@@ -867,13 +1213,19 @@ products = [
     "category": "higiene",
     "unit": "200ml",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 13.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 13.90, "extrabom": 15.50, "carone": 16.90, "casagrande": 14.90, "atacado_vem": 14.20 },
+    "offerPrice": 13.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 13.9,
+      "extrabom": 15.5,
+      "carone": 16.9,
+      "casagrande": 14.9,
+      "atacado_vem": 14.2
+    },
     "featured": True,
-    "discountTag": "App R$ 13,90 | Cartão R$ 12,50 | Varejo R$ 14,29"
+    "discountTag": "Menor preço no Atacadão | R$ 13,90"
   },
   {
     "id": "atc_53",
@@ -881,13 +1233,19 @@ products = [
     "category": "higiene",
     "unit": "50ml",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 5.98,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 5.98, "extrabom": 7.90, "carone": 8.50, "bh": 6.49, "assai": 6.20 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 5.98,
+      "extrabom": 7.9,
+      "carone": 8.5,
+      "bh": 6.49,
+      "assai": 6.2
+    },
     "featured": False,
-    "discountTag": "App R$ 5,98 | Cartão R$ 5,38 | Varejo R$ 6,98"
+    "discountTag": "Menor preço no Atacadão | R$ 5,98"
   },
   {
     "id": "atc_54",
@@ -895,13 +1253,19 @@ products = [
     "category": "higiene",
     "unit": "180g",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 2.95,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 2.95, "extrabom": 3.35, "carone": 3.69, "casagrande": 3.19, "atacado_vem": 3.05 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 2.95,
+      "extrabom": 3.35,
+      "carone": 3.69,
+      "casagrande": 3.19,
+      "atacado_vem": 3.05
+    },
     "featured": False,
-    "discountTag": "App R$ 2,95 | Cartão R$ 2,65 | Varejo R$ 3,10"
+    "discountTag": "Menor preço no Atacadão | R$ 2,95"
   },
   {
     "id": "atc_55",
@@ -909,13 +1273,19 @@ products = [
     "category": "higiene",
     "unit": "70g",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 2.49,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 2.49, "extrabom": 2.98, "carone": 3.29, "bh": 2.69, "assai": 2.59 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 2.49,
+      "extrabom": 2.98,
+      "carone": 3.29,
+      "bh": 2.69,
+      "assai": 2.59
+    },
     "featured": False,
-    "discountTag": "App R$ 2,49 | Cartão R$ 2,29 | Varejo R$ 2,69"
+    "discountTag": "Menor preço no Atacadão | R$ 2,49"
   },
   {
     "id": "atc_56",
@@ -923,13 +1293,19 @@ products = [
     "category": "limpeza",
     "unit": "unidade",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 349.00,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 349.00, "extrabom": 370.00, "carone": 389.00, "casagrande": 365.00, "atacado_vem": 355.00 },
+    "offerPrice": 349.0,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 349.0,
+      "extrabom": 370.0,
+      "carone": 389.0,
+      "casagrande": 365.0,
+      "atacado_vem": 355.0
+    },
     "featured": True,
-    "discountTag": "App R$ 349,00 | Cartão R$ 309,00 | Varejo R$ 360,00"
+    "discountTag": "Menor preço no Atacadão | R$ 349,00"
   },
   {
     "id": "atc_57",
@@ -937,13 +1313,19 @@ products = [
     "category": "limpeza",
     "unit": "unidade",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 66.25,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 66.25, "extrabom": 90.00, "carone": 95.00, "bh": 75.00, "assai": 69.90 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 66.25,
+      "extrabom": 90.0,
+      "carone": 95.0,
+      "bh": 75.0,
+      "assai": 69.9
+    },
     "featured": False,
-    "discountTag": "App R$ 66,25 | Cartão R$ 59,85 | Varejo R$ 79,60"
+    "discountTag": "Menor preço no Atacadão | R$ 66,25"
   },
   {
     "id": "atc_58",
@@ -951,13 +1333,19 @@ products = [
     "category": "limpeza",
     "unit": "500 fls",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 24.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 24.90, "extrabom": 27.90, "carone": 29.90, "casagrande": 26.90, "atacado_vem": 25.50 },
+    "offerPrice": 24.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 24.9,
+      "extrabom": 27.9,
+      "carone": 29.9,
+      "casagrande": 26.9,
+      "atacado_vem": 25.5
+    },
     "featured": False,
-    "discountTag": "App R$ 24,90 | Cartão R$ 22,40 | Varejo R$ 25,90"
+    "discountTag": "Menor preço no Atacadão | R$ 24,90"
   },
   {
     "id": "atc_59",
@@ -965,13 +1353,19 @@ products = [
     "category": "limpeza",
     "unit": "15kg",
     "image": "assets/carne.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 59.00,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 59.00, "extrabom": 79.90, "carone": 82.90, "bh": 69.90, "assai": 62.90 },
+    "offerPrice": 59.0,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 59.0,
+      "extrabom": 79.9,
+      "carone": 82.9,
+      "bh": 69.9,
+      "assai": 62.9
+    },
     "featured": True,
-    "discountTag": "App R$ 59,00 | Cartão R$ 52,90 | Varejo R$ 72,90"
+    "discountTag": "Menor preço no Atacadão | R$ 59,00"
   },
   {
     "id": "atc_60",
@@ -979,13 +1373,19 @@ products = [
     "category": "limpeza",
     "unit": "2.5kg",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
     "offerPrice": 43.54,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 43.54, "extrabom": 52.90, "carone": 55.90, "casagrande": 48.90, "atacado_vem": 45.90 },
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 43.54,
+      "extrabom": 52.9,
+      "carone": 55.9,
+      "casagrande": 48.9,
+      "atacado_vem": 45.9
+    },
     "featured": False,
-    "discountTag": "App R$ 43,54 | Cartão R$ 39,83 | Varejo R$ 47,60"
+    "discountTag": "Menor preço no Atacadão | R$ 43,54"
   },
   {
     "id": "atc_61",
@@ -993,13 +1393,19 @@ products = [
     "category": "limpeza",
     "unit": "900g",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 14.90,
-    "validity": "Válido 25/08 a 31/08/2026",
-    "prices": { "atacadao": 14.90, "extrabom": 22.90, "carone": 23.90, "bh": 17.90, "assai": 15.90 },
+    "offerPrice": 14.9,
+    "validity": "Ofertas Atualizadas de Hoje",
+    "prices": {
+      "atacadao": 14.9,
+      "extrabom": 22.9,
+      "carone": 23.9,
+      "bh": 17.9,
+      "assai": 15.9
+    },
     "featured": False,
-    "discountTag": "App R$ 14,90 | Cartão R$ 13,20 | Varejo R$ 17,90"
+    "discountTag": "Menor preço no Atacadão | R$ 14,90"
   },
   {
     "id": "car_1",
@@ -1007,18 +1413,18 @@ products = [
     "category": "mercearia",
     "unit": "680g",
     "image": "assets/tomate.png",
-    "encarteId": 8,
+    "encarteId": 1,
     "offerMarketId": "carone",
     "offerPrice": 11.98,
-    "validity": "Válido 26/08 a 05/09/2026",
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "carone": 11.98,
       "extrabom": 13.99,
-      "atacadao": 12.50,
-      "assai": 12.90
+      "atacadao": 12.5,
+      "assai": 12.9
     },
     "featured": True,
-    "discountTag": "Oferta Carone Viva a Itália | R$ 11,98"
+    "discountTag": "Menor preço no Carone | R$ 11,98"
   },
   {
     "id": "car_2",
@@ -1026,18 +1432,18 @@ products = [
     "category": "mercearia",
     "unit": "190g",
     "image": "assets/arroz.png",
-    "encarteId": 8,
+    "encarteId": 1,
     "offerMarketId": "carone",
     "offerPrice": 17.98,
-    "validity": "Válido 26/08 a 05/09/2026",
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "carone": 17.98,
-      "extrabom": 21.90,
-      "atacadao": 18.90,
-      "bh": 19.50
+      "extrabom": 21.9,
+      "atacadao": 18.9,
+      "bh": 19.5
     },
     "featured": True,
-    "discountTag": "Oferta Carone Viva a Itália | R$ 17,98"
+    "discountTag": "Menor preço no Carone | R$ 17,98"
   },
   {
     "id": "car_3",
@@ -1045,18 +1451,18 @@ products = [
     "category": "mercearia",
     "unit": "400g",
     "image": "assets/tomate.png",
-    "encarteId": 8,
+    "encarteId": 1,
     "offerMarketId": "carone",
     "offerPrice": 7.79,
-    "validity": "Válido 26/08 a 05/09/2026",
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "carone": 7.79,
       "extrabom": 9.99,
-      "atacadao": 8.50,
-      "casagrande": 8.90
+      "atacadao": 8.5,
+      "casagrande": 8.9
     },
     "featured": True,
-    "discountTag": "Oferta Carone Viva a Itália | R$ 7,79"
+    "discountTag": "Menor preço no Carone | R$ 7,79"
   },
   {
     "id": "car_4",
@@ -1064,18 +1470,18 @@ products = [
     "category": "mercearia",
     "unit": "500g",
     "image": "assets/itens.jpeg",
-    "encarteId": 8,
+    "encarteId": 1,
     "offerMarketId": "carone",
     "offerPrice": 7.79,
-    "validity": "Válido 26/08 a 05/09/2026",
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "carone": 7.79,
-      "extrabom": 9.50,
-      "atacadao": 8.20,
-      "bh": 8.90
+      "extrabom": 9.5,
+      "atacadao": 8.2,
+      "bh": 8.9
     },
     "featured": True,
-    "discountTag": "Oferta Carone Viva a Itália | R$ 7,79"
+    "discountTag": "Menor preço no Carone | R$ 7,79"
   },
   {
     "id": "car_5",
@@ -1083,18 +1489,18 @@ products = [
     "category": "mercearia",
     "unit": "500ml",
     "image": "assets/arroz.png",
-    "encarteId": 9,
+    "encarteId": 1,
     "offerMarketId": "carone",
     "offerPrice": 29.98,
-    "validity": "Válido 26/08 a 05/09/2026",
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "carone": 29.98,
-      "extrabom": 35.90,
-      "atacadao": 31.90,
-      "assai": 32.50
+      "extrabom": 35.9,
+      "atacadao": 31.9,
+      "assai": 32.5
     },
     "featured": True,
-    "discountTag": "Oferta Carone Viva a Itália | R$ 29,98"
+    "discountTag": "Menor preço no Carone | R$ 29,98"
   },
   {
     "id": "car_6",
@@ -1102,18 +1508,18 @@ products = [
     "category": "bebidas",
     "unit": "750ml",
     "image": "assets/cerveja.png",
-    "encarteId": 9,
+    "encarteId": 1,
     "offerMarketId": "carone",
-    "offerPrice": 84.90,
-    "validity": "Válido 26/08 a 05/09/2026",
+    "offerPrice": 84.9,
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 84.90,
-      "extrabom": 99.00,
-      "atacadao": 89.90,
-      "casagrande": 94.00
+      "carone": 84.9,
+      "extrabom": 99.0,
+      "atacadao": 89.9,
+      "casagrande": 94.0
     },
     "featured": True,
-    "discountTag": "Oferta Carone Viva a Itália | R$ 84,90"
+    "discountTag": "Menor preço no Carone | R$ 84,90"
   },
   {
     "id": "car_7",
@@ -1121,18 +1527,18 @@ products = [
     "category": "bebidas",
     "unit": "750ml",
     "image": "assets/cerveja.png",
-    "encarteId": 9,
+    "encarteId": 1,
     "offerMarketId": "carone",
-    "offerPrice": 72.90,
-    "validity": "Válido 26/08 a 05/09/2026",
+    "offerPrice": 72.9,
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 72.90,
-      "extrabom": 85.00,
-      "atacadao": 75.90,
-      "bh": 79.90
+      "carone": 72.9,
+      "extrabom": 85.0,
+      "atacadao": 75.9,
+      "bh": 79.9
     },
     "featured": True,
-    "discountTag": "Oferta Carone Viva a Itália | R$ 72,90"
+    "discountTag": "Menor preço no Carone | R$ 72,90"
   },
   {
     "id": "car_8",
@@ -1140,18 +1546,18 @@ products = [
     "category": "bebidas",
     "unit": "750ml",
     "image": "assets/cerveja.png",
-    "encarteId": 9,
+    "encarteId": 1,
     "offerMarketId": "carone",
-    "offerPrice": 129.00,
-    "validity": "Válido 26/08 a 05/09/2026",
+    "offerPrice": 129.0,
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 129.00,
-      "extrabom": 149.00,
-      "atacadao": 135.00,
-      "assai": 139.00
+      "carone": 129.0,
+      "extrabom": 149.0,
+      "atacadao": 135.0,
+      "assai": 139.0
     },
     "featured": True,
-    "discountTag": "Oferta Carone Viva a Itália | R$ 129,00"
+    "discountTag": "Menor preço no Carone | R$ 129,00"
   },
   {
     "id": "car_9",
@@ -1159,18 +1565,18 @@ products = [
     "category": "higiene",
     "unit": "12 un",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "carone",
-    "offerPrice": 18.90,
-    "validity": "Válido 25/08 a 05/09/2026",
+    "offerPrice": 18.9,
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 18.90,
-      "extrabom": 21.90,
-      "atacadao": 19.90,
-      "assai": 19.50
+      "carone": 18.9,
+      "extrabom": 21.9,
+      "atacadao": 19.9,
+      "assai": 19.5
     },
     "featured": True,
-    "discountTag": "Oferta Carone | R$ 18,90"
+    "discountTag": "Menor preço no Carone | R$ 18,90"
   },
   {
     "id": "car_10",
@@ -1178,39 +1584,37 @@ products = [
     "category": "limpeza",
     "unit": "360ml",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": 1,
     "offerMarketId": "carone",
-    "offerPrice": 12.90,
-    "validity": "Válido 25/08 a 05/09/2026",
+    "offerPrice": 12.9,
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 12.90,
-      "extrabom": 14.90,
-      "atacadao": 13.50,
-      "bh": 13.90
+      "carone": 12.9,
+      "extrabom": 14.9,
+      "atacadao": 13.5,
+      "bh": 13.9
     },
     "featured": True,
-    "discountTag": "Oferta Carone | R$ 12,90"
+    "discountTag": "Menor preço no Carone | R$ 12,90"
   },
-
-  # SUPERMERCADOS BH 30 ANOS - OFERTAS SETEMBRO 2026
   {
     "id": "bh_30_1",
     "name": "Frango a Passarinho Sadia Congelado 1kg",
     "category": "acougue",
     "unit": "1kg",
     "image": "assets/frango.png",
-    "encarteId": 28,
+    "encarteId": 1,
     "offerMarketId": "bh",
     "offerPrice": 12.98,
     "validity": "Válido até 15/09/2026",
     "prices": {
       "bh": 12.98,
       "extrabom": 14.98,
-      "atacadao": 13.50,
-      "carone": 14.90
+      "atacadao": 13.5,
+      "carone": 14.9
     },
     "featured": True,
-    "discountTag": "Oferta BH 30 Anos | R$ 12,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 12,98"
   },
   {
     "id": "bh_30_2",
@@ -1218,18 +1622,18 @@ products = [
     "category": "acougue",
     "unit": "1kg",
     "image": "assets/frango.png",
-    "encarteId": 28,
+    "encarteId": 1,
     "offerMarketId": "bh",
     "offerPrice": 15.98,
     "validity": "Válido até 15/09/2026",
     "prices": {
       "bh": 15.98,
-      "extrabom": 17.80,
-      "atacadao": 16.50,
-      "carone": 16.90
+      "extrabom": 17.8,
+      "atacadao": 16.5,
+      "carone": 16.9
     },
     "featured": True,
-    "discountTag": "Oferta BH 30 Anos | R$ 15,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 15,98"
   },
   {
     "id": "bh_30_3",
@@ -1237,17 +1641,17 @@ products = [
     "category": "laticinios",
     "unit": "600g",
     "image": "assets/frango.png",
-    "encarteId": 28,
+    "encarteId": 1,
     "offerMarketId": "bh",
     "offerPrice": 12.98,
     "validity": "Válido até 15/09/2026",
     "prices": {
       "bh": 12.98,
       "extrabom": 15.98,
-      "carone": 14.90
+      "carone": 14.9
     },
     "featured": True,
-    "discountTag": "Oferta BH 30 Anos | R$ 12,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 12,98"
   },
   {
     "id": "bh_30_4",
@@ -1255,18 +1659,18 @@ products = [
     "category": "acougue",
     "unit": "1kg",
     "image": "assets/carne.png",
-    "encarteId": 28,
-    "offerMarketId": "bh",
-    "offerPrice": 23.98,
+    "encarteId": 1,
+    "offerMarketId": "atacadao",
+    "offerPrice": 23.9,
     "validity": "Válido até 15/09/2026",
     "prices": {
       "bh": 23.98,
       "extrabom": 24.98,
-      "atacadao": 23.90,
-      "carone": 24.90
+      "atacadao": 23.9,
+      "carone": 24.9
     },
     "featured": True,
-    "discountTag": "Oferta BH 30 Anos | R$ 23,98"
+    "discountTag": "Menor preço no Atacadão | R$ 23,90"
   },
   {
     "id": "bh_30_5",
@@ -1274,17 +1678,17 @@ products = [
     "category": "mercearia",
     "unit": "450ml",
     "image": "assets/arroz.png",
-    "encarteId": 28,
+    "encarteId": 1,
     "offerMarketId": "bh",
-    "offerPrice": 25.90,
+    "offerPrice": 25.9,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 25.90,
-      "carone": 29.90,
-      "extrabom": 28.90
+      "bh": 25.9,
+      "carone": 29.9,
+      "extrabom": 28.9
     },
     "featured": True,
-    "discountTag": "Importação Exclusiva BH | R$ 25,90"
+    "discountTag": "Menor preço no Supermercados BH | R$ 25,90"
   },
   {
     "id": "bh_30_6",
@@ -1292,18 +1696,18 @@ products = [
     "category": "laticinios",
     "unit": "500g",
     "image": "assets/itens.jpeg",
-    "encarteId": 29,
+    "encarteId": 2,
     "offerMarketId": "bh",
     "offerPrice": 6.98,
     "validity": "Válido até 15/09/2026",
     "prices": {
       "bh": 6.98,
       "extrabom": 8.98,
-      "atacadao": 7.50,
+      "atacadao": 7.5,
       "carone": 7.98
     },
     "featured": True,
-    "discountTag": "Oferta BH Perecíveis | R$ 6,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 6,98"
   },
   {
     "id": "bh_30_7",
@@ -1311,7 +1715,7 @@ products = [
     "category": "mercearia",
     "unit": "300g",
     "image": "assets/tomate.png",
-    "encarteId": 29,
+    "encarteId": 2,
     "offerMarketId": "bh",
     "offerPrice": 4.98,
     "validity": "Válido até 15/09/2026",
@@ -1322,7 +1726,7 @@ products = [
       "carone": 5.79
     },
     "featured": True,
-    "discountTag": "Oferta BH Cargill | R$ 4,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 4,98"
   },
   {
     "id": "bh_30_8",
@@ -1330,18 +1734,18 @@ products = [
     "category": "mercearia",
     "unit": "1kg",
     "image": "assets/itens.jpeg",
-    "encarteId": 30,
+    "encarteId": 3,
     "offerMarketId": "bh",
     "offerPrice": 45.98,
     "validity": "Válido até 15/09/2026",
     "prices": {
       "bh": 45.98,
-      "extrabom": 49.90,
-      "atacadao": 46.90,
-      "carone": 47.90
+      "extrabom": 49.9,
+      "atacadao": 46.9,
+      "carone": 47.9
     },
     "featured": True,
-    "discountTag": "Oferta BH Bombons | R$ 45,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 45,98"
   },
   {
     "id": "bh_30_9",
@@ -1349,18 +1753,18 @@ products = [
     "category": "mercearia",
     "unit": "825g",
     "image": "assets/itens.jpeg",
-    "encarteId": 30,
+    "encarteId": 3,
     "offerMarketId": "bh",
-    "offerPrice": 45.90,
+    "offerPrice": 45.9,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 45.90,
-      "extrabom": 48.90,
-      "atacadao": 46.50,
-      "carone": 47.50
+      "bh": 45.9,
+      "extrabom": 48.9,
+      "atacadao": 46.5,
+      "carone": 47.5
     },
     "featured": True,
-    "discountTag": "Oferta BH Bombons | R$ 45,90"
+    "discountTag": "Menor preço no Supermercados BH | R$ 45,90"
   },
   {
     "id": "bh_30_10",
@@ -1368,7 +1772,7 @@ products = [
     "category": "bebidas",
     "unit": "473ml",
     "image": "assets/limpeza.png",
-    "encarteId": 30,
+    "encarteId": 3,
     "offerMarketId": "bh",
     "offerPrice": 3.99,
     "validity": "Válido até 15/09/2026",
@@ -1379,7 +1783,7 @@ products = [
       "carone": 4.29
     },
     "featured": True,
-    "discountTag": "Pack Ambev BH | R$ 3,99 un"
+    "discountTag": "Menor preço no Supermercados BH | R$ 3,99"
   },
   {
     "id": "bh_30_11",
@@ -1387,18 +1791,18 @@ products = [
     "category": "limpeza",
     "unit": "3L",
     "image": "assets/limpeza.png",
-    "encarteId": 31,
+    "encarteId": 4,
     "offerMarketId": "bh",
     "offerPrice": 29.98,
     "validity": "Válido até 15/09/2026",
     "prices": {
       "bh": 29.98,
-      "extrabom": 35.90,
-      "atacadao": 31.90,
-      "carone": 32.90
+      "extrabom": 35.9,
+      "atacadao": 31.9,
+      "carone": 32.9
     },
     "featured": True,
-    "discountTag": "Oferta Unilever BH | R$ 29,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 29,98"
   },
   {
     "id": "bh_30_12",
@@ -1406,39 +1810,37 @@ products = [
     "category": "higiene",
     "unit": "90 un",
     "image": "assets/limpeza.png",
-    "encarteId": 31,
+    "encarteId": 4,
     "offerMarketId": "bh",
-    "offerPrice": 78.90,
+    "offerPrice": 78.9,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 78.90,
-      "extrabom": 85.90,
-      "atacadao": 79.90,
-      "carone": 82.90
+      "bh": 78.9,
+      "extrabom": 85.9,
+      "atacadao": 79.9,
+      "carone": 82.9
     },
     "featured": True,
-    "discountTag": "Oferta BH Bebê | R$ 78,90"
+    "discountTag": "Menor preço no Supermercados BH | R$ 78,90"
   },
-
-  # ATACADÃO COLINA BR-101 - OFERTAS LINHA APTI SETEMBRO 2026
   {
     "id": "atc_apti_1",
     "name": "Caldo de Carne / Galinha Apti Pacote 1,05kg",
     "category": "mercearia",
     "unit": "1,05kg",
     "image": "assets/carne.png",
-    "encarteId": 32,
+    "encarteId": 5,
     "offerMarketId": "atacadao",
     "offerPrice": 8.99,
     "validity": "Válido 04/09 a 13/09/2026",
     "prices": {
       "atacadao": 8.99,
       "bh": 9.98,
-      "extrabom": 10.50,
-      "carone": 9.90
+      "extrabom": 10.5,
+      "carone": 9.9
     },
     "featured": True,
-    "discountTag": "Oferta Atacadão Apti | R$ 8,99"
+    "discountTag": "Menor preço no Atacadão | R$ 8,99"
   },
   {
     "id": "atc_apti_2",
@@ -1446,17 +1848,17 @@ products = [
     "category": "mercearia",
     "unit": "1kg",
     "image": "assets/itens.jpeg",
-    "encarteId": 32,
+    "encarteId": 5,
     "offerMarketId": "atacadao",
-    "offerPrice": 39.90,
+    "offerPrice": 39.9,
     "validity": "Válido 04/09 a 13/09/2026",
     "prices": {
-      "atacadao": 39.90,
-      "extrabom": 44.90,
-      "carone": 42.90
+      "atacadao": 39.9,
+      "extrabom": 44.9,
+      "carone": 42.9
     },
     "featured": True,
-    "discountTag": "Oferta Atacadão Apti | R$ 39,90"
+    "discountTag": "Menor preço no Atacadão | R$ 39,90"
   },
   {
     "id": "atc_apti_3",
@@ -1464,18 +1866,18 @@ products = [
     "category": "mercearia",
     "unit": "1kg",
     "image": "assets/itens.jpeg",
-    "encarteId": 32,
+    "encarteId": 5,
     "offerMarketId": "atacadao",
-    "offerPrice": 15.90,
+    "offerPrice": 15.9,
     "validity": "Válido 04/09 a 13/09/2026",
     "prices": {
-      "atacadao": 15.90,
-      "bh": 17.90,
-      "extrabom": 18.50,
-      "carone": 16.90
+      "atacadao": 15.9,
+      "bh": 17.9,
+      "extrabom": 18.5,
+      "carone": 16.9
     },
     "featured": True,
-    "discountTag": "Oferta Atacadão Apti | R$ 15,90"
+    "discountTag": "Menor preço no Atacadão | R$ 15,90"
   },
   {
     "id": "atc_apti_4",
@@ -1483,7 +1885,7 @@ products = [
     "category": "mercearia",
     "unit": "400g",
     "image": "assets/itens.jpeg",
-    "encarteId": 32,
+    "encarteId": 5,
     "offerMarketId": "atacadao",
     "offerPrice": 2.89,
     "validity": "Válido 04/09 a 13/09/2026",
@@ -1494,7 +1896,7 @@ products = [
       "carone": 3.29
     },
     "featured": True,
-    "discountTag": "Oferta Atacadão Apti | R$ 2,89"
+    "discountTag": "Menor preço no Atacadão | R$ 2,89"
   },
   {
     "id": "atc_apti_5",
@@ -1502,7 +1904,7 @@ products = [
     "category": "mercearia",
     "unit": "20g",
     "image": "assets/itens.jpeg",
-    "encarteId": 32,
+    "encarteId": 5,
     "offerMarketId": "atacadao",
     "offerPrice": 0.99,
     "validity": "Válido 04/09 a 13/09/2026",
@@ -1513,29 +1915,27 @@ products = [
       "carone": 1.19
     },
     "featured": True,
-    "discountTag": "Oferta Atacadão Apti | R$ 0,99"
+    "discountTag": "Menor preço no Atacadão | R$ 0,99"
   },
-
-  # REDE CASAGRANDE BARCELONA - OFERTAS SETEMBRO 2026 (24/08 a 05/09/2026)
   {
     "id": "cg_set_1",
     "name": "Picanha Bovina Friboi Resfriada kg",
     "category": "acougue",
     "unit": "1kg",
     "image": "assets/contrafile.png",
-    "encarteId": 33,
+    "encarteId": 1,
     "offerMarketId": "casagrande",
     "offerPrice": 49.99,
-    "validity": "Válido 24/08 a 05/09/2026",
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "casagrande": 49.99,
-      "extrabom": 54.90,
-      "carone": 56.90,
-      "bh": 52.90,
-      "atacadao": 51.90
+      "extrabom": 54.9,
+      "carone": 56.9,
+      "bh": 52.9,
+      "atacadao": 51.9
     },
     "featured": True,
-    "discountTag": "Oferta Casagrande Barcelona | R$ 49,99"
+    "discountTag": "Menor preço no Rede Casagrande | R$ 49,99"
   },
   {
     "id": "cg_set_2",
@@ -1543,19 +1943,19 @@ products = [
     "category": "acougue",
     "unit": "1kg",
     "image": "assets/carne.png",
-    "encarteId": 33,
-    "offerMarketId": "casagrande",
-    "offerPrice": 17.98,
-    "validity": "Válido 24/08 a 05/09/2026",
+    "encarteId": 1,
+    "offerMarketId": "atacadao",
+    "offerPrice": 17.9,
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "casagrande": 17.98,
-      "extrabom": 18.90,
-      "carone": 19.90,
+      "extrabom": 18.9,
+      "carone": 19.9,
       "bh": 18.49,
-      "atacadao": 17.90
+      "atacadao": 17.9
     },
     "featured": True,
-    "discountTag": "Oferta Casagrande Barcelona | R$ 17,98"
+    "discountTag": "Menor preço no Atacadão | R$ 17,90"
   },
   {
     "id": "cg_set_3",
@@ -1563,19 +1963,19 @@ products = [
     "category": "mercearia",
     "unit": "400g",
     "image": "assets/itens.jpeg",
-    "encarteId": 33,
+    "encarteId": 1,
     "offerMarketId": "casagrande",
     "offerPrice": 10.98,
-    "validity": "Válido 24/08 a 05/09/2026",
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "casagrande": 10.98,
-      "extrabom": 12.90,
-      "carone": 13.50,
-      "bh": 11.90,
+      "extrabom": 12.9,
+      "carone": 13.5,
+      "bh": 11.9,
       "atacadao": 11.49
     },
     "featured": True,
-    "discountTag": "Oferta Casagrande Barcelona | R$ 10,98"
+    "discountTag": "Menor preço no Rede Casagrande | R$ 10,98"
   },
   {
     "id": "cg_set_4",
@@ -1583,19 +1983,19 @@ products = [
     "category": "mercearia",
     "unit": "1,033kg",
     "image": "assets/itens.jpeg",
-    "encarteId": 33,
+    "encarteId": 1,
     "offerMarketId": "casagrande",
     "offerPrice": 17.98,
-    "validity": "Válido 24/08 a 05/09/2026",
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "casagrande": 17.98,
-      "extrabom": 19.90,
-      "carone": 21.90,
-      "bh": 18.90,
-      "atacadao": 18.50
+      "extrabom": 19.9,
+      "carone": 21.9,
+      "bh": 18.9,
+      "atacadao": 18.5
     },
     "featured": True,
-    "discountTag": "Oferta Casagrande Barcelona | R$ 17,98"
+    "discountTag": "Menor preço no Rede Casagrande | R$ 17,98"
   },
   {
     "id": "cg_set_5",
@@ -1603,19 +2003,19 @@ products = [
     "category": "laticinios",
     "unit": "150g",
     "image": "assets/itens.jpeg",
-    "encarteId": 33,
+    "encarteId": 1,
     "offerMarketId": "casagrande",
     "offerPrice": 8.98,
-    "validity": "Válido 24/08 a 05/09/2026",
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "casagrande": 8.98,
-      "extrabom": 9.90,
-      "carone": 10.50,
+      "extrabom": 9.9,
+      "carone": 10.5,
       "bh": 9.49,
-      "atacadao": 9.20
+      "atacadao": 9.2
     },
     "featured": True,
-    "discountTag": "Oferta Casagrande Barcelona | R$ 8,98"
+    "discountTag": "Menor preço no Rede Casagrande | R$ 8,98"
   },
   {
     "id": "cg_set_6",
@@ -1623,19 +2023,19 @@ products = [
     "category": "acougue",
     "unit": "1kg",
     "image": "assets/frango.png",
-    "encarteId": 34,
+    "encarteId": 1,
     "offerMarketId": "casagrande",
-    "offerPrice": 9.90,
-    "validity": "Válido 24/08 a 05/09/2026",
+    "offerPrice": 9.9,
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "casagrande": 9.90,
-      "extrabom": 10.90,
-      "carone": 11.90,
+      "casagrande": 9.9,
+      "extrabom": 10.9,
+      "carone": 11.9,
       "bh": 10.49,
       "atacadao": 9.98
     },
     "featured": True,
-    "discountTag": "Oferta Casagrande Barcelona | R$ 9,90"
+    "discountTag": "Menor preço no Rede Casagrande | R$ 9,90"
   },
   {
     "id": "cg_set_7",
@@ -1643,19 +2043,19 @@ products = [
     "category": "laticinios",
     "unit": "1kg",
     "image": "assets/itens.jpeg",
-    "encarteId": 34,
+    "encarteId": 1,
     "offerMarketId": "casagrande",
     "offerPrice": 13.99,
-    "validity": "Válido 24/08 a 05/09/2026",
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "casagrande": 13.99,
-      "extrabom": 15.90,
-      "carone": 16.90,
-      "bh": 14.90,
-      "atacadao": 14.50
+      "extrabom": 15.9,
+      "carone": 16.9,
+      "bh": 14.9,
+      "atacadao": 14.5
     },
     "featured": True,
-    "discountTag": "Oferta Casagrande Barcelona | R$ 13,99"
+    "discountTag": "Menor preço no Rede Casagrande | R$ 13,99"
   },
   {
     "id": "cg_set_8",
@@ -1663,19 +2063,19 @@ products = [
     "category": "mercearia",
     "unit": "115g",
     "image": "assets/tomate.png",
-    "encarteId": 34,
+    "encarteId": 1,
     "offerMarketId": "casagrande",
     "offerPrice": 9.99,
-    "validity": "Válido 24/08 a 05/09/2026",
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "casagrande": 9.99,
-      "extrabom": 11.90,
-      "carone": 12.50,
-      "bh": 10.90,
-      "atacadao": 10.50
+      "extrabom": 11.9,
+      "carone": 12.5,
+      "bh": 10.9,
+      "atacadao": 10.5
     },
     "featured": True,
-    "discountTag": "Oferta Casagrande Barcelona | R$ 9,99"
+    "discountTag": "Menor preço no Rede Casagrande | R$ 9,99"
   },
   {
     "id": "cg_set_9",
@@ -1683,19 +2083,19 @@ products = [
     "category": "mercearia",
     "unit": "120g",
     "image": "assets/itens.jpeg",
-    "encarteId": 34,
+    "encarteId": 1,
     "offerMarketId": "casagrande",
     "offerPrice": 10.99,
-    "validity": "Válido 24/08 a 05/09/2026",
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "casagrande": 10.99,
-      "extrabom": 12.90,
-      "carone": 13.50,
-      "bh": 11.90,
-      "atacadao": 11.50
+      "extrabom": 12.9,
+      "carone": 13.5,
+      "bh": 11.9,
+      "atacadao": 11.5
     },
     "featured": True,
-    "discountTag": "Oferta Casagrande Barcelona | R$ 10,99"
+    "discountTag": "Menor preço no Rede Casagrande | R$ 10,99"
   },
   {
     "id": "cg_set_10",
@@ -1703,1622 +2103,1621 @@ products = [
     "category": "limpeza",
     "unit": "3L",
     "image": "assets/limpeza.png",
-    "encarteId": 34,
+    "encarteId": 1,
     "offerMarketId": "casagrande",
     "offerPrice": 29.98,
-    "validity": "Válido 24/08 a 05/09/2026",
+    "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "casagrande": 29.98,
-      "extrabom": 34.90,
-      "carone": 36.90,
-      "bh": 31.90,
-      "atacadao": 30.90
+      "extrabom": 34.9,
+      "carone": 36.9,
+      "bh": 31.9,
+      "atacadao": 30.9
     },
     "featured": True,
-    "discountTag": "Oferta Unilever Casagrande | R$ 29,98"
+    "discountTag": "Menor preço no Rede Casagrande | R$ 29,98"
+  },
+  {
+    "id": "atc_pl_1",
+    "name": "Shampoo Pantene Vários Tipos 175ml",
+    "category": "higiene",
+    "unit": "175ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 13.98,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 13.98,
+      "extrabom": 16.9,
+      "carone": 17.49,
+      "casagrande": 16.5,
+      "bh": 15.9,
+      "atacado_vem": 14.5
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 13,98"
+  },
+  {
+    "id": "atc_pl_2",
+    "name": "Amaciante de Roupas Concentrado Downy Várias Fragrâncias 500ml",
+    "category": "limpeza",
+    "unit": "500ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 11.2,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 11.2,
+      "extrabom": 13.9,
+      "carone": 14.2,
+      "casagrande": 13.5,
+      "bh": 12.9,
+      "atacado_vem": 11.9
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 11,20"
+  },
+  {
+    "id": "atc_pl_3",
+    "name": "Kit Pantene Shampoo 300ml + Condicionador 150ml Vários Tipos",
+    "category": "higiene",
+    "unit": "kit",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 34.5,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 34.5,
+      "extrabom": 38.9,
+      "carone": 39.9,
+      "casagrande": 37.9,
+      "bh": 36.9,
+      "atacado_vem": 35.9
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 34,50"
+  },
+  {
+    "id": "atc_pl_4",
+    "name": "Creme Dental Oral-B 4 em 1 Pack Leve 12 Pague 10 (12x70g)",
+    "category": "higiene",
+    "unit": "pack 12x70g",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 32.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 32.9,
+      "extrabom": 37.9,
+      "carone": 38.9,
+      "casagrande": 36.9,
+      "bh": 35.9,
+      "atacado_vem": 33.9
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 32,90"
+  },
+  {
+    "id": "atc_pl_5",
+    "name": "Creme Dental Sorriso Tripla Limpeza Completa Tubo 70g",
+    "category": "higiene",
+    "unit": "70g",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 2.49,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 2.49,
+      "extrabom": 3.49,
+      "carone": 3.69,
+      "casagrande": 3.29,
+      "bh": 2.99,
+      "atacado_vem": 2.69
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 2,49"
+  },
+  {
+    "id": "atc_pl_6",
+    "name": "Shampoo e Condicionador Darling Vários Tipos Frasco 315ml",
+    "category": "higiene",
+    "unit": "315ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 6.49,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 6.49,
+      "extrabom": 8.99,
+      "carone": 9.2,
+      "casagrande": 8.5,
+      "bh": 7.9,
+      "atacado_vem": 6.99
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 6,49"
+  },
+  {
+    "id": "atc_pl_7",
+    "name": "Sabonete Palmolive Naturals Vários Tipos 85g",
+    "category": "higiene",
+    "unit": "85g",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 2.09,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 2.09,
+      "extrabom": 2.89,
+      "carone": 2.99,
+      "casagrande": 2.79,
+      "bh": 2.49,
+      "atacado_vem": 2.19
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 2,09"
+  },
+  {
+    "id": "atc_pl_8",
+    "name": "Limpador Ajax Vários Tipos Frasco 500ml",
+    "category": "limpeza",
+    "unit": "500ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 4.29,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 4.29,
+      "extrabom": 6.5,
+      "carone": 6.8,
+      "casagrande": 5.99,
+      "bh": 5.49,
+      "atacado_vem": 4.59
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 4,29"
+  },
+  {
+    "id": "atc_pl_9",
+    "name": "Lava Roupa em Pó Surf Rosas e Flor de Lís / Cuidado do Coco 2,4kg",
+    "category": "limpeza",
+    "unit": "2.4kg",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 19.5,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 19.5,
+      "extrabom": 22.9,
+      "carone": 23.5,
+      "casagrande": 21.9,
+      "bh": 20.9,
+      "atacado_vem": 19.9
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 19,50"
+  },
+  {
+    "id": "atc_pl_10",
+    "name": "Amaciante para Roupas Concentrado Comfort Várias Fragrâncias 500ml",
+    "category": "limpeza",
+    "unit": "500ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 8.99,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 8.99,
+      "extrabom": 10.78,
+      "carone": 11.49,
+      "casagrande": 10.5,
+      "bh": 9.9,
+      "atacado_vem": 9.29
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 8,99"
+  },
+  {
+    "id": "atc_pl_11",
+    "name": "Shampoo Seda Vários Tipos Frasco 300ml / 325ml",
+    "category": "higiene",
+    "unit": "325ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 14.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 14.9,
+      "extrabom": 18.9,
+      "carone": 19.5,
+      "casagrande": 17.9,
+      "bh": 16.9,
+      "atacado_vem": 15.5
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 14,90"
+  },
+  {
+    "id": "atc_pl_12",
+    "name": "Desodorante Aerossol Rexona Várias Fragrâncias 200ml",
+    "category": "higiene",
+    "unit": "200ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 15.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 15.9,
+      "extrabom": 18.9,
+      "carone": 19.9,
+      "casagrande": 17.9,
+      "bh": 16.9,
+      "atacado_vem": 16.29
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 15,90"
+  },
+  {
+    "id": "atc_pl_13",
+    "name": "Detergente Líquido Ypê Vários Tipos 500ml",
+    "category": "limpeza",
+    "unit": "500ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 2.19,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 2.19,
+      "extrabom": 2.49,
+      "carone": 2.59,
+      "casagrande": 2.39,
+      "bh": 2.29,
+      "atacado_vem": 2.19
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 2,19"
+  },
+  {
+    "id": "atc_pl_14",
+    "name": "Amaciante de Roupas Ypê Várias Fragrâncias 2L",
+    "category": "limpeza",
+    "unit": "2L",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 6.98,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 6.98,
+      "extrabom": 8.97,
+      "carone": 9.49,
+      "casagrande": 8.5,
+      "bh": 7.9,
+      "atacado_vem": 7.29
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 6,98"
+  },
+  {
+    "id": "atc_pl_15",
+    "name": "Lava Roupas em Pó Tixan Várias Fragrâncias Pacote 8kg",
+    "category": "limpeza",
+    "unit": "8kg",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 68.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 68.9,
+      "extrabom": 81.9,
+      "carone": 84.9,
+      "casagrande": 79.9,
+      "bh": 74.9,
+      "atacado_vem": 69.9
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 68,90"
+  },
+  {
+    "id": "atc_pl_16",
+    "name": "Lava Roupas Líquido Tixan Primavera Bombona 7L",
+    "category": "limpeza",
+    "unit": "7L",
+    "image": "assets/limpeza.png",
+    "encarteId": 6,
+    "offerMarketId": "atacadao",
+    "offerPrice": 45.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 45.9,
+      "extrabom": 57.98,
+      "carone": 59.9,
+      "casagrande": 54.9,
+      "bh": 49.9,
+      "atacado_vem": 46.9
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 45,90"
+  },
+  {
+    "id": "atc_pl_17",
+    "name": "Papel Higiênico Cotton Folha Dupla 30m Pacote 24 Rolos",
+    "category": "higiene",
+    "unit": "24 un",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 32.5,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 32.5,
+      "extrabom": 37.5,
+      "carone": 38.9,
+      "casagrande": 36.9,
+      "bh": 34.9,
+      "atacado_vem": 33.5
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 32,50"
+  },
+  {
+    "id": "atc_pl_18",
+    "name": "Fralda Descartável Baby Sec Vários Tamanhos Pacote",
+    "category": "higiene",
+    "unit": "pacote",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 33.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 33.9,
+      "extrabom": 39.99,
+      "carone": 41.9,
+      "casagrande": 38.9,
+      "bh": 36.9,
+      "atacado_vem": 34.9
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 33,90"
+  },
+  {
+    "id": "atc_pl_19",
+    "name": "Absorvente Diana Suave com Abas Leve 16 Pague 14 (16 un)",
+    "category": "higiene",
+    "unit": "16 un",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 5.48,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 5.48,
+      "extrabom": 6.48,
+      "carone": 6.9,
+      "casagrande": 6.2,
+      "bh": 5.9,
+      "atacado_vem": 5.69
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 5,48"
+  },
+  {
+    "id": "atc_pl_20",
+    "name": "Kit Tira Manchas em Gel Vanish 2x1,2L (Nesta embalagem R$ 17,45 cada)",
+    "category": "limpeza",
+    "unit": "kit 2x1,2L",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 34.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 34.9,
+      "extrabom": 44.9,
+      "carone": 46.9,
+      "casagrande": 42.9,
+      "bh": 38.9,
+      "atacado_vem": 35.9
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 34,90"
+  },
+  {
+    "id": "atc_pl_21",
+    "name": "Limpador Multiuso Veja Várias Fragrâncias 500ml",
+    "category": "limpeza",
+    "unit": "500ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 4.29,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 4.29,
+      "extrabom": 5.49,
+      "carone": 5.8,
+      "casagrande": 5.2,
+      "bh": 4.79,
+      "atacado_vem": 4.49
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 4,29"
+  },
+  {
+    "id": "atc_pl_22",
+    "name": "Limpador Veja X-14 Tira Limo Pulverizador 500ml",
+    "category": "limpeza",
+    "unit": "500ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 14.98,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 14.98,
+      "extrabom": 19.5,
+      "carone": 20.9,
+      "casagrande": 18.9,
+      "bh": 16.9,
+      "atacado_vem": 15.5
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 14,98"
+  },
+  {
+    "id": "atc_pl_23",
+    "name": "Fralda Descartável Personal Pants XG Pacote 22 un",
+    "category": "higiene",
+    "unit": "22 un",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 19.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 19.9,
+      "extrabom": 27.9,
+      "carone": 28.9,
+      "casagrande": 25.9,
+      "bh": 22.9,
+      "atacado_vem": 20.9
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 19,90"
+  },
+  {
+    "id": "atc_pl_24",
+    "name": "Papel Higiênico Personal Vip Folha Dupla 20m Leve 12 Pague 11",
+    "category": "higiene",
+    "unit": "12 rolos",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 9.98,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 9.98,
+      "extrabom": 14.88,
+      "carone": 15.5,
+      "casagrande": 13.9,
+      "bh": 11.9,
+      "atacado_vem": 10.5
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 9,98"
+  },
+  {
+    "id": "atc_pl_25",
+    "name": "Papel Higiênico Personal Vip KM Folha Dupla 50m Pacote 20 Rolos",
+    "category": "higiene",
+    "unit": "20 rolos",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 39.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 39.9,
+      "extrabom": 54.98,
+      "carone": 56.9,
+      "casagrande": 49.9,
+      "bh": 44.9,
+      "atacado_vem": 41.9
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 39,90"
+  },
+  {
+    "id": "atc_pl_26",
+    "name": "Sabonete Hidratante Nivea Várias Fragrâncias 85g",
+    "category": "higiene",
+    "unit": "85g",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 1.98,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 1.98,
+      "extrabom": 2.65,
+      "carone": 2.79,
+      "casagrande": 2.49,
+      "bh": 2.29,
+      "atacado_vem": 2.09
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 1,98"
+  },
+  {
+    "id": "atc_pl_27",
+    "name": "Desodorante Roll-On Nivea Pack 2x50ml (50% desc 2ª un)",
+    "category": "higiene",
+    "unit": "pack 2x50ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 11.98,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 11.98,
+      "extrabom": 15.9,
+      "carone": 16.5,
+      "casagrande": 14.9,
+      "bh": 13.9,
+      "atacado_vem": 12.5
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 11,98"
+  },
+  {
+    "id": "atc_pl_28",
+    "name": "Desodorante Aerossol Nivea Várias Fragrâncias 200ml",
+    "category": "higiene",
+    "unit": "200ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 12.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 12.9,
+      "extrabom": 16.9,
+      "carone": 17.5,
+      "casagrande": 15.9,
+      "bh": 14.9,
+      "atacado_vem": 13.5
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 12,90"
+  },
+  {
+    "id": "atc_pl_29",
+    "name": "Inseticida Aerossol Baygon Ação Total 360ml",
+    "category": "limpeza",
+    "unit": "360ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 12.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 12.9,
+      "extrabom": 14.49,
+      "carone": 15.2,
+      "casagrande": 14.2,
+      "bh": 13.8,
+      "atacado_vem": 13.1
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 12,90"
+  },
+  {
+    "id": "atc_pl_30",
+    "name": "Desodorizador Pastilha Adesiva Pato Leve 5 Pague 4 (5 un)",
+    "category": "limpeza",
+    "unit": "5 un",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 4.79,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 4.79,
+      "extrabom": 5.49,
+      "carone": 5.9,
+      "casagrande": 5.3,
+      "bh": 4.99,
+      "atacado_vem": 4.85
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 4,79"
+  },
+  {
+    "id": "atc_pl_31",
+    "name": "Desinfetante Líquido Lysoform Original / Suave Bombona 5L",
+    "category": "limpeza",
+    "unit": "5L",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 45.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 45.9,
+      "extrabom": 49.9,
+      "carone": 52.9,
+      "casagrande": 48.9,
+      "bh": 47.9,
+      "atacado_vem": 46.5
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 45,90"
+  },
+  {
+    "id": "atc_pl_32",
+    "name": "Creme Condicionante Skala Vários Tipos Pote 1kg",
+    "category": "higiene",
+    "unit": "1kg",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 9.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 9.9,
+      "extrabom": 13.9,
+      "carone": 14.5,
+      "casagrande": 12.9,
+      "bh": 11.9,
+      "atacado_vem": 10.5
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 9,90"
+  },
+  {
+    "id": "atc_pl_33",
+    "name": "Kit Skala Shampoo + Condicionador Vários Tipos",
+    "category": "higiene",
+    "unit": "kit",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 11.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 11.9,
+      "extrabom": 17.98,
+      "carone": 18.5,
+      "casagrande": 16.9,
+      "bh": 14.9,
+      "atacado_vem": 12.5
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 11,90"
+  },
+  {
+    "id": "atc_pl_34",
+    "name": "Desodorante Roll-On Skala Várias Fragrâncias 60ml",
+    "category": "higiene",
+    "unit": "60ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 4.98,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 4.98,
+      "extrabom": 6.9,
+      "carone": 7.2,
+      "casagrande": 6.5,
+      "bh": 5.9,
+      "atacado_vem": 5.2
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 4,98"
+  },
+  {
+    "id": "atc_pl_35",
+    "name": "Fralda Descartável Huggies Máxima Proteção Vários Tamanhos",
+    "category": "higiene",
+    "unit": "pacote",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 69.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 69.9,
+      "extrabom": 104.96,
+      "carone": 108.9,
+      "casagrande": 98.9,
+      "bh": 89.9,
+      "atacado_vem": 74.9
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 69,90"
+  },
+  {
+    "id": "atc_pl_36",
+    "name": "Fralda Descartável Huggies Rápida Absorção Vários Tamanhos",
+    "category": "higiene",
+    "unit": "pacote",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 74.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 74.9,
+      "extrabom": 109.9,
+      "carone": 114.9,
+      "casagrande": 102.9,
+      "bh": 94.9,
+      "atacado_vem": 79.9
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 74,90"
+  },
+  {
+    "id": "atc_pl_37",
+    "name": "Shampoo Infantil Huggies Extra Suave Frasco 600ml",
+    "category": "higiene",
+    "unit": "600ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 7,
+    "offerMarketId": "atacadao",
+    "offerPrice": 24.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 24.9,
+      "extrabom": 43.0,
+      "carone": 44.9,
+      "casagrande": 39.9,
+      "bh": 34.9,
+      "atacado_vem": 27.9
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 24,90"
+  },
+  {
+    "id": "atc_pl_38",
+    "name": "Kit Elseve Shampoo + Condicionador Vários Tipos",
+    "category": "higiene",
+    "unit": "kit",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 29.98,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 29.98,
+      "extrabom": 37.5,
+      "carone": 38.9,
+      "casagrande": 35.9,
+      "bh": 33.9,
+      "atacado_vem": 31.5
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 29,98"
+  },
+  {
+    "id": "atc_pl_39",
+    "name": "Tintura Cor&Ton Várias Tonalidades Caixinha 135g",
+    "category": "higiene",
+    "unit": "135g",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 12.78,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 12.78,
+      "extrabom": 14.98,
+      "carone": 15.5,
+      "casagrande": 14.2,
+      "bh": 13.9,
+      "atacado_vem": 13.1
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 12,78"
+  },
+  {
+    "id": "atc_pl_40",
+    "name": "Shampoo Elseve Vários Tipos Frasco 400ml",
+    "category": "higiene",
+    "unit": "400ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 25.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 25.9,
+      "extrabom": 29.98,
+      "carone": 31.5,
+      "casagrande": 28.9,
+      "bh": 27.9,
+      "atacado_vem": 26.5
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 25,90"
+  },
+  {
+    "id": "atc_pl_41",
+    "name": "Absorvente Sempre Livre Adapt Suave com Abas Pacote 8 un",
+    "category": "higiene",
+    "unit": "8 un",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 3.49,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 3.49,
+      "extrabom": 4.99,
+      "carone": 5.2,
+      "casagrande": 4.69,
+      "bh": 4.29,
+      "atacado_vem": 3.79
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 3,49"
+  },
+  {
+    "id": "atc_pl_42",
+    "name": "Antisséptico Bucal Listerine Vários Tipos Frasco 250ml",
+    "category": "higiene",
+    "unit": "250ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 11.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 11.9,
+      "extrabom": 14.98,
+      "carone": 15.5,
+      "casagrande": 13.9,
+      "bh": 12.9,
+      "atacado_vem": 12.2
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 11,90"
+  },
+  {
+    "id": "atc_pl_43",
+    "name": "Sabonete Johnson's Várias Fragrâncias 80g",
+    "category": "higiene",
+    "unit": "80g",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 1.79,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 1.79,
+      "extrabom": 2.45,
+      "carone": 2.59,
+      "casagrande": 2.29,
+      "bh": 1.99,
+      "atacado_vem": 1.85
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 1,79"
+  },
+  {
+    "id": "atc_pl_44",
+    "name": "Desinfetante Álcool Líquido Coperalcool 46º INPM Frasco 1L",
+    "category": "limpeza",
+    "unit": "1L",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 11.5,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 11.5,
+      "extrabom": 12.98,
+      "carone": 13.5,
+      "casagrande": 12.79,
+      "bh": 12.2,
+      "atacado_vem": 11.9
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 11,50"
+  },
+  {
+    "id": "atc_pl_45",
+    "name": "Limpador Perfumado Coala Várias Fragrâncias 120ml",
+    "category": "limpeza",
+    "unit": "120ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 12.5,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 12.5,
+      "extrabom": 13.99,
+      "carone": 14.5,
+      "casagrande": 13.5,
+      "bh": 12.9,
+      "atacado_vem": 12.7
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 12,50"
+  },
+  {
+    "id": "atc_pl_46",
+    "name": "Removedor de Esmalte Zulu Tradicional / Fashion 90ml",
+    "category": "higiene",
+    "unit": "90ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 3.29,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 3.29,
+      "extrabom": 3.99,
+      "carone": 4.2,
+      "casagrande": 3.89,
+      "bh": 3.59,
+      "atacado_vem": 3.39
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 3,29"
+  },
+  {
+    "id": "atc_pl_47",
+    "name": "Inseticida Aerossol Proinset Multi Inseticida 350ml",
+    "category": "limpeza",
+    "unit": "350ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 7.99,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 7.99,
+      "extrabom": 9.49,
+      "carone": 9.9,
+      "casagrande": 8.9,
+      "bh": 8.49,
+      "atacado_vem": 8.19
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 7,99"
+  },
+  {
+    "id": "atc_pl_48",
+    "name": "Desodorante Aerossol Above ONE Várias Fragrâncias 150ml",
+    "category": "higiene",
+    "unit": "150ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 5.98,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 5.98,
+      "extrabom": 6.75,
+      "carone": 7.2,
+      "casagrande": 6.5,
+      "bh": 6.29,
+      "atacado_vem": 6.09
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 5,98"
+  },
+  {
+    "id": "atc_pl_49",
+    "name": "Antisséptico Bucal Above Fresh Protect 500ml",
+    "category": "higiene",
+    "unit": "500ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 10.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 10.9,
+      "extrabom": 14.9,
+      "carone": 15.2,
+      "casagrande": 13.9,
+      "bh": 12.5,
+      "atacado_vem": 11.5
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 10,90"
+  },
+  {
+    "id": "atc_pl_50",
+    "name": "Lava Roupa Líquido Urca Várias Fragrâncias Bombona 5L",
+    "category": "limpeza",
+    "unit": "5L",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 22.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 22.9,
+      "extrabom": 25.98,
+      "carone": 26.9,
+      "casagrande": 24.9,
+      "bh": 23.9,
+      "atacado_vem": 23.2
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 22,90"
+  },
+  {
+    "id": "atc_pl_51",
+    "name": "Amaciante para Roupas Urca Brisa / Floral Bombona 5L",
+    "category": "limpeza",
+    "unit": "5L",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 12.5,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 12.5,
+      "extrabom": 14.98,
+      "carone": 15.5,
+      "casagrande": 13.9,
+      "bh": 13.2,
+      "atacado_vem": 12.8
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 12,50"
+  },
+  {
+    "id": "atc_pl_52",
+    "name": "Lava Roupas em Pó Urca Pacote 4kg",
+    "category": "limpeza",
+    "unit": "4kg",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 19.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 19.9,
+      "extrabom": 22.98,
+      "carone": 23.9,
+      "casagrande": 21.9,
+      "bh": 20.9,
+      "atacado_vem": 20.2
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 19,90"
+  },
+  {
+    "id": "atc_pl_53",
+    "name": "Kit Uau Clorativo / Multiuso",
+    "category": "limpeza",
+    "unit": "kit",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 9.98,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 9.98,
+      "extrabom": 15.5,
+      "carone": 15.9,
+      "casagrande": 13.9,
+      "bh": 12.5,
+      "atacado_vem": 10.9
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 9,98"
+  },
+  {
+    "id": "atc_pl_54",
+    "name": "Limpador Perfumado Uau Flores Vermelhas / Lavanda 500ml",
+    "category": "limpeza",
+    "unit": "500ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 4.49,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 4.49,
+      "extrabom": 5.39,
+      "carone": 5.8,
+      "casagrande": 5.1,
+      "bh": 4.79,
+      "atacado_vem": 4.59
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 4,49"
+  },
+  {
+    "id": "atc_pl_55",
+    "name": "Amaciante de Roupas Concentrado Uau Carinho e Conforto 500ml",
+    "category": "limpeza",
+    "unit": "500ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 8,
+    "offerMarketId": "atacadao",
+    "offerPrice": 8.49,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 8.49,
+      "extrabom": 10.9,
+      "carone": 11.5,
+      "casagrande": 10.2,
+      "bh": 9.49,
+      "atacado_vem": 8.9
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 8,49"
+  },
+  {
+    "id": "atc_pl_56",
+    "name": "Sabonete Francis Várias Fragrâncias Pack 6x80g",
+    "category": "higiene",
+    "unit": "pack 6x80g",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 13.98,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 13.98,
+      "extrabom": 15.5,
+      "carone": 16.2,
+      "casagrande": 14.9,
+      "bh": 14.2,
+      "atacado_vem": 14.0
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 13,98"
+  },
+  {
+    "id": "atc_pl_57",
+    "name": "Kit OX Shampoo + Condicionador Vários Tipos",
+    "category": "higiene",
+    "unit": "kit",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 29.98,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 29.98,
+      "extrabom": 36.98,
+      "carone": 37.9,
+      "casagrande": 34.9,
+      "bh": 32.9,
+      "atacado_vem": 30.9
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 29,98"
+  },
+  {
+    "id": "atc_pl_58",
+    "name": "Sabonete Albany Várias Fragrâncias 80g",
+    "category": "higiene",
+    "unit": "80g",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 1.49,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 1.49,
+      "extrabom": 1.79,
+      "carone": 1.89,
+      "casagrande": 1.69,
+      "bh": 1.59,
+      "atacado_vem": 1.52
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 1,49"
+  },
+  {
+    "id": "atc_pl_59",
+    "name": "Talco Antisséptico Tenys Pé Baruel 100g",
+    "category": "higiene",
+    "unit": "100g",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 12.49,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 12.49,
+      "extrabom": 15.9,
+      "carone": 16.5,
+      "casagrande": 14.9,
+      "bh": 13.9,
+      "atacado_vem": 12.9
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 12,49"
+  },
+  {
+    "id": "atc_pl_60",
+    "name": "Shampoo Infantil Baruel Baby Cheirinho do Sono 210ml",
+    "category": "higiene",
+    "unit": "210ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 6.99,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 6.99,
+      "extrabom": 8.9,
+      "carone": 9.5,
+      "casagrande": 8.49,
+      "bh": 7.9,
+      "atacado_vem": 7.39
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 6,99"
+  },
+  {
+    "id": "atc_pl_61",
+    "name": "Kit Infantil Baruel Baby Shampoo + Condicionador Sono Tranquilo",
+    "category": "higiene",
+    "unit": "kit",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 18.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 18.9,
+      "extrabom": 22.49,
+      "carone": 23.5,
+      "casagrande": 21.9,
+      "bh": 20.5,
+      "atacado_vem": 19.5
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 18,90"
+  },
+  {
+    "id": "atc_pl_62",
+    "name": "Esponja Scotch-Brite Esferas de Limpeza Pacote com 3 un",
+    "category": "limpeza",
+    "unit": "3 un",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 6.59,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 6.59,
+      "extrabom": 7.98,
+      "carone": 8.5,
+      "casagrande": 7.8,
+      "bh": 7.49,
+      "atacado_vem": 6.99
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 6,59"
+  },
+  {
+    "id": "atc_pl_63",
+    "name": "Esponja Scotch-Brite Pacote com 4 un",
+    "category": "limpeza",
+    "unit": "4 un",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 6.59,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 6.59,
+      "extrabom": 7.98,
+      "carone": 8.5,
+      "casagrande": 7.8,
+      "bh": 7.49,
+      "atacado_vem": 6.99
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 6,59"
+  },
+  {
+    "id": "atc_pl_64",
+    "name": "Esponja Multiuso Tinindo 3M Ref. 1365 Unidade",
+    "category": "limpeza",
+    "unit": "unidade",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 1.79,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 1.79,
+      "extrabom": 2.59,
+      "carone": 2.7,
+      "casagrande": 2.39,
+      "bh": 2.19,
+      "atacado_vem": 1.99
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 1,79"
+  },
+  {
+    "id": "atc_pl_65",
+    "name": "Papel Higiênico Max Pure Folha Dupla 30m Pacote 12 Rolos",
+    "category": "higiene",
+    "unit": "12 rolos",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 15.5,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 15.5,
+      "extrabom": 16.98,
+      "carone": 17.5,
+      "casagrande": 16.5,
+      "bh": 15.9,
+      "atacado_vem": 15.7
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 15,50"
+  },
+  {
+    "id": "atc_pl_66",
+    "name": "Toalha de Papel Scala Plus 60 Folhas Pacote 2 Rolos",
+    "category": "limpeza",
+    "unit": "2 rolos",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 5.49,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 5.49,
+      "extrabom": 6.35,
+      "carone": 6.7,
+      "casagrande": 5.99,
+      "bh": 5.79,
+      "atacado_vem": 5.59
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 5,49"
+  },
+  {
+    "id": "atc_pl_67",
+    "name": "Papel Higiênico Neve Folha Dupla 20m Pacote 12 Rolos",
+    "category": "higiene",
+    "unit": "12 rolos",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 15.98,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 15.98,
+      "extrabom": 18.5,
+      "carone": 19.2,
+      "casagrande": 17.9,
+      "bh": 16.9,
+      "atacado_vem": 16.2
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 15,98"
+  },
+  {
+    "id": "atc_pl_68",
+    "name": "Kit Novex Shampoo + Condicionador Vários Tipos",
+    "category": "higiene",
+    "unit": "kit",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 16.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 16.9,
+      "extrabom": 18.9,
+      "carone": 19.5,
+      "casagrande": 17.9,
+      "bh": 17.2,
+      "atacado_vem": 17.0
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 16,90"
+  },
+  {
+    "id": "atc_pl_69",
+    "name": "Tintura Maxton Várias Tonalidades Kit",
+    "category": "higiene",
+    "unit": "kit",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 13.98,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 13.98,
+      "extrabom": 15.49,
+      "carone": 16.2,
+      "casagrande": 14.9,
+      "bh": 14.2,
+      "atacado_vem": 14.0
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 13,98"
+  },
+  {
+    "id": "atc_pl_70",
+    "name": "Creme de Tratamento Novex Vários Tipos Pote 1kg",
+    "category": "higiene",
+    "unit": "1kg",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 22.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 22.9,
+      "extrabom": 26.5,
+      "carone": 27.9,
+      "casagrande": 24.9,
+      "bh": 23.9,
+      "atacado_vem": 23.2
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 22,90"
+  },
+  {
+    "id": "atc_pl_71",
+    "name": "Lã de Aço Bombril Pacote 45g",
+    "category": "limpeza",
+    "unit": "45g",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 1.85,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 1.85,
+      "extrabom": 2.17,
+      "carone": 2.29,
+      "casagrande": 2.09,
+      "bh": 1.99,
+      "atacado_vem": 1.89
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 1,85"
+  },
+  {
+    "id": "atc_pl_72",
+    "name": "Limpador Perfumado Limpol Vários Tipos 500ml",
+    "category": "limpeza",
+    "unit": "500ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 3.35,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 3.35,
+      "extrabom": 3.98,
+      "carone": 4.19,
+      "casagrande": 3.79,
+      "bh": 3.59,
+      "atacado_vem": 3.45
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 3,35"
+  },
+  {
+    "id": "atc_pl_73",
+    "name": "Sapólio Radium Cremoso Clássico / Cremoso Cloro 450ml",
+    "category": "limpeza",
+    "unit": "450ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 9.9,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 9.9,
+      "extrabom": 11.2,
+      "carone": 11.9,
+      "casagrande": 10.9,
+      "bh": 10.2,
+      "atacado_vem": 10.0
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 9,90"
+  },
+  {
+    "id": "atc_pl_74",
+    "name": "Sabonete Líquido Monange Várias Fragrâncias Refil 400ml",
+    "category": "higiene",
+    "unit": "400ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 11.99,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 11.99,
+      "extrabom": 13.99,
+      "carone": 14.5,
+      "casagrande": 12.9,
+      "bh": 12.5,
+      "atacado_vem": 12.2
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 11,99"
+  },
+  {
+    "id": "atc_pl_75",
+    "name": "Desodorante Aerossol Monange Várias Fragrâncias 150ml",
+    "category": "higiene",
+    "unit": "150ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 7.99,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 7.99,
+      "extrabom": 9.3,
+      "carone": 9.8,
+      "casagrande": 8.9,
+      "bh": 8.5,
+      "atacado_vem": 8.19
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão | R$ 7,99"
+  },
+  {
+    "id": "atc_pl_76",
+    "name": "Shampoo Monange Vários Tipos Frasco 325ml",
+    "category": "higiene",
+    "unit": "325ml",
+    "image": "assets/limpeza.png",
+    "encarteId": 10,
+    "offerMarketId": "atacadao",
+    "offerPrice": 6.75,
+    "validity": "Válido 01/09 a 10/09/2026",
+    "prices": {
+      "atacadao": 6.75,
+      "extrabom": 7.99,
+      "carone": 8.49,
+      "casagrande": 7.5,
+      "bh": 7.19,
+      "atacado_vem": 6.9
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão | R$ 6,75"
   }
-,
-  {
-  "id": "atc_pl_1",
-  "name": "Shampoo Pantene Vários Tipos 175ml",
-  "category": "higiene",
-  "unit": "175ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 13.98,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 13.98,
-    "extrabom": 16.9,
-    "carone": 17.49,
-    "casagrande": 16.5,
-    "bh": 15.9,
-    "atacado_vem": 14.5
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 16,90 por R$ 13,98"
-},
-  {
-  "id": "atc_pl_2",
-  "name": "Amaciante de Roupas Concentrado Downy Várias Fragrâncias 500ml",
-  "category": "limpeza",
-  "unit": "500ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 11.2,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 11.2,
-    "extrabom": 13.9,
-    "carone": 14.2,
-    "casagrande": 13.5,
-    "bh": 12.9,
-    "atacado_vem": 11.9
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 12,90 por R$ 11,20"
-},
-  {
-  "id": "atc_pl_3",
-  "name": "Kit Pantene Shampoo 300ml + Condicionador 150ml Vários Tipos",
-  "category": "higiene",
-  "unit": "kit",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 34.5,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 34.5,
-    "extrabom": 38.9,
-    "carone": 39.9,
-    "casagrande": 37.9,
-    "bh": 36.9,
-    "atacado_vem": 35.9
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 38,90 por R$ 34,50"
-},
-  {
-  "id": "atc_pl_4",
-  "name": "Creme Dental Oral-B 4 em 1 Pack Leve 12 Pague 10 (12x70g)",
-  "category": "higiene",
-  "unit": "pack 12x70g",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 32.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 32.9,
-    "extrabom": 37.9,
-    "carone": 38.9,
-    "casagrande": 36.9,
-    "bh": 35.9,
-    "atacado_vem": 33.9
-  },
-  "featured": True,
-  "discountTag": "Leve 12 Pague 10 | De R$ 37,90 por R$ 32,90"
-},
-  {
-  "id": "atc_pl_5",
-  "name": "Creme Dental Sorriso Tripla Limpeza Completa Tubo 70g",
-  "category": "higiene",
-  "unit": "70g",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 2.49,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 2.49,
-    "extrabom": 3.49,
-    "carone": 3.69,
-    "casagrande": 3.29,
-    "bh": 2.99,
-    "atacado_vem": 2.69
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 3,49 por R$ 2,49"
-},
-  {
-  "id": "atc_pl_6",
-  "name": "Shampoo e Condicionador Darling Vários Tipos Frasco 315ml",
-  "category": "higiene",
-  "unit": "315ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 6.49,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 6.49,
-    "extrabom": 8.99,
-    "carone": 9.2,
-    "casagrande": 8.5,
-    "bh": 7.9,
-    "atacado_vem": 6.99
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 8,99 por R$ 6,49"
-},
-  {
-  "id": "atc_pl_7",
-  "name": "Sabonete Palmolive Naturals Vários Tipos 85g",
-  "category": "higiene",
-  "unit": "85g",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 2.09,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 2.09,
-    "extrabom": 2.89,
-    "carone": 2.99,
-    "casagrande": 2.79,
-    "bh": 2.49,
-    "atacado_vem": 2.19
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 2,89 por R$ 2,09"
-},
-  {
-  "id": "atc_pl_8",
-  "name": "Limpador Ajax Vários Tipos Frasco 500ml",
-  "category": "limpeza",
-  "unit": "500ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 4.29,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 4.29,
-    "extrabom": 6.5,
-    "carone": 6.8,
-    "casagrande": 5.99,
-    "bh": 5.49,
-    "atacado_vem": 4.59
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 6,50 por R$ 4,29"
-},
-  {
-  "id": "atc_pl_9",
-  "name": "Lava Roupa em Pó Surf Rosas e Flor de Lís / Cuidado do Coco 2,4kg",
-  "category": "limpeza",
-  "unit": "2.4kg",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 19.5,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 19.5,
-    "extrabom": 22.9,
-    "carone": 23.5,
-    "casagrande": 21.9,
-    "bh": 20.9,
-    "atacado_vem": 19.9
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 21,98 por R$ 19,50"
-},
-  {
-  "id": "atc_pl_10",
-  "name": "Amaciante para Roupas Concentrado Comfort Várias Fragrâncias 500ml",
-  "category": "limpeza",
-  "unit": "500ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 8.99,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 8.99,
-    "extrabom": 10.78,
-    "carone": 11.49,
-    "casagrande": 10.5,
-    "bh": 9.9,
-    "atacado_vem": 9.29
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 10,78 por R$ 8,99"
-},
-  {
-  "id": "atc_pl_11",
-  "name": "Shampoo Seda Vários Tipos Frasco 300ml / 325ml",
-  "category": "higiene",
-  "unit": "325ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 14.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 14.9,
-    "extrabom": 18.9,
-    "carone": 19.5,
-    "casagrande": 17.9,
-    "bh": 16.9,
-    "atacado_vem": 15.5
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 18,90 por R$ 14,90"
-},
-  {
-  "id": "atc_pl_12",
-  "name": "Desodorante Aerossol Rexona Várias Fragrâncias 200ml",
-  "category": "higiene",
-  "unit": "200ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 15.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 15.9,
-    "extrabom": 18.9,
-    "carone": 19.9,
-    "casagrande": 17.9,
-    "bh": 16.9,
-    "atacado_vem": 16.29
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 18,90 por R$ 15,90"
-},
-  {
-  "id": "atc_pl_13",
-  "name": "Detergente Líquido Ypê Vários Tipos 500ml",
-  "category": "limpeza",
-  "unit": "500ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 2.19,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 2.19,
-    "extrabom": 2.49,
-    "carone": 2.59,
-    "casagrande": 2.39,
-    "bh": 2.29,
-    "atacado_vem": 2.19
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 2,49 por R$ 2,19"
-},
-  {
-  "id": "atc_pl_14",
-  "name": "Amaciante de Roupas Ypê Várias Fragrâncias 2L",
-  "category": "limpeza",
-  "unit": "2L",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 6.98,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 6.98,
-    "extrabom": 8.97,
-    "carone": 9.49,
-    "casagrande": 8.5,
-    "bh": 7.9,
-    "atacado_vem": 7.29
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 8,97 por R$ 6,98"
-},
-  {
-  "id": "atc_pl_15",
-  "name": "Lava Roupas em Pó Tixan Várias Fragrâncias Pacote 8kg",
-  "category": "limpeza",
-  "unit": "8kg",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 68.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 68.9,
-    "extrabom": 81.9,
-    "carone": 84.9,
-    "casagrande": 79.9,
-    "bh": 74.9,
-    "atacado_vem": 69.9
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 81,90 por R$ 68,90"
-},
-  {
-  "id": "atc_pl_16",
-  "name": "Lava Roupas Líquido Tixan Primavera Bombona 7L",
-  "category": "limpeza",
-  "unit": "7L",
-  "image": "assets/limpeza.png",
-  "encarteId": 35,
-  "offerMarketId": "atacadao",
-  "offerPrice": 45.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 45.9,
-    "extrabom": 57.98,
-    "carone": 59.9,
-    "casagrande": 54.9,
-    "bh": 49.9,
-    "atacado_vem": 46.9
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 57,98 por R$ 45,90"
-},
-  {
-  "id": "atc_pl_17",
-  "name": "Papel Higiênico Cotton Folha Dupla 30m Pacote 24 Rolos",
-  "category": "higiene",
-  "unit": "24 un",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 32.5,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 32.5,
-    "extrabom": 37.5,
-    "carone": 38.9,
-    "casagrande": 36.9,
-    "bh": 34.9,
-    "atacado_vem": 33.5
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 37,50 por R$ 32,50"
-},
-  {
-  "id": "atc_pl_18",
-  "name": "Fralda Descartável Baby Sec Vários Tamanhos Pacote",
-  "category": "higiene",
-  "unit": "pacote",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 33.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 33.9,
-    "extrabom": 39.99,
-    "carone": 41.9,
-    "casagrande": 38.9,
-    "bh": 36.9,
-    "atacado_vem": 34.9
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 39,99 por R$ 33,90"
-},
-  {
-  "id": "atc_pl_19",
-  "name": "Absorvente Diana Suave com Abas Leve 16 Pague 14 (16 un)",
-  "category": "higiene",
-  "unit": "16 un",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 5.48,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 5.48,
-    "extrabom": 6.48,
-    "carone": 6.9,
-    "casagrande": 6.2,
-    "bh": 5.9,
-    "atacado_vem": 5.69
-  },
-  "featured": False,
-  "discountTag": "Leve 16 Pague 14 | De R$ 6,48 por R$ 5,48"
-},
-  {
-  "id": "atc_pl_20",
-  "name": "Kit Tira Manchas em Gel Vanish 2x1,2L (Nesta embalagem R$ 17,45 cada)",
-  "category": "limpeza",
-  "unit": "kit 2x1,2L",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 34.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 34.9,
-    "extrabom": 44.9,
-    "carone": 46.9,
-    "casagrande": 42.9,
-    "bh": 38.9,
-    "atacado_vem": 35.9
-  },
-  "featured": True,
-  "discountTag": "Super Oferta | R$ 17,45 un | De R$ 44,90 por R$ 34,90"
-},
-  {
-  "id": "atc_pl_21",
-  "name": "Limpador Multiuso Veja Várias Fragrâncias 500ml",
-  "category": "limpeza",
-  "unit": "500ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 4.29,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 4.29,
-    "extrabom": 5.49,
-    "carone": 5.8,
-    "casagrande": 5.2,
-    "bh": 4.79,
-    "atacado_vem": 4.49
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 5,49 por R$ 4,29"
-},
-  {
-  "id": "atc_pl_22",
-  "name": "Limpador Veja X-14 Tira Limo Pulverizador 500ml",
-  "category": "limpeza",
-  "unit": "500ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 14.98,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 14.98,
-    "extrabom": 19.5,
-    "carone": 20.9,
-    "casagrande": 18.9,
-    "bh": 16.9,
-    "atacado_vem": 15.5
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 19,50 por R$ 14,98"
-},
-  {
-  "id": "atc_pl_23",
-  "name": "Fralda Descartável Personal Pants XG Pacote 22 un",
-  "category": "higiene",
-  "unit": "22 un",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 19.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 19.9,
-    "extrabom": 27.9,
-    "carone": 28.9,
-    "casagrande": 25.9,
-    "bh": 22.9,
-    "atacado_vem": 20.9
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 27,90 por R$ 19,90"
-},
-  {
-  "id": "atc_pl_24",
-  "name": "Papel Higiênico Personal Vip Folha Dupla 20m Leve 12 Pague 11",
-  "category": "higiene",
-  "unit": "12 rolos",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 9.98,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 9.98,
-    "extrabom": 14.88,
-    "carone": 15.5,
-    "casagrande": 13.9,
-    "bh": 11.9,
-    "atacado_vem": 10.5
-  },
-  "featured": False,
-  "discountTag": "Leve 12 Pague 11 | De R$ 14,88 por R$ 9,98"
-},
-  {
-  "id": "atc_pl_25",
-  "name": "Papel Higiênico Personal Vip KM Folha Dupla 50m Pacote 20 Rolos",
-  "category": "higiene",
-  "unit": "20 rolos",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 39.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 39.9,
-    "extrabom": 54.98,
-    "carone": 56.9,
-    "casagrande": 49.9,
-    "bh": 44.9,
-    "atacado_vem": 41.9
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 54,98 por R$ 39,90"
-},
-  {
-  "id": "atc_pl_26",
-  "name": "Sabonete Hidratante Nivea Várias Fragrâncias 85g",
-  "category": "higiene",
-  "unit": "85g",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 1.98,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 1.98,
-    "extrabom": 2.65,
-    "carone": 2.79,
-    "casagrande": 2.49,
-    "bh": 2.29,
-    "atacado_vem": 2.09
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 2,65 por R$ 1,98"
-},
-  {
-  "id": "atc_pl_27",
-  "name": "Desodorante Roll-On Nivea Pack 2x50ml (50% desc 2ª un)",
-  "category": "higiene",
-  "unit": "pack 2x50ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 11.98,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 11.98,
-    "extrabom": 15.9,
-    "carone": 16.5,
-    "casagrande": 14.9,
-    "bh": 13.9,
-    "atacado_vem": 12.5
-  },
-  "featured": False,
-  "discountTag": "50% Desc na 2ª un | De R$ 15,90 por R$ 11,98"
-},
-  {
-  "id": "atc_pl_28",
-  "name": "Desodorante Aerossol Nivea Várias Fragrâncias 200ml",
-  "category": "higiene",
-  "unit": "200ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 12.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 12.9,
-    "extrabom": 16.9,
-    "carone": 17.5,
-    "casagrande": 15.9,
-    "bh": 14.9,
-    "atacado_vem": 13.5
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 16,90 por R$ 12,90"
-},
-  {
-  "id": "atc_pl_29",
-  "name": "Inseticida Aerossol Baygon Ação Total 360ml",
-  "category": "limpeza",
-  "unit": "360ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 12.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 12.9,
-    "extrabom": 14.49,
-    "carone": 15.2,
-    "casagrande": 14.2,
-    "bh": 13.8,
-    "atacado_vem": 13.1
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 14,49 por R$ 12,90"
-},
-  {
-  "id": "atc_pl_30",
-  "name": "Desodorizador Pastilha Adesiva Pato Leve 5 Pague 4 (5 un)",
-  "category": "limpeza",
-  "unit": "5 un",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 4.79,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 4.79,
-    "extrabom": 5.49,
-    "carone": 5.9,
-    "casagrande": 5.3,
-    "bh": 4.99,
-    "atacado_vem": 4.85
-  },
-  "featured": False,
-  "discountTag": "Leve 5 Pague 4 | De R$ 5,49 por R$ 4,79"
-},
-  {
-  "id": "atc_pl_31",
-  "name": "Desinfetante Líquido Lysoform Original / Suave Bombona 5L",
-  "category": "limpeza",
-  "unit": "5L",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 45.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 45.9,
-    "extrabom": 49.9,
-    "carone": 52.9,
-    "casagrande": 48.9,
-    "bh": 47.9,
-    "atacado_vem": 46.5
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 49,90 por R$ 45,90"
-},
-  {
-  "id": "atc_pl_32",
-  "name": "Creme Condicionante Skala Vários Tipos Pote 1kg",
-  "category": "higiene",
-  "unit": "1kg",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 9.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 9.9,
-    "extrabom": 13.9,
-    "carone": 14.5,
-    "casagrande": 12.9,
-    "bh": 11.9,
-    "atacado_vem": 10.5
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 13,90 por R$ 9,90"
-},
-  {
-  "id": "atc_pl_33",
-  "name": "Kit Skala Shampoo + Condicionador Vários Tipos",
-  "category": "higiene",
-  "unit": "kit",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 11.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 11.9,
-    "extrabom": 17.98,
-    "carone": 18.5,
-    "casagrande": 16.9,
-    "bh": 14.9,
-    "atacado_vem": 12.5
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 17,98 por R$ 11,90"
-},
-  {
-  "id": "atc_pl_34",
-  "name": "Desodorante Roll-On Skala Várias Fragrâncias 60ml",
-  "category": "higiene",
-  "unit": "60ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 4.98,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 4.98,
-    "extrabom": 6.9,
-    "carone": 7.2,
-    "casagrande": 6.5,
-    "bh": 5.9,
-    "atacado_vem": 5.2
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 6,90 por R$ 4,98"
-},
-  {
-  "id": "atc_pl_35",
-  "name": "Fralda Descartável Huggies Máxima Proteção Vários Tamanhos",
-  "category": "higiene",
-  "unit": "pacote",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 69.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 69.9,
-    "extrabom": 104.96,
-    "carone": 108.9,
-    "casagrande": 98.9,
-    "bh": 89.9,
-    "atacado_vem": 74.9
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 104,96 por R$ 69,90"
-},
-  {
-  "id": "atc_pl_36",
-  "name": "Fralda Descartável Huggies Rápida Absorção Vários Tamanhos",
-  "category": "higiene",
-  "unit": "pacote",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 74.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 74.9,
-    "extrabom": 109.9,
-    "carone": 114.9,
-    "casagrande": 102.9,
-    "bh": 94.9,
-    "atacado_vem": 79.9
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 109,90 por R$ 74,90"
-},
-  {
-  "id": "atc_pl_37",
-  "name": "Shampoo Infantil Huggies Extra Suave Frasco 600ml",
-  "category": "higiene",
-  "unit": "600ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 36,
-  "offerMarketId": "atacadao",
-  "offerPrice": 24.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 24.9,
-    "extrabom": 43.0,
-    "carone": 44.9,
-    "casagrande": 39.9,
-    "bh": 34.9,
-    "atacado_vem": 27.9
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 43,00 por R$ 24,90"
-},
-  {
-  "id": "atc_pl_38",
-  "name": "Kit Elseve Shampoo + Condicionador Vários Tipos",
-  "category": "higiene",
-  "unit": "kit",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 29.98,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 29.98,
-    "extrabom": 37.5,
-    "carone": 38.9,
-    "casagrande": 35.9,
-    "bh": 33.9,
-    "atacado_vem": 31.5
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 37,50 por R$ 29,98"
-},
-  {
-  "id": "atc_pl_39",
-  "name": "Tintura Cor&Ton Várias Tonalidades Caixinha 135g",
-  "category": "higiene",
-  "unit": "135g",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 12.78,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 12.78,
-    "extrabom": 14.98,
-    "carone": 15.5,
-    "casagrande": 14.2,
-    "bh": 13.9,
-    "atacado_vem": 13.1
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 14,98 por R$ 12,78"
-},
-  {
-  "id": "atc_pl_40",
-  "name": "Shampoo Elseve Vários Tipos Frasco 400ml",
-  "category": "higiene",
-  "unit": "400ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 25.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 25.9,
-    "extrabom": 29.98,
-    "carone": 31.5,
-    "casagrande": 28.9,
-    "bh": 27.9,
-    "atacado_vem": 26.5
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 29,98 por R$ 25,90"
-},
-  {
-  "id": "atc_pl_41",
-  "name": "Absorvente Sempre Livre Adapt Suave com Abas Pacote 8 un",
-  "category": "higiene",
-  "unit": "8 un",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 3.49,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 3.49,
-    "extrabom": 4.99,
-    "carone": 5.2,
-    "casagrande": 4.69,
-    "bh": 4.29,
-    "atacado_vem": 3.79
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 4,99 por R$ 3,49"
-},
-  {
-  "id": "atc_pl_42",
-  "name": "Antisséptico Bucal Listerine Vários Tipos Frasco 250ml",
-  "category": "higiene",
-  "unit": "250ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 11.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 11.9,
-    "extrabom": 14.98,
-    "carone": 15.5,
-    "casagrande": 13.9,
-    "bh": 12.9,
-    "atacado_vem": 12.2
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 14,98 por R$ 11,90"
-},
-  {
-  "id": "atc_pl_43",
-  "name": "Sabonete Johnson's Várias Fragrâncias 80g",
-  "category": "higiene",
-  "unit": "80g",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 1.79,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 1.79,
-    "extrabom": 2.45,
-    "carone": 2.59,
-    "casagrande": 2.29,
-    "bh": 1.99,
-    "atacado_vem": 1.85
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 2,45 por R$ 1,79"
-},
-  {
-  "id": "atc_pl_44",
-  "name": "Desinfetante Álcool Líquido Coperalcool 46º INPM Frasco 1L",
-  "category": "limpeza",
-  "unit": "1L",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 11.5,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 11.5,
-    "extrabom": 12.98,
-    "carone": 13.5,
-    "casagrande": 12.79,
-    "bh": 12.2,
-    "atacado_vem": 11.9
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 12,98 por R$ 11,50"
-},
-  {
-  "id": "atc_pl_45",
-  "name": "Limpador Perfumado Coala Várias Fragrâncias 120ml",
-  "category": "limpeza",
-  "unit": "120ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 12.5,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 12.5,
-    "extrabom": 13.99,
-    "carone": 14.5,
-    "casagrande": 13.5,
-    "bh": 12.9,
-    "atacado_vem": 12.7
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 13,99 por R$ 12,50"
-},
-  {
-  "id": "atc_pl_46",
-  "name": "Removedor de Esmalte Zulu Tradicional / Fashion 90ml",
-  "category": "higiene",
-  "unit": "90ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 3.29,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 3.29,
-    "extrabom": 3.99,
-    "carone": 4.2,
-    "casagrande": 3.89,
-    "bh": 3.59,
-    "atacado_vem": 3.39
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 3,99 por R$ 3,29"
-},
-  {
-  "id": "atc_pl_47",
-  "name": "Inseticida Aerossol Proinset Multi Inseticida 350ml",
-  "category": "limpeza",
-  "unit": "350ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 7.99,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 7.99,
-    "extrabom": 9.49,
-    "carone": 9.9,
-    "casagrande": 8.9,
-    "bh": 8.49,
-    "atacado_vem": 8.19
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 9,49 por R$ 7,99"
-},
-  {
-  "id": "atc_pl_48",
-  "name": "Desodorante Aerossol Above ONE Várias Fragrâncias 150ml",
-  "category": "higiene",
-  "unit": "150ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 5.98,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 5.98,
-    "extrabom": 6.75,
-    "carone": 7.2,
-    "casagrande": 6.5,
-    "bh": 6.29,
-    "atacado_vem": 6.09
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 6,75 por R$ 5,98"
-},
-  {
-  "id": "atc_pl_49",
-  "name": "Antisséptico Bucal Above Fresh Protect 500ml",
-  "category": "higiene",
-  "unit": "500ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 10.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 10.9,
-    "extrabom": 14.9,
-    "carone": 15.2,
-    "casagrande": 13.9,
-    "bh": 12.5,
-    "atacado_vem": 11.5
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 14,90 por R$ 10,90"
-},
-  {
-  "id": "atc_pl_50",
-  "name": "Lava Roupa Líquido Urca Várias Fragrâncias Bombona 5L",
-  "category": "limpeza",
-  "unit": "5L",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 22.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 22.9,
-    "extrabom": 25.98,
-    "carone": 26.9,
-    "casagrande": 24.9,
-    "bh": 23.9,
-    "atacado_vem": 23.2
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 25,98 por R$ 22,90"
-},
-  {
-  "id": "atc_pl_51",
-  "name": "Amaciante para Roupas Urca Brisa / Floral Bombona 5L",
-  "category": "limpeza",
-  "unit": "5L",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 12.5,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 12.5,
-    "extrabom": 14.98,
-    "carone": 15.5,
-    "casagrande": 13.9,
-    "bh": 13.2,
-    "atacado_vem": 12.8
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 14,98 por R$ 12,50"
-},
-  {
-  "id": "atc_pl_52",
-  "name": "Lava Roupas em Pó Urca Pacote 4kg",
-  "category": "limpeza",
-  "unit": "4kg",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 19.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 19.9,
-    "extrabom": 22.98,
-    "carone": 23.9,
-    "casagrande": 21.9,
-    "bh": 20.9,
-    "atacado_vem": 20.2
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 22,98 por R$ 19,90"
-},
-  {
-  "id": "atc_pl_53",
-  "name": "Kit Uau Clorativo / Multiuso",
-  "category": "limpeza",
-  "unit": "kit",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 9.98,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 9.98,
-    "extrabom": 15.5,
-    "carone": 15.9,
-    "casagrande": 13.9,
-    "bh": 12.5,
-    "atacado_vem": 10.9
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 15,50 por R$ 9,98"
-},
-  {
-  "id": "atc_pl_54",
-  "name": "Limpador Perfumado Uau Flores Vermelhas / Lavanda 500ml",
-  "category": "limpeza",
-  "unit": "500ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 4.49,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 4.49,
-    "extrabom": 5.39,
-    "carone": 5.8,
-    "casagrande": 5.1,
-    "bh": 4.79,
-    "atacado_vem": 4.59
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 5,39 por R$ 4,49"
-},
-  {
-  "id": "atc_pl_55",
-  "name": "Amaciante de Roupas Concentrado Uau Carinho e Conforto 500ml",
-  "category": "limpeza",
-  "unit": "500ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 37,
-  "offerMarketId": "atacadao",
-  "offerPrice": 8.49,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 8.49,
-    "extrabom": 10.9,
-    "carone": 11.5,
-    "casagrande": 10.2,
-    "bh": 9.49,
-    "atacado_vem": 8.9
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 10,90 por R$ 8,49"
-},
-  {
-  "id": "atc_pl_56",
-  "name": "Sabonete Francis Várias Fragrâncias Pack 6x80g",
-  "category": "higiene",
-  "unit": "pack 6x80g",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 13.98,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 13.98,
-    "extrabom": 15.5,
-    "carone": 16.2,
-    "casagrande": 14.9,
-    "bh": 14.2,
-    "atacado_vem": 14.0
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 15,50 por R$ 13,98"
-},
-  {
-  "id": "atc_pl_57",
-  "name": "Kit OX Shampoo + Condicionador Vários Tipos",
-  "category": "higiene",
-  "unit": "kit",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 29.98,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 29.98,
-    "extrabom": 36.98,
-    "carone": 37.9,
-    "casagrande": 34.9,
-    "bh": 32.9,
-    "atacado_vem": 30.9
-  },
-  "featured": False,
-  "discountTag": "Oferta Especial | De R$ 36,98 por R$ 29,98"
-},
-  {
-  "id": "atc_pl_58",
-  "name": "Sabonete Albany Várias Fragrâncias 80g",
-  "category": "higiene",
-  "unit": "80g",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 1.49,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 1.49,
-    "extrabom": 1.79,
-    "carone": 1.89,
-    "casagrande": 1.69,
-    "bh": 1.59,
-    "atacado_vem": 1.52
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 1,79 por R$ 1,49"
-},
-  {
-  "id": "atc_pl_59",
-  "name": "Talco Antisséptico Tenys Pé Baruel 100g",
-  "category": "higiene",
-  "unit": "100g",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 12.49,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 12.49,
-    "extrabom": 15.9,
-    "carone": 16.5,
-    "casagrande": 14.9,
-    "bh": 13.9,
-    "atacado_vem": 12.9
-  },
-  "featured": True,
-  "discountTag": "App R$ 12,49 | De R$ 15,90 por R$ 12,90"
-},
-  {
-  "id": "atc_pl_60",
-  "name": "Shampoo Infantil Baruel Baby Cheirinho do Sono 210ml",
-  "category": "higiene",
-  "unit": "210ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 6.99,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 6.99,
-    "extrabom": 8.9,
-    "carone": 9.5,
-    "casagrande": 8.49,
-    "bh": 7.9,
-    "atacado_vem": 7.39
-  },
-  "featured": False,
-  "discountTag": "App R$ 6,99 | De R$ 8,90 por R$ 7,49"
-},
-  {
-  "id": "atc_pl_61",
-  "name": "Kit Infantil Baruel Baby Shampoo + Condicionador Sono Tranquilo",
-  "category": "higiene",
-  "unit": "kit",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 18.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 18.9,
-    "extrabom": 22.49,
-    "carone": 23.5,
-    "casagrande": 21.9,
-    "bh": 20.5,
-    "atacado_vem": 19.5
-  },
-  "featured": True,
-  "discountTag": "App R$ 18,90 | De R$ 22,49 por R$ 19,90"
-},
-  {
-  "id": "atc_pl_62",
-  "name": "Esponja Scotch-Brite Esferas de Limpeza Pacote com 3 un",
-  "category": "limpeza",
-  "unit": "3 un",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 6.59,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 6.59,
-    "extrabom": 7.98,
-    "carone": 8.5,
-    "casagrande": 7.8,
-    "bh": 7.49,
-    "atacado_vem": 6.99
-  },
-  "featured": True,
-  "discountTag": "App R$ 6,59 | De R$ 7,98 por R$ 7,29"
-},
-  {
-  "id": "atc_pl_63",
-  "name": "Esponja Scotch-Brite Pacote com 4 un",
-  "category": "limpeza",
-  "unit": "4 un",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 6.59,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 6.59,
-    "extrabom": 7.98,
-    "carone": 8.5,
-    "casagrande": 7.8,
-    "bh": 7.49,
-    "atacado_vem": 6.99
-  },
-  "featured": False,
-  "discountTag": "App R$ 6,59 | De R$ 7,98 por R$ 7,29"
-},
-  {
-  "id": "atc_pl_64",
-  "name": "Esponja Multiuso Tinindo 3M Ref. 1365 Unidade",
-  "category": "limpeza",
-  "unit": "unidade",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 1.79,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 1.79,
-    "extrabom": 2.59,
-    "carone": 2.7,
-    "casagrande": 2.39,
-    "bh": 2.19,
-    "atacado_vem": 1.99
-  },
-  "featured": False,
-  "discountTag": "App R$ 1,79 | De R$ 2,59 por R$ 2,09"
-},
-  {
-  "id": "atc_pl_65",
-  "name": "Papel Higiênico Max Pure Folha Dupla 30m Pacote 12 Rolos",
-  "category": "higiene",
-  "unit": "12 rolos",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 15.5,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 15.5,
-    "extrabom": 16.98,
-    "carone": 17.5,
-    "casagrande": 16.5,
-    "bh": 15.9,
-    "atacado_vem": 15.7
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 16,98 por R$ 15,50"
-},
-  {
-  "id": "atc_pl_66",
-  "name": "Toalha de Papel Scala Plus 60 Folhas Pacote 2 Rolos",
-  "category": "limpeza",
-  "unit": "2 rolos",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 5.49,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 5.49,
-    "extrabom": 6.35,
-    "carone": 6.7,
-    "casagrande": 5.99,
-    "bh": 5.79,
-    "atacado_vem": 5.59
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 6,35 por R$ 5,49"
-},
-  {
-  "id": "atc_pl_67",
-  "name": "Papel Higiênico Neve Folha Dupla 20m Pacote 12 Rolos",
-  "category": "higiene",
-  "unit": "12 rolos",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 15.98,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 15.98,
-    "extrabom": 18.5,
-    "carone": 19.2,
-    "casagrande": 17.9,
-    "bh": 16.9,
-    "atacado_vem": 16.2
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 18,50 por R$ 15,98"
-},
-  {
-  "id": "atc_pl_68",
-  "name": "Kit Novex Shampoo + Condicionador Vários Tipos",
-  "category": "higiene",
-  "unit": "kit",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 16.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 16.9,
-    "extrabom": 18.9,
-    "carone": 19.5,
-    "casagrande": 17.9,
-    "bh": 17.2,
-    "atacado_vem": 17.0
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 18,90 por R$ 16,90"
-},
-  {
-  "id": "atc_pl_69",
-  "name": "Tintura Maxton Várias Tonalidades Kit",
-  "category": "higiene",
-  "unit": "kit",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 13.98,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 13.98,
-    "extrabom": 15.49,
-    "carone": 16.2,
-    "casagrande": 14.9,
-    "bh": 14.2,
-    "atacado_vem": 14.0
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 15,49 por R$ 13,98"
-},
-  {
-  "id": "atc_pl_70",
-  "name": "Creme de Tratamento Novex Vários Tipos Pote 1kg",
-  "category": "higiene",
-  "unit": "1kg",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 22.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 22.9,
-    "extrabom": 26.5,
-    "carone": 27.9,
-    "casagrande": 24.9,
-    "bh": 23.9,
-    "atacado_vem": 23.2
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 26,50 por R$ 22,90"
-},
-  {
-  "id": "atc_pl_71",
-  "name": "Lã de Aço Bombril Pacote 45g",
-  "category": "limpeza",
-  "unit": "45g",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 1.85,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 1.85,
-    "extrabom": 2.17,
-    "carone": 2.29,
-    "casagrande": 2.09,
-    "bh": 1.99,
-    "atacado_vem": 1.89
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 2,17 por R$ 1,85"
-},
-  {
-  "id": "atc_pl_72",
-  "name": "Limpador Perfumado Limpol Vários Tipos 500ml",
-  "category": "limpeza",
-  "unit": "500ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 3.35,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 3.35,
-    "extrabom": 3.98,
-    "carone": 4.19,
-    "casagrande": 3.79,
-    "bh": 3.59,
-    "atacado_vem": 3.45
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 3,98 por R$ 3,35"
-},
-  {
-  "id": "atc_pl_73",
-  "name": "Sapólio Radium Cremoso Clássico / Cremoso Cloro 450ml",
-  "category": "limpeza",
-  "unit": "450ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 9.9,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 9.9,
-    "extrabom": 11.2,
-    "carone": 11.9,
-    "casagrande": 10.9,
-    "bh": 10.2,
-    "atacado_vem": 10.0
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 11,20 por R$ 9,90"
-},
-  {
-  "id": "atc_pl_74",
-  "name": "Sabonete Líquido Monange Várias Fragrâncias Refil 400ml",
-  "category": "higiene",
-  "unit": "400ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 11.99,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 11.99,
-    "extrabom": 13.99,
-    "carone": 14.5,
-    "casagrande": 12.9,
-    "bh": 12.5,
-    "atacado_vem": 12.2
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 13,99 por R$ 11,99"
-},
-  {
-  "id": "atc_pl_75",
-  "name": "Desodorante Aerossol Monange Várias Fragrâncias 150ml",
-  "category": "higiene",
-  "unit": "150ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 7.99,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 7.99,
-    "extrabom": 9.3,
-    "carone": 9.8,
-    "casagrande": 8.9,
-    "bh": 8.5,
-    "atacado_vem": 8.19
-  },
-  "featured": True,
-  "discountTag": "Oferta Atacadão | De R$ 9,30 por R$ 7,99"
-},
-  {
-  "id": "atc_pl_76",
-  "name": "Shampoo Monange Vários Tipos Frasco 325ml",
-  "category": "higiene",
-  "unit": "325ml",
-  "image": "assets/limpeza.png",
-  "encarteId": 39,
-  "offerMarketId": "atacadao",
-  "offerPrice": 6.75,
-  "validity": "Válido 01/09 a 10/09/2026",
-  "prices": {
-    "atacadao": 6.75,
-    "extrabom": 7.99,
-    "carone": 8.49,
-    "casagrande": 7.5,
-    "bh": 7.19,
-    "atacado_vem": 6.9
-  },
-  "featured": False,
-  "discountTag": "Oferta Atacadão | De R$ 7,99 por R$ 6,75"
-}
 ]
 
 content = f"""// Catálogo Completo de Supermercados, Encartes e Produtos
 // Colina de Laranjeiras & Imediações (Serra / ES)
-// Atualizado com Ofertas Oficiais Atacadão (Válidas de 25/08 a 31/08/2026)
+// Atualizado com Ofertas Oficiais Ativas de Hoje
 
 const SUPERMARKETS = {json.dumps(supermarkets, indent=2, ensure_ascii=False)};
 
@@ -3335,4 +3734,3 @@ with open(output_path, "w", encoding="utf-8") as f:
     f.write(content)
 
 print(f"SUCCESS: data.js atualizado com sucesso em {output_path}!")
-
