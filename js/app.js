@@ -28,6 +28,13 @@ function updateHeaderDate() {
   }
 }
 
+// Helper de Rastreamento de Eventos (Google Analytics GA4)
+function trackEvent(eventName, params = {}) {
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', eventName, params);
+  }
+}
+
 // Renderização dos Chips de Supermercado no Hero
 function renderSupermarketChips() {
   const container = document.getElementById('marketChipsContainer');
@@ -282,25 +289,25 @@ function renderProducts() {
 
     if (userVoteToday === 'up') {
       voteButtonsHTML = `
-        <button id="btn-vote-up-${product.id}" title="✓ Você já confirmou esta oferta hoje" style="flex: 1; background: #10b981; border: 1px solid #10b981; color: #ffffff; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: default; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.76rem;">
+        <button id="btn-vote-up-${product.id}" onclick="toggleConfirmProductPrice('${product.id}')" title="✓ Clique para desfazer sua confirmação de preço" style="flex: 1; background: #10b981; border: 1px solid #10b981; color: #ffffff; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.76rem; transition: all 0.2s;">
           ✓ Confirmado <span id="vote-up-count-${product.id}">(${votes.up})</span>
         </button>
-        <button id="btn-vote-down-${product.id}" onclick="if (window.cart && window.cart.showToast) window.cart.showToast('🔒 Você já avaliou esta oferta hoje!');" title="Você já avaliou esta oferta hoje" style="flex: 1; background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: not-allowed; opacity: 0.5; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.76rem;">
-          👎 <span id="vote-down-count-${product.id}">(${votes.down})</span>
+        <button id="btn-vote-down-${product.id}" onclick="openPriceReportModal('${product.id}')" title="Trocar para informar preço diferente" style="flex: 1; background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: pointer; opacity: 0.75; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.76rem;">
+          👎 Diferente <span id="vote-down-count-${product.id}">(${votes.down})</span>
         </button>
       `;
     } else if (userVoteToday === 'down') {
       voteButtonsHTML = `
-        <button id="btn-vote-up-${product.id}" onclick="if (window.cart && window.cart.showToast) window.cart.showToast('🔒 Você já avaliou esta oferta hoje!');" title="Você já avaliou esta oferta hoje" style="flex: 1; background: #ecfdf5; border: 1px solid #a7f3d0; color: #065f46; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: not-allowed; opacity: 0.5; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.76rem;">
-          👍 <span id="vote-up-count-${product.id}">(${votes.up})</span>
+        <button id="btn-vote-up-${product.id}" onclick="toggleConfirmProductPrice('${product.id}')" title="Trocar para confirmar preço" style="flex: 1; background: #ecfdf5; border: 1px solid #a7f3d0; color: #065f46; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: pointer; opacity: 0.75; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.76rem;">
+          👍 Sim <span id="vote-up-count-${product.id}">(${votes.up})</span>
         </button>
-        <button id="btn-vote-down-${product.id}" title="✓ Você informou uma alteração de preço para esta oferta hoje" style="flex: 1; background: #ef4444; border: 1px solid #ef4444; color: #ffffff; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: default; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.76rem;">
+        <button id="btn-vote-down-${product.id}" onclick="openPriceReportModal('${product.id}')" title="✓ Você informou uma alteração de preço para esta oferta hoje" style="flex: 1; background: #ef4444; border: 1px solid #ef4444; color: #ffffff; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.76rem;">
           ✓ Informado <span id="vote-down-count-${product.id}">(${votes.down})</span>
         </button>
       `;
     } else {
       voteButtonsHTML = `
-        <button id="btn-vote-up-${product.id}" onclick="confirmProductPrice('${product.id}')" title="Confirmar que o preço está correto" style="flex: 1; background: #ecfdf5; border: 1px solid #10b981; color: #047857; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.2s; font-size: 0.76rem;">
+        <button id="btn-vote-up-${product.id}" onclick="toggleConfirmProductPrice('${product.id}')" title="Confirmar que o preço está correto" style="flex: 1; background: #ecfdf5; border: 1px solid #10b981; color: #047857; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.2s; font-size: 0.76rem;">
           👍 Sim <span id="vote-up-count-${product.id}">(${votes.up})</span>
         </button>
         <button id="btn-vote-down-${product.id}" onclick="openPriceReportModal('${product.id}')" title="Informar valor real ou preço diferente que encontrou no mercado" style="flex: 1; background: #fef2f2; border: 1px solid #ef4444; color: #b91c1c; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.2s; font-size: 0.76rem;">
@@ -974,6 +981,19 @@ function recordUserVoteToday(productId, type) {
   }
 }
 
+function removeUserVoteToday(productId) {
+  try {
+    const todayKey = new Date().toISOString().split('T')[0];
+    const dailyVotes = JSON.parse(localStorage.getItem('economiza_colina_user_daily_votes')) || {};
+    if (dailyVotes[todayKey] && dailyVotes[todayKey][productId]) {
+      delete dailyVotes[todayKey][productId];
+      localStorage.setItem('economiza_colina_user_daily_votes', JSON.stringify(dailyVotes));
+    }
+  } catch (e) {
+    console.error('Erro ao remover voto diário:', e);
+  }
+}
+
 function getProductVotes(productId) {
   const votes = JSON.parse(localStorage.getItem('economiza_colina_votes')) || {};
   if (!votes[productId]) {
@@ -989,41 +1009,52 @@ function getProductVotes(productId) {
   return votes[productId];
 }
 
-// Confirmar Preço do Morador (👍) - Trava 1 Voto Por Produto por Dia
-function confirmProductPrice(productId) {
+// Confirmar ou Desfazer Confirmação de Preço (👍) - Alternância (Toggle) 1 Voto Por Morador
+function toggleConfirmProductPrice(productId) {
   const now = Date.now();
-  if (now - lastVoteTimestamp < 1000) {
-    if (window.cart && window.cart.showToast) {
-      window.cart.showToast('⏳ Por favor, aguarde 1 segundo entre confirmações.');
-    }
-    return;
-  }
-
-  const previousVote = hasUserVotedToday(productId);
-  if (previousVote) {
-    if (window.cart && window.cart.showToast) {
-      window.cart.showToast('🔒 Você já avaliou esta oferta hoje! Pode confirmar outras ofertas do bairro.');
-    }
-    return;
-  }
-
+  if (now - lastVoteTimestamp < 400) return;
   lastVoteTimestamp = now;
 
+  const previousVote = hasUserVotedToday(productId);
   const votes = JSON.parse(localStorage.getItem('economiza_colina_votes')) || {};
   const current = votes[productId] || getProductVotes(productId);
 
-  current.up += 1;
-  votes[productId] = current;
-  localStorage.setItem('economiza_colina_votes', JSON.stringify(votes));
+  if (previousVote === 'up') {
+    // Morador já havia confirmado 👍 -> Clique novamente REMOVE/DESFAZ a confirmação (-1)
+    current.up = Math.max(0, current.up - 1);
+    votes[productId] = current;
+    localStorage.setItem('economiza_colina_votes', JSON.stringify(votes));
 
-  recordUserVoteToday(productId, 'up');
-  recordProductView(productId);
+    removeUserVoteToday(productId);
+    renderProducts();
 
-  renderProducts();
+    if (window.cart && window.cart.showToast) {
+      window.cart.showToast('↩️ Sua confirmação de preço foi removida.');
+    }
+  } else {
+    // Se o morador já tinha registrado 'down' antes, desfaz a divergência (-1)
+    if (previousVote === 'down') {
+      current.down = Math.max(0, current.down - 1);
+    }
 
-  if (window.cart && window.cart.showToast) {
-    window.cart.showToast('👍 Preço confirmado por você hoje! +10 pts no ranking comunitário!');
+    // Adiciona a confirmação (+1)
+    current.up += 1;
+    votes[productId] = current;
+    localStorage.setItem('economiza_colina_votes', JSON.stringify(votes));
+
+    recordUserVoteToday(productId, 'up');
+    recordProductView(productId);
+
+    renderProducts();
+
+    if (window.cart && window.cart.showToast) {
+      window.cart.showToast('👍 Preço confirmado por você! (Clique novamente se desejar desfazer)');
+    }
   }
+}
+
+function confirmProductPrice(productId) {
+  toggleConfirmProductPrice(productId);
 }
 
 // Abrir Modal para Morador Informar o Preço Real Encontrado (👎)
@@ -1132,9 +1163,17 @@ function submitPriceReport(event, productId) {
     customPrices[productId] = { marketId, realPrice: newPrice, marketName: marketObj.name };
     localStorage.setItem('economiza_colina_custom_prices', JSON.stringify(customPrices));
 
+    const previousVote = hasUserVotedToday(productId);
     const votes = JSON.parse(localStorage.getItem('economiza_colina_votes')) || {};
     const current = votes[productId] || getProductVotes(productId);
-    current.down += 1;
+
+    if (previousVote === 'up') {
+      current.up = Math.max(0, current.up - 1);
+    }
+    if (previousVote !== 'down') {
+      current.down += 1;
+    }
+    
     votes[productId] = current;
     localStorage.setItem('economiza_colina_votes', JSON.stringify(votes));
     
