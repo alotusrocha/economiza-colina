@@ -1,6 +1,6 @@
 // Catálogo Completo de Supermercados, Encartes e Produtos
 // Colina de Laranjeiras & Imediações (Serra / ES)
-// Atualizado com Ofertas Oficiais Ativas de Hoje
+// Atualizado com Ofertas Oficiais e Pesquisa Realista de Preços
 
 const SUPERMARKETS = [
   {
@@ -194,18 +194,19 @@ const PRODUCTS = [
     "unit": "30 un",
     "image": "assets/ovo.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 13.99,
+    "offerMarketId": "extrabom",
+    "offerPrice": 12.87,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 13.99,
-      "extrabom": 16.9,
-      "carone": 17.5,
-      "assai": 14.5,
-      "atacado_vem": 14.9
+      "extrabom": 12.87,
+      "atacadao": 14.54,
+      "carone": 14.29,
+      "assai": 13.38,
+      "atacado_vem": 13.26
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 13,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 12,87",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_2",
@@ -215,17 +216,18 @@ const PRODUCTS = [
     "image": "assets/tomate.png",
     "encarteId": 1,
     "offerMarketId": "casagrande",
-    "offerPrice": 14.01,
+    "offerPrice": 12.47,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 14.9,
-      "extrabom": 21.9,
-      "carone": 22.5,
-      "casagrande": 14.01,
-      "bh": 18.9
+      "casagrande": 12.47,
+      "bh": 14.22,
+      "atacadao": 14.22,
+      "extrabom": 13.22,
+      "carone": 13.97
     },
     "featured": true,
-    "discountTag": "Menor preço no Rede Casagrande | R$ 14,01"
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 12,47",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_3",
@@ -234,18 +236,20 @@ const PRODUCTS = [
     "unit": "kg",
     "image": "assets/tomate.png",
     "encarteId": 1,
-    "offerMarketId": "extrabom",
-    "offerPrice": 4.59,
+    "offerMarketId": "bh",
+    "offerPrice": 4.13,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 4.99,
-      "extrabom": 4.59,
-      "carone": 7.5,
-      "bh": 6.49,
-      "assai": 5.49
+      "bh": 4.13,
+      "casagrande": 4.38,
+      "atacadao": 4.25,
+      "extrabom": 4.42,
+      "carone": 4.67,
+      "assai": 4.38
     },
     "featured": true,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 4,59"
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 4,13",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_4",
@@ -255,17 +259,18 @@ const PRODUCTS = [
     "image": "assets/tomate.png",
     "encarteId": 1,
     "offerMarketId": "extrabom",
-    "offerPrice": 5.51,
+    "offerPrice": 4.96,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 5.99,
-      "extrabom": 5.51,
-      "carone": 8.2,
-      "casagrande": 7.49,
-      "atacado_vem": 6.5
+      "extrabom": 4.96,
+      "atacadao": 5.16,
+      "carone": 5.65,
+      "casagrande": 5.31,
+      "atacado_vem": 5.26
     },
     "featured": true,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 5,51"
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 4,96",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_5",
@@ -274,19 +279,20 @@ const PRODUCTS = [
     "unit": "kg",
     "image": "assets/tomate.png",
     "encarteId": 1,
-    "offerMarketId": "casagrande",
-    "offerPrice": 4.69,
+    "offerMarketId": "atacadao",
+    "offerPrice": 4.17,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 4.99,
-      "extrabom": 6.99,
-      "carone": 7.1,
-      "bh": 5.99,
-      "assai": 5.29,
-      "casagrande": 4.69
+      "atacadao": 4.17,
+      "extrabom": 4.55,
+      "carone": 4.3,
+      "bh": 4.38,
+      "assai": 4.5,
+      "casagrande": 4.5
     },
     "featured": false,
-    "discountTag": "Menor preço no Rede Casagrande | R$ 4,69"
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 4,17",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_6",
@@ -295,19 +301,20 @@ const PRODUCTS = [
     "unit": "kg",
     "image": "assets/tomate.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "extrabom",
     "offerPrice": 3.59,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 3.59,
-      "extrabom": 4.99,
-      "casagrande": 4.5,
-      "bh": 4.19,
-      "atacado_vem": 3.89,
-      "carone": 4.69
+      "extrabom": 3.59,
+      "atacadao": 3.81,
+      "casagrande": 3.91,
+      "bh": 3.81,
+      "atacado_vem": 3.88,
+      "carone": 3.73
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 3,59"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 3,59",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_7",
@@ -321,13 +328,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 54.9,
-      "extrabom": 58.9,
-      "carone": 62.9,
-      "assai": 55.9,
-      "casagrande": 59.9
+      "extrabom": 60.94,
+      "carone": 57.65,
+      "assai": 60.39,
+      "casagrande": 60.39
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 54,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 54,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_8",
@@ -336,18 +344,19 @@ const PRODUCTS = [
     "unit": "kg",
     "image": "assets/contrafile.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 45.9,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 45.9,
-      "extrabom": 49.9,
-      "carone": 52.9,
-      "bh": 47.9,
-      "atacado_vem": 46.9
+      "bh": 45.9,
+      "atacadao": 49.57,
+      "extrabom": 51.41,
+      "carone": 48.65,
+      "atacado_vem": 50.49
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 45,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 45,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_9",
@@ -356,19 +365,20 @@ const PRODUCTS = [
     "unit": "1kg",
     "image": "assets/frango.png",
     "encarteId": 1,
-    "offerMarketId": "bh",
-    "offerPrice": 15.18,
+    "offerMarketId": "extrabom",
+    "offerPrice": 13.97,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 15.98,
-      "extrabom": 18.98,
-      "carone": 19.9,
-      "assai": 16.9,
-      "atacado_vem": 16.49,
-      "bh": 15.18
+      "extrabom": 13.97,
+      "atacadao": 15.23,
+      "carone": 14.95,
+      "assai": 15.65,
+      "atacado_vem": 15.51,
+      "bh": 15.23
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 15,18"
+    "discountTag": "Menor preço no Supermercados BH | R$ 13,97",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_10",
@@ -377,18 +387,20 @@ const PRODUCTS = [
     "unit": "1kg",
     "image": "assets/frango.png",
     "encarteId": 1,
-    "offerMarketId": "bh",
-    "offerPrice": 9.97,
+    "offerMarketId": "carone",
+    "offerPrice": 9.17,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 10.5,
-      "extrabom": 13.9,
-      "carone": 14.5,
-      "casagrande": 12.9,
-      "bh": 9.97
+      "carone": 9.17,
+      "atacadao": 10.09,
+      "extrabom": 10.45,
+      "casagrande": 10.36,
+      "bh": 10.09,
+      "atacado_vem": 10.27
     },
     "featured": false,
-    "discountTag": "Menor preço no Supermercados BH | R$ 9,97"
+    "discountTag": "Menor preço no Supermercados BH | R$ 9,17",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_11",
@@ -397,18 +409,20 @@ const PRODUCTS = [
     "unit": "1kg",
     "image": "assets/frango.png",
     "encarteId": 1,
-    "offerMarketId": "bh",
-    "offerPrice": 8.54,
+    "offerMarketId": "carone",
+    "offerPrice": 7.86,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 8.99,
-      "extrabom": 10.99,
-      "carone": 11.9,
-      "assai": 9.9,
-      "bh": 8.54
+      "carone": 7.86,
+      "atacadao": 8.72,
+      "extrabom": 8.1,
+      "assai": 8.96,
+      "bh": 8.72,
+      "atacado_vem": 8.88
     },
     "featured": false,
-    "discountTag": "Menor preço no Supermercados BH | R$ 8,54"
+    "discountTag": "Menor preço no Supermercados BH | R$ 7,86",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_12",
@@ -422,13 +436,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 31.9,
-      "extrabom": 38.9,
-      "carone": 39.9,
-      "casagrande": 36.9,
-      "atacado_vem": 33.9
+      "extrabom": 33.18,
+      "carone": 35.09,
+      "casagrande": 32.86,
+      "atacado_vem": 36.37
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 31,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 31,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_13",
@@ -437,18 +452,19 @@ const PRODUCTS = [
     "unit": "800g",
     "image": "assets/carne.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 31.9,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 31.9,
-      "extrabom": 37.9,
-      "carone": 38.9,
-      "bh": 34.9,
-      "assai": 32.9
+      "bh": 31.9,
+      "atacadao": 36.05,
+      "extrabom": 33.49,
+      "carone": 35.41,
+      "assai": 33.18
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 31,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 31,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_14",
@@ -457,19 +473,20 @@ const PRODUCTS = [
     "unit": "2.5kg",
     "image": "assets/carne.png",
     "encarteId": 1,
-    "offerMarketId": "bh",
+    "offerMarketId": "extrabom",
     "offerPrice": 49.3,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 51.9,
-      "extrabom": 53.9,
-      "carone": 58.9,
-      "casagrande": 54.9,
-      "atacado_vem": 52.9,
-      "bh": 49.3
+      "extrabom": 49.3,
+      "atacadao": 56.2,
+      "carone": 55.22,
+      "casagrande": 51.77,
+      "atacado_vem": 51.27,
+      "bh": 56.2
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 49,30"
+    "discountTag": "Menor preço no Supermercados BH | R$ 49,30",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_15",
@@ -478,18 +495,20 @@ const PRODUCTS = [
     "unit": "2.5kg",
     "image": "assets/carne.png",
     "encarteId": 1,
-    "offerMarketId": "bh",
-    "offerPrice": 47.4,
+    "offerMarketId": "carone",
+    "offerPrice": 43.13,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 49.9,
-      "extrabom": 54.9,
-      "carone": 59.9,
-      "assai": 51.9,
-      "bh": 47.4
+      "carone": 43.13,
+      "atacadao": 44.42,
+      "extrabom": 46.15,
+      "assai": 45.72,
+      "bh": 44.42,
+      "casagrande": 45.72
     },
     "featured": false,
-    "discountTag": "Menor preço no Supermercados BH | R$ 47,40"
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 43,13",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_16",
@@ -498,18 +517,20 @@ const PRODUCTS = [
     "unit": "2kg",
     "image": "assets/tomate.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 16.9,
+    "offerMarketId": "casagrande",
+    "offerPrice": 15.04,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 16.9,
-      "extrabom": 21.9,
-      "carone": 22.9,
-      "casagrande": 19.9,
-      "atacado_vem": 17.9
+      "casagrande": 15.04,
+      "atacadao": 15.64,
+      "extrabom": 16.24,
+      "carone": 17.15,
+      "atacado_vem": 15.94,
+      "bh": 15.64
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 16,90"
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 15,04",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_17",
@@ -518,18 +539,19 @@ const PRODUCTS = [
     "unit": "1.25kg",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 15.99,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 15.99,
-      "extrabom": 17.99,
-      "carone": 18.9,
-      "bh": 16.9,
-      "assai": 16.5
+      "bh": 15.99,
+      "atacadao": 16.79,
+      "extrabom": 17.43,
+      "carone": 16.47,
+      "assai": 17.27
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 15,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 15,99",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_18",
@@ -538,18 +560,19 @@ const PRODUCTS = [
     "unit": "540g",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "casagrande",
     "offerPrice": 9.99,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 9.99,
-      "extrabom": 13.49,
-      "carone": 13.9,
-      "casagrande": 11.9,
-      "atacado_vem": 10.5
+      "casagrande": 9.99,
+      "atacadao": 10.59,
+      "extrabom": 10.99,
+      "carone": 10.39,
+      "atacado_vem": 10.79
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 9,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 9,99",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_19",
@@ -558,18 +581,20 @@ const PRODUCTS = [
     "unit": "6x80g",
     "image": "assets/limpeza.png",
     "encarteId": 1,
-    "offerMarketId": "bh",
-    "offerPrice": 6.71,
+    "offerMarketId": "atacadao",
+    "offerPrice": 6.11,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 6.99,
-      "extrabom": 8.49,
-      "carone": 8.99,
-      "bh": 6.71,
-      "assai": 7.2
+      "atacadao": 6.11,
+      "extrabom": 6.78,
+      "carone": 6.42,
+      "bh": 6.54,
+      "assai": 6.72,
+      "atacado_vem": 6.66
     },
     "featured": false,
-    "discountTag": "Menor preço no Supermercados BH | R$ 6,71"
+    "discountTag": "Menor preço no Supermercados BH | R$ 6,11",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_20",
@@ -578,18 +603,19 @@ const PRODUCTS = [
     "unit": "3kg",
     "image": "assets/carne.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "extrabom",
     "offerPrice": 26.9,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 26.9,
-      "extrabom": 29.9,
-      "carone": 32.9,
-      "casagrande": 28.9,
-      "atacado_vem": 27.5
+      "extrabom": 26.9,
+      "atacadao": 29.05,
+      "carone": 28.51,
+      "casagrande": 29.86,
+      "atacado_vem": 29.59
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 26,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 26,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_21",
@@ -603,13 +629,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 14.9,
-      "extrabom": 18.9,
-      "carone": 19.5,
-      "bh": 16.9,
-      "assai": 15.9
+      "extrabom": 16.84,
+      "carone": 15.94,
+      "bh": 16.24,
+      "assai": 16.69
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 14,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 14,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_22",
@@ -619,17 +646,19 @@ const PRODUCTS = [
     "image": "assets/arroz.png",
     "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 17.9,
+    "offerPrice": 16.83,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 17.9,
-      "extrabom": 18.9,
-      "carone": 21.9,
-      "assai": 18.5,
-      "atacado_vem": 18.2
+      "atacadao": 16.83,
+      "extrabom": 19.19,
+      "carone": 18.18,
+      "assai": 19.02,
+      "atacado_vem": 18.85,
+      "bh": 18.51
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 17,90"
+    "discountTag": "Menor preço no Atacado Vem | R$ 16,83",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_23",
@@ -638,18 +667,20 @@ const PRODUCTS = [
     "unit": "5kg",
     "image": "assets/arroz.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 11.79,
+    "offerMarketId": "bh",
+    "offerPrice": 10.96,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 11.79,
-      "extrabom": 12.29,
-      "carone": 13.5,
+      "bh": 10.96,
+      "atacadao": 12.17,
+      "extrabom": 11.29,
+      "carone": 11.95,
       "casagrande": 12.49,
-      "bh": 11.99
+      "atacado_vem": 12.38
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 11,79"
+    "discountTag": "Menor preço no Supermercados BH | R$ 10,96",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_24",
@@ -658,18 +689,20 @@ const PRODUCTS = [
     "unit": "1L",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "bh",
-    "offerPrice": 4.5,
+    "offerMarketId": "atacadao",
+    "offerPrice": 4.09,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 4.69,
-      "extrabom": 5.19,
-      "carone": 5.49,
-      "casagrande": 4.99,
-      "bh": 4.5
+      "atacadao": 4.09,
+      "casagrande": 4.21,
+      "extrabom": 4.25,
+      "carone": 4.5,
+      "bh": 4.58,
+      "atacado_vem": 4.66
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 4,50"
+    "discountTag": "Menor preço no Supermercados BH | R$ 4,09",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_25",
@@ -678,18 +711,19 @@ const PRODUCTS = [
     "unit": "14.5kg",
     "image": "assets/arroz.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "carone",
     "offerPrice": 179.9,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 179.9,
-      "extrabom": 199.9,
-      "carone": 209.0,
-      "assai": 185.0,
-      "atacado_vem": 182.0
+      "carone": 179.9,
+      "atacadao": 203.29,
+      "extrabom": 188.9,
+      "assai": 187.1,
+      "atacado_vem": 185.3
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 179,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 179,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_26",
@@ -698,18 +732,19 @@ const PRODUCTS = [
     "unit": "500ml",
     "image": "assets/arroz.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 29.9,
+    "offerMarketId": "bh",
+    "offerPrice": 27.51,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 29.9,
-      "extrabom": 31.9,
-      "carone": 35.9,
-      "casagrande": 32.9,
-      "bh": 30.9
+      "bh": 27.51,
+      "atacadao": 31.36,
+      "extrabom": 29.16,
+      "carone": 30.81,
+      "casagrande": 28.89
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 29,90"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 27,51",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_27",
@@ -723,13 +758,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 2.39,
-      "extrabom": 2.69,
-      "carone": 2.99,
-      "bh": 2.5,
-      "assai": 2.45
+      "extrabom": 2.56,
+      "carone": 2.7,
+      "bh": 2.46,
+      "assai": 2.53
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 2,39"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 2,39",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_28",
@@ -743,13 +779,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 15.9,
-      "extrabom": 21.9,
-      "carone": 22.9,
-      "casagrande": 18.9,
-      "atacado_vem": 16.5
+      "extrabom": 17.17,
+      "carone": 18.13,
+      "casagrande": 17.01,
+      "atacado_vem": 16.85
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 15,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 15,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_29",
@@ -758,18 +795,19 @@ const PRODUCTS = [
     "unit": "150g",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "extrabom",
     "offerPrice": 5.99,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 5.99,
-      "extrabom": 7.99,
-      "carone": 8.5,
-      "bh": 6.99,
-      "assai": 6.2
+      "extrabom": 5.99,
+      "atacadao": 6.29,
+      "carone": 6.17,
+      "bh": 6.29,
+      "assai": 6.47
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 5,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 5,99",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_30",
@@ -778,18 +816,19 @@ const PRODUCTS = [
     "unit": "390g",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "carone",
     "offerPrice": 1.99,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 1.99,
-      "extrabom": 4.49,
-      "carone": 4.9,
-      "casagrande": 3.5,
-      "atacado_vem": 2.2
+      "carone": 1.99,
+      "atacadao": 2.11,
+      "extrabom": 2.19,
+      "casagrande": 2.17,
+      "atacado_vem": 2.15
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 1,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,99",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_31",
@@ -798,18 +837,19 @@ const PRODUCTS = [
     "unit": "9x180ml",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 15.9,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 15.9,
-      "extrabom": 17.9,
-      "carone": 18.9,
-      "assai": 16.5,
-      "bh": 16.2
+      "bh": 15.9,
+      "atacadao": 17.01,
+      "extrabom": 17.65,
+      "carone": 16.7,
+      "assai": 17.49
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 15,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 15,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_32",
@@ -823,13 +863,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 8.9,
-      "extrabom": 11.9,
-      "carone": 12.5,
-      "casagrande": 10.9,
-      "atacado_vem": 9.5
+      "extrabom": 9.97,
+      "carone": 9.43,
+      "casagrande": 9.88,
+      "atacado_vem": 9.79
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 8,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 8,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_33",
@@ -838,18 +879,20 @@ const PRODUCTS = [
     "unit": "395g",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "bh",
-    "offerPrice": 7.63,
+    "offerMarketId": "atacadao",
+    "offerPrice": 6.94,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 7.95,
-      "extrabom": 8.99,
-      "carone": 9.5,
-      "bh": 7.63,
-      "assai": 8.2
+      "atacadao": 6.94,
+      "extrabom": 7.84,
+      "carone": 7.43,
+      "bh": 7.56,
+      "assai": 7.77,
+      "atacado_vem": 7.7
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 7,63"
+    "discountTag": "Menor preço no Supermercados BH | R$ 6,94",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_34",
@@ -858,18 +901,19 @@ const PRODUCTS = [
     "unit": "7 un",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "extrabom",
     "offerPrice": 23.9,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 23.9,
-      "extrabom": 30.99,
-      "carone": 32.9,
-      "casagrande": 27.9,
-      "atacado_vem": 24.9
+      "extrabom": 23.9,
+      "atacadao": 26.29,
+      "carone": 25.81,
+      "casagrande": 27.01,
+      "atacado_vem": 26.77
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 23,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 23,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_35",
@@ -878,18 +922,19 @@ const PRODUCTS = [
     "unit": "48.3g",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "carone",
     "offerPrice": 8.9,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 8.9,
-      "extrabom": 11.9,
-      "carone": 12.5,
-      "bh": 9.9,
-      "assai": 9.2
+      "carone": 8.9,
+      "atacadao": 9.88,
+      "extrabom": 9.17,
+      "bh": 9.88,
+      "assai": 10.15
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 8,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 8,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_36",
@@ -899,17 +944,18 @@ const PRODUCTS = [
     "image": "assets/itens.jpeg",
     "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 1.79,
+    "offerPrice": 1.99,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 1.79,
-      "extrabom": 2.19,
-      "carone": 2.49,
-      "casagrande": 2.0,
-      "atacado_vem": 1.89
+      "atacadao": 1.99,
+      "extrabom": 2.07,
+      "carone": 2.19,
+      "casagrande": 2.05,
+      "atacado_vem": 2.27
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 1,79"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,79",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_37",
@@ -923,13 +969,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 54.9,
-      "extrabom": 69.9,
-      "carone": 72.9,
-      "assai": 57.9,
-      "bh": 59.9
+      "extrabom": 57.65,
+      "carone": 60.94,
+      "assai": 57.1,
+      "bh": 62.04
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 54,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 54,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_38",
@@ -939,17 +986,18 @@ const PRODUCTS = [
     "image": "assets/cerveja.png",
     "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 10.99,
+    "offerPrice": 9.89,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 10.99,
-      "extrabom": 12.99,
-      "carone": 13.9,
-      "casagrande": 11.99,
-      "atacado_vem": 11.5
+      "atacadao": 9.89,
+      "extrabom": 10.48,
+      "carone": 11.08,
+      "casagrande": 10.38,
+      "atacado_vem": 10.29
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 10,99"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 9,89",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_39",
@@ -963,13 +1011,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 4.19,
-      "extrabom": 4.79,
-      "carone": 4.99,
-      "bh": 4.39,
-      "assai": 4.29
+      "extrabom": 4.48,
+      "carone": 4.73,
+      "bh": 4.32,
+      "assai": 4.44
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 4,19"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,19",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_40",
@@ -978,18 +1027,20 @@ const PRODUCTS = [
     "unit": "269ml",
     "image": "assets/limpeza.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 2.99,
+    "offerMarketId": "carone",
+    "offerPrice": 2.75,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 2.99,
-      "extrabom": 3.29,
-      "carone": 3.49,
-      "casagrande": 3.19,
-      "atacado_vem": 3.09
+      "carone": 2.75,
+      "atacadao": 2.86,
+      "extrabom": 2.97,
+      "casagrande": 2.94,
+      "atacado_vem": 2.92,
+      "assai": 2.94
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 2,99"
+    "discountTag": "Menor preço no Atacado Vem | R$ 2,75",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_41",
@@ -998,18 +1049,19 @@ const PRODUCTS = [
     "unit": "600ml",
     "image": "assets/cerveja.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "carone",
     "offerPrice": 4.49,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 4.49,
-      "extrabom": 4.99,
-      "carone": 5.29,
-      "bh": 4.79,
-      "assai": 4.59
+      "carone": 4.49,
+      "atacadao": 4.71,
+      "extrabom": 4.89,
+      "bh": 4.71,
+      "assai": 4.85
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 4,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,49",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_42",
@@ -1023,13 +1075,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 11.99,
-      "extrabom": 13.99,
-      "carone": 14.9,
-      "casagrande": 12.9,
-      "atacado_vem": 12.49
+      "extrabom": 13.19,
+      "carone": 12.47,
+      "casagrande": 13.07,
+      "atacado_vem": 12.95
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 11,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 11,99",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_43",
@@ -1038,18 +1091,19 @@ const PRODUCTS = [
     "unit": "500ml",
     "image": "assets/cerveja.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 4.39,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 4.39,
-      "extrabom": 4.99,
-      "carone": 5.49,
-      "bh": 4.69,
-      "assai": 4.49
+      "bh": 4.39,
+      "atacadao": 4.7,
+      "extrabom": 4.87,
+      "carone": 4.61,
+      "assai": 4.83
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 4,39"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,39",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_44",
@@ -1058,18 +1112,19 @@ const PRODUCTS = [
     "unit": "450ml",
     "image": "assets/cerveja.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 1.89,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 1.99,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 1.89,
-      "extrabom": 2.69,
-      "carone": 2.89,
-      "casagrande": 2.2,
-      "atacado_vem": 1.99
+      "atacado_vem": 1.99,
+      "atacadao": 2.15,
+      "extrabom": 2.23,
+      "carone": 2.11,
+      "casagrande": 2.21
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 1,89"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,89",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_45",
@@ -1078,18 +1133,19 @@ const PRODUCTS = [
     "unit": "290ml",
     "image": "assets/cerveja.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 1.05,
+    "offerMarketId": "carone",
+    "offerPrice": 1.99,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 1.05,
-      "extrabom": 1.29,
-      "carone": 1.49,
-      "bh": 1.19,
-      "assai": 1.1
+      "carone": 1.99,
+      "atacadao": 2.17,
+      "extrabom": 2.25,
+      "bh": 2.17,
+      "assai": 2.23
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 1,05"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,05",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_46",
@@ -1098,18 +1154,19 @@ const PRODUCTS = [
     "unit": "2.4kg",
     "image": "assets/limpeza.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 17.9,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 17.9,
-      "extrabom": 19.9,
-      "carone": 21.9,
-      "casagrande": 18.9,
-      "atacado_vem": 18.2
+      "atacado_vem": 17.9,
+      "atacadao": 19.69,
+      "extrabom": 20.41,
+      "carone": 19.33,
+      "casagrande": 20.23
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 17,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 17,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_47",
@@ -1123,13 +1180,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 9.75,
-      "extrabom": 10.79,
-      "carone": 11.9,
-      "bh": 10.2,
-      "assai": 9.9
+      "extrabom": 10.04,
+      "carone": 10.63,
+      "bh": 10.82,
+      "assai": 11.12
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 9,75"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 9,75",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_48",
@@ -1138,18 +1196,19 @@ const PRODUCTS = [
     "unit": "1L",
     "image": "assets/limpeza.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 1.99,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 1.99,
-      "extrabom": 2.35,
-      "carone": 2.59,
-      "casagrande": 2.2,
-      "atacado_vem": 2.05
+      "atacado_vem": 1.99,
+      "atacadao": 2.23,
+      "extrabom": 2.07,
+      "carone": 2.19,
+      "casagrande": 2.05
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 1,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,99",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_49",
@@ -1158,18 +1217,19 @@ const PRODUCTS = [
     "unit": "45g",
     "image": "assets/limpeza.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 1.39,
+    "offerMarketId": "bh",
+    "offerPrice": 1.99,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 1.39,
-      "extrabom": 1.59,
-      "carone": 1.79,
-      "bh": 1.49,
-      "assai": 1.42
+      "bh": 1.99,
+      "atacadao": 2.25,
+      "extrabom": 2.09,
+      "carone": 2.21,
+      "assai": 2.07
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 1,39"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,39",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_50",
@@ -1178,18 +1238,19 @@ const PRODUCTS = [
     "unit": "2L",
     "image": "assets/limpeza.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "extrabom",
     "offerPrice": 4.49,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 4.49,
-      "extrabom": 5.69,
-      "carone": 6.29,
-      "casagrande": 5.2,
-      "atacado_vem": 4.79
+      "extrabom": 4.49,
+      "atacadao": 5.12,
+      "carone": 5.03,
+      "casagrande": 4.71,
+      "atacado_vem": 4.67
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 4,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,49",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_51",
@@ -1199,17 +1260,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 0.89,
+    "offerPrice": 1.99,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 0.89,
-      "extrabom": 1.39,
-      "carone": 1.49,
-      "bh": 0.99,
-      "assai": 0.95
+      "atacadao": 1.99,
+      "extrabom": 2.13,
+      "carone": 2.25,
+      "bh": 2.05,
+      "assai": 2.11
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 0,89"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 0,89",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_52",
@@ -1223,13 +1285,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 13.9,
-      "extrabom": 15.5,
-      "carone": 16.9,
-      "casagrande": 14.9,
-      "atacado_vem": 14.2
+      "extrabom": 15.01,
+      "carone": 15.85,
+      "casagrande": 14.87,
+      "atacado_vem": 14.73
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 13,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 13,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_53",
@@ -1243,13 +1306,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 5.98,
-      "extrabom": 7.9,
-      "carone": 8.5,
-      "bh": 6.49,
-      "assai": 6.2
+      "extrabom": 6.52,
+      "carone": 6.16,
+      "bh": 6.28,
+      "assai": 6.46
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 5,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 5,98",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_54",
@@ -1263,13 +1327,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 2.95,
-      "extrabom": 3.35,
-      "carone": 3.69,
-      "casagrande": 3.19,
-      "atacado_vem": 3.05
+      "extrabom": 3.25,
+      "carone": 3.07,
+      "casagrande": 3.22,
+      "atacado_vem": 3.19
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 2,95"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 2,95",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_55",
@@ -1278,18 +1343,19 @@ const PRODUCTS = [
     "unit": "70g",
     "image": "assets/limpeza.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "carone",
     "offerPrice": 2.49,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 2.49,
-      "extrabom": 2.98,
-      "carone": 3.29,
-      "bh": 2.69,
-      "assai": 2.59
+      "carone": 2.49,
+      "atacadao": 2.66,
+      "extrabom": 2.76,
+      "bh": 2.66,
+      "assai": 2.74
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 2,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 2,49",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_56",
@@ -1298,18 +1364,19 @@ const PRODUCTS = [
     "unit": "unidade",
     "image": "assets/limpeza.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 349.0,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 349.0,
-      "extrabom": 370.0,
-      "carone": 389.0,
-      "casagrande": 365.0,
-      "atacado_vem": 355.0
+      "atacado_vem": 349.0,
+      "atacadao": 376.92,
+      "extrabom": 390.88,
+      "carone": 369.94,
+      "casagrande": 387.39
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 349,00"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 349,00",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_57",
@@ -1323,13 +1390,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 66.25,
-      "extrabom": 90.0,
-      "carone": 95.0,
-      "bh": 75.0,
-      "assai": 69.9
+      "extrabom": 74.86,
+      "carone": 70.89,
+      "bh": 72.21,
+      "assai": 74.2
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 66,25"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 66,25",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_58",
@@ -1338,18 +1406,19 @@ const PRODUCTS = [
     "unit": "500 fls",
     "image": "assets/limpeza.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 24.9,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 24.9,
-      "extrabom": 27.9,
-      "carone": 29.9,
-      "casagrande": 26.9,
-      "atacado_vem": 25.5
+      "atacado_vem": 24.9,
+      "atacadao": 27.39,
+      "extrabom": 28.39,
+      "carone": 26.89,
+      "casagrande": 28.14
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 24,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 24,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_59",
@@ -1358,18 +1427,20 @@ const PRODUCTS = [
     "unit": "15kg",
     "image": "assets/carne.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 59.0,
+    "offerMarketId": "bh",
+    "offerPrice": 55.46,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 59.0,
-      "extrabom": 79.9,
-      "carone": 82.9,
-      "bh": 69.9,
-      "assai": 62.9
+      "bh": 55.46,
+      "atacadao": 61.56,
+      "extrabom": 57.12,
+      "carone": 60.45,
+      "assai": 63.22,
+      "atacado_vem": 62.67
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 59,00"
+    "discountTag": "Menor preço no Atacado Vem | R$ 55,46",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_60",
@@ -1378,18 +1449,19 @@ const PRODUCTS = [
     "unit": "2.5kg",
     "image": "assets/limpeza.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "extrabom",
     "offerPrice": 43.54,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 43.54,
-      "extrabom": 52.9,
-      "carone": 55.9,
-      "casagrande": 48.9,
-      "atacado_vem": 45.9
+      "extrabom": 43.54,
+      "atacadao": 48.76,
+      "carone": 47.89,
+      "casagrande": 44.85,
+      "atacado_vem": 49.64
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 43,54"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 43,54",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_61",
@@ -1403,13 +1475,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 14.9,
-      "extrabom": 22.9,
-      "carone": 23.9,
-      "bh": 17.9,
-      "assai": 15.9
+      "extrabom": 15.65,
+      "carone": 16.54,
+      "bh": 16.84,
+      "assai": 15.5
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 14,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 14,90",
+    "sourceType": "encarte"
   },
   {
     "id": "car_1",
@@ -1418,17 +1491,18 @@ const PRODUCTS = [
     "unit": "680g",
     "image": "assets/tomate.png",
     "encarteId": 1,
-    "offerMarketId": "carone",
+    "offerMarketId": "atacadao",
     "offerPrice": 11.98,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 11.98,
-      "extrabom": 13.99,
-      "atacadao": 12.5,
-      "assai": 12.9
+      "atacadao": 11.98,
+      "carone": 13.42,
+      "extrabom": 12.7,
+      "assai": 12.58
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 11,98"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 11,98",
+    "sourceType": "encarte"
   },
   {
     "id": "car_2",
@@ -1437,17 +1511,18 @@ const PRODUCTS = [
     "unit": "190g",
     "image": "assets/arroz.png",
     "encarteId": 1,
-    "offerMarketId": "carone",
-    "offerPrice": 17.98,
+    "offerMarketId": "bh",
+    "offerPrice": 16.54,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 17.98,
-      "extrabom": 21.9,
-      "atacadao": 18.9,
-      "bh": 19.5
+      "bh": 16.54,
+      "carone": 18.69,
+      "extrabom": 17.7,
+      "atacadao": 17.04
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 17,98"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 16,54",
+    "sourceType": "encarte"
   },
   {
     "id": "car_3",
@@ -1456,17 +1531,18 @@ const PRODUCTS = [
     "unit": "400g",
     "image": "assets/tomate.png",
     "encarteId": 1,
-    "offerMarketId": "carone",
+    "offerMarketId": "extrabom",
     "offerPrice": 7.79,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 7.79,
-      "extrabom": 9.99,
-      "atacadao": 8.5,
-      "casagrande": 8.9
+      "extrabom": 7.79,
+      "carone": 8.88,
+      "atacadao": 8.1,
+      "casagrande": 8.34
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 7,79"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 7,79",
+    "sourceType": "encarte"
   },
   {
     "id": "car_4",
@@ -1480,12 +1556,13 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "carone": 7.79,
-      "extrabom": 9.5,
-      "atacadao": 8.2,
-      "bh": 8.9
+      "extrabom": 8.49,
+      "atacadao": 8.18,
+      "bh": 8.18
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 7,79"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 7,79",
+    "sourceType": "encarte"
   },
   {
     "id": "car_5",
@@ -1495,16 +1572,17 @@ const PRODUCTS = [
     "image": "assets/arroz.png",
     "encarteId": 1,
     "offerMarketId": "carone",
-    "offerPrice": 29.98,
+    "offerPrice": 27.58,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 29.98,
-      "extrabom": 35.9,
-      "atacadao": 31.9,
-      "assai": 32.5
+      "carone": 27.58,
+      "extrabom": 30.34,
+      "atacadao": 29.23,
+      "assai": 30.06
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 29,98"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 27,58",
+    "sourceType": "encarte"
   },
   {
     "id": "car_6",
@@ -1513,17 +1591,18 @@ const PRODUCTS = [
     "unit": "750ml",
     "image": "assets/cerveja.png",
     "encarteId": 1,
-    "offerMarketId": "carone",
-    "offerPrice": 84.9,
+    "offerMarketId": "atacadao",
+    "offerPrice": 76.41,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 84.9,
-      "extrabom": 99.0,
-      "atacadao": 89.9,
-      "casagrande": 94.0
+      "atacadao": 76.41,
+      "carone": 80.23,
+      "extrabom": 84.82,
+      "casagrande": 84.05
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 84,90"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 76,41",
+    "sourceType": "encarte"
   },
   {
     "id": "car_7",
@@ -1532,17 +1611,18 @@ const PRODUCTS = [
     "unit": "750ml",
     "image": "assets/cerveja.png",
     "encarteId": 1,
-    "offerMarketId": "carone",
-    "offerPrice": 72.9,
+    "offerMarketId": "bh",
+    "offerPrice": 65.61,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 72.9,
-      "extrabom": 85.0,
-      "atacadao": 75.9,
-      "bh": 79.9
+      "bh": 65.61,
+      "carone": 69.55,
+      "extrabom": 73.48,
+      "atacadao": 70.86
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 72,90"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 65,61",
+    "sourceType": "encarte"
   },
   {
     "id": "car_8",
@@ -1552,16 +1632,17 @@ const PRODUCTS = [
     "image": "assets/cerveja.png",
     "encarteId": 1,
     "offerMarketId": "carone",
-    "offerPrice": 129.0,
+    "offerPrice": 116.1,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 129.0,
-      "extrabom": 149.0,
-      "atacadao": 135.0,
-      "assai": 139.0
+      "carone": 116.1,
+      "extrabom": 131.19,
+      "atacadao": 126.55,
+      "assai": 130.03
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 129,00"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 116,10",
+    "sourceType": "encarte"
   },
   {
     "id": "car_9",
@@ -1575,12 +1656,13 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "carone": 18.9,
-      "extrabom": 21.9,
-      "atacadao": 19.9,
-      "assai": 19.5
+      "extrabom": 21.55,
+      "atacadao": 20.79,
+      "assai": 21.36
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 18,90"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 18,90",
+    "sourceType": "encarte"
   },
   {
     "id": "car_10",
@@ -1594,12 +1676,13 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "carone": 12.9,
-      "extrabom": 14.9,
-      "atacadao": 13.5,
-      "bh": 13.9
+      "extrabom": 13.29,
+      "atacadao": 14.32,
+      "bh": 14.32
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 12,90"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 12,90",
+    "sourceType": "encarte"
   },
   {
     "id": "bh_30_1",
@@ -1608,17 +1691,19 @@ const PRODUCTS = [
     "unit": "1kg",
     "image": "assets/frango.png",
     "encarteId": 1,
-    "offerMarketId": "bh",
-    "offerPrice": 12.33,
+    "offerMarketId": "atacadao",
+    "offerPrice": 11.34,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 12.33,
-      "extrabom": 14.98,
-      "atacadao": 13.5,
-      "carone": 14.9
+      "atacadao": 11.34,
+      "bh": 12.7,
+      "extrabom": 11.79,
+      "carone": 12.47,
+      "atacado_vem": 12.93
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 12,33"
+    "discountTag": "Menor preço no Supermercados BH | R$ 11,34",
+    "sourceType": "encarte"
   },
   {
     "id": "bh_30_2",
@@ -1628,16 +1713,18 @@ const PRODUCTS = [
     "image": "assets/frango.png",
     "encarteId": 1,
     "offerMarketId": "bh",
-    "offerPrice": 15.18,
+    "offerPrice": 13.97,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 15.18,
-      "extrabom": 17.8,
-      "atacadao": 16.5,
-      "carone": 16.9
+      "bh": 13.97,
+      "extrabom": 14.67,
+      "atacadao": 15.79,
+      "carone": 15.51,
+      "atacado_vem": 14.39
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 15,18"
+    "discountTag": "Menor preço no Supermercados BH | R$ 13,97",
+    "sourceType": "encarte"
   },
   {
     "id": "bh_30_3",
@@ -1651,11 +1738,12 @@ const PRODUCTS = [
     "validity": "Válido até 15/09/2026",
     "prices": {
       "bh": 12.98,
-      "extrabom": 15.98,
-      "carone": 14.9
+      "extrabom": 13.76,
+      "carone": 14.54
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 12,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 12,98",
+    "sourceType": "encarte"
   },
   {
     "id": "bh_30_4",
@@ -1664,17 +1752,18 @@ const PRODUCTS = [
     "unit": "1kg",
     "image": "assets/carne.png",
     "encarteId": 1,
-    "offerMarketId": "bh",
+    "offerMarketId": "carone",
     "offerPrice": 22.7,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 22.7,
-      "extrabom": 24.98,
-      "atacadao": 23.9,
-      "carone": 24.9
+      "carone": 22.7,
+      "bh": 23.38,
+      "extrabom": 24.29,
+      "atacadao": 23.38
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 22,70"
+    "discountTag": "Menor preço no Supermercados BH | R$ 22,70",
+    "sourceType": "encarte"
   },
   {
     "id": "bh_30_5",
@@ -1684,15 +1773,16 @@ const PRODUCTS = [
     "image": "assets/arroz.png",
     "encarteId": 1,
     "offerMarketId": "bh",
-    "offerPrice": 25.9,
+    "offerPrice": 23.83,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 25.9,
-      "carone": 29.9,
-      "extrabom": 28.9
+      "bh": 23.83,
+      "carone": 27.17,
+      "extrabom": 25.74
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 25,90"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 23,83",
+    "sourceType": "encarte"
   },
   {
     "id": "bh_30_6",
@@ -1706,12 +1796,13 @@ const PRODUCTS = [
     "validity": "Válido até 15/09/2026",
     "prices": {
       "bh": 6.98,
-      "extrabom": 8.98,
-      "atacadao": 7.5,
-      "carone": 7.98
+      "extrabom": 7.61,
+      "atacadao": 7.33,
+      "carone": 7.19
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 6,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 6,98",
+    "sourceType": "encarte"
   },
   {
     "id": "bh_30_7",
@@ -1725,12 +1816,13 @@ const PRODUCTS = [
     "validity": "Válido até 15/09/2026",
     "prices": {
       "bh": 4.98,
-      "extrabom": 6.98,
-      "atacadao": 5.49,
-      "carone": 5.79
+      "extrabom": 5.48,
+      "atacadao": 5.28,
+      "carone": 5.18
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 4,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 4,98",
+    "sourceType": "encarte"
   },
   {
     "id": "bh_30_8",
@@ -1739,17 +1831,18 @@ const PRODUCTS = [
     "unit": "1kg",
     "image": "assets/itens.jpeg",
     "encarteId": 3,
-    "offerMarketId": "bh",
+    "offerMarketId": "extrabom",
     "offerPrice": 45.98,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 45.98,
-      "extrabom": 49.9,
-      "atacadao": 46.9,
-      "carone": 47.9
+      "extrabom": 45.98,
+      "bh": 49.2,
+      "atacadao": 49.2,
+      "carone": 48.28
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 45,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 45,98",
+    "sourceType": "encarte"
   },
   {
     "id": "bh_30_9",
@@ -1758,17 +1851,18 @@ const PRODUCTS = [
     "unit": "825g",
     "image": "assets/itens.jpeg",
     "encarteId": 3,
-    "offerMarketId": "bh",
+    "offerMarketId": "carone",
     "offerPrice": 45.9,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 45.9,
-      "extrabom": 48.9,
-      "atacadao": 46.5,
-      "carone": 47.5
+      "carone": 45.9,
+      "bh": 49.57,
+      "extrabom": 51.41,
+      "atacadao": 49.57
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 45,90"
+    "discountTag": "Menor preço no Supermercados BH | R$ 45,90",
+    "sourceType": "encarte"
   },
   {
     "id": "bh_30_10",
@@ -1777,17 +1871,18 @@ const PRODUCTS = [
     "unit": "473ml",
     "image": "assets/limpeza.png",
     "encarteId": 3,
-    "offerMarketId": "bh",
+    "offerMarketId": "carone",
     "offerPrice": 3.99,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 3.99,
-      "extrabom": 4.35,
-      "atacadao": 4.19,
-      "carone": 4.29
+      "carone": 3.99,
+      "bh": 4.35,
+      "extrabom": 4.51,
+      "atacadao": 4.35
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 3,99"
+    "discountTag": "Menor preço no Supermercados BH | R$ 3,99",
+    "sourceType": "encarte"
   },
   {
     "id": "bh_30_11",
@@ -1796,17 +1891,18 @@ const PRODUCTS = [
     "unit": "3L",
     "image": "assets/limpeza.png",
     "encarteId": 4,
-    "offerMarketId": "bh",
+    "offerMarketId": "atacadao",
     "offerPrice": 29.98,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 29.98,
-      "extrabom": 35.9,
-      "atacadao": 31.9,
-      "carone": 32.9
+      "atacadao": 29.98,
+      "bh": 32.98,
+      "extrabom": 34.18,
+      "carone": 32.38
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 29,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 29,98",
+    "sourceType": "encarte"
   },
   {
     "id": "bh_30_12",
@@ -1820,12 +1916,13 @@ const PRODUCTS = [
     "validity": "Válido até 15/09/2026",
     "prices": {
       "bh": 78.9,
-      "extrabom": 85.9,
-      "atacadao": 79.9,
-      "carone": 82.9
+      "extrabom": 81.27,
+      "atacadao": 87.58,
+      "carone": 86.0
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 78,90"
+    "discountTag": "Menor preço no Supermercados BH | R$ 78,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_apti_1",
@@ -1834,17 +1931,18 @@ const PRODUCTS = [
     "unit": "1,05kg",
     "image": "assets/carne.png",
     "encarteId": 5,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "extrabom",
     "offerPrice": 8.99,
     "validity": "Válido 04/09 a 13/09/2026",
     "prices": {
-      "atacadao": 8.99,
-      "bh": 9.98,
-      "extrabom": 10.5,
-      "carone": 9.9
+      "extrabom": 8.99,
+      "atacadao": 10.07,
+      "bh": 10.07,
+      "carone": 9.89
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 8,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 8,99",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_apti_2",
@@ -1853,16 +1951,17 @@ const PRODUCTS = [
     "unit": "1kg",
     "image": "assets/itens.jpeg",
     "encarteId": 5,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "carone",
     "offerPrice": 39.9,
     "validity": "Válido 04/09 a 13/09/2026",
     "prices": {
-      "atacadao": 39.9,
-      "extrabom": 44.9,
-      "carone": 42.9
+      "carone": 39.9,
+      "atacadao": 45.09,
+      "extrabom": 41.9
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 39,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 39,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_apti_3",
@@ -1871,17 +1970,18 @@ const PRODUCTS = [
     "unit": "1kg",
     "image": "assets/itens.jpeg",
     "encarteId": 5,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 15.9,
     "validity": "Válido 04/09 a 13/09/2026",
     "prices": {
-      "atacadao": 15.9,
-      "bh": 17.9,
-      "extrabom": 18.5,
-      "carone": 16.9
+      "bh": 15.9,
+      "atacadao": 18.13,
+      "extrabom": 16.85,
+      "carone": 17.81
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 15,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 15,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_apti_4",
@@ -1895,12 +1995,13 @@ const PRODUCTS = [
     "validity": "Válido 04/09 a 13/09/2026",
     "prices": {
       "atacadao": 2.89,
-      "extrabom": 3.98,
-      "bh": 3.49,
-      "carone": 3.29
+      "extrabom": 3.09,
+      "bh": 2.98,
+      "carone": 3.27
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 2,89"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 2,89",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_apti_5",
@@ -1909,17 +2010,18 @@ const PRODUCTS = [
     "unit": "20g",
     "image": "assets/itens.jpeg",
     "encarteId": 5,
-    "offerMarketId": "atacadao",
-    "offerPrice": 0.99,
+    "offerMarketId": "bh",
+    "offerPrice": 1.99,
     "validity": "Válido 04/09 a 13/09/2026",
     "prices": {
-      "atacadao": 0.99,
-      "bh": 1.49,
-      "extrabom": 1.39,
-      "carone": 1.19
+      "bh": 1.99,
+      "atacadao": 2.07,
+      "extrabom": 2.15,
+      "carone": 2.27
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 0,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 0,99",
+    "sourceType": "encarte"
   },
   {
     "id": "cg_set_1",
@@ -1929,17 +2031,18 @@ const PRODUCTS = [
     "image": "assets/contrafile.png",
     "encarteId": 1,
     "offerMarketId": "extrabom",
-    "offerPrice": 47.49,
+    "offerPrice": 43.22,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "casagrande": 49.99,
-      "extrabom": 47.49,
-      "carone": 48.99,
-      "bh": 52.9,
-      "atacadao": 51.9
+      "extrabom": 43.22,
+      "casagrande": 46.68,
+      "carone": 44.52,
+      "bh": 45.38,
+      "atacadao": 45.38
     },
     "featured": true,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 47,49"
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 43,22",
+    "sourceType": "encarte"
   },
   {
     "id": "cg_set_2",
@@ -1948,18 +2051,19 @@ const PRODUCTS = [
     "unit": "1kg",
     "image": "assets/carne.png",
     "encarteId": 1,
-    "offerMarketId": "casagrande",
-    "offerPrice": 16.83,
+    "offerMarketId": "carone",
+    "offerPrice": 15.48,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "casagrande": 16.83,
-      "extrabom": 18.9,
-      "carone": 19.9,
-      "bh": 18.49,
-      "atacadao": 17.9
+      "carone": 15.48,
+      "casagrande": 16.87,
+      "extrabom": 17.03,
+      "bh": 16.41,
+      "atacadao": 16.41
     },
     "featured": true,
-    "discountTag": "Menor preço no Rede Casagrande | R$ 16,83"
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 15,48",
+    "sourceType": "encarte"
   },
   {
     "id": "cg_set_3",
@@ -1968,18 +2072,19 @@ const PRODUCTS = [
     "unit": "400g",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "casagrande",
+    "offerMarketId": "bh",
     "offerPrice": 10.98,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "casagrande": 10.98,
-      "extrabom": 12.9,
-      "carone": 13.5,
-      "bh": 11.9,
-      "atacadao": 11.49
+      "bh": 10.98,
+      "casagrande": 12.08,
+      "extrabom": 12.19,
+      "carone": 11.53,
+      "atacadao": 11.75
     },
     "featured": true,
-    "discountTag": "Menor preço no Rede Casagrande | R$ 10,98"
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 10,98",
+    "sourceType": "encarte"
   },
   {
     "id": "cg_set_4",
@@ -1988,18 +2093,19 @@ const PRODUCTS = [
     "unit": "1,033kg",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "casagrande",
+    "offerMarketId": "atacadao",
     "offerPrice": 17.98,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "casagrande": 17.98,
-      "extrabom": 19.9,
-      "carone": 21.9,
-      "bh": 18.9,
-      "atacadao": 18.5
+      "atacadao": 17.98,
+      "casagrande": 19.96,
+      "extrabom": 20.14,
+      "carone": 19.06,
+      "bh": 19.42
     },
     "featured": true,
-    "discountTag": "Menor preço no Rede Casagrande | R$ 17,98"
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 17,98",
+    "sourceType": "encarte"
   },
   {
     "id": "cg_set_5",
@@ -2008,19 +2114,20 @@ const PRODUCTS = [
     "unit": "150g",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "assai",
-    "offerPrice": 8.35,
+    "offerMarketId": "casagrande",
+    "offerPrice": 7.51,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "casagrande": 8.98,
-      "extrabom": 9.9,
-      "carone": 10.5,
-      "bh": 9.49,
-      "atacadao": 9.2,
-      "assai": 8.35
+      "casagrande": 7.51,
+      "atacadao": 8.19,
+      "extrabom": 8.49,
+      "carone": 8.04,
+      "bh": 8.19,
+      "assai": 8.41
     },
     "featured": true,
-    "discountTag": "Menor preço no Assaí Atacadista | R$ 8,35"
+    "discountTag": "Menor preço no Assaí Atacadista | R$ 7,51",
+    "sourceType": "encarte"
   },
   {
     "id": "cg_set_6",
@@ -2029,18 +2136,20 @@ const PRODUCTS = [
     "unit": "1kg",
     "image": "assets/frango.png",
     "encarteId": 1,
-    "offerMarketId": "bh",
-    "offerPrice": 9.4,
+    "offerMarketId": "extrabom",
+    "offerPrice": 8.65,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "casagrande": 9.9,
-      "extrabom": 10.9,
-      "carone": 11.9,
-      "bh": 9.4,
-      "atacadao": 9.98
+      "extrabom": 8.65,
+      "casagrande": 9.77,
+      "carone": 9.34,
+      "bh": 9.52,
+      "atacadao": 9.52,
+      "atacado_vem": 9.69
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 9,40"
+    "discountTag": "Menor preço no Supermercados BH | R$ 8,65",
+    "sourceType": "encarte"
   },
   {
     "id": "cg_set_7",
@@ -2049,18 +2158,19 @@ const PRODUCTS = [
     "unit": "1kg",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "casagrande",
+    "offerMarketId": "extrabom",
     "offerPrice": 13.99,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "casagrande": 13.99,
-      "extrabom": 15.9,
-      "carone": 16.9,
-      "bh": 14.9,
-      "atacadao": 14.5
+      "extrabom": 13.99,
+      "casagrande": 15.95,
+      "carone": 15.25,
+      "bh": 15.53,
+      "atacadao": 15.53
     },
     "featured": true,
-    "discountTag": "Menor preço no Rede Casagrande | R$ 13,99"
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 13,99",
+    "sourceType": "encarte"
   },
   {
     "id": "cg_set_8",
@@ -2069,18 +2179,19 @@ const PRODUCTS = [
     "unit": "115g",
     "image": "assets/tomate.png",
     "encarteId": 1,
-    "offerMarketId": "casagrande",
+    "offerMarketId": "bh",
     "offerPrice": 9.99,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "casagrande": 9.99,
-      "extrabom": 11.9,
-      "carone": 12.5,
-      "bh": 10.9,
-      "atacadao": 10.5
+      "bh": 9.99,
+      "casagrande": 10.29,
+      "extrabom": 10.39,
+      "carone": 10.99,
+      "atacadao": 11.19
     },
     "featured": true,
-    "discountTag": "Menor preço no Rede Casagrande | R$ 9,99"
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 9,99",
+    "sourceType": "encarte"
   },
   {
     "id": "cg_set_9",
@@ -2089,18 +2200,19 @@ const PRODUCTS = [
     "unit": "120g",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "casagrande",
+    "offerMarketId": "atacadao",
     "offerPrice": 10.99,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "casagrande": 10.99,
-      "extrabom": 12.9,
-      "carone": 13.5,
-      "bh": 11.9,
-      "atacadao": 11.5
+      "atacadao": 10.99,
+      "casagrande": 11.43,
+      "extrabom": 11.54,
+      "carone": 12.2,
+      "bh": 12.42
     },
     "featured": true,
-    "discountTag": "Menor preço no Rede Casagrande | R$ 10,99"
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 10,99",
+    "sourceType": "encarte"
   },
   {
     "id": "cg_set_10",
@@ -2114,13 +2226,14 @@ const PRODUCTS = [
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "casagrande": 29.98,
-      "extrabom": 34.9,
-      "carone": 36.9,
-      "bh": 31.9,
-      "atacadao": 30.9
+      "extrabom": 31.78,
+      "carone": 33.58,
+      "bh": 34.18,
+      "atacadao": 34.18
     },
     "featured": true,
-    "discountTag": "Menor preço no Rede Casagrande | R$ 29,98"
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 29,98",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_1",
@@ -2130,18 +2243,19 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 6,
     "offerMarketId": "atacadao",
-    "offerPrice": 13.98,
+    "offerPrice": 13.28,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 13.98,
-      "extrabom": 16.9,
-      "carone": 17.49,
-      "casagrande": 16.5,
-      "bh": 15.9,
-      "atacado_vem": 14.5
+      "atacadao": 13.28,
+      "extrabom": 14.21,
+      "carone": 15.01,
+      "casagrande": 14.08,
+      "bh": 13.68,
+      "atacado_vem": 13.94
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 13,98"
+    "discountTag": "Menor preço no Atacado Vem | R$ 13,28",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_2",
@@ -2150,19 +2264,20 @@ const PRODUCTS = [
     "unit": "500ml",
     "image": "assets/limpeza.png",
     "encarteId": 6,
-    "offerMarketId": "atacadao",
-    "offerPrice": 11.2,
+    "offerMarketId": "extrabom",
+    "offerPrice": 10.64,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 11.2,
-      "extrabom": 13.9,
-      "carone": 14.2,
-      "casagrande": 13.5,
-      "bh": 12.9,
-      "atacado_vem": 11.9
+      "extrabom": 10.64,
+      "atacadao": 11.07,
+      "carone": 12.13,
+      "casagrande": 11.38,
+      "bh": 11.07,
+      "atacado_vem": 11.28
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 11,20"
+    "discountTag": "Menor preço no Supermercados BH | R$ 10,64",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_3",
@@ -2176,14 +2291,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 34.5,
-      "extrabom": 38.9,
-      "carone": 39.9,
-      "casagrande": 37.9,
-      "bh": 36.9,
-      "atacado_vem": 35.9
+      "extrabom": 37.61,
+      "carone": 35.54,
+      "casagrande": 37.26,
+      "bh": 36.23,
+      "atacado_vem": 36.91
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 34,50"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 34,50",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_4",
@@ -2192,19 +2308,20 @@ const PRODUCTS = [
     "unit": "pack 12x70g",
     "image": "assets/limpeza.png",
     "encarteId": 6,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 32.9,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 32.9,
-      "extrabom": 37.9,
-      "carone": 38.9,
-      "casagrande": 36.9,
-      "bh": 35.9,
-      "atacado_vem": 33.9
+      "bh": 32.9,
+      "atacadao": 34.87,
+      "extrabom": 36.19,
+      "carone": 34.22,
+      "casagrande": 35.86,
+      "atacado_vem": 35.53
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 32,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 32,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_5",
@@ -2213,19 +2330,20 @@ const PRODUCTS = [
     "unit": "70g",
     "image": "assets/limpeza.png",
     "encarteId": 6,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 2.49,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 2.49,
-      "extrabom": 3.49,
-      "carone": 3.69,
-      "casagrande": 3.29,
-      "bh": 2.99,
-      "atacado_vem": 2.69
+      "atacado_vem": 2.49,
+      "atacadao": 2.66,
+      "extrabom": 2.76,
+      "carone": 2.61,
+      "casagrande": 2.74,
+      "bh": 2.66
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 2,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 2,49",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_6",
@@ -2239,14 +2357,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 6.49,
-      "extrabom": 8.99,
-      "carone": 9.2,
-      "casagrande": 8.5,
-      "bh": 7.9,
-      "atacado_vem": 6.99
+      "extrabom": 7.27,
+      "carone": 6.88,
+      "casagrande": 7.2,
+      "bh": 7.01,
+      "atacado_vem": 7.14
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 6,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 6,49",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_7",
@@ -2255,19 +2374,20 @@ const PRODUCTS = [
     "unit": "85g",
     "image": "assets/limpeza.png",
     "encarteId": 6,
-    "offerMarketId": "atacadao",
-    "offerPrice": 2.09,
+    "offerMarketId": "carone",
+    "offerPrice": 1.99,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 2.09,
-      "extrabom": 2.89,
-      "carone": 2.99,
-      "casagrande": 2.79,
-      "bh": 2.49,
-      "atacado_vem": 2.19
+      "carone": 1.99,
+      "atacadao": 2.17,
+      "extrabom": 2.25,
+      "casagrande": 2.23,
+      "bh": 2.17,
+      "atacado_vem": 2.21
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 2,09"
+    "discountTag": "Menor preço no Supermercados BH | R$ 1,99",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_8",
@@ -2276,19 +2396,20 @@ const PRODUCTS = [
     "unit": "500ml",
     "image": "assets/limpeza.png",
     "encarteId": 6,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 4.29,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 4.29,
-      "extrabom": 6.5,
-      "carone": 6.8,
-      "casagrande": 5.99,
-      "bh": 5.49,
-      "atacado_vem": 4.59
+      "atacado_vem": 4.29,
+      "atacadao": 4.72,
+      "extrabom": 4.89,
+      "carone": 4.63,
+      "casagrande": 4.85,
+      "bh": 4.72
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 4,29"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,29",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_9",
@@ -2302,14 +2423,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 19.5,
-      "extrabom": 22.9,
-      "carone": 23.5,
-      "casagrande": 21.9,
-      "bh": 20.9,
-      "atacado_vem": 19.9
+      "extrabom": 20.09,
+      "carone": 21.26,
+      "casagrande": 22.23,
+      "bh": 21.65,
+      "atacado_vem": 22.03
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 19,50"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 19,50",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_10",
@@ -2318,19 +2440,20 @@ const PRODUCTS = [
     "unit": "500ml",
     "image": "assets/limpeza.png",
     "encarteId": 6,
-    "offerMarketId": "atacadao",
-    "offerPrice": 8.99,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 8.54,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 8.99,
-      "extrabom": 10.78,
-      "carone": 11.49,
-      "casagrande": 10.5,
-      "bh": 9.9,
-      "atacado_vem": 9.29
+      "atacado_vem": 8.54,
+      "atacadao": 9.56,
+      "extrabom": 8.88,
+      "carone": 9.39,
+      "casagrande": 8.8,
+      "bh": 9.56
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 8,99"
+    "discountTag": "Menor preço no Atacado Vem | R$ 8,54",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_11",
@@ -2344,14 +2467,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 14.9,
-      "extrabom": 18.9,
-      "carone": 19.5,
-      "casagrande": 17.9,
-      "bh": 16.9,
-      "atacado_vem": 15.5
+      "extrabom": 15.65,
+      "carone": 16.54,
+      "casagrande": 15.5,
+      "bh": 16.84,
+      "atacado_vem": 15.35
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 14,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 14,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_12",
@@ -2360,19 +2484,20 @@ const PRODUCTS = [
     "unit": "200ml",
     "image": "assets/limpeza.png",
     "encarteId": 6,
-    "offerMarketId": "atacadao",
-    "offerPrice": 15.9,
+    "offerMarketId": "carone",
+    "offerPrice": 15.11,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 15.9,
-      "extrabom": 18.9,
-      "carone": 19.9,
-      "casagrande": 17.9,
-      "bh": 16.9,
-      "atacado_vem": 16.29
+      "carone": 15.11,
+      "atacadao": 17.23,
+      "extrabom": 16.02,
+      "casagrande": 15.87,
+      "bh": 17.23,
+      "atacado_vem": 15.71
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 15,90"
+    "discountTag": "Menor preço no Supermercados BH | R$ 15,11",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_13",
@@ -2381,19 +2506,20 @@ const PRODUCTS = [
     "unit": "500ml",
     "image": "assets/limpeza.png",
     "encarteId": 6,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 2.19,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 2.19,
-      "extrabom": 2.49,
-      "carone": 2.59,
-      "casagrande": 2.39,
-      "bh": 2.29,
-      "atacado_vem": 2.19
+      "atacado_vem": 2.19,
+      "atacadao": 2.26,
+      "extrabom": 2.34,
+      "carone": 2.47,
+      "casagrande": 2.32,
+      "bh": 2.26
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 2,19"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 2,19",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_14",
@@ -2403,18 +2529,19 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 6,
     "offerMarketId": "atacadao",
-    "offerPrice": 6.98,
+    "offerPrice": 6.7,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 6.98,
-      "extrabom": 8.97,
-      "carone": 9.49,
-      "casagrande": 8.5,
-      "bh": 7.9,
-      "atacado_vem": 7.29
+      "atacadao": 6.7,
+      "extrabom": 7.24,
+      "carone": 7.64,
+      "casagrande": 7.17,
+      "bh": 6.97,
+      "atacado_vem": 7.1
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 6,98"
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 6,70",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_15",
@@ -2423,19 +2550,20 @@ const PRODUCTS = [
     "unit": "8kg",
     "image": "assets/limpeza.png",
     "encarteId": 6,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 68.9,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 68.9,
-      "extrabom": 81.9,
-      "carone": 84.9,
-      "casagrande": 79.9,
-      "bh": 74.9,
-      "atacado_vem": 69.9
+      "atacado_vem": 68.9,
+      "atacadao": 72.35,
+      "extrabom": 75.1,
+      "carone": 70.97,
+      "casagrande": 74.41,
+      "bh": 72.35
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 68,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 68,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_16",
@@ -2444,19 +2572,20 @@ const PRODUCTS = [
     "unit": "7L",
     "image": "assets/limpeza.png",
     "encarteId": 6,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 45.9,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 45.9,
-      "extrabom": 57.98,
-      "carone": 59.9,
-      "casagrande": 54.9,
-      "bh": 49.9,
-      "atacado_vem": 46.9
+      "bh": 45.9,
+      "atacadao": 48.65,
+      "extrabom": 50.49,
+      "carone": 47.74,
+      "casagrande": 50.03,
+      "atacado_vem": 49.57
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 45,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 45,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_17",
@@ -2465,19 +2594,20 @@ const PRODUCTS = [
     "unit": "24 un",
     "image": "assets/limpeza.png",
     "encarteId": 7,
-    "offerMarketId": "atacadao",
-    "offerPrice": 32.5,
+    "offerMarketId": "carone",
+    "offerPrice": 30.88,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 32.5,
-      "extrabom": 37.5,
-      "carone": 38.9,
-      "casagrande": 36.9,
-      "bh": 34.9,
-      "atacado_vem": 33.5
+      "carone": 30.88,
+      "atacadao": 33.04,
+      "extrabom": 34.28,
+      "casagrande": 33.97,
+      "bh": 33.04,
+      "atacado_vem": 33.66
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 32,50"
+    "discountTag": "Menor preço no Supermercados BH | R$ 30,88",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_18",
@@ -2491,14 +2621,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 33.9,
-      "extrabom": 39.99,
-      "carone": 41.9,
-      "casagrande": 38.9,
-      "bh": 36.9,
-      "atacado_vem": 34.9
+      "extrabom": 37.97,
+      "carone": 35.93,
+      "casagrande": 37.63,
+      "bh": 36.61,
+      "atacado_vem": 37.29
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 33,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 33,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_19",
@@ -2507,19 +2638,20 @@ const PRODUCTS = [
     "unit": "16 un",
     "image": "assets/limpeza.png",
     "encarteId": 7,
-    "offerMarketId": "atacadao",
-    "offerPrice": 5.48,
+    "offerMarketId": "bh",
+    "offerPrice": 5.21,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 5.48,
-      "extrabom": 6.48,
-      "carone": 6.9,
-      "casagrande": 6.2,
-      "bh": 5.9,
-      "atacado_vem": 5.69
+      "bh": 5.21,
+      "atacadao": 5.68,
+      "extrabom": 5.89,
+      "carone": 5.57,
+      "casagrande": 5.84,
+      "atacado_vem": 5.78
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 5,48"
+    "discountTag": "Menor preço no Atacado Vem | R$ 5,21",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_20",
@@ -2528,19 +2660,20 @@ const PRODUCTS = [
     "unit": "kit 2x1,2L",
     "image": "assets/limpeza.png",
     "encarteId": 7,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 34.9,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 34.9,
-      "extrabom": 44.9,
-      "carone": 46.9,
-      "casagrande": 42.9,
-      "bh": 38.9,
-      "atacado_vem": 35.9
+      "atacado_vem": 34.9,
+      "atacadao": 38.39,
+      "extrabom": 39.79,
+      "carone": 37.69,
+      "casagrande": 39.44,
+      "bh": 38.39
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 34,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 34,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_21",
@@ -2549,19 +2682,20 @@ const PRODUCTS = [
     "unit": "500ml",
     "image": "assets/limpeza.png",
     "encarteId": 7,
-    "offerMarketId": "atacadao",
-    "offerPrice": 4.29,
+    "offerMarketId": "bh",
+    "offerPrice": 4.12,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 4.29,
-      "extrabom": 5.49,
-      "carone": 5.8,
-      "casagrande": 5.2,
-      "bh": 4.79,
-      "atacado_vem": 4.49
+      "bh": 4.12,
+      "atacadao": 4.57,
+      "extrabom": 4.24,
+      "carone": 4.49,
+      "casagrande": 4.7,
+      "atacado_vem": 4.66
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 4,29"
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 4,12",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_22",
@@ -2570,19 +2704,20 @@ const PRODUCTS = [
     "unit": "500ml",
     "image": "assets/limpeza.png",
     "encarteId": 7,
-    "offerMarketId": "atacadao",
-    "offerPrice": 14.98,
+    "offerMarketId": "extrabom",
+    "offerPrice": 14.23,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 14.98,
-      "extrabom": 19.5,
-      "carone": 20.9,
-      "casagrande": 18.9,
-      "bh": 16.9,
-      "atacado_vem": 15.5
+      "extrabom": 14.23,
+      "atacadao": 15.94,
+      "carone": 15.65,
+      "casagrande": 14.66,
+      "bh": 15.94,
+      "atacado_vem": 16.22
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 14,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 14,23",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_23",
@@ -2596,14 +2731,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 19.9,
-      "extrabom": 27.9,
-      "carone": 28.9,
-      "casagrande": 25.9,
-      "bh": 22.9,
-      "atacado_vem": 20.9
+      "extrabom": 20.89,
+      "carone": 22.09,
+      "casagrande": 20.7,
+      "bh": 22.49,
+      "atacado_vem": 20.5
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 19,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 19,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_24",
@@ -2612,19 +2748,20 @@ const PRODUCTS = [
     "unit": "12 rolos",
     "image": "assets/limpeza.png",
     "encarteId": 7,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 9.98,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 9.98,
-      "extrabom": 14.88,
-      "carone": 15.5,
-      "casagrande": 13.9,
-      "bh": 11.9,
-      "atacado_vem": 10.5
+      "bh": 9.98,
+      "atacadao": 11.38,
+      "extrabom": 10.58,
+      "carone": 11.18,
+      "casagrande": 10.48,
+      "atacado_vem": 10.38
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 9,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 9,98",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_25",
@@ -2633,19 +2770,20 @@ const PRODUCTS = [
     "unit": "20 rolos",
     "image": "assets/limpeza.png",
     "encarteId": 7,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 39.9,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 39.9,
-      "extrabom": 54.98,
-      "carone": 56.9,
-      "casagrande": 49.9,
-      "bh": 44.9,
-      "atacado_vem": 41.9
+      "atacado_vem": 39.9,
+      "atacadao": 41.1,
+      "extrabom": 42.69,
+      "carone": 45.09,
+      "casagrande": 42.29,
+      "bh": 41.1
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 39,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 39,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_26",
@@ -2655,18 +2793,19 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 7,
     "offerMarketId": "atacadao",
-    "offerPrice": 1.98,
+    "offerPrice": 1.99,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 1.98,
-      "extrabom": 2.65,
-      "carone": 2.79,
-      "casagrande": 2.49,
-      "bh": 2.29,
-      "atacado_vem": 2.09
+      "atacadao": 1.99,
+      "extrabom": 2.15,
+      "carone": 2.27,
+      "casagrande": 2.13,
+      "bh": 2.07,
+      "atacado_vem": 2.11
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 1,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,98",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_27",
@@ -2675,19 +2814,20 @@ const PRODUCTS = [
     "unit": "pack 2x50ml",
     "image": "assets/limpeza.png",
     "encarteId": 7,
-    "offerMarketId": "atacadao",
-    "offerPrice": 11.98,
+    "offerMarketId": "carone",
+    "offerPrice": 11.38,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 11.98,
-      "extrabom": 15.9,
-      "carone": 16.5,
-      "casagrande": 14.9,
-      "bh": 13.9,
-      "atacado_vem": 12.5
+      "carone": 11.38,
+      "atacadao": 11.95,
+      "extrabom": 12.4,
+      "casagrande": 12.29,
+      "bh": 11.95,
+      "atacado_vem": 12.18
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 11,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 11,38",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_28",
@@ -2697,18 +2837,19 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 7,
     "offerMarketId": "atacadao",
-    "offerPrice": 12.9,
+    "offerPrice": 12.38,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 12.9,
-      "extrabom": 16.9,
-      "carone": 17.5,
-      "casagrande": 15.9,
-      "bh": 14.9,
-      "atacado_vem": 13.5
+      "atacadao": 12.38,
+      "extrabom": 13.62,
+      "carone": 12.88,
+      "casagrande": 13.49,
+      "bh": 13.12,
+      "atacado_vem": 13.37
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 12,90"
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 12,38",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_29",
@@ -2722,14 +2863,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 12.9,
-      "extrabom": 14.49,
-      "carone": 15.2,
-      "casagrande": 14.2,
+      "extrabom": 14.32,
+      "carone": 13.55,
+      "casagrande": 14.19,
       "bh": 13.8,
-      "atacado_vem": 13.1
+      "atacado_vem": 14.06
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 12,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 12,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_30",
@@ -2738,19 +2880,20 @@ const PRODUCTS = [
     "unit": "5 un",
     "image": "assets/limpeza.png",
     "encarteId": 7,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 4.79,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 4.79,
-      "extrabom": 5.49,
-      "carone": 5.9,
-      "casagrande": 5.3,
-      "bh": 4.99,
-      "atacado_vem": 4.85
+      "atacado_vem": 4.79,
+      "atacadao": 5.17,
+      "extrabom": 5.36,
+      "carone": 5.08,
+      "casagrande": 5.32,
+      "bh": 5.17
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 4,79"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,79",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_31",
@@ -2759,19 +2902,20 @@ const PRODUCTS = [
     "unit": "5L",
     "image": "assets/limpeza.png",
     "encarteId": 7,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 45.9,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 45.9,
-      "extrabom": 49.9,
-      "carone": 52.9,
-      "casagrande": 48.9,
-      "bh": 47.9,
-      "atacado_vem": 46.5
+      "bh": 45.9,
+      "atacadao": 50.03,
+      "extrabom": 51.87,
+      "carone": 49.11,
+      "casagrande": 51.41,
+      "atacado_vem": 50.95
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 45,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 45,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_32",
@@ -2780,19 +2924,20 @@ const PRODUCTS = [
     "unit": "1kg",
     "image": "assets/limpeza.png",
     "encarteId": 7,
-    "offerMarketId": "atacadao",
-    "offerPrice": 9.9,
+    "offerMarketId": "carone",
+    "offerPrice": 9.4,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 9.9,
-      "extrabom": 13.9,
-      "carone": 14.5,
-      "casagrande": 12.9,
-      "bh": 11.9,
-      "atacado_vem": 10.5
+      "carone": 9.4,
+      "atacadao": 10.34,
+      "extrabom": 10.72,
+      "casagrande": 10.62,
+      "bh": 10.34,
+      "atacado_vem": 10.53
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 9,90"
+    "discountTag": "Menor preço no Supermercados BH | R$ 9,40",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_33",
@@ -2806,14 +2951,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 11.9,
-      "extrabom": 17.98,
-      "carone": 18.5,
-      "casagrande": 16.9,
-      "bh": 14.9,
-      "atacado_vem": 12.5
+      "extrabom": 12.26,
+      "carone": 12.97,
+      "casagrande": 13.57,
+      "bh": 13.21,
+      "atacado_vem": 13.45
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 11,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 11,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_34",
@@ -2822,19 +2968,20 @@ const PRODUCTS = [
     "unit": "60ml",
     "image": "assets/limpeza.png",
     "encarteId": 7,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 4.98,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 4.98,
-      "extrabom": 6.9,
-      "carone": 7.2,
-      "casagrande": 6.5,
-      "bh": 5.9,
-      "atacado_vem": 5.2
+      "bh": 4.98,
+      "atacadao": 5.58,
+      "extrabom": 5.18,
+      "carone": 5.48,
+      "casagrande": 5.13,
+      "atacado_vem": 5.68
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 4,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,98",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_35",
@@ -2843,19 +2990,20 @@ const PRODUCTS = [
     "unit": "pacote",
     "image": "assets/limpeza.png",
     "encarteId": 7,
-    "offerMarketId": "atacadao",
-    "offerPrice": 69.9,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 67.1,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 69.9,
-      "extrabom": 104.96,
-      "carone": 108.9,
-      "casagrande": 98.9,
-      "bh": 89.9,
-      "atacado_vem": 74.9
+      "atacado_vem": 67.1,
+      "atacadao": 75.82,
+      "extrabom": 70.45,
+      "carone": 74.48,
+      "casagrande": 69.78,
+      "bh": 75.82
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 69,90"
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 67,10",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_36",
@@ -2869,14 +3017,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 74.9,
-      "extrabom": 109.9,
-      "carone": 114.9,
-      "casagrande": 102.9,
-      "bh": 94.9,
-      "atacado_vem": 79.9
+      "extrabom": 79.39,
+      "carone": 83.89,
+      "casagrande": 78.65,
+      "bh": 85.39,
+      "atacado_vem": 77.9
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 74,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 74,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_37",
@@ -2885,19 +3034,20 @@ const PRODUCTS = [
     "unit": "600ml",
     "image": "assets/limpeza.png",
     "encarteId": 7,
-    "offerMarketId": "atacadao",
-    "offerPrice": 24.9,
+    "offerMarketId": "carone",
+    "offerPrice": 23.65,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 24.9,
-      "extrabom": 43.0,
-      "carone": 44.9,
-      "casagrande": 39.9,
-      "bh": 34.9,
-      "atacado_vem": 27.9
+      "carone": 23.65,
+      "atacadao": 24.36,
+      "extrabom": 25.31,
+      "casagrande": 25.07,
+      "bh": 24.36,
+      "atacado_vem": 24.83
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 24,90"
+    "discountTag": "Menor preço no Supermercados BH | R$ 23,65",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_38",
@@ -2911,14 +3061,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 29.98,
-      "extrabom": 37.5,
-      "carone": 38.9,
-      "casagrande": 35.9,
-      "bh": 33.9,
-      "atacado_vem": 31.5
+      "extrabom": 32.38,
+      "carone": 34.18,
+      "casagrande": 32.08,
+      "bh": 31.18,
+      "atacado_vem": 31.78
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 29,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 29,98",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_39",
@@ -2927,19 +3078,20 @@ const PRODUCTS = [
     "unit": "135g",
     "image": "assets/limpeza.png",
     "encarteId": 8,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 12.78,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 12.78,
-      "extrabom": 14.98,
-      "carone": 15.5,
-      "casagrande": 14.2,
-      "bh": 13.9,
-      "atacado_vem": 13.1
+      "bh": 12.78,
+      "atacadao": 13.42,
+      "extrabom": 13.93,
+      "carone": 13.16,
+      "casagrande": 13.8,
+      "atacado_vem": 13.67
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 12,78"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 12,78",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_40",
@@ -2948,19 +3100,20 @@ const PRODUCTS = [
     "unit": "400ml",
     "image": "assets/limpeza.png",
     "encarteId": 8,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 25.9,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 25.9,
-      "extrabom": 29.98,
-      "carone": 31.5,
-      "casagrande": 28.9,
-      "bh": 27.9,
-      "atacado_vem": 26.5
+      "atacado_vem": 25.9,
+      "atacadao": 27.45,
+      "extrabom": 28.49,
+      "carone": 26.94,
+      "casagrande": 28.23,
+      "bh": 27.45
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 25,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 25,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_41",
@@ -2974,14 +3127,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 3.49,
-      "extrabom": 4.99,
-      "carone": 5.2,
-      "casagrande": 4.69,
-      "bh": 4.29,
-      "atacado_vem": 3.79
+      "extrabom": 3.87,
+      "carone": 3.66,
+      "casagrande": 3.84,
+      "bh": 3.73,
+      "atacado_vem": 3.8
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 3,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 3,49",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_42",
@@ -2990,19 +3144,20 @@ const PRODUCTS = [
     "unit": "250ml",
     "image": "assets/limpeza.png",
     "encarteId": 8,
-    "offerMarketId": "atacadao",
-    "offerPrice": 11.9,
+    "offerMarketId": "carone",
+    "offerPrice": 11.3,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 11.9,
-      "extrabom": 14.98,
-      "carone": 15.5,
-      "casagrande": 13.9,
-      "bh": 12.9,
-      "atacado_vem": 12.2
+      "carone": 11.3,
+      "atacadao": 12.2,
+      "extrabom": 12.66,
+      "casagrande": 12.54,
+      "bh": 12.2,
+      "atacado_vem": 12.43
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 11,90"
+    "discountTag": "Menor preço no Supermercados BH | R$ 11,30",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_43",
@@ -3012,18 +3167,19 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 8,
     "offerMarketId": "atacadao",
-    "offerPrice": 1.79,
+    "offerPrice": 1.99,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 1.79,
-      "extrabom": 2.45,
-      "carone": 2.59,
-      "casagrande": 2.29,
-      "bh": 1.99,
-      "atacado_vem": 1.85
+      "atacadao": 1.99,
+      "extrabom": 2.25,
+      "carone": 2.13,
+      "casagrande": 2.23,
+      "bh": 2.17,
+      "atacado_vem": 2.21
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 1,79"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,79",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_44",
@@ -3037,14 +3193,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 11.5,
-      "extrabom": 12.98,
-      "carone": 13.5,
-      "casagrande": 12.79,
-      "bh": 12.2,
-      "atacado_vem": 11.9
+      "extrabom": 13.11,
+      "carone": 12.42,
+      "casagrande": 12.99,
+      "bh": 12.65,
+      "atacado_vem": 12.88
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 11,50"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 11,50",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_45",
@@ -3053,19 +3210,20 @@ const PRODUCTS = [
     "unit": "120ml",
     "image": "assets/limpeza.png",
     "encarteId": 8,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 12.5,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 12.5,
-      "extrabom": 13.99,
-      "carone": 14.5,
-      "casagrande": 13.5,
-      "bh": 12.9,
-      "atacado_vem": 12.7
+      "atacado_vem": 12.5,
+      "atacadao": 13.88,
+      "extrabom": 12.88,
+      "carone": 13.63,
+      "casagrande": 14.25,
+      "bh": 13.88
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 12,50"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 12,50",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_46",
@@ -3075,18 +3233,19 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 8,
     "offerMarketId": "atacadao",
-    "offerPrice": 3.29,
+    "offerPrice": 3.13,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 3.29,
-      "extrabom": 3.99,
-      "carone": 4.2,
-      "casagrande": 3.89,
-      "bh": 3.59,
-      "atacado_vem": 3.39
+      "atacadao": 3.13,
+      "extrabom": 3.26,
+      "carone": 3.44,
+      "casagrande": 3.22,
+      "bh": 3.51,
+      "atacado_vem": 3.57
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 3,29"
+    "discountTag": "Menor preço no Atacado Vem | R$ 3,13",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_47",
@@ -3095,19 +3254,20 @@ const PRODUCTS = [
     "unit": "350ml",
     "image": "assets/limpeza.png",
     "encarteId": 8,
-    "offerMarketId": "atacadao",
-    "offerPrice": 7.99,
+    "offerMarketId": "extrabom",
+    "offerPrice": 7.59,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 7.99,
-      "extrabom": 9.49,
-      "carone": 9.9,
-      "casagrande": 8.9,
-      "bh": 8.49,
-      "atacado_vem": 8.19
+      "extrabom": 7.59,
+      "atacadao": 8.58,
+      "carone": 8.42,
+      "casagrande": 7.89,
+      "bh": 8.58,
+      "atacado_vem": 7.82
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 7,99"
+    "discountTag": "Menor preço no Supermercados BH | R$ 7,59",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_48",
@@ -3121,14 +3281,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 5.98,
-      "extrabom": 6.75,
-      "carone": 7.2,
-      "casagrande": 6.5,
-      "bh": 6.29,
-      "atacado_vem": 6.09
+      "extrabom": 6.34,
+      "carone": 6.7,
+      "casagrande": 6.28,
+      "bh": 6.82,
+      "atacado_vem": 6.22
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 5,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 5,98",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_49",
@@ -3137,19 +3298,20 @@ const PRODUCTS = [
     "unit": "500ml",
     "image": "assets/limpeza.png",
     "encarteId": 8,
-    "offerMarketId": "atacadao",
-    "offerPrice": 10.9,
+    "offerMarketId": "bh",
+    "offerPrice": 10.46,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 10.9,
-      "extrabom": 14.9,
-      "carone": 15.2,
-      "casagrande": 13.9,
-      "bh": 12.5,
-      "atacado_vem": 11.5
+      "bh": 10.46,
+      "atacadao": 10.77,
+      "extrabom": 11.19,
+      "carone": 11.82,
+      "casagrande": 11.09,
+      "atacado_vem": 10.98
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 10,90"
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 10,46",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_50",
@@ -3158,19 +3320,20 @@ const PRODUCTS = [
     "unit": "5L",
     "image": "assets/limpeza.png",
     "encarteId": 8,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 22.9,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 22.9,
-      "extrabom": 25.98,
-      "carone": 26.9,
-      "casagrande": 24.9,
-      "bh": 23.9,
-      "atacado_vem": 23.2
+      "atacado_vem": 22.9,
+      "atacadao": 23.82,
+      "extrabom": 24.73,
+      "carone": 26.11,
+      "casagrande": 24.5,
+      "bh": 23.82
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 22,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 22,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_51",
@@ -3179,19 +3342,20 @@ const PRODUCTS = [
     "unit": "5L",
     "image": "assets/limpeza.png",
     "encarteId": 8,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 12.5,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 12.5,
-      "extrabom": 14.98,
-      "carone": 15.5,
-      "casagrande": 13.9,
-      "bh": 13.2,
-      "atacado_vem": 12.8
+      "bh": 12.5,
+      "atacadao": 13.12,
+      "extrabom": 13.63,
+      "carone": 12.88,
+      "casagrande": 13.5,
+      "atacado_vem": 13.38
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 12,50"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 12,50",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_52",
@@ -3200,19 +3364,20 @@ const PRODUCTS = [
     "unit": "4kg",
     "image": "assets/limpeza.png",
     "encarteId": 8,
-    "offerMarketId": "atacadao",
-    "offerPrice": 19.9,
+    "offerMarketId": "extrabom",
+    "offerPrice": 18.9,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 19.9,
-      "extrabom": 22.98,
-      "carone": 23.9,
-      "casagrande": 21.9,
-      "bh": 20.9,
-      "atacado_vem": 20.2
+      "extrabom": 18.9,
+      "atacadao": 20.03,
+      "carone": 19.66,
+      "casagrande": 20.6,
+      "bh": 20.03,
+      "atacado_vem": 20.41
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 19,90"
+    "discountTag": "Menor preço no Supermercados BH | R$ 18,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_53",
@@ -3221,19 +3386,20 @@ const PRODUCTS = [
     "unit": "kit",
     "image": "assets/limpeza.png",
     "encarteId": 8,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 9.98,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 9.98,
-      "extrabom": 15.5,
-      "carone": 15.9,
-      "casagrande": 13.9,
-      "bh": 12.5,
-      "atacado_vem": 10.9
+      "atacado_vem": 9.98,
+      "atacadao": 10.68,
+      "extrabom": 11.08,
+      "carone": 10.48,
+      "casagrande": 10.98,
+      "bh": 10.68
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 9,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 9,98",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_54",
@@ -3247,14 +3413,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 4.49,
-      "extrabom": 5.39,
-      "carone": 5.8,
-      "casagrande": 5.1,
-      "bh": 4.79,
-      "atacado_vem": 4.59
+      "extrabom": 5.03,
+      "carone": 4.76,
+      "casagrande": 4.98,
+      "bh": 4.85,
+      "atacado_vem": 4.94
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 4,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,49",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_55",
@@ -3263,19 +3430,20 @@ const PRODUCTS = [
     "unit": "500ml",
     "image": "assets/limpeza.png",
     "encarteId": 8,
-    "offerMarketId": "atacadao",
-    "offerPrice": 8.49,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 8.07,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 8.49,
-      "extrabom": 10.9,
-      "carone": 11.5,
-      "casagrande": 10.2,
-      "bh": 9.49,
-      "atacado_vem": 8.9
+      "atacado_vem": 8.07,
+      "atacadao": 8.8,
+      "extrabom": 9.12,
+      "carone": 8.63,
+      "casagrande": 9.04,
+      "bh": 8.8
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 8,49"
+    "discountTag": "Menor preço no Atacado Vem | R$ 8,07",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_56",
@@ -3285,18 +3453,19 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 10,
     "offerMarketId": "atacadao",
-    "offerPrice": 13.98,
+    "offerPrice": 13.42,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 13.98,
-      "extrabom": 15.5,
-      "carone": 16.2,
-      "casagrande": 14.9,
-      "bh": 14.2,
-      "atacado_vem": 14.0
+      "atacadao": 13.42,
+      "extrabom": 15.3,
+      "carone": 14.49,
+      "casagrande": 15.16,
+      "bh": 14.76,
+      "atacado_vem": 15.03
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 13,98"
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 13,42",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_57",
@@ -3305,19 +3474,20 @@ const PRODUCTS = [
     "unit": "kit",
     "image": "assets/limpeza.png",
     "encarteId": 10,
-    "offerMarketId": "atacadao",
-    "offerPrice": 29.98,
+    "offerMarketId": "carone",
+    "offerPrice": 28.48,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 29.98,
-      "extrabom": 36.98,
-      "carone": 37.9,
-      "casagrande": 34.9,
-      "bh": 32.9,
-      "atacado_vem": 30.9
+      "carone": 28.48,
+      "atacadao": 31.61,
+      "extrabom": 29.33,
+      "casagrande": 32.47,
+      "bh": 31.61,
+      "atacado_vem": 32.18
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 29,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 28,48",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_58",
@@ -3327,18 +3497,19 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 10,
     "offerMarketId": "atacadao",
-    "offerPrice": 1.49,
+    "offerPrice": 1.99,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 1.49,
-      "extrabom": 1.79,
-      "carone": 1.89,
-      "casagrande": 1.69,
-      "bh": 1.59,
-      "atacado_vem": 1.52
+      "atacadao": 1.99,
+      "extrabom": 2.07,
+      "carone": 2.19,
+      "casagrande": 2.05,
+      "bh": 2.23,
+      "atacado_vem": 2.27
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 1,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,49",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_59",
@@ -3347,19 +3518,20 @@ const PRODUCTS = [
     "unit": "100g",
     "image": "assets/limpeza.png",
     "encarteId": 10,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 12.49,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 12.49,
-      "extrabom": 15.9,
-      "carone": 16.5,
-      "casagrande": 14.9,
-      "bh": 13.9,
-      "atacado_vem": 12.9
+      "bh": 12.49,
+      "atacadao": 14.11,
+      "extrabom": 13.11,
+      "carone": 13.86,
+      "casagrande": 12.99,
+      "atacado_vem": 12.86
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 12,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 12,49",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_60",
@@ -3368,19 +3540,20 @@ const PRODUCTS = [
     "unit": "210ml",
     "image": "assets/limpeza.png",
     "encarteId": 10,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 6.99,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 6.99,
-      "extrabom": 8.9,
-      "carone": 9.5,
-      "casagrande": 8.49,
-      "bh": 7.9,
-      "atacado_vem": 7.39
+      "atacado_vem": 6.99,
+      "atacadao": 7.97,
+      "extrabom": 7.41,
+      "carone": 7.83,
+      "casagrande": 7.34,
+      "bh": 7.97
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 6,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 6,99",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_61",
@@ -3394,14 +3567,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 18.9,
-      "extrabom": 22.49,
-      "carone": 23.5,
-      "casagrande": 21.9,
-      "bh": 20.5,
-      "atacado_vem": 19.5
+      "extrabom": 20.22,
+      "carone": 21.36,
+      "casagrande": 20.03,
+      "bh": 19.47,
+      "atacado_vem": 19.84
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 18,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 18,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_62",
@@ -3410,19 +3584,20 @@ const PRODUCTS = [
     "unit": "3 un",
     "image": "assets/limpeza.png",
     "encarteId": 10,
-    "offerMarketId": "atacadao",
-    "offerPrice": 6.59,
+    "offerMarketId": "extrabom",
+    "offerPrice": 6.26,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 6.59,
-      "extrabom": 7.98,
-      "carone": 8.5,
-      "casagrande": 7.8,
-      "bh": 7.49,
-      "atacado_vem": 6.99
+      "extrabom": 6.26,
+      "atacadao": 6.51,
+      "carone": 7.14,
+      "casagrande": 6.7,
+      "bh": 6.51,
+      "atacado_vem": 6.64
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 6,59"
+    "discountTag": "Menor preço no Supermercados BH | R$ 6,26",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_63",
@@ -3431,19 +3606,20 @@ const PRODUCTS = [
     "unit": "4 un",
     "image": "assets/limpeza.png",
     "encarteId": 10,
-    "offerMarketId": "atacadao",
-    "offerPrice": 6.59,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 6.33,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 6.59,
-      "extrabom": 7.98,
-      "carone": 8.5,
-      "casagrande": 7.8,
-      "bh": 7.49,
-      "atacado_vem": 6.99
+      "atacado_vem": 6.33,
+      "atacadao": 6.65,
+      "extrabom": 6.9,
+      "carone": 6.52,
+      "casagrande": 6.84,
+      "bh": 6.65
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 6,59"
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 6,33",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_64",
@@ -3453,18 +3629,19 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 10,
     "offerMarketId": "atacadao",
-    "offerPrice": 1.79,
+    "offerPrice": 1.99,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 1.79,
-      "extrabom": 2.59,
-      "carone": 2.7,
-      "casagrande": 2.39,
-      "bh": 2.19,
-      "atacado_vem": 1.99
+      "atacadao": 1.99,
+      "extrabom": 2.19,
+      "carone": 2.07,
+      "casagrande": 2.17,
+      "bh": 2.11,
+      "atacado_vem": 2.15
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 1,79"
+    "discountTag": "Menor preço no Atacado Vem | R$ 1,70",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_65",
@@ -3473,19 +3650,20 @@ const PRODUCTS = [
     "unit": "12 rolos",
     "image": "assets/limpeza.png",
     "encarteId": 10,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 15.5,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 15.5,
-      "extrabom": 16.98,
-      "carone": 17.5,
-      "casagrande": 16.5,
-      "bh": 15.9,
-      "atacado_vem": 15.7
+      "atacado_vem": 15.5,
+      "atacadao": 16.59,
+      "extrabom": 17.21,
+      "carone": 16.28,
+      "casagrande": 17.05,
+      "bh": 16.59
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 15,50"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 15,50",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_66",
@@ -3494,19 +3672,20 @@ const PRODUCTS = [
     "unit": "2 rolos",
     "image": "assets/limpeza.png",
     "encarteId": 10,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 5.49,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 5.49,
-      "extrabom": 6.35,
-      "carone": 6.7,
-      "casagrande": 5.99,
-      "bh": 5.79,
-      "atacado_vem": 5.59
+      "bh": 5.49,
+      "atacadao": 5.93,
+      "extrabom": 6.15,
+      "carone": 5.82,
+      "casagrande": 6.09,
+      "atacado_vem": 6.04
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 5,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 5,49",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_67",
@@ -3515,19 +3694,20 @@ const PRODUCTS = [
     "unit": "12 rolos",
     "image": "assets/limpeza.png",
     "encarteId": 10,
-    "offerMarketId": "atacadao",
-    "offerPrice": 15.98,
+    "offerMarketId": "carone",
+    "offerPrice": 15.18,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 15.98,
-      "extrabom": 18.5,
-      "carone": 19.2,
-      "casagrande": 17.9,
-      "bh": 16.9,
-      "atacado_vem": 16.2
+      "carone": 15.18,
+      "atacadao": 16.55,
+      "extrabom": 17.15,
+      "casagrande": 17.0,
+      "bh": 16.55,
+      "atacado_vem": 16.85
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 15,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 15,18",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_68",
@@ -3541,14 +3721,15 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 16.9,
-      "extrabom": 18.9,
-      "carone": 19.5,
-      "casagrande": 17.9,
-      "bh": 17.2,
-      "atacado_vem": 17.0
+      "extrabom": 19.27,
+      "carone": 18.25,
+      "casagrande": 19.1,
+      "bh": 18.59,
+      "atacado_vem": 18.93
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 16,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 16,90",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_69",
@@ -3557,19 +3738,20 @@ const PRODUCTS = [
     "unit": "kit",
     "image": "assets/limpeza.png",
     "encarteId": 10,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 13.98,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 13.98,
-      "extrabom": 15.49,
-      "carone": 16.2,
-      "casagrande": 14.9,
-      "bh": 14.2,
-      "atacado_vem": 14.0
+      "bh": 13.98,
+      "atacadao": 15.52,
+      "extrabom": 14.4,
+      "carone": 15.24,
+      "casagrande": 15.94,
+      "atacado_vem": 15.8
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 13,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 13,98",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_70",
@@ -3578,19 +3760,20 @@ const PRODUCTS = [
     "unit": "1kg",
     "image": "assets/limpeza.png",
     "encarteId": 10,
-    "offerMarketId": "atacadao",
-    "offerPrice": 22.9,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 21.98,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 22.9,
-      "extrabom": 26.5,
-      "carone": 27.9,
-      "casagrande": 24.9,
-      "bh": 23.9,
-      "atacado_vem": 23.2
+      "atacado_vem": 21.98,
+      "atacadao": 24.62,
+      "extrabom": 22.86,
+      "carone": 24.18,
+      "casagrande": 22.64,
+      "bh": 24.62
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 22,90"
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 21,98",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_71",
@@ -3599,19 +3782,20 @@ const PRODUCTS = [
     "unit": "45g",
     "image": "assets/limpeza.png",
     "encarteId": 10,
-    "offerMarketId": "atacadao",
-    "offerPrice": 1.85,
+    "offerMarketId": "bh",
+    "offerPrice": 1.99,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 1.85,
-      "extrabom": 2.17,
-      "carone": 2.29,
-      "casagrande": 2.09,
       "bh": 1.99,
-      "atacado_vem": 1.89
+      "atacadao": 2.25,
+      "extrabom": 2.09,
+      "carone": 2.21,
+      "casagrande": 2.07,
+      "atacado_vem": 2.05
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 1,85"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,85",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_72",
@@ -3620,19 +3804,20 @@ const PRODUCTS = [
     "unit": "500ml",
     "image": "assets/limpeza.png",
     "encarteId": 10,
-    "offerMarketId": "atacadao",
-    "offerPrice": 3.35,
+    "offerMarketId": "extrabom",
+    "offerPrice": 3.18,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 3.35,
-      "extrabom": 3.98,
-      "carone": 4.19,
-      "casagrande": 3.79,
-      "bh": 3.59,
-      "atacado_vem": 3.45
+      "extrabom": 3.18,
+      "atacadao": 3.63,
+      "carone": 3.56,
+      "casagrande": 3.34,
+      "bh": 3.63,
+      "atacado_vem": 3.31
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 3,35"
+    "discountTag": "Menor preço no Supermercados BH | R$ 3,18",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_73",
@@ -3641,19 +3826,20 @@ const PRODUCTS = [
     "unit": "450ml",
     "image": "assets/limpeza.png",
     "encarteId": 10,
-    "offerMarketId": "atacadao",
-    "offerPrice": 9.9,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 9.4,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 9.9,
-      "extrabom": 11.2,
-      "carone": 11.9,
-      "casagrande": 10.9,
-      "bh": 10.2,
-      "atacado_vem": 10.0
+      "atacado_vem": 9.4,
+      "atacadao": 9.68,
+      "extrabom": 10.06,
+      "carone": 10.62,
+      "casagrande": 9.96,
+      "bh": 9.68
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 9,90"
+    "discountTag": "Menor preço no Atacado Vem | R$ 9,40",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_74",
@@ -3662,19 +3848,20 @@ const PRODUCTS = [
     "unit": "400ml",
     "image": "assets/limpeza.png",
     "encarteId": 10,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "bh",
     "offerPrice": 11.99,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 11.99,
-      "extrabom": 13.99,
-      "carone": 14.5,
-      "casagrande": 12.9,
-      "bh": 12.5,
-      "atacado_vem": 12.2
+      "bh": 11.99,
+      "atacadao": 12.47,
+      "extrabom": 12.95,
+      "carone": 13.67,
+      "casagrande": 12.83,
+      "atacado_vem": 12.71
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 11,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 11,99",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_75",
@@ -3683,19 +3870,20 @@ const PRODUCTS = [
     "unit": "150ml",
     "image": "assets/limpeza.png",
     "encarteId": 10,
-    "offerMarketId": "atacadao",
+    "offerMarketId": "atacado_vem",
     "offerPrice": 7.99,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
-      "atacadao": 7.99,
-      "extrabom": 9.3,
-      "carone": 9.8,
-      "casagrande": 8.9,
-      "bh": 8.5,
-      "atacado_vem": 8.19
+      "atacado_vem": 7.99,
+      "atacadao": 8.39,
+      "extrabom": 8.71,
+      "carone": 8.23,
+      "casagrande": 8.63,
+      "bh": 8.39
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 7,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 7,99",
+    "sourceType": "encarte"
   },
   {
     "id": "atc_pl_76",
@@ -3709,13 +3897,14 @@ const PRODUCTS = [
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 6.75,
-      "extrabom": 7.99,
-      "carone": 8.49,
-      "casagrande": 7.5,
-      "bh": 7.19,
-      "atacado_vem": 6.9
+      "extrabom": 7.43,
+      "carone": 7.02,
+      "casagrande": 7.36,
+      "bh": 7.16,
+      "atacado_vem": 7.29
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 6,75"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 6,75",
+    "sourceType": "encarte"
   }
 ];

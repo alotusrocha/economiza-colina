@@ -356,6 +356,53 @@ class ShoppingCart {
     printWindow.document.close();
   }
 
+  openSavingsCard() {
+    const opt = this.calculateOptimization();
+    if (!opt) {
+      this.showToast('Adicione produtos à cesta para gerar seu cartão de economia!');
+      return;
+    }
+
+    const modal = document.getElementById('savingsCardModal');
+    const body = document.getElementById('savingsCardModalBody');
+    if (!modal || !body) return;
+
+    const savingsVal = this.optimizationMode === 'single' ? opt.singleSavings : opt.multiSavings;
+    const totalVal = this.optimizationMode === 'single' ? opt.bestSingleMarket.total : opt.multiTotal;
+    const marketName = this.optimizationMode === 'single' ? opt.bestSingleMarket.market.name : 'Multi-Mercados (Menores Preços do Bairro)';
+
+    body.innerHTML = `
+      <div style="background: linear-gradient(135deg, #059669 0%, #047857 100%); border-radius: 16px; padding: 20px; color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.3); border: 2px solid #34d399; margin-bottom: 16px;">
+        <div style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #a7f3d0; margin-bottom: 4px;">
+          🛒 Economiza Colina • Bairro
+        </div>
+        <div style="font-size: 1.6rem; font-weight: 900; line-height: 1.1; margin-bottom: 10px;">
+          Economizei R$ ${savingsVal.toFixed(2)}!
+        </div>
+        <div style="font-size: 0.85rem; background: rgba(0,0,0,0.25); padding: 8px 12px; border-radius: 10px; margin-bottom: 12px;">
+          📍 Mercado Escolhido: <strong>${marketName}</strong>
+        </div>
+        <div style="font-size: 0.8rem; color: #d1fae5;">
+          Contém ${opt.fullItems.length} itens comparados em Colina de Laranjeiras.
+        </div>
+        <div style="font-size: 1.2rem; font-weight: 800; margin-top: 10px; border-top: 1px dashed rgba(255,255,255,0.3); padding-top: 8px;">
+          Total da Compra: R$ ${totalVal.toFixed(2)}
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 8px; justify-content: center;">
+        <button onclick="cart.shareWhatsApp()" style="background: #25d366; color: white; border: none; font-weight: 800; padding: 12px 18px; border-radius: 10px; cursor: pointer; flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px;">
+          📲 Compartilhar no WhatsApp
+        </button>
+        <button onclick="closeSavingsCardModal()" style="background: #334155; color: white; border: none; font-weight: 700; padding: 12px 14px; border-radius: 10px; cursor: pointer;">
+          Fechar
+        </button>
+      </div>
+    `;
+
+    modal.style.display = 'flex';
+  }
+
   showToast(message) {
     let toast = document.getElementById('toastNotification');
     if (!toast) {
@@ -394,3 +441,4 @@ class ShoppingCart {
 
 const cart = new ShoppingCart();
 document.addEventListener('DOMContentLoaded', () => cart.updateCartBadge());
+

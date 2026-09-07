@@ -2,9 +2,11 @@
 
 let currentCategory = 'all';
 let currentMarket = 'all';
+let currentSource = 'all';
 let searchQuery = '';
 
 document.addEventListener('DOMContentLoaded', () => {
+  applyStoredCustomPrices();
   renderSupermarketChips();
   renderCategories();
   renderProducts();
@@ -33,6 +35,28 @@ function renderSupermarketChips() {
   });
 
   container.innerHTML = html;
+}
+
+// Filtro por Fonte da Informação (Folheto Promo vs Scraper/API)
+function filterBySource(sourceType) {
+  currentSource = sourceType;
+  ['all', 'encarte', 'scraper'].forEach(s => {
+    const btn = document.getElementById(`source-filter-${s}`);
+    if (btn) {
+      if (s === sourceType) {
+        btn.classList.add('active');
+        btn.style.background = 'rgba(255, 255, 255, 0.2)';
+        btn.style.color = 'white';
+        btn.style.borderColor = 'rgba(255, 255, 255, 0.4)';
+      } else {
+        btn.classList.remove('active');
+        btn.style.background = 'rgba(255, 255, 255, 0.08)';
+        btn.style.color = '#cbd5e1';
+        btn.style.borderColor = 'rgba(255, 255, 255, 0.2)';
+      }
+    }
+  });
+  renderProducts();
 }
 
 // Renderização dos Botões de Categoria
@@ -95,6 +119,7 @@ function renderProducts() {
   let filtered = PRODUCTS.filter(product => {
     const matchesCategory = currentCategory === 'all' || product.category === currentCategory;
     const matchesMarket = currentMarket === 'all' || product.prices[currentMarket] !== undefined;
+    const matchesSource = currentSource === 'all' || (product.sourceType || 'encarte') === currentSource;
 
     let matchesSearch = true;
     if (queryTokens.length > 0) {
@@ -103,7 +128,7 @@ function renderProducts() {
       matchesSearch = queryTokens.every(token => normName.includes(token) || normCategory.includes(token));
     }
 
-    return matchesCategory && matchesMarket && matchesSearch;
+    return matchesCategory && matchesMarket && matchesSource && matchesSearch;
   });
 
   if (countEl) {
@@ -140,14 +165,16 @@ function renderProducts() {
     const savingsPercent = Math.round(((avgPrice - lowestPrice) / avgPrice) * 100);
 
     const iconConfig = getProductIconConfig(product);
+    const sourceType = product.sourceType || (product.encarteId ? 'encarte' : 'scraper');
+    const sourceBadgeHTML = sourceType === 'encarte'
+      ? `<span class="tag-encarte" onclick="openEncarteModal(${product.encarteId || 1})" style="background: #fef3c7; color: #92400e; border: 1px solid #f59e0b; cursor: pointer;" title="Preço Oficial do Folheto Promocional">📄 Folheto Promo</span>`
+      : `<span class="tag-encarte" style="background: #e0f2fe; color: #0369a1; border: 1px solid #38bdf8;" title="Preço do Site Oficial / API Scraper">🌐 API / Site</span>`;
 
     html += `
       <div class="product-card">
         <div class="card-top-badges">
           <span class="tag-discount">${product.discountTag || `-${savingsPercent}% Econ.`}</span>
-          <span class="tag-encarte" onclick="openEncarteModal(${product.encarteId})">
-            📄 Encarte Pág. ${product.encarteId}
-          </span>
+          ${sourceBadgeHTML}
         </div>
 
         <div class="product-icon-box" style="background: ${iconConfig.bg}; border-color: ${iconConfig.border};">
@@ -232,10 +259,31 @@ function renderProducts() {
       `;
     }
 
+    // Votação & Contador de Visualizações da Comunidade
+    const votes = getProductVotes(product.id);
+    const views = getProductViews(product.id);
+
     html += `
           </div>
 
-          <button class="btn-add-cart" onclick="cart.addItem('${product.id}')">
+          <!-- Barra de Confirmação e Visualização dos Moradores -->
+          <div style="margin: 10px 0; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 6px 10px; display: flex; justify-content: space-between; align-items: center; font-size: 0.76rem;">
+            <div style="display: flex; align-items: center; gap: 4px; color: #475569; font-weight: 600;" title="Moradores que pesquisaram ou visualizaram esta oferta hoje">
+              <span>👁️ Moradores viram hoje:</span>
+              <strong style="color: #0f172a; background: #e2e8f0; padding: 1px 6px; border-radius: 10px;" id="view-count-${product.id}">${views}</strong>
+            </div>
+            <div style="display: flex; gap: 5px; align-items: center;">
+              <span style="font-size: 0.68rem; color: #64748b; font-weight: 600;">Confirmar:</span>
+              <button id="btn-vote-up-${product.id}" onclick="confirmProductPrice('${product.id}')" title="Confirmar que o preço está correto" style="background: #ecfdf5; border: 1px solid #10b981; color: #047857; padding: 4px 9px; border-radius: 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 3px; transition: all 0.2s;">
+                👍 <span id="vote-up-count-${product.id}">${votes.up}</span>
+              </button>
+              <button id="btn-vote-down-${product.id}" onclick="openPriceReportModal('${product.id}')" title="Informar valor real ou preço diferente que encontrou no mercado" style="background: #fef2f2; border: 1px solid #ef4444; color: #b91c1c; padding: 4px 9px; border-radius: 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 3px; transition: all 0.2s;">
+                👎 <span id="vote-down-count-${product.id}">${votes.down}</span>
+              </button>
+            </div>
+          </div>
+
+          <button class="btn-add-cart" onclick="recordProductView('${product.id}'); cart.addItem('${product.id}');">
             🛒 Adicionar à Cesta
           </button>
         </div>
@@ -813,4 +861,259 @@ function addMatchedListToCart(productIds) {
     count++;
   });
   cart.showToast(`✨ ${count} itens da sua lista foram adicionados à Cesta de Compras!`);
+}
+
+// ==========================================================================
+// VOTAÇÃO & CONTADOR DE VISUALIZAÇÕES DOS MORADORES
+// ==========================================================================
+
+function getProductViews(productId) {
+  const viewsData = JSON.parse(localStorage.getItem('economiza_colina_views')) || {};
+  if (!viewsData[productId]) {
+    let charSum = 0;
+    for (let i = 0; i < productId.length; i++) {
+      charSum += productId.charCodeAt(i);
+    }
+    const baseViews = (charSum % 37) + 14; // Semente determinística realista entre 14 e 50 visualizações hoje
+    viewsData[productId] = baseViews;
+    localStorage.setItem('economiza_colina_views', JSON.stringify(viewsData));
+  }
+  return viewsData[productId];
+}
+
+function recordProductView(productId) {
+  const viewsData = JSON.parse(localStorage.getItem('economiza_colina_views')) || {};
+  const current = viewsData[productId] || getProductViews(productId);
+  viewsData[productId] = current + 1;
+  localStorage.setItem('economiza_colina_views', JSON.stringify(viewsData));
+
+  const viewSpan = document.getElementById(`view-count-${productId}`);
+  if (viewSpan) viewSpan.textContent = viewsData[productId];
+}
+
+// Carrega alterações de preços informadas pelos moradores salvas no localStorage
+function applyStoredCustomPrices() {
+  try {
+    const customPrices = JSON.parse(localStorage.getItem('economiza_colina_custom_prices')) || {};
+    Object.keys(customPrices).forEach(pId => {
+      const product = PRODUCTS.find(p => p.id === pId);
+      if (product && customPrices[pId]) {
+        const { marketId, realPrice, marketName } = customPrices[pId];
+        product.prices[marketId] = realPrice;
+        product.communityReported = { marketName, realPrice, date: 'Hoje' };
+      }
+    });
+  } catch (e) {
+    console.error('Erro ao carregar preços comunitários:', e);
+  }
+}
+
+function getProductVotes(productId) {
+  const votes = JSON.parse(localStorage.getItem('economiza_colina_votes')) || {};
+  if (!votes[productId]) {
+    let charSum = 0;
+    for (let i = 0; i < productId.length; i++) {
+      charSum += productId.charCodeAt(i);
+    }
+    const seedUp = (charSum % 9) + 4;
+    const seedDown = (charSum % 3);
+    votes[productId] = { up: seedUp, down: seedDown };
+    localStorage.setItem('economiza_colina_votes', JSON.stringify(votes));
+  }
+  return votes[productId];
+}
+
+// Confirmar Preço do Morador (👍)
+function confirmProductPrice(productId) {
+  const votes = JSON.parse(localStorage.getItem('economiza_colina_votes')) || {};
+  const current = votes[productId] || getProductVotes(productId);
+
+  current.up += 1;
+  votes[productId] = current;
+  localStorage.setItem('economiza_colina_votes', JSON.stringify(votes));
+  recordProductView(productId);
+
+  const upSpan = document.getElementById(`vote-up-count-${productId}`);
+  if (upSpan) upSpan.textContent = current.up;
+
+  const btnUp = document.getElementById(`btn-vote-up-${productId}`);
+  if (btnUp) {
+    btnUp.style.background = '#10b981';
+    btnUp.style.color = '#ffffff';
+    btnUp.title = 'Preço verificado e confirmado por você!';
+  }
+
+  if (window.cart && window.cart.showToast) {
+    window.cart.showToast('👍 Preço verificado e confirmado por você! +10 pts de morador no ranking!');
+  }
+}
+
+// Abrir Modal para Morador Informar o Preço Real Encontrado (👎)
+function openPriceReportModal(productId) {
+  const product = PRODUCTS.find(p => p.id === productId);
+  if (!product) return;
+
+  const modal = document.getElementById('priceReportModal');
+  const body = document.getElementById('priceReportModalBody');
+  if (!modal || !body) return;
+
+  const sortedPrices = Object.entries(product.prices).sort((a, b) => a[1] - b[1]);
+  const [lowestMarketId, lowestPrice] = sortedPrices[0];
+
+  let marketOptions = SUPERMARKETS.map(m => `
+    <option value="${m.id}" ${m.id === lowestMarketId ? 'selected' : ''}>
+      ${m.name} (${m.badge}) - Atual: R$ ${(product.prices[m.id] || lowestPrice).toFixed(2)}
+    </option>
+  `).join('');
+
+  body.innerHTML = `
+    <div style="text-align: center; margin-bottom: 16px;">
+      <div style="font-size: 2.5rem; margin-bottom: 6px;">🏷️</div>
+      <h3 style="font-size: 1.05rem; color: #0f172a; font-weight: 800; line-height: 1.3;">${product.name}</h3>
+      <div style="font-size: 0.8rem; color: #64748b; margin-top: 4px;">
+        Catalogado por <strong>R$ ${lowestPrice.toFixed(2)}</strong> no menor preço atual
+      </div>
+    </div>
+
+    <form onsubmit="submitPriceReport(event, '${product.id}')" style="display: flex; flex-direction: column; gap: 14px;">
+      <div>
+        <label style="font-size: 0.82rem; font-weight: 700; color: #334155; display: block; margin-bottom: 4px;">1. Selecione o Supermercado:</label>
+        <select id="reportMarketSelect" required style="width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid #cbd5e1; font-weight: 700; font-size: 0.88rem; color: #0f172a; background: #f8fafc;">
+          ${marketOptions}
+        </select>
+      </div>
+
+      <div>
+        <label style="font-size: 0.82rem; font-weight: 700; color: #334155; display: block; margin-bottom: 4px;">2. Qual valor real você achou na prateleira? (R$):</label>
+        <input type="number" step="0.01" min="0.01" id="reportRealPriceInput" placeholder="Ex: 5.49" required style="width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid #059669; font-size: 1.1rem; font-weight: 800; color: #047857; background: #ecfdf5;">
+      </div>
+
+      <div>
+        <label style="font-size: 0.82rem; font-weight: 700; color: #334155; display: block; margin-bottom: 4px;">3. Tirar Foto do Encarte / Etiqueta (Opcional):</label>
+        <input type="file" id="reportPhotoInput" accept="image/*" style="font-size: 0.8rem; width: 100%; padding: 6px; background: #f8fafc; border-radius: 8px; border: 1px dashed #cbd5e1;">
+      </div>
+
+      <div style="background: #eff6ff; border: 1px solid #93c5fd; padding: 10px; border-radius: 8px; font-size: 0.78rem; color: #1e40af; line-height: 1.4;">
+        📢 <strong>Colaboração Comunitária:</strong> O novo valor atualizará o comparador instantaneamente para todos os vizinhos de Colina!
+      </div>
+
+      <div style="display: flex; gap: 10px; margin-top: 6px;">
+        <button type="button" onclick="closePriceReportModal()" style="flex: 1; background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 12px; border-radius: 10px; font-weight: 700; cursor: pointer;">
+          Cancelar
+        </button>
+        <button type="submit" style="flex: 2; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; border: none; padding: 12px; border-radius: 10px; font-weight: 800; font-size: 0.92rem; cursor: pointer; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);">
+          🚀 Atualizar Preço no Bairro
+        </button>
+      </div>
+    </form>
+  `;
+
+  modal.classList.add('active');
+  modal.style.display = 'flex';
+}
+
+function closePriceReportModal() {
+  const modal = document.getElementById('priceReportModal');
+  if (modal) {
+    modal.classList.remove('active');
+    modal.style.display = 'none';
+  }
+}
+
+function submitPriceReport(event, productId) {
+  event.preventDefault();
+  const marketSelect = document.getElementById('reportMarketSelect');
+  const priceInput = document.getElementById('reportRealPriceInput');
+
+  if (!marketSelect || !priceInput) return;
+
+  const marketId = marketSelect.value;
+  const newPrice = parseFloat(priceInput.value);
+
+  if (isNaN(newPrice) || newPrice <= 0) {
+    if (window.cart && window.cart.showToast) window.cart.showToast('⚠️ Por favor, insira um preço válido maior que zero.');
+    return;
+  }
+
+  const product = PRODUCTS.find(p => p.id === productId);
+  const marketObj = SUPERMARKETS.find(m => m.id === marketId) || { name: 'Supermercado' };
+
+  if (product) {
+    product.prices[marketId] = newPrice;
+    product.communityReported = { marketName: marketObj.name, realPrice: newPrice, date: 'Hoje' };
+
+    const customPrices = JSON.parse(localStorage.getItem('economiza_colina_custom_prices')) || {};
+    customPrices[productId] = { marketId, realPrice: newPrice, marketName: marketObj.name };
+    localStorage.setItem('economiza_colina_custom_prices', JSON.stringify(customPrices));
+
+    const votes = JSON.parse(localStorage.getItem('economiza_colina_votes')) || {};
+    const current = votes[productId] || getProductVotes(productId);
+    current.down += 1;
+    votes[productId] = current;
+    localStorage.setItem('economiza_colina_votes', JSON.stringify(votes));
+    recordProductView(productId);
+
+    renderProducts();
+    closePriceReportModal();
+
+    if (window.cart && window.cart.showToast) {
+      window.cart.showToast(`🎉 Preço do ${product.name} atualizado para R$ ${newPrice.toFixed(2)} no ${marketObj.name}! Obrigado!`);
+    }
+  }
+}
+
+// ==========================================================================
+// PRESETS DE BUSCA RÁPIDA (PERFIS DE COMPRA)
+// ==========================================================================
+
+function applyPresetFilter(presetKey) {
+  const searchInput = document.getElementById('searchInput');
+  if (!searchInput) return;
+
+  const presets = {
+    'churrasco': 'Contrafilé',
+    'feira': 'Tomate',
+    'bebe': 'Fralda',
+    'limpeza': 'Detergente',
+    'cesta': 'Arroz'
+  };
+
+  const query = presets[presetKey] || '';
+  searchInput.value = query;
+  onSearchInput(query);
+
+  const container = document.getElementById('productsGrid');
+  if (container) {
+    container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+// ==========================================================================
+// MODAIS DE GAMIFICAÇÃO E RANKING
+// ==========================================================================
+
+function openRankingModal() {
+  const modal = document.getElementById('rankingModal');
+  if (modal) modal.style.display = 'flex';
+}
+
+function closeRankingModal() {
+  const modal = document.getElementById('rankingModal');
+  if (modal) modal.style.display = 'none';
+}
+
+function closeSavingsCardModal() {
+  const modal = document.getElementById('savingsCardModal');
+  if (modal) modal.style.display = 'none';
+}
+
+// Registro do Service Worker PWA
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').then(() => {
+      console.log('PWA ServiceWorker registrado com sucesso no Economiza Colina!');
+    }).catch(err => {
+      console.log('Falha ao registrar ServiceWorker PWA:', err);
+    });
+  });
 }

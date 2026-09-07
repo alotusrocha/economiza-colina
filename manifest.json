@@ -1,0 +1,17 @@
+{
+  "name": "Economiza Colina - Comparador de Supermercados",
+  "short_name": "Economiza Colina",
+  "description": "Comparador de preços e ofertas exclusivas para moradores de Colina de Laranjeiras e imediações em Serra/ES.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -9,6 +9,11 @@
   <!-- Favicon / Ícone da Aba ($ Economia) -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="shortcut icon" href="assets/favicon.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#10b981">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Economiza Colina">
 
   <!-- Google Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,6 +49,9 @@
         </a>
 
         <div class="nav-actions">
+          <div class="user-rank-badge" id="userRankBadge" onclick="openRankingModal()" title="Ver Ranking da Comunidade de Colina" style="background: rgba(251, 191, 36, 0.15); border: 1px solid #f59e0b; color: #fbbf24; padding: 6px 12px; border-radius: 20px; font-weight: 800; font-size: 0.8rem; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: transform 0.2s;">
+            🏆 <span>Caçador de Ofertas</span> <span style="background: #f59e0b; color: #000; padding: 2px 6px; border-radius: 10px; font-size: 0.72rem;">120 pts</span>
+          </div>
           <a href="video.html" class="btn-header" id="btnVideoNav" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #000; font-weight: 800; text-decoration: none;">
             ▶ Assistir Vídeo (30s)
           </a>
@@ -74,9 +82,42 @@
           </button>
         </form>
 
+        <!-- Quick Presets Filters (Perfis de Compra) -->
+        <div style="display: flex; justify-content: center; gap: 8px; margin-top: 12px; flex-wrap: wrap;" id="presetFiltersContainer">
+          <button class="preset-filter-btn" onclick="applyPresetFilter('churrasco')" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #f8fafc; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
+            🥩 Churrasco do Fim de Semana
+          </button>
+          <button class="preset-filter-btn" onclick="applyPresetFilter('feira')" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #f8fafc; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
+            🥦 Feirão Hortifrúti
+          </button>
+          <button class="preset-filter-btn" onclick="applyPresetFilter('bebe')" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #f8fafc; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
+            👶 Fraldas & Linha Bebê
+          </button>
+          <button class="preset-filter-btn" onclick="applyPresetFilter('limpeza')" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #f8fafc; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
+            🧹 Faxina & Limpeza
+          </button>
+          <button class="preset-filter-btn" onclick="applyPresetFilter('cesta')" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #f8fafc; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
+            🌾 Cesta Básica
+          </button>
+        </div>
+
         <!-- Supermarkets Quick Filter Chips -->
         <div class="market-chips" id="marketChipsContainer">
           <!-- Renderizado via JS -->
+        </div>
+
+        <!-- Source Transparency Filter (Transparência de Fontes: Folhetos vs APIs/Scrapers) -->
+        <div style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 14px; flex-wrap: wrap;" id="sourceFiltersContainer">
+          <span style="font-size: 0.78rem; color: #94a3b8; font-weight: 700;">Origem do Preço:</span>
+          <button class="source-filter-btn active" id="source-filter-all" onclick="filterBySource('all')" style="background: rgba(255, 255, 255, 0.2); color: white; border: 1px solid rgba(255, 255, 255, 0.4); padding: 5px 12px; border-radius: 16px; font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
+            🔍 Todas as Fontes (174)
+          </button>
+          <button class="source-filter-btn" id="source-filter-encarte" onclick="filterBySource('encarte')" style="background: rgba(255, 255, 255, 0.08); color: #cbd5e1; border: 1px solid rgba(255, 255, 255, 0.2); padding: 5px 12px; border-radius: 16px; font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
+            📄 Folhetos Promo (76)
+          </button>
+          <button class="source-filter-btn" id="source-filter-scraper" onclick="filterBySource('scraper')" style="background: rgba(255, 255, 255, 0.08); color: #cbd5e1; border: 1px solid rgba(255, 255, 255, 0.2); padding: 5px 12px; border-radius: 16px; font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
+            🌐 Scrapers / APIs (98)
+          </button>
         </div>
 
         <!-- Promo Video Banner Callout -->
@@ -213,12 +254,101 @@
         <!-- Renderizado dinamicamente pelo cart.js -->
       </div>
 
-      <div class="modal-footer" id="cartFooter" style="display: none;">
+      <div class="modal-footer" id="cartFooter" style="display: none; flex-wrap: wrap; gap: 10px;">
         <button class="btn-whatsapp" onclick="cart.shareWhatsApp()" id="btnShareWhatsApp">
-          📲 Enviar Lista para o WhatsApp
+          📲 Enviar Lista WhatsApp
+        </button>
+        <button class="btn-header" onclick="cart.openSavingsCard()" id="btnGenerateCard" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #000; font-weight: 800; padding: 12px 16px; border-radius: 10px; border: none; cursor: pointer;">
+          📸 Gerar Cartão de Economia Vizinho
         </button>
         <button class="btn-header" onclick="cart.exportPDF()" id="btnExportPDF" style="background: #0f172a; color: white; border: 1px solid #334155; padding: 12px 16px;">
-          📄 Salvar PDF / Imprimir Lista
+          📄 Salvar PDF / Imprimir
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Cartão Visual de Economia para WhatsApp / Stories -->
+  <div class="modal-overlay" id="savingsCardModal" role="dialog" aria-labelledby="savingsCardTitle">
+    <div class="modal-container" style="max-width: 450px; background: #0f172a; color: white; text-align: center; border: 1px solid #334155;">
+      <div class="modal-header" style="border-bottom: 1px solid #334155;">
+        <div class="modal-title" id="savingsCardTitle" style="color: #34d399;">
+          ✨ Cartão de Economia do Bairro
+        </div>
+        <button class="btn-close-modal" onclick="closeSavingsCardModal()" aria-label="Fechar Modal">&times;</button>
+      </div>
+
+      <div class="modal-body" id="savingsCardModalBody" style="padding: 20px;">
+        <!-- Renderizado dinamicamente pelo cart.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Ranking de Moradores & Gamificação de Colina -->
+  <div class="modal-overlay" id="rankingModal" role="dialog" aria-labelledby="rankingTitle">
+    <div class="modal-container" style="max-width: 480px;">
+      <div class="modal-header">
+        <div class="modal-title" id="rankingTitle">
+          🏆 Ranking de Moradores Economizadores
+        </div>
+        <button class="btn-close-modal" onclick="closeRankingModal()" aria-label="Fechar Modal">&times;</button>
+      </div>
+
+      <div class="modal-body" style="padding: 20px;">
+        <div style="text-align: center; margin-bottom: 16px;">
+          <div style="font-size: 2.2rem; margin-bottom: 4px;">🥇</div>
+          <h3 style="font-size: 1.1rem; color: #0f172a; font-weight: 800;">Caçadores de Ofertas de Colina</h3>
+          <p style="font-size: 0.84rem; color: #64748b;">Ganhe pontos ao confirmar preços (👍), reportar novas ofertas (📸) e ajudar o bairro a economizar!</p>
+        </div>
+
+        <div class="ranking-list" style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; background: #fef3c7; border: 1px solid #f59e0b; padding: 10px 14px; border-radius: 12px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 1.3rem;">🥇</span>
+              <div>
+                <div style="font-weight: 800; font-size: 0.9rem; color: #78350f;">Rodrigo S. (Colina I)</div>
+                <div style="font-size: 0.76rem; color: #92400e;">18 ofertas confirmadas</div>
+              </div>
+            </div>
+            <span style="font-weight: 800; color: #b45309; font-size: 0.9rem;">340 pts</span>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; border: 1px solid #cbd5e1; padding: 10px 14px; border-radius: 12px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 1.3rem;">🥈</span>
+              <div>
+                <div style="font-weight: 800; font-size: 0.9rem; color: #334155;">Mariana K. (Shopping Montserrat)</div>
+                <div style="font-size: 0.76rem; color: #64748b;">14 ofertas confirmadas</div>
+              </div>
+            </div>
+            <span style="font-weight: 800; color: #475569; font-size: 0.9rem;">260 pts</span>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; background: #ffedd5; border: 1px solid #fdba74; padding: 10px 14px; border-radius: 12px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 1.3rem;">🥉</span>
+              <div>
+                <div style="font-weight: 800; font-size: 0.9rem; color: #7c2d12;">Lucas M. (Laranjeiras)</div>
+                <div style="font-size: 0.76rem; color: #9a3412;">9 ofertas confirmadas</div>
+              </div>
+            </div>
+            <span style="font-weight: 800; color: #c2410c; font-size: 0.9rem;">180 pts</span>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; background: #ecfdf5; border: 1px solid #10b981; padding: 10px 14px; border-radius: 12px; margin-top: 6px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 1.3rem;">⭐</span>
+              <div>
+                <div style="font-weight: 800; font-size: 0.9rem; color: #065f46;">Você (Morador)</div>
+                <div style="font-size: 0.76rem; color: #047857;">4 interações hoje</div>
+              </div>
+            </div>
+            <span style="font-weight: 800; color: #059669; font-size: 0.9rem;">120 pts</span>
+          </div>
+        </div>
+
+        <button onclick="closeRankingModal(); openTipModal();" style="width: 100%; margin-top: 16px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; border: none; padding: 12px; border-radius: 12px; font-weight: 800; cursor: pointer;">
+          + Ganhar Pontos Publicando Oferta
         </button>
       </div>
     </div>
@@ -290,6 +420,22 @@
             <span>📸 Publicar Foto / Oferta para o Bairro</span>
           </button>
         </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Informar ou Corrigir Preço do Morador -->
+  <div class="modal-overlay" id="priceReportModal" role="dialog" aria-labelledby="priceReportTitle">
+    <div class="modal-container" style="max-width: 460px; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);">
+      <div class="modal-header" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 16px 20px;">
+        <div class="modal-title" id="priceReportTitle" style="color: #38bdf8; font-weight: 800; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;">
+          <span>📢</span> Informar Preço Real Encontrado
+        </div>
+        <button class="btn-close-modal" onclick="closePriceReportModal()" aria-label="Fechar Modal" style="color: white; font-size: 1.5rem; background: transparent; border: none; cursor: pointer;">&times;</button>
+      </div>
+
+      <div class="modal-body" id="priceReportModalBody" style="padding: 20px;">
+        <!-- Preenchido dinamicamente via JS -->
       </div>
     </div>
   </div>
