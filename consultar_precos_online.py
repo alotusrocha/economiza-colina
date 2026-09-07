@@ -216,15 +216,15 @@ def processar_e_formatar_produtos(raw_products):
     """Normaliza e formata os produtos para o catálogo do Economiza Colina."""
     formatted_products = []
     
-    # Imagens padrão por categoria caso não haja imagem
+    # Imagens padrão por categoria utilizando assets locais do projeto
     default_images = {
-        'acougue': 'https://images.unsplash.com/photo-1603048588665-791ca8aea617?w=400&auto=format&fit=crop&q=80',
-        'hortifruti': 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=400&auto=format&fit=crop&q=80',
-        'laticinios': 'https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=400&auto=format&fit=crop&q=80',
-        'mercearia': 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&auto=format&fit=crop&q=80',
-        'bebidas': 'https://images.unsplash.com/photo-1527960471264-932f39eb5846?w=400&auto=format&fit=crop&q=80',
-        'limpeza': 'https://images.unsplash.com/photo-1585421514738-01798e348b17?w=400&auto=format&fit=crop&q=80',
-        'higiene': 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&auto=format&fit=crop&q=80'
+        'acougue': 'assets/carne.png',
+        'hortifruti': 'assets/tomate.png',
+        'laticinios': 'assets/itens.jpeg',
+        'mercearia': 'assets/arroz.png',
+        'bebidas': 'assets/cerveja.png',
+        'limpeza': 'assets/limpeza.png',
+        'higiene': 'assets/limpeza.png'
     }
 
     for idx, p in enumerate(raw_products, 1):
