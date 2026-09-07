@@ -1,12 +1,17 @@
-const CACHE_NAME = 'economiza-colina-v1';
+const CACHE_NAME = 'economiza-colina-v2';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './video.html',
+  './manifest.json',
   './css/styles.css',
   './js/app.js',
   './js/cart.js',
   './js/data.js',
+  './assets/icon-192.png',
+  './assets/icon-512.png',
+  './assets/apple-touch-icon.png',
+  './assets/favicon.png',
   './assets/favicon.svg',
   './assets/ovo.png',
   './assets/frango.png',
