@@ -6,6 +6,7 @@ let currentSource = 'all';
 let searchQuery = '';
 
 document.addEventListener('DOMContentLoaded', () => {
+  updateHeaderDate();
   applyStoredCustomPrices();
   renderSupermarketChips();
   renderCategories();
@@ -14,6 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCommunityTips();
   setupEventListeners();
 });
+
+// Atualização Dinâmica da Data no Topo
+function updateHeaderDate() {
+  const el = document.getElementById('topBarUpdateDate');
+  if (el) {
+    const now = new Date();
+    const months = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+    const currentMonth = months[now.getMonth()];
+    const currentYear = now.getFullYear();
+    el.textContent = `Serra / ES • Atualizado em ${currentMonth}/${currentYear}`;
+  }
+}
 
 // Renderização dos Chips de Supermercado no Hero
 function renderSupermarketChips() {
@@ -170,10 +183,12 @@ function renderProducts() {
       ? `<span class="tag-encarte" onclick="openEncarteModal(${product.encarteId || 1})" style="background: #fef3c7; color: #92400e; border: 1px solid #f59e0b; cursor: pointer;" title="Preço Oficial do Folheto Promocional">📄 Folheto Promo</span>`
       : `<span class="tag-encarte" style="background: #e0f2fe; color: #0369a1; border: 1px solid #38bdf8;" title="Preço do Site Oficial / API Scraper">🌐 API / Site</span>`;
 
+    const discountBadgeText = savingsPercent > 0 ? `🔥 -${savingsPercent}% Econ.` : `🏆 Oferta do Bairro`;
+
     html += `
       <div class="product-card">
         <div class="card-top-badges">
-          <span class="tag-discount">${product.discountTag || `-${savingsPercent}% Econ.`}</span>
+          <span class="tag-discount">${discountBadgeText}</span>
           ${sourceBadgeHTML}
         </div>
 
@@ -262,24 +277,51 @@ function renderProducts() {
     // Votação & Contador de Visualizações da Comunidade
     const votes = getProductVotes(product.id);
     const views = getProductViews(product.id);
+    const userVoteToday = hasUserVotedToday(product.id);
+    let voteButtonsHTML = '';
+
+    if (userVoteToday === 'up') {
+      voteButtonsHTML = `
+        <button id="btn-vote-up-${product.id}" title="✓ Você já confirmou esta oferta hoje" style="flex: 1; background: #10b981; border: 1px solid #10b981; color: #ffffff; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: default; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.76rem;">
+          ✓ Confirmado <span id="vote-up-count-${product.id}">(${votes.up})</span>
+        </button>
+        <button id="btn-vote-down-${product.id}" onclick="if (window.cart && window.cart.showToast) window.cart.showToast('🔒 Você já avaliou esta oferta hoje!');" title="Você já avaliou esta oferta hoje" style="flex: 1; background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: not-allowed; opacity: 0.5; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.76rem;">
+          👎 <span id="vote-down-count-${product.id}">(${votes.down})</span>
+        </button>
+      `;
+    } else if (userVoteToday === 'down') {
+      voteButtonsHTML = `
+        <button id="btn-vote-up-${product.id}" onclick="if (window.cart && window.cart.showToast) window.cart.showToast('🔒 Você já avaliou esta oferta hoje!');" title="Você já avaliou esta oferta hoje" style="flex: 1; background: #ecfdf5; border: 1px solid #a7f3d0; color: #065f46; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: not-allowed; opacity: 0.5; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.76rem;">
+          👍 <span id="vote-up-count-${product.id}">(${votes.up})</span>
+        </button>
+        <button id="btn-vote-down-${product.id}" title="✓ Você informou uma alteração de preço para esta oferta hoje" style="flex: 1; background: #ef4444; border: 1px solid #ef4444; color: #ffffff; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: default; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.76rem;">
+          ✓ Informado <span id="vote-down-count-${product.id}">(${votes.down})</span>
+        </button>
+      `;
+    } else {
+      voteButtonsHTML = `
+        <button id="btn-vote-up-${product.id}" onclick="confirmProductPrice('${product.id}')" title="Confirmar que o preço está correto" style="flex: 1; background: #ecfdf5; border: 1px solid #10b981; color: #047857; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.2s; font-size: 0.76rem;">
+          👍 Sim <span id="vote-up-count-${product.id}">(${votes.up})</span>
+        </button>
+        <button id="btn-vote-down-${product.id}" onclick="openPriceReportModal('${product.id}')" title="Informar valor real ou preço diferente que encontrou no mercado" style="flex: 1; background: #fef2f2; border: 1px solid #ef4444; color: #b91c1c; padding: 5px 8px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.2s; font-size: 0.76rem;">
+          👎 Diferente <span id="vote-down-count-${product.id}">(${votes.down})</span>
+        </button>
+      `;
+    }
 
     html += `
           </div>
 
           <!-- Barra de Confirmação e Visualização dos Moradores -->
-          <div style="margin: 10px 0; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 6px 10px; display: flex; justify-content: space-between; align-items: center; font-size: 0.76rem;">
-            <div style="display: flex; align-items: center; gap: 4px; color: #475569; font-weight: 600;" title="Moradores que pesquisaram ou visualizaram esta oferta hoje">
-              <span>👁️ Moradores viram hoje:</span>
-              <strong style="color: #0f172a; background: #e2e8f0; padding: 1px 6px; border-radius: 10px;" id="view-count-${product.id}">${views}</strong>
+          <div style="margin: 10px 0; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px 10px; font-size: 0.76rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <div style="display: flex; align-items: center; gap: 4px; color: #475569; font-weight: 600;" title="Visualizações hoje">
+                <span>👁️ <strong style="color: #0f172a;" id="view-count-${product.id}">${views}</strong> moradores viram hoje</span>
+              </div>
+              <span style="font-size: 0.68rem; color: #64748b; font-weight: 700;">Preço correto?</span>
             </div>
-            <div style="display: flex; gap: 5px; align-items: center;">
-              <span style="font-size: 0.68rem; color: #64748b; font-weight: 600;">Confirmar:</span>
-              <button id="btn-vote-up-${product.id}" onclick="confirmProductPrice('${product.id}')" title="Confirmar que o preço está correto" style="background: #ecfdf5; border: 1px solid #10b981; color: #047857; padding: 4px 9px; border-radius: 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 3px; transition: all 0.2s;">
-                👍 <span id="vote-up-count-${product.id}">${votes.up}</span>
-              </button>
-              <button id="btn-vote-down-${product.id}" onclick="openPriceReportModal('${product.id}')" title="Informar valor real ou preço diferente que encontrou no mercado" style="background: #fef2f2; border: 1px solid #ef4444; color: #b91c1c; padding: 4px 9px; border-radius: 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 3px; transition: all 0.2s;">
-                👎 <span id="vote-down-count-${product.id}">${votes.down}</span>
-              </button>
+            <div style="display: flex; gap: 6px; width: 100%;">
+              ${voteButtonsHTML}
             </div>
           </div>
 
@@ -908,6 +950,30 @@ function applyStoredCustomPrices() {
   }
 }
 
+let lastVoteTimestamp = 0;
+
+function hasUserVotedToday(productId) {
+  try {
+    const todayKey = new Date().toISOString().split('T')[0];
+    const dailyVotes = JSON.parse(localStorage.getItem('economiza_colina_user_daily_votes')) || {};
+    return (dailyVotes[todayKey] && dailyVotes[todayKey][productId]) || false;
+  } catch (e) {
+    return false;
+  }
+}
+
+function recordUserVoteToday(productId, type) {
+  try {
+    const todayKey = new Date().toISOString().split('T')[0];
+    const dailyVotes = JSON.parse(localStorage.getItem('economiza_colina_user_daily_votes')) || {};
+    if (!dailyVotes[todayKey]) dailyVotes[todayKey] = {};
+    dailyVotes[todayKey][productId] = type;
+    localStorage.setItem('economiza_colina_user_daily_votes', JSON.stringify(dailyVotes));
+  } catch (e) {
+    console.error('Erro ao registrar voto diário:', e);
+  }
+}
+
 function getProductVotes(productId) {
   const votes = JSON.parse(localStorage.getItem('economiza_colina_votes')) || {};
   if (!votes[productId]) {
@@ -923,33 +989,53 @@ function getProductVotes(productId) {
   return votes[productId];
 }
 
-// Confirmar Preço do Morador (👍)
+// Confirmar Preço do Morador (👍) - Trava 1 Voto Por Produto por Dia
 function confirmProductPrice(productId) {
+  const now = Date.now();
+  if (now - lastVoteTimestamp < 1000) {
+    if (window.cart && window.cart.showToast) {
+      window.cart.showToast('⏳ Por favor, aguarde 1 segundo entre confirmações.');
+    }
+    return;
+  }
+
+  const previousVote = hasUserVotedToday(productId);
+  if (previousVote) {
+    if (window.cart && window.cart.showToast) {
+      window.cart.showToast('🔒 Você já avaliou esta oferta hoje! Pode confirmar outras ofertas do bairro.');
+    }
+    return;
+  }
+
+  lastVoteTimestamp = now;
+
   const votes = JSON.parse(localStorage.getItem('economiza_colina_votes')) || {};
   const current = votes[productId] || getProductVotes(productId);
 
   current.up += 1;
   votes[productId] = current;
   localStorage.setItem('economiza_colina_votes', JSON.stringify(votes));
+
+  recordUserVoteToday(productId, 'up');
   recordProductView(productId);
 
-  const upSpan = document.getElementById(`vote-up-count-${productId}`);
-  if (upSpan) upSpan.textContent = current.up;
-
-  const btnUp = document.getElementById(`btn-vote-up-${productId}`);
-  if (btnUp) {
-    btnUp.style.background = '#10b981';
-    btnUp.style.color = '#ffffff';
-    btnUp.title = 'Preço verificado e confirmado por você!';
-  }
+  renderProducts();
 
   if (window.cart && window.cart.showToast) {
-    window.cart.showToast('👍 Preço verificado e confirmado por você! +10 pts de morador no ranking!');
+    window.cart.showToast('👍 Preço confirmado por você hoje! +10 pts no ranking comunitário!');
   }
 }
 
 // Abrir Modal para Morador Informar o Preço Real Encontrado (👎)
 function openPriceReportModal(productId) {
+  const previousVote = hasUserVotedToday(productId);
+  if (previousVote) {
+    if (window.cart && window.cart.showToast) {
+      window.cart.showToast('🔒 Você já registrou uma avaliação para esta oferta hoje!');
+    }
+    return;
+  }
+
   const product = PRODUCTS.find(p => p.id === productId);
   if (!product) return;
 
@@ -1051,6 +1137,8 @@ function submitPriceReport(event, productId) {
     current.down += 1;
     votes[productId] = current;
     localStorage.setItem('economiza_colina_votes', JSON.stringify(votes));
+    
+    recordUserVoteToday(productId, 'down');
     recordProductView(productId);
 
     renderProducts();
