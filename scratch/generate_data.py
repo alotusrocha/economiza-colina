@@ -204,7 +204,7 @@ products = [
       "atacado_vem": 14.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 13,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 13,99"
   },
   {
     "id": "atc_2",
@@ -213,18 +213,18 @@ products = [
     "unit": "kg",
     "image": "assets/tomate.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 14.9,
+    "offerMarketId": "casagrande",
+    "offerPrice": 14.01,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 14.9,
       "extrabom": 21.9,
       "carone": 22.5,
-      "casagrande": 20.9,
+      "casagrande": 14.01,
       "bh": 18.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 14,90"
+    "discountTag": "Menor preço no Rede Casagrande | R$ 14,01"
   },
   {
     "id": "atc_3",
@@ -233,18 +233,18 @@ products = [
     "unit": "kg",
     "image": "assets/tomate.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 4.99,
+    "offerMarketId": "extrabom",
+    "offerPrice": 4.59,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 4.99,
-      "extrabom": 7.99,
+      "extrabom": 4.59,
       "carone": 7.5,
       "bh": 6.49,
       "assai": 5.49
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 4,99"
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 4,59"
   },
   {
     "id": "atc_4",
@@ -253,18 +253,18 @@ products = [
     "unit": "kg",
     "image": "assets/tomate.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 5.99,
+    "offerMarketId": "extrabom",
+    "offerPrice": 5.51,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 5.99,
-      "extrabom": 7.99,
+      "extrabom": 5.51,
       "carone": 8.2,
       "casagrande": 7.49,
       "atacado_vem": 6.5
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 5,99"
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 5,51"
   },
   {
     "id": "atc_5",
@@ -273,18 +273,19 @@ products = [
     "unit": "kg",
     "image": "assets/tomate.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 4.99,
+    "offerMarketId": "casagrande",
+    "offerPrice": 4.69,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 4.99,
       "extrabom": 6.99,
       "carone": 7.1,
       "bh": 5.99,
-      "assai": 5.29
+      "assai": 5.29,
+      "casagrande": 4.69
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 4,99"
+    "discountTag": "Menor preço no Rede Casagrande | R$ 4,69"
   },
   {
     "id": "atc_6",
@@ -305,7 +306,7 @@ products = [
       "carone": 4.69
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 3,59"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 3,59"
   },
   {
     "id": "atc_7",
@@ -325,7 +326,7 @@ products = [
       "casagrande": 59.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 54,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 54,90"
   },
   {
     "id": "atc_8",
@@ -345,7 +346,7 @@ products = [
       "atacado_vem": 46.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 45,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 45,90"
   },
   {
     "id": "atc_9",
@@ -354,18 +355,19 @@ products = [
     "unit": "1kg",
     "image": "assets/frango.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 15.98,
+    "offerMarketId": "bh",
+    "offerPrice": 15.18,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 15.98,
       "extrabom": 18.98,
       "carone": 19.9,
       "assai": 16.9,
-      "atacado_vem": 16.49
+      "atacado_vem": 16.49,
+      "bh": 15.18
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 15,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 15,18"
   },
   {
     "id": "atc_10",
@@ -374,18 +376,18 @@ products = [
     "unit": "1kg",
     "image": "assets/frango.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 10.5,
+    "offerMarketId": "bh",
+    "offerPrice": 9.97,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 10.5,
       "extrabom": 13.9,
       "carone": 14.5,
       "casagrande": 12.9,
-      "bh": 11.9
+      "bh": 9.97
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 10,50"
+    "discountTag": "Menor preço no Supermercados BH | R$ 9,97"
   },
   {
     "id": "atc_11",
@@ -394,18 +396,18 @@ products = [
     "unit": "1kg",
     "image": "assets/frango.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 8.99,
+    "offerMarketId": "bh",
+    "offerPrice": 8.54,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 8.99,
       "extrabom": 10.99,
       "carone": 11.9,
       "assai": 9.9,
-      "bh": 9.49
+      "bh": 8.54
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 8,99"
+    "discountTag": "Menor preço no Supermercados BH | R$ 8,54"
   },
   {
     "id": "atc_12",
@@ -425,7 +427,7 @@ products = [
       "atacado_vem": 33.9
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 31,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 31,90"
   },
   {
     "id": "atc_13",
@@ -445,7 +447,7 @@ products = [
       "assai": 32.9
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 31,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 31,90"
   },
   {
     "id": "atc_14",
@@ -454,18 +456,19 @@ products = [
     "unit": "2.5kg",
     "image": "assets/carne.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 51.9,
+    "offerMarketId": "bh",
+    "offerPrice": 49.3,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 51.9,
       "extrabom": 53.9,
       "carone": 58.9,
       "casagrande": 54.9,
-      "atacado_vem": 52.9
+      "atacado_vem": 52.9,
+      "bh": 49.3
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 51,90"
+    "discountTag": "Menor preço no Supermercados BH | R$ 49,30"
   },
   {
     "id": "atc_15",
@@ -474,18 +477,18 @@ products = [
     "unit": "2.5kg",
     "image": "assets/carne.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 49.9,
+    "offerMarketId": "bh",
+    "offerPrice": 47.4,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 49.9,
       "extrabom": 54.9,
       "carone": 59.9,
       "assai": 51.9,
-      "bh": 52.9
+      "bh": 47.4
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 49,90"
+    "discountTag": "Menor preço no Supermercados BH | R$ 47,40"
   },
   {
     "id": "atc_16",
@@ -505,7 +508,7 @@ products = [
       "atacado_vem": 17.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 16,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 16,90"
   },
   {
     "id": "atc_17",
@@ -525,7 +528,7 @@ products = [
       "assai": 16.5
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 15,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 15,99"
   },
   {
     "id": "atc_18",
@@ -545,7 +548,7 @@ products = [
       "atacado_vem": 10.5
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 9,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 9,99"
   },
   {
     "id": "atc_19",
@@ -554,18 +557,18 @@ products = [
     "unit": "6x80g",
     "image": "assets/limpeza.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 6.99,
+    "offerMarketId": "bh",
+    "offerPrice": 6.71,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 6.99,
       "extrabom": 8.49,
       "carone": 8.99,
-      "bh": 7.49,
+      "bh": 6.71,
       "assai": 7.2
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 6,99"
+    "discountTag": "Menor preço no Supermercados BH | R$ 6,71"
   },
   {
     "id": "atc_20",
@@ -585,7 +588,7 @@ products = [
       "atacado_vem": 27.5
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 26,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 26,90"
   },
   {
     "id": "atc_21",
@@ -605,7 +608,7 @@ products = [
       "assai": 15.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 14,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 14,90"
   },
   {
     "id": "atc_22",
@@ -625,7 +628,7 @@ products = [
       "atacado_vem": 18.2
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 17,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 17,90"
   },
   {
     "id": "atc_23",
@@ -645,7 +648,7 @@ products = [
       "bh": 11.99
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 11,79"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 11,79"
   },
   {
     "id": "atc_24",
@@ -654,18 +657,18 @@ products = [
     "unit": "1L",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 4.69,
+    "offerMarketId": "bh",
+    "offerPrice": 4.5,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 4.69,
       "extrabom": 5.19,
       "carone": 5.49,
       "casagrande": 4.99,
-      "bh": 4.79
+      "bh": 4.5
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 4,69"
+    "discountTag": "Menor preço no Supermercados BH | R$ 4,50"
   },
   {
     "id": "atc_25",
@@ -685,7 +688,7 @@ products = [
       "atacado_vem": 182.0
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 179,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 179,90"
   },
   {
     "id": "atc_26",
@@ -705,7 +708,7 @@ products = [
       "bh": 30.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 29,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 29,90"
   },
   {
     "id": "atc_27",
@@ -725,7 +728,7 @@ products = [
       "assai": 2.45
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 2,39"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 2,39"
   },
   {
     "id": "atc_28",
@@ -745,7 +748,7 @@ products = [
       "atacado_vem": 16.5
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 15,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 15,90"
   },
   {
     "id": "atc_29",
@@ -765,7 +768,7 @@ products = [
       "assai": 6.2
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 5,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 5,99"
   },
   {
     "id": "atc_30",
@@ -785,7 +788,7 @@ products = [
       "atacado_vem": 2.2
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 1,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,99"
   },
   {
     "id": "atc_31",
@@ -805,7 +808,7 @@ products = [
       "bh": 16.2
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 15,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 15,90"
   },
   {
     "id": "atc_32",
@@ -825,7 +828,7 @@ products = [
       "atacado_vem": 9.5
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 8,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 8,90"
   },
   {
     "id": "atc_33",
@@ -834,18 +837,18 @@ products = [
     "unit": "395g",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 7.95,
+    "offerMarketId": "bh",
+    "offerPrice": 7.63,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 7.95,
       "extrabom": 8.99,
       "carone": 9.5,
-      "bh": 8.49,
+      "bh": 7.63,
       "assai": 8.2
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 7,95"
+    "discountTag": "Menor preço no Supermercados BH | R$ 7,63"
   },
   {
     "id": "atc_34",
@@ -865,7 +868,7 @@ products = [
       "atacado_vem": 24.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 23,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 23,90"
   },
   {
     "id": "atc_35",
@@ -885,7 +888,7 @@ products = [
       "assai": 9.2
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 8,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 8,90"
   },
   {
     "id": "atc_36",
@@ -905,7 +908,7 @@ products = [
       "atacado_vem": 1.89
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 1,79"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,79"
   },
   {
     "id": "atc_37",
@@ -925,7 +928,7 @@ products = [
       "bh": 59.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 54,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 54,90"
   },
   {
     "id": "atc_38",
@@ -945,7 +948,7 @@ products = [
       "atacado_vem": 11.5
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 10,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 10,99"
   },
   {
     "id": "atc_39",
@@ -965,7 +968,7 @@ products = [
       "assai": 4.29
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 4,19"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,19"
   },
   {
     "id": "atc_40",
@@ -985,7 +988,7 @@ products = [
       "atacado_vem": 3.09
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 2,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 2,99"
   },
   {
     "id": "atc_41",
@@ -1005,7 +1008,7 @@ products = [
       "assai": 4.59
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 4,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,49"
   },
   {
     "id": "atc_42",
@@ -1025,7 +1028,7 @@ products = [
       "atacado_vem": 12.49
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 11,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 11,99"
   },
   {
     "id": "atc_43",
@@ -1045,7 +1048,7 @@ products = [
       "assai": 4.49
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 4,39"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,39"
   },
   {
     "id": "atc_44",
@@ -1065,7 +1068,7 @@ products = [
       "atacado_vem": 1.99
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 1,89"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,89"
   },
   {
     "id": "atc_45",
@@ -1085,7 +1088,7 @@ products = [
       "assai": 1.1
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 1,05"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,05"
   },
   {
     "id": "atc_46",
@@ -1105,7 +1108,7 @@ products = [
       "atacado_vem": 18.2
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 17,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 17,90"
   },
   {
     "id": "atc_47",
@@ -1125,7 +1128,7 @@ products = [
       "assai": 9.9
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 9,75"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 9,75"
   },
   {
     "id": "atc_48",
@@ -1145,7 +1148,7 @@ products = [
       "atacado_vem": 2.05
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 1,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,99"
   },
   {
     "id": "atc_49",
@@ -1165,7 +1168,7 @@ products = [
       "assai": 1.42
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 1,39"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,39"
   },
   {
     "id": "atc_50",
@@ -1185,7 +1188,7 @@ products = [
       "atacado_vem": 4.79
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 4,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,49"
   },
   {
     "id": "atc_51",
@@ -1205,7 +1208,7 @@ products = [
       "assai": 0.95
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 0,89"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 0,89"
   },
   {
     "id": "atc_52",
@@ -1225,7 +1228,7 @@ products = [
       "atacado_vem": 14.2
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 13,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 13,90"
   },
   {
     "id": "atc_53",
@@ -1245,7 +1248,7 @@ products = [
       "assai": 6.2
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 5,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 5,98"
   },
   {
     "id": "atc_54",
@@ -1265,7 +1268,7 @@ products = [
       "atacado_vem": 3.05
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 2,95"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 2,95"
   },
   {
     "id": "atc_55",
@@ -1285,7 +1288,7 @@ products = [
       "assai": 2.59
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 2,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 2,49"
   },
   {
     "id": "atc_56",
@@ -1305,7 +1308,7 @@ products = [
       "atacado_vem": 355.0
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 349,00"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 349,00"
   },
   {
     "id": "atc_57",
@@ -1325,7 +1328,7 @@ products = [
       "assai": 69.9
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 66,25"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 66,25"
   },
   {
     "id": "atc_58",
@@ -1345,7 +1348,7 @@ products = [
       "atacado_vem": 25.5
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 24,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 24,90"
   },
   {
     "id": "atc_59",
@@ -1365,7 +1368,7 @@ products = [
       "assai": 62.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 59,00"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 59,00"
   },
   {
     "id": "atc_60",
@@ -1385,7 +1388,7 @@ products = [
       "atacado_vem": 45.9
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 43,54"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 43,54"
   },
   {
     "id": "atc_61",
@@ -1405,7 +1408,7 @@ products = [
       "assai": 15.9
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 14,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 14,90"
   },
   {
     "id": "car_1",
@@ -1424,7 +1427,7 @@ products = [
       "assai": 12.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Carone | R$ 11,98"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 11,98"
   },
   {
     "id": "car_2",
@@ -1443,7 +1446,7 @@ products = [
       "bh": 19.5
     },
     "featured": True,
-    "discountTag": "Menor preço no Carone | R$ 17,98"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 17,98"
   },
   {
     "id": "car_3",
@@ -1462,7 +1465,7 @@ products = [
       "casagrande": 8.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Carone | R$ 7,79"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 7,79"
   },
   {
     "id": "car_4",
@@ -1481,7 +1484,7 @@ products = [
       "bh": 8.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Carone | R$ 7,79"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 7,79"
   },
   {
     "id": "car_5",
@@ -1500,7 +1503,7 @@ products = [
       "assai": 32.5
     },
     "featured": True,
-    "discountTag": "Menor preço no Carone | R$ 29,98"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 29,98"
   },
   {
     "id": "car_6",
@@ -1519,7 +1522,7 @@ products = [
       "casagrande": 94.0
     },
     "featured": True,
-    "discountTag": "Menor preço no Carone | R$ 84,90"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 84,90"
   },
   {
     "id": "car_7",
@@ -1538,7 +1541,7 @@ products = [
       "bh": 79.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Carone | R$ 72,90"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 72,90"
   },
   {
     "id": "car_8",
@@ -1557,7 +1560,7 @@ products = [
       "assai": 139.0
     },
     "featured": True,
-    "discountTag": "Menor preço no Carone | R$ 129,00"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 129,00"
   },
   {
     "id": "car_9",
@@ -1576,7 +1579,7 @@ products = [
       "assai": 19.5
     },
     "featured": True,
-    "discountTag": "Menor preço no Carone | R$ 18,90"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 18,90"
   },
   {
     "id": "car_10",
@@ -1595,7 +1598,7 @@ products = [
       "bh": 13.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Carone | R$ 12,90"
+    "discountTag": "Menor preço no Carone Supermercados | R$ 12,90"
   },
   {
     "id": "bh_30_1",
@@ -1605,16 +1608,16 @@ products = [
     "image": "assets/frango.png",
     "encarteId": 1,
     "offerMarketId": "bh",
-    "offerPrice": 12.98,
+    "offerPrice": 12.33,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 12.98,
+      "bh": 12.33,
       "extrabom": 14.98,
       "atacadao": 13.5,
       "carone": 14.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Supermercados BH | R$ 12,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 12,33"
   },
   {
     "id": "bh_30_2",
@@ -1624,16 +1627,16 @@ products = [
     "image": "assets/frango.png",
     "encarteId": 1,
     "offerMarketId": "bh",
-    "offerPrice": 15.98,
+    "offerPrice": 15.18,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 15.98,
+      "bh": 15.18,
       "extrabom": 17.8,
       "atacadao": 16.5,
       "carone": 16.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Supermercados BH | R$ 15,98"
+    "discountTag": "Menor preço no Supermercados BH | R$ 15,18"
   },
   {
     "id": "bh_30_3",
@@ -1660,17 +1663,17 @@ products = [
     "unit": "1kg",
     "image": "assets/carne.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 23.9,
+    "offerMarketId": "bh",
+    "offerPrice": 22.7,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 23.98,
+      "bh": 22.7,
       "extrabom": 24.98,
       "atacadao": 23.9,
       "carone": 24.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 23,90"
+    "discountTag": "Menor preço no Supermercados BH | R$ 22,70"
   },
   {
     "id": "bh_30_5",
@@ -1840,7 +1843,7 @@ products = [
       "carone": 9.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 8,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 8,99"
   },
   {
     "id": "atc_apti_2",
@@ -1858,7 +1861,7 @@ products = [
       "carone": 42.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 39,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 39,90"
   },
   {
     "id": "atc_apti_3",
@@ -1877,7 +1880,7 @@ products = [
       "carone": 16.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 15,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 15,90"
   },
   {
     "id": "atc_apti_4",
@@ -1896,7 +1899,7 @@ products = [
       "carone": 3.29
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 2,89"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 2,89"
   },
   {
     "id": "atc_apti_5",
@@ -1915,7 +1918,7 @@ products = [
       "carone": 1.19
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 0,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 0,99"
   },
   {
     "id": "cg_set_1",
@@ -1924,18 +1927,18 @@ products = [
     "unit": "1kg",
     "image": "assets/contrafile.png",
     "encarteId": 1,
-    "offerMarketId": "casagrande",
-    "offerPrice": 49.99,
+    "offerMarketId": "extrabom",
+    "offerPrice": 47.49,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "casagrande": 49.99,
-      "extrabom": 54.9,
-      "carone": 56.9,
+      "extrabom": 47.49,
+      "carone": 48.99,
       "bh": 52.9,
       "atacadao": 51.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Rede Casagrande | R$ 49,99"
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 47,49"
   },
   {
     "id": "cg_set_2",
@@ -1944,18 +1947,18 @@ products = [
     "unit": "1kg",
     "image": "assets/carne.png",
     "encarteId": 1,
-    "offerMarketId": "atacadao",
-    "offerPrice": 17.9,
+    "offerMarketId": "casagrande",
+    "offerPrice": 16.83,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "casagrande": 17.98,
+      "casagrande": 16.83,
       "extrabom": 18.9,
       "carone": 19.9,
       "bh": 18.49,
       "atacadao": 17.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 17,90"
+    "discountTag": "Menor preço no Rede Casagrande | R$ 16,83"
   },
   {
     "id": "cg_set_3",
@@ -2004,18 +2007,19 @@ products = [
     "unit": "150g",
     "image": "assets/itens.jpeg",
     "encarteId": 1,
-    "offerMarketId": "casagrande",
-    "offerPrice": 8.98,
+    "offerMarketId": "assai",
+    "offerPrice": 8.35,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "casagrande": 8.98,
       "extrabom": 9.9,
       "carone": 10.5,
       "bh": 9.49,
-      "atacadao": 9.2
+      "atacadao": 9.2,
+      "assai": 8.35
     },
     "featured": True,
-    "discountTag": "Menor preço no Rede Casagrande | R$ 8,98"
+    "discountTag": "Menor preço no Assaí Atacadista | R$ 8,35"
   },
   {
     "id": "cg_set_6",
@@ -2024,18 +2028,18 @@ products = [
     "unit": "1kg",
     "image": "assets/frango.png",
     "encarteId": 1,
-    "offerMarketId": "casagrande",
-    "offerPrice": 9.9,
+    "offerMarketId": "bh",
+    "offerPrice": 9.4,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "casagrande": 9.9,
       "extrabom": 10.9,
       "carone": 11.9,
-      "bh": 10.49,
+      "bh": 9.4,
       "atacadao": 9.98
     },
     "featured": True,
-    "discountTag": "Menor preço no Rede Casagrande | R$ 9,90"
+    "discountTag": "Menor preço no Supermercados BH | R$ 9,40"
   },
   {
     "id": "cg_set_7",
@@ -2136,7 +2140,7 @@ products = [
       "atacado_vem": 14.5
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 13,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 13,98"
   },
   {
     "id": "atc_pl_2",
@@ -2157,7 +2161,7 @@ products = [
       "atacado_vem": 11.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 11,20"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 11,20"
   },
   {
     "id": "atc_pl_3",
@@ -2178,7 +2182,7 @@ products = [
       "atacado_vem": 35.9
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 34,50"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 34,50"
   },
   {
     "id": "atc_pl_4",
@@ -2199,7 +2203,7 @@ products = [
       "atacado_vem": 33.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 32,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 32,90"
   },
   {
     "id": "atc_pl_5",
@@ -2220,7 +2224,7 @@ products = [
       "atacado_vem": 2.69
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 2,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 2,49"
   },
   {
     "id": "atc_pl_6",
@@ -2241,7 +2245,7 @@ products = [
       "atacado_vem": 6.99
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 6,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 6,49"
   },
   {
     "id": "atc_pl_7",
@@ -2262,7 +2266,7 @@ products = [
       "atacado_vem": 2.19
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 2,09"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 2,09"
   },
   {
     "id": "atc_pl_8",
@@ -2283,7 +2287,7 @@ products = [
       "atacado_vem": 4.59
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 4,29"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,29"
   },
   {
     "id": "atc_pl_9",
@@ -2304,7 +2308,7 @@ products = [
       "atacado_vem": 19.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 19,50"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 19,50"
   },
   {
     "id": "atc_pl_10",
@@ -2325,7 +2329,7 @@ products = [
       "atacado_vem": 9.29
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 8,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 8,99"
   },
   {
     "id": "atc_pl_11",
@@ -2346,7 +2350,7 @@ products = [
       "atacado_vem": 15.5
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 14,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 14,90"
   },
   {
     "id": "atc_pl_12",
@@ -2367,7 +2371,7 @@ products = [
       "atacado_vem": 16.29
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 15,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 15,90"
   },
   {
     "id": "atc_pl_13",
@@ -2388,7 +2392,7 @@ products = [
       "atacado_vem": 2.19
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 2,19"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 2,19"
   },
   {
     "id": "atc_pl_14",
@@ -2409,7 +2413,7 @@ products = [
       "atacado_vem": 7.29
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 6,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 6,98"
   },
   {
     "id": "atc_pl_15",
@@ -2430,7 +2434,7 @@ products = [
       "atacado_vem": 69.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 68,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 68,90"
   },
   {
     "id": "atc_pl_16",
@@ -2451,7 +2455,7 @@ products = [
       "atacado_vem": 46.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 45,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 45,90"
   },
   {
     "id": "atc_pl_17",
@@ -2472,7 +2476,7 @@ products = [
       "atacado_vem": 33.5
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 32,50"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 32,50"
   },
   {
     "id": "atc_pl_18",
@@ -2493,7 +2497,7 @@ products = [
       "atacado_vem": 34.9
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 33,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 33,90"
   },
   {
     "id": "atc_pl_19",
@@ -2514,7 +2518,7 @@ products = [
       "atacado_vem": 5.69
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 5,48"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 5,48"
   },
   {
     "id": "atc_pl_20",
@@ -2535,7 +2539,7 @@ products = [
       "atacado_vem": 35.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 34,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 34,90"
   },
   {
     "id": "atc_pl_21",
@@ -2556,7 +2560,7 @@ products = [
       "atacado_vem": 4.49
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 4,29"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,29"
   },
   {
     "id": "atc_pl_22",
@@ -2577,7 +2581,7 @@ products = [
       "atacado_vem": 15.5
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 14,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 14,98"
   },
   {
     "id": "atc_pl_23",
@@ -2598,7 +2602,7 @@ products = [
       "atacado_vem": 20.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 19,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 19,90"
   },
   {
     "id": "atc_pl_24",
@@ -2619,7 +2623,7 @@ products = [
       "atacado_vem": 10.5
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 9,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 9,98"
   },
   {
     "id": "atc_pl_25",
@@ -2640,7 +2644,7 @@ products = [
       "atacado_vem": 41.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 39,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 39,90"
   },
   {
     "id": "atc_pl_26",
@@ -2661,7 +2665,7 @@ products = [
       "atacado_vem": 2.09
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 1,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,98"
   },
   {
     "id": "atc_pl_27",
@@ -2682,7 +2686,7 @@ products = [
       "atacado_vem": 12.5
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 11,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 11,98"
   },
   {
     "id": "atc_pl_28",
@@ -2703,7 +2707,7 @@ products = [
       "atacado_vem": 13.5
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 12,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 12,90"
   },
   {
     "id": "atc_pl_29",
@@ -2724,7 +2728,7 @@ products = [
       "atacado_vem": 13.1
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 12,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 12,90"
   },
   {
     "id": "atc_pl_30",
@@ -2745,7 +2749,7 @@ products = [
       "atacado_vem": 4.85
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 4,79"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,79"
   },
   {
     "id": "atc_pl_31",
@@ -2766,7 +2770,7 @@ products = [
       "atacado_vem": 46.5
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 45,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 45,90"
   },
   {
     "id": "atc_pl_32",
@@ -2787,7 +2791,7 @@ products = [
       "atacado_vem": 10.5
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 9,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 9,90"
   },
   {
     "id": "atc_pl_33",
@@ -2808,7 +2812,7 @@ products = [
       "atacado_vem": 12.5
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 11,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 11,90"
   },
   {
     "id": "atc_pl_34",
@@ -2829,7 +2833,7 @@ products = [
       "atacado_vem": 5.2
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 4,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,98"
   },
   {
     "id": "atc_pl_35",
@@ -2850,7 +2854,7 @@ products = [
       "atacado_vem": 74.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 69,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 69,90"
   },
   {
     "id": "atc_pl_36",
@@ -2871,7 +2875,7 @@ products = [
       "atacado_vem": 79.9
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 74,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 74,90"
   },
   {
     "id": "atc_pl_37",
@@ -2892,7 +2896,7 @@ products = [
       "atacado_vem": 27.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 24,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 24,90"
   },
   {
     "id": "atc_pl_38",
@@ -2913,7 +2917,7 @@ products = [
       "atacado_vem": 31.5
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 29,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 29,98"
   },
   {
     "id": "atc_pl_39",
@@ -2934,7 +2938,7 @@ products = [
       "atacado_vem": 13.1
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 12,78"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 12,78"
   },
   {
     "id": "atc_pl_40",
@@ -2955,7 +2959,7 @@ products = [
       "atacado_vem": 26.5
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 25,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 25,90"
   },
   {
     "id": "atc_pl_41",
@@ -2976,7 +2980,7 @@ products = [
       "atacado_vem": 3.79
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 3,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 3,49"
   },
   {
     "id": "atc_pl_42",
@@ -2997,7 +3001,7 @@ products = [
       "atacado_vem": 12.2
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 11,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 11,90"
   },
   {
     "id": "atc_pl_43",
@@ -3018,7 +3022,7 @@ products = [
       "atacado_vem": 1.85
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 1,79"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,79"
   },
   {
     "id": "atc_pl_44",
@@ -3039,7 +3043,7 @@ products = [
       "atacado_vem": 11.9
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 11,50"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 11,50"
   },
   {
     "id": "atc_pl_45",
@@ -3060,7 +3064,7 @@ products = [
       "atacado_vem": 12.7
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 12,50"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 12,50"
   },
   {
     "id": "atc_pl_46",
@@ -3081,7 +3085,7 @@ products = [
       "atacado_vem": 3.39
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 3,29"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 3,29"
   },
   {
     "id": "atc_pl_47",
@@ -3102,7 +3106,7 @@ products = [
       "atacado_vem": 8.19
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 7,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 7,99"
   },
   {
     "id": "atc_pl_48",
@@ -3123,7 +3127,7 @@ products = [
       "atacado_vem": 6.09
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 5,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 5,98"
   },
   {
     "id": "atc_pl_49",
@@ -3144,7 +3148,7 @@ products = [
       "atacado_vem": 11.5
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 10,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 10,90"
   },
   {
     "id": "atc_pl_50",
@@ -3165,7 +3169,7 @@ products = [
       "atacado_vem": 23.2
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 22,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 22,90"
   },
   {
     "id": "atc_pl_51",
@@ -3186,7 +3190,7 @@ products = [
       "atacado_vem": 12.8
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 12,50"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 12,50"
   },
   {
     "id": "atc_pl_52",
@@ -3207,7 +3211,7 @@ products = [
       "atacado_vem": 20.2
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 19,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 19,90"
   },
   {
     "id": "atc_pl_53",
@@ -3228,7 +3232,7 @@ products = [
       "atacado_vem": 10.9
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 9,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 9,98"
   },
   {
     "id": "atc_pl_54",
@@ -3249,7 +3253,7 @@ products = [
       "atacado_vem": 4.59
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 4,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,49"
   },
   {
     "id": "atc_pl_55",
@@ -3270,7 +3274,7 @@ products = [
       "atacado_vem": 8.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 8,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 8,49"
   },
   {
     "id": "atc_pl_56",
@@ -3291,7 +3295,7 @@ products = [
       "atacado_vem": 14.0
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 13,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 13,98"
   },
   {
     "id": "atc_pl_57",
@@ -3312,7 +3316,7 @@ products = [
       "atacado_vem": 30.9
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 29,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 29,98"
   },
   {
     "id": "atc_pl_58",
@@ -3333,7 +3337,7 @@ products = [
       "atacado_vem": 1.52
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 1,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,49"
   },
   {
     "id": "atc_pl_59",
@@ -3354,7 +3358,7 @@ products = [
       "atacado_vem": 12.9
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 12,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 12,49"
   },
   {
     "id": "atc_pl_60",
@@ -3375,7 +3379,7 @@ products = [
       "atacado_vem": 7.39
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 6,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 6,99"
   },
   {
     "id": "atc_pl_61",
@@ -3396,7 +3400,7 @@ products = [
       "atacado_vem": 19.5
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 18,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 18,90"
   },
   {
     "id": "atc_pl_62",
@@ -3417,7 +3421,7 @@ products = [
       "atacado_vem": 6.99
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 6,59"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 6,59"
   },
   {
     "id": "atc_pl_63",
@@ -3438,7 +3442,7 @@ products = [
       "atacado_vem": 6.99
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 6,59"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 6,59"
   },
   {
     "id": "atc_pl_64",
@@ -3459,7 +3463,7 @@ products = [
       "atacado_vem": 1.99
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 1,79"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,79"
   },
   {
     "id": "atc_pl_65",
@@ -3480,7 +3484,7 @@ products = [
       "atacado_vem": 15.7
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 15,50"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 15,50"
   },
   {
     "id": "atc_pl_66",
@@ -3501,7 +3505,7 @@ products = [
       "atacado_vem": 5.59
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 5,49"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 5,49"
   },
   {
     "id": "atc_pl_67",
@@ -3522,7 +3526,7 @@ products = [
       "atacado_vem": 16.2
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 15,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 15,98"
   },
   {
     "id": "atc_pl_68",
@@ -3543,7 +3547,7 @@ products = [
       "atacado_vem": 17.0
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 16,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 16,90"
   },
   {
     "id": "atc_pl_69",
@@ -3564,7 +3568,7 @@ products = [
       "atacado_vem": 14.0
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 13,98"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 13,98"
   },
   {
     "id": "atc_pl_70",
@@ -3585,7 +3589,7 @@ products = [
       "atacado_vem": 23.2
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 22,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 22,90"
   },
   {
     "id": "atc_pl_71",
@@ -3606,7 +3610,7 @@ products = [
       "atacado_vem": 1.89
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 1,85"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 1,85"
   },
   {
     "id": "atc_pl_72",
@@ -3627,7 +3631,7 @@ products = [
       "atacado_vem": 3.45
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 3,35"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 3,35"
   },
   {
     "id": "atc_pl_73",
@@ -3648,7 +3652,7 @@ products = [
       "atacado_vem": 10.0
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 9,90"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 9,90"
   },
   {
     "id": "atc_pl_74",
@@ -3669,7 +3673,7 @@ products = [
       "atacado_vem": 12.2
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 11,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 11,99"
   },
   {
     "id": "atc_pl_75",
@@ -3690,7 +3694,7 @@ products = [
       "atacado_vem": 8.19
     },
     "featured": True,
-    "discountTag": "Menor preço no Atacadão | R$ 7,99"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 7,99"
   },
   {
     "id": "atc_pl_76",
@@ -3711,7 +3715,7 @@ products = [
       "atacado_vem": 6.9
     },
     "featured": False,
-    "discountTag": "Menor preço no Atacadão | R$ 6,75"
+    "discountTag": "Menor preço no Atacadão Serra | R$ 6,75"
   }
 ]
 
