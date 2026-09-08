@@ -14,7 +14,20 @@ document.addEventListener('DOMContentLoaded', () => {
   renderEncartesGallery();
   renderCommunityTips();
   setupEventListeners();
+  trackPWAMode();
 });
+
+// Detecção e Rastreamento de PWA Instalado no Android / iOS (GA4)
+function trackPWAMode() {
+  const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+  if (isStandalone) {
+    trackEvent('pwa_launch', {
+      event_category: 'PWA',
+      event_label: 'Standalone App Mode',
+      platform: 'Android/Mobile'
+    });
+  }
+}
 
 // Atualização Dinâmica da Data no Topo
 function updateHeaderDate() {
@@ -320,14 +333,14 @@ function renderProducts() {
           </div>
 
           <!-- Barra de Confirmação e Visualização dos Moradores -->
-          <div style="margin: 10px 0; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px 10px; font-size: 0.76rem;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <div style="display: flex; align-items: center; gap: 4px; color: #475569; font-weight: 600;" title="Visualizações hoje">
-                <span>👁️ <strong style="color: #0f172a;" id="view-count-${product.id}">${views}</strong> moradores viram hoje</span>
+          <div class="community-vote-box">
+            <div class="vote-box-header">
+              <div class="vote-views-count" title="Visualizações hoje">
+                <span>👁️ <strong id="view-count-${product.id}">${views}</strong> moradores viram hoje</span>
               </div>
-              <span style="font-size: 0.68rem; color: #64748b; font-weight: 700;">Preço correto?</span>
+              <span class="vote-box-question">Preço correto?</span>
             </div>
-            <div style="display: flex; gap: 6px; width: 100%;">
+            <div class="vote-buttons-row">
               ${voteButtonsHTML}
             </div>
           </div>
@@ -368,13 +381,34 @@ function renderEncartesGallery() {
   container.innerHTML = html;
 }
 
-// Dicas da Comunidade
+// Dicas da Comunidade (Apenas Envios Reais dos Moradores)
+function getRealCommunityTips() {
+  try {
+    const stored = localStorage.getItem('economiza_colina_real_tips');
+    return stored ? JSON.parse(stored) : [];
+  } catch (e) {
+    return [];
+  }
+}
+
 function renderCommunityTips() {
   const container = document.getElementById('communityTipsContainer');
   if (!container) return;
 
+  const realTips = getRealCommunityTips();
+
+  if (realTips.length === 0) {
+    container.innerHTML = `
+      <div class="tip-card" style="background: rgba(16, 185, 129, 0.08); border-left: 3px solid #10b981; color: #047857; border-radius: 20px; padding: 6px 14px; font-size: 0.82rem;">
+        <span class="tip-author">📢 Dica de Vizinho:</span>
+        <span>Nenhuma dica enviada hoje pelos moradores. Viu algo no mercado? Clique em <strong>"+ Publicar Oferta que Vi"</strong>!</span>
+      </div>
+    `;
+    return;
+  }
+
   let html = '';
-  COMMUNITY_TIPS.forEach(tip => {
+  realTips.forEach(tip => {
     html += `
       <div class="tip-card">
         <span class="tip-author">💬 ${tip.author}:</span>
@@ -551,13 +585,17 @@ function submitCommunityTip(e) {
     ? `📸 [Foto da Etiqueta Anexada] ${text ? text : 'Preço fotografado no mercado'}`
     : text;
 
-  // 1. Adicionar dica à lista comunitária
-  COMMUNITY_TIPS.unshift({
-    author: `${author} (Colina)`,
+  // 1. Adicionar dica real à lista comunitária e salvar no localStorage
+  const newTip = {
+    author: `${author} (${market})`,
     market,
     text: displayText,
     time: 'Agora mesmo'
-  });
+  };
+
+  const realTips = getRealCommunityTips();
+  realTips.unshift(newTip);
+  localStorage.setItem('economiza_colina_real_tips', JSON.stringify(realTips));
 
   // 2. Tentar vincular automaticamente o achado do vizinho ao produto no catálogo!
   let priceMatch = text.match(/R\$\s*(\d+[.,]\d{2})/i) || text.match(/(\d+[.,]\d{2})/);
@@ -849,10 +887,12 @@ function optimizeShoppingList() {
 
   // Alerta de itens não encontrados
   if (unmatchedItems.length > 0) {
+    const primaryMarketName = bestSingleMarket ? bestSingleMarket.market.name : 'Extrabom';
+    const altMarket = SUPERMARKETS.find(m => m.name !== primaryMarketName) || { name: 'Carone' };
     resHtml += `
       <div style="background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; padding: 8px 12px; margin-bottom: 12px; font-size: 0.78rem; color: #fca5a5;">
         <strong>⚠️ Itens não identificados nos encartes de hoje (${unmatchedItems.length}):</strong> ${unmatchedItems.join(', ')}.
-        <br><span style="color: #cbd5e1; font-size: 0.74rem;">Dica: Você encontrará esses itens no setor de mercearia do <strong>${bestSingleMarket.market.name}</strong> ou <strong>Extrabom</strong>.</span>
+        <br><span style="color: #cbd5e1; font-size: 0.74rem;">Dica: Você encontrará esses itens no setor de mercearia do <strong>${primaryMarketName}</strong> ou <strong>${altMarket.name}</strong>.</span>
       </div>
     `;
   }
@@ -916,15 +956,21 @@ function addMatchedListToCart(productIds) {
 // VOTAÇÃO & CONTADOR DE VISUALIZAÇÕES DOS MORADORES
 // ==========================================================================
 
+// Limpa sementes de dados de teste antigos do navegador do usuário
+(function resetLegacyMockCounters() {
+  try {
+    if (!localStorage.getItem('economiza_colina_zeroed_v2')) {
+      localStorage.removeItem('economiza_colina_views');
+      localStorage.removeItem('economiza_colina_votes');
+      localStorage.setItem('economiza_colina_zeroed_v2', 'true');
+    }
+  } catch (e) {}
+})();
+
 function getProductViews(productId) {
   const viewsData = JSON.parse(localStorage.getItem('economiza_colina_views')) || {};
-  if (!viewsData[productId]) {
-    let charSum = 0;
-    for (let i = 0; i < productId.length; i++) {
-      charSum += productId.charCodeAt(i);
-    }
-    const baseViews = (charSum % 37) + 14; // Semente determinística realista entre 14 e 50 visualizações hoje
-    viewsData[productId] = baseViews;
+  if (viewsData[productId] === undefined) {
+    viewsData[productId] = 0;
     localStorage.setItem('economiza_colina_views', JSON.stringify(viewsData));
   }
   return viewsData[productId];
@@ -932,7 +978,7 @@ function getProductViews(productId) {
 
 function recordProductView(productId) {
   const viewsData = JSON.parse(localStorage.getItem('economiza_colina_views')) || {};
-  const current = viewsData[productId] || getProductViews(productId);
+  const current = viewsData[productId] !== undefined ? viewsData[productId] : getProductViews(productId);
   viewsData[productId] = current + 1;
   localStorage.setItem('economiza_colina_views', JSON.stringify(viewsData));
 
@@ -997,13 +1043,7 @@ function removeUserVoteToday(productId) {
 function getProductVotes(productId) {
   const votes = JSON.parse(localStorage.getItem('economiza_colina_votes')) || {};
   if (!votes[productId]) {
-    let charSum = 0;
-    for (let i = 0; i < productId.length; i++) {
-      charSum += productId.charCodeAt(i);
-    }
-    const seedUp = (charSum % 9) + 4;
-    const seedDown = (charSum % 3);
-    votes[productId] = { up: seedUp, down: seedDown };
+    votes[productId] = { up: 0, down: 0 };
     localStorage.setItem('economiza_colina_votes', JSON.stringify(votes));
   }
   return votes[productId];

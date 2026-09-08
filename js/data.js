@@ -3908,3 +3908,5 @@ const PRODUCTS = [
     "sourceType": "encarte"
   }
 ];
+
+const COMMUNITY_TIPS = [];

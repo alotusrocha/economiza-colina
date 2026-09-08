@@ -57,10 +57,27 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.top-bar .container {
+.top-bar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.top-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-bar-date {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.top-bar-right {
+  font-size: 0.8rem;
+  color: #fbbf24;
+  font-weight: 600;
 }
 
 .location-badge {
@@ -141,6 +158,34 @@ body {
   gap: 12px;
 }
 
+.user-rank-badge {
+  background: rgba(251, 191, 36, 0.15);
+  border: 1px solid #f59e0b;
+  color: #fbbf24;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.2s;
+  white-space: nowrap;
+}
+
+.user-rank-badge:hover {
+  transform: translateY(-1px);
+}
+
+.rank-pts {
+  background: #f59e0b;
+  color: #000;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 0.72rem;
+}
+
 .btn-header {
   display: inline-flex;
   align-items: center;
@@ -154,10 +199,19 @@ body {
   border: none;
 }
 
+.btn-video {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #000;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
 .btn-encartes {
   background: rgba(255, 255, 255, 0.08);
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.15);
+  white-space: nowrap;
 }
 
 .btn-encartes:hover {
@@ -169,6 +223,7 @@ body {
   color: white;
   position: relative;
   box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  white-space: nowrap;
 }
 
 .btn-cart:hover {
@@ -191,6 +246,49 @@ body {
   align-items: center;
   justify-content: center;
   border: 2px solid #0f172a;
+}
+
+/* Product Card Community Vote Box */
+.community-vote-box {
+  margin-top: auto;
+  margin-bottom: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 0.76rem;
+}
+
+.vote-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.vote-views-count {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #475569;
+  font-weight: 600;
+}
+
+.vote-views-count strong {
+  color: #0f172a;
+}
+
+.vote-box-question {
+  font-size: 0.68rem;
+  color: #64748b;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.vote-buttons-row {
+  display: flex;
+  gap: 6px;
+  width: 100%;
 }
 
 /* ==========================================================================
@@ -480,6 +578,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
+  align-items: stretch;
 }
 
 /* Product Card Styling */
@@ -492,6 +591,7 @@ body {
   transition: var(--transition);
   display: flex;
   flex-direction: column;
+  height: 100%;
   position: relative;
 }
 
@@ -1075,26 +1175,248 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for Mobile & PWA */
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 1.7rem;
+  body {
+    padding-bottom: 70px;
   }
-  .navbar {
+
+  .container {
+    padding: 0 12px;
+  }
+
+  /* Top bar layout on mobile */
+  .top-bar {
+    padding: 4px 0;
+    font-size: 0.72rem;
+  }
+
+  .top-bar-container {
     flex-direction: column;
-    gap: 12px;
+    gap: 2px;
+    text-align: center;
+    align-items: center;
   }
-  .search-box-wrapper {
-    flex-direction: column;
+
+  .top-bar-right {
+    display: none; /* Oculta frase secundária no celular para economizar altura */
   }
-  .search-btn {
-    padding: 12px;
+
+  .top-bar-left {
+    gap: 6px;
+    flex-wrap: wrap;
     justify-content: center;
   }
+
+  .location-badge {
+    padding: 2px 8px;
+    font-size: 0.7rem;
+  }
+
+  .top-bar-date {
+    font-size: 0.7rem;
+  }
+
+  /* Layout de navegação ultra compacto no celular */
+  .header-main {
+    padding: 0;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px 0 6px;
+    gap: 8px;
+  }
+
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+  }
+
+  .logo-title {
+    font-size: 1.15rem;
+  }
+
+  .logo-subtitle {
+    font-size: 0.65rem;
+  }
+
+  /* Carrossel horizontal deslizável sem estouro para os botões do topo */
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 2px 0 4px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .nav-actions::-webkit-scrollbar {
+    display: none;
+  }
+
+  .user-rank-badge {
+    padding: 4px 10px;
+    font-size: 0.74rem;
+    flex-shrink: 0;
+    border-radius: 12px;
+  }
+
+  .btn-header {
+    padding: 5px 10px;
+    font-size: 0.76rem;
+    flex-shrink: 0;
+    white-space: nowrap;
+    border-radius: 12px;
+  }
+
+  /* Hero Section no Celular */
+  .hero-section {
+    padding: 20px 0 28px;
+  }
+
+  .hero-title {
+    font-size: 1.35rem;
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.82rem;
+    margin-bottom: 14px;
+  }
+
+  .search-box-wrapper {
+    flex-direction: column;
+    padding: 6px;
+    gap: 6px;
+    border-radius: 14px;
+  }
+
+  .search-input {
+    padding: 10px 14px;
+    font-size: 0.88rem;
+  }
+
+  .search-btn {
+    padding: 10px;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* Filtros rápidos e Chips de Supermercados - Carrossel Horizontal Touch */
+  #presetFiltersContainer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 6px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 4px 0 6px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  #presetFiltersContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .preset-filter-btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 5px 12px !important;
+    font-size: 0.75rem !important;
+  }
+
+  .market-chips {
+    display: flex;
+    justify-content: flex-start;
+    gap: 6px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 4px 0 6px;
+    margin-top: 14px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .market-chips::-webkit-scrollbar {
+    display: none;
+  }
+
+  .chip-market {
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+
+  /* Ajustes dos Cards de Produtos no Celular */
   .products-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
+
   .list-optimizer-grid {
     grid-template-columns: 1fr !important;
+  }
+
+  .product-details {
+    padding: 12px;
+  }
+
+  .product-name {
+    font-size: 0.9rem;
+  }
+
+  .best-price-value {
+    font-size: 1.25rem;
+  }
+
+  .community-vote-box {
+    padding: 6px 8px;
+  }
+
+  .vote-box-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-bottom: 6px;
+  }
+
+  .vote-views-count {
+    font-size: 0.72rem;
+  }
+
+  .vote-box-question {
+    font-size: 0.65rem;
+  }
+
+  .vote-buttons-row button {
+    font-size: 0.72rem !important;
+    padding: 6px 4px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-subtitle {
+    display: none; /* Esconde subtítulo em telas muito pequenas para economizar altura do cabeçalho */
+  }
+
+  .rank-title {
+    display: none; /* Exibe apenas troféu e pontos no celular estreito */
+  }
+
+  .btn-text {
+    font-size: 0.74rem;
   }
 }
