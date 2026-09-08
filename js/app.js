@@ -570,25 +570,45 @@ function previewTipPhoto(e) {
 
 function submitCommunityTip(e) {
   e.preventDefault();
-  const author = document.getElementById('tipAuthor').value || 'Morador de Colina';
-  const market = document.getElementById('tipMarket').value || 'Supermercado';
-  const text = document.getElementById('tipText').value || '';
+  const authorInput = document.getElementById('tipAuthor');
+  const marketSelect = document.getElementById('tipMarket');
+  const priceInput = document.getElementById('tipPrice');
+  const textInput = document.getElementById('tipText');
   const photoInput = document.getElementById('tipPhoto');
+
+  const author = (authorInput && authorInput.value.trim()) || 'Morador de Colina';
+  const marketId = (marketSelect && marketSelect.value) || 'carone';
+  const marketObj = SUPERMARKETS.find(m => m.id === marketId) || SUPERMARKETS[0];
+  const marketName = marketObj.name;
+  const text = (textInput && textInput.value.trim()) || '';
+  const priceVal = priceInput ? parseFloat(priceInput.value) : 0;
   const photoFile = photoInput && photoInput.files && photoInput.files[0];
 
-  if (!text && !photoFile) {
-    cart.showToast('Por favor, tire uma foto ou escreva o detalhe da oferta!');
+  if (!text && !photoFile && (!priceVal || priceVal <= 0)) {
+    if (window.cart && window.cart.showToast) {
+      window.cart.showToast('⚠️ Por favor, informe o nome do produto ou tire uma foto!');
+    }
     return;
   }
 
-  const displayText = photoFile
-    ? `📸 [Foto da Etiqueta Anexada] ${text ? text : 'Preço fotografado no mercado'}`
-    : text;
+  // Tentar extrair preço do campo de entrada OU do texto da oferta
+  let reportedPrice = priceVal;
+  if (!reportedPrice || isNaN(reportedPrice) || reportedPrice <= 0) {
+    let priceMatch = text.match(/R\$\s*(\d+[.,]\d{2})/i) || text.match(/(\d+[.,]\d{2})/);
+    if (priceMatch) {
+      reportedPrice = parseFloat(priceMatch[1].replace(',', '.'));
+    }
+  }
 
-  // 1. Adicionar dica real à lista comunitária e salvar no localStorage
+  const priceText = reportedPrice > 0 ? ` - R$ ${reportedPrice.toFixed(2)}` : '';
+  const displayText = photoFile
+    ? `📸 [Foto Anexada] ${text ? text : 'Preço fotografado'}${priceText}`
+    : `${text}${priceText}`;
+
+  // 1. Salvar dica real de comunidade na barra "Dica de Vizinho"
   const newTip = {
-    author: `${author} (${market})`,
-    market,
+    author: `${author} (${marketName.split(' ')[0]})`,
+    market: marketName,
     text: displayText,
     time: 'Agora mesmo'
   };
@@ -597,41 +617,73 @@ function submitCommunityTip(e) {
   realTips.unshift(newTip);
   localStorage.setItem('economiza_colina_real_tips', JSON.stringify(realTips));
 
-  // 2. Tentar vincular automaticamente o achado do vizinho ao produto no catálogo!
-  let priceMatch = text.match(/R\$\s*(\d+[.,]\d{2})/i) || text.match(/(\d+[.,]\d{2})/);
-  if (priceMatch) {
-    let reportedPrice = parseFloat(priceMatch[1].replace(',', '.'));
-    let lowerText = text.toLowerCase();
+  // 2. Se houver um produto existente no catálogo, atualiza o preço no mercado correspondente!
+  let lowerText = text.toLowerCase();
+  let matchedProduct = PRODUCTS.find(p => {
+    return lowerText.split(' ').some(word => word.length > 3 && p.name.toLowerCase().includes(word));
+  });
 
-    // Mapeamento de mercado por id
-    const marketObj = SUPERMARKETS.find(m => m.name.toLowerCase().includes(market.toLowerCase()) || market.toLowerCase().includes(m.id)) || SUPERMARKETS[0];
+  if (matchedProduct && reportedPrice > 0) {
+    matchedProduct.prices[marketObj.id] = reportedPrice;
+    matchedProduct.communityReported = { author, marketName: marketName, realPrice: reportedPrice, date: 'Hoje' };
 
-    // Encontrar produto correspondente pelo nome
-    const matchedProduct = PRODUCTS.find(p => lowerText.split(' ').some(word => word.length > 3 && p.name.toLowerCase().includes(word)));
+    // Salvar no localStorage de preços comunitários customizados
+    const customPrices = JSON.parse(localStorage.getItem('economiza_colina_custom_prices')) || {};
+    customPrices[matchedProduct.id] = { marketId: marketObj.id, realPrice: reportedPrice, marketName };
+    localStorage.setItem('economiza_colina_custom_prices', JSON.stringify(customPrices));
 
-    if (matchedProduct && reportedPrice > 0) {
-      // Atualizar preço do concorrente e adicionar selo comunitário
-      matchedProduct.prices[marketObj.id] = reportedPrice;
-      matchedProduct.communityReported = {
-        author,
-        marketName: marketObj.name,
-        price: reportedPrice
-      };
-      cart.showToast(`📸 Foto enviada! Preço do ${matchedProduct.name} atualizado no ${marketObj.name}!`);
-    } else {
-      cart.showToast('📸 Foto enviada com sucesso! A rotina de IA lerá a etiqueta na atualização.');
+    if (window.cart && window.cart.showToast) {
+      window.cart.showToast(`🎉 Foto enviada! Preço do ${matchedProduct.name} atualizado no ${marketName}!`);
+    }
+  } else if (text && reportedPrice > 0) {
+    // 3. Se for um produto NOVO que não existe no catálogo estático, CRIA O CARD DO PRODUTO DINAMICAMENTE!
+    const newProductId = 'user_prod_' + Date.now();
+    const newProductCard = {
+      id: newProductId,
+      name: text,
+      category: 'mercearia',
+      unit: 'un',
+      image: 'assets/limpeza.png',
+      encarteId: 1,
+      offerMarketId: marketObj.id,
+      offerPrice: reportedPrice,
+      validity: 'Publicado por Morador Hoje',
+      prices: {
+        [marketObj.id]: reportedPrice
+      },
+      featured: true,
+      discountTag: `📸 Oferta do Vizinho (${author})`,
+      sourceType: 'community',
+      communityReported: { author, marketName, realPrice: reportedPrice, date: 'Hoje' }
+    };
+
+    // Adiciona ao topo dos produtos
+    PRODUCTS.unshift(newProductCard);
+
+    // Salva produtos criados pelos moradores no localStorage
+    const customUserProducts = JSON.parse(localStorage.getItem('economiza_colina_user_created_products')) || [];
+    customUserProducts.unshift(newProductCard);
+    localStorage.setItem('economiza_colina_user_created_products', JSON.stringify(customUserProducts));
+
+    if (window.cart && window.cart.showToast) {
+      window.cart.showToast(`🎉 Nova oferta "${text}" (R$ ${reportedPrice.toFixed(2)}) publicada com sucesso no ${marketName}!`);
     }
   } else {
-    cart.showToast('📸 Foto de preço enviada! A rotina de IA lerá a etiqueta na próxima atualização.');
+    if (window.cart && window.cart.showToast) {
+      window.cart.showToast('📸 Foto/Oferta publicada com sucesso no mural do bairro!');
+    }
   }
 
+  // Ocultar pré-visualização e fechar modal
   const previewContainer = document.getElementById('photoPreviewContainer');
   if (previewContainer) previewContainer.style.display = 'none';
 
   renderCommunityTips();
   renderProducts();
   closeTipModal();
-  document.getElementById('tipForm').reset();
+
+  const tipForm = document.getElementById('tipForm');
+  if (tipForm) tipForm.reset();
 }
 
 // Mapeamento Inteligente de Ícones Padronizados por Categoria / Tipo de Item
@@ -986,9 +1038,18 @@ function recordProductView(productId) {
   if (viewSpan) viewSpan.textContent = viewsData[productId];
 }
 
-// Carrega alterações de preços informadas pelos moradores salvas no localStorage
+// Carrega alterações de preços e ofertas criadas pelos moradores salvas no localStorage
 function applyStoredCustomPrices() {
   try {
+    // 1. Carregar produtos criados por moradores no aplicativo
+    const customUserProducts = JSON.parse(localStorage.getItem('economiza_colina_user_created_products')) || [];
+    customUserProducts.forEach(up => {
+      if (!PRODUCTS.some(p => p.id === up.id)) {
+        PRODUCTS.unshift(up);
+      }
+    });
+
+    // 2. Carregar preços customizados informados pelos moradores
     const customPrices = JSON.parse(localStorage.getItem('economiza_colina_custom_prices')) || {};
     Object.keys(customPrices).forEach(pId => {
       const product = PRODUCTS.find(p => p.id === pId);

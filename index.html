@@ -404,15 +404,20 @@
 
           <div style="margin-bottom: 14px;">
             <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Supermercado:</label>
-            <select id="tipMarket" name="market" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;">
-              <option value="Extrabom Colina">Extrabom (Shopping Montserrat)</option>
-              <option value="Supermercados Carone Colina">Supermercados Carone (Colina de Laranjeiras)</option>
-              <option value="Perim Laranjeiras">Perim (Laranjeiras)</option>
-              <option value="Atacadão BR-101">Atacadão (Colina BR-101)</option>
-              <option value="Assaí Atacadista">Assaí Atacadista</option>
-              <option value="OK Superatacado">OK Superatacado</option>
-              <option value="EPA Supermercados">EPA Laranjeiras</option>
+            <select id="tipMarket" name="market" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; font-weight: 700;">
+              <option value="carone">Supermercados Carone (Colina de Laranjeiras)</option>
+              <option value="extrabom">Extrabom (Shopping Montserrat)</option>
+              <option value="atacadao">Atacadão (Colina BR-101)</option>
+              <option value="casagrande">Rede Casagrande (Bairro Barcelona)</option>
+              <option value="bh">Supermercados BH (Laranjeiras)</option>
+              <option value="assai">Assaí Atacadista</option>
+              <option value="atacado_vem">Atacado Vem (Norte-Sul)</option>
             </select>
+          </div>
+
+          <div style="margin-bottom: 14px;">
+            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">🏷️ Preço da Oferta na Etiqueta (R$):</label>
+            <input type="number" step="0.01" min="0.01" id="tipPrice" name="price" placeholder="Ex: 24.79" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #059669; font-size: 1rem; font-weight: 800; color: #047857; background: #ecfdf5;">
           </div>
 
           <div style="margin-bottom: 14px;">
@@ -425,8 +430,8 @@
           </div>
 
           <div style="margin-bottom: 18px;">
-            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Qual a oferta / detalhes que você viu?</label>
-            <textarea id="tipText" name="text" rows="3" placeholder="Ex: Coxão mole tá R$ 29,90/kg no Carone agora a tarde!"></textarea>
+            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Qual a oferta / produto que você viu?</label>
+            <textarea id="tipText" name="text" rows="2" placeholder="Ex: Azeite de Oliveira Serra 500ml" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;"></textarea>
           </div>
 
           <button type="submit" style="width: 100%; background: linear-gradient(135deg, #10b981 0%, #047857 100%); color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;">
