@@ -421,11 +421,28 @@
           </div>
 
           <div style="margin-bottom: 14px;">
-            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">📸 Tirar Foto da Etiqueta / Preço no Mercado (Opcional):</label>
-            <input type="file" id="tipPhoto" name="photo" accept="image/*" capture="environment" onchange="previewTipPhoto(event)" style="width: 100%; padding: 8px; background: #f8fafc; border-radius: 8px; border: 1px dashed #059669; font-size: 0.84rem;">
-            <div id="photoPreviewContainer" style="display: none; margin-top: 8px; text-align: center;">
-              <img id="photoPreviewImg" src="" alt="Pré-visualização da etiqueta" style="max-height: 140px; border-radius: 8px; border: 2px solid #10b981; margin-top: 4px;">
-              <div style="font-size: 0.75rem; color: #059669; font-weight: 700; margin-top: 2px;">✓ Foto da etiqueta pronta para leitura automática!</div>
+            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 6px;">📸 Foto da Etiqueta / Produto (Opcional):</label>
+
+            <!-- Inputs de Arquivo Ocultos -->
+            <input type="file" id="tipPhotoFile" name="photo" accept="image/*" onchange="handleTipPhotoSelect(event, 'gallery')" style="display: none;">
+            <input type="file" id="tipPhotoCamera" name="photo_camera" accept="image/*" capture="environment" onchange="handleTipPhotoSelect(event, 'camera')" style="display: none;">
+
+            <!-- Botões de Escolha Dupla -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+              <button type="button" onclick="document.getElementById('tipPhotoFile').click()" style="background: #f8fafc; border: 1.5px dashed #059669; color: #047857; padding: 10px 6px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                <span>📁 Escolher Arquivo</span>
+              </button>
+              <button type="button" onclick="document.getElementById('tipPhotoCamera').click()" style="background: #ecfdf5; border: 1.5px solid #10b981; color: #065f46; padding: 10px 6px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                <span>📸 Usar Câmera</span>
+              </button>
+            </div>
+
+            <div id="photoPreviewContainer" style="display: none; margin-top: 10px; text-align: center; background: #f8fafc; padding: 10px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <img id="photoPreviewImg" src="" alt="Pré-visualização da etiqueta" style="max-height: 140px; border-radius: 8px; border: 2px solid #10b981; margin-top: 4px; object-fit: contain;">
+              <div id="photoPreviewBadge" style="font-size: 0.76rem; color: #059669; font-weight: 700; margin-top: 4px;">✓ Foto selecionada com sucesso!</div>
+              <button type="button" onclick="clearTipPhoto()" style="margin-top: 6px; background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; padding: 4px 10px; border-radius: 6px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">
+                🗑️ Remover Foto
+              </button>
             </div>
           </div>
 

@@ -409,11 +409,17 @@ function renderCommunityTips() {
 
   let html = '';
   realTips.forEach(tip => {
+    const photoThumb = tip.photoUrl
+      ? `<img src="${tip.photoUrl}" alt="Foto da oferta" style="height: 36px; width: 36px; object-fit: cover; border-radius: 6px; border: 1.5px solid #10b981; margin-right: 6px; flex-shrink: 0;">`
+      : '';
     html += `
-      <div class="tip-card">
-        <span class="tip-author">💬 ${tip.author}:</span>
-        <span>"${tip.text}"</span>
-        <span class="tip-time">${tip.time}</span>
+      <div class="tip-card" style="display: flex; align-items: center; gap: 8px;">
+        ${photoThumb}
+        <div>
+          <span class="tip-author">💬 ${tip.author}:</span>
+          <span>"${tip.text}"</span>
+          <span class="tip-time">${tip.time}</span>
+        </div>
       </div>
     `;
   });
@@ -551,21 +557,51 @@ function closeTipModal() {
   if (modal) modal.classList.remove('active');
 }
 
-function previewTipPhoto(e) {
+let currentTipPhotoDataUrl = null;
+let currentReportPhotoDataUrl = null;
+
+function handleTipPhotoSelect(e, sourceType) {
   const file = e.target.files && e.target.files[0];
   const container = document.getElementById('photoPreviewContainer');
   const img = document.getElementById('photoPreviewImg');
+  const badge = document.getElementById('photoPreviewBadge');
 
   if (file && container && img) {
     const reader = new FileReader();
     reader.onload = function(evt) {
-      img.src = evt.target.result;
+      currentTipPhotoDataUrl = evt.target.result;
+      img.src = currentTipPhotoDataUrl;
       container.style.display = 'block';
+      if (badge) {
+        badge.textContent = sourceType === 'camera'
+          ? '📸 Foto da Câmera capturada com sucesso!'
+          : '📁 Foto da Galeria selecionada com sucesso!';
+      }
+    };
+    reader.onerror = function() {
+      if (window.cart && window.cart.showToast) {
+        window.cart.showToast('❌ Erro ao ler a imagem. Tente outra foto.');
+      }
     };
     reader.readAsDataURL(file);
-  } else if (container) {
-    container.style.display = 'none';
   }
+}
+
+function clearTipPhoto() {
+  currentTipPhotoDataUrl = null;
+  const container = document.getElementById('photoPreviewContainer');
+  const img = document.getElementById('photoPreviewImg');
+  const fileInput = document.getElementById('tipPhotoFile');
+  const cameraInput = document.getElementById('tipPhotoCamera');
+
+  if (fileInput) fileInput.value = '';
+  if (cameraInput) cameraInput.value = '';
+  if (img) img.src = '';
+  if (container) container.style.display = 'none';
+}
+
+function previewTipPhoto(e) {
+  handleTipPhotoSelect(e, 'gallery');
 }
 
 function submitCommunityTip(e) {
@@ -574,7 +610,6 @@ function submitCommunityTip(e) {
   const marketSelect = document.getElementById('tipMarket');
   const priceInput = document.getElementById('tipPrice');
   const textInput = document.getElementById('tipText');
-  const photoInput = document.getElementById('tipPhoto');
 
   const author = (authorInput && authorInput.value.trim()) || 'Morador de Colina';
   const marketId = (marketSelect && marketSelect.value) || 'carone';
@@ -582,11 +617,11 @@ function submitCommunityTip(e) {
   const marketName = marketObj.name;
   const text = (textInput && textInput.value.trim()) || '';
   const priceVal = priceInput ? parseFloat(priceInput.value) : 0;
-  const photoFile = photoInput && photoInput.files && photoInput.files[0];
+  const hasPhoto = !!currentTipPhotoDataUrl;
 
-  if (!text && !photoFile && (!priceVal || priceVal <= 0)) {
+  if (!text && !hasPhoto && (!priceVal || priceVal <= 0)) {
     if (window.cart && window.cart.showToast) {
-      window.cart.showToast('⚠️ Por favor, informe o nome do produto ou tire uma foto!');
+      window.cart.showToast('⚠️ Por favor, informe o nome do produto ou envie uma foto!');
     }
     return;
   }
@@ -601,7 +636,7 @@ function submitCommunityTip(e) {
   }
 
   const priceText = reportedPrice > 0 ? ` - R$ ${reportedPrice.toFixed(2)}` : '';
-  const displayText = photoFile
+  const displayText = hasPhoto
     ? `📸 [Foto Anexada] ${text ? text : 'Preço fotografado'}${priceText}`
     : `${text}${priceText}`;
 
@@ -610,6 +645,7 @@ function submitCommunityTip(e) {
     author: `${author} (${marketName.split(' ')[0]})`,
     market: marketName,
     text: displayText,
+    photoUrl: currentTipPhotoDataUrl || null,
     time: 'Agora mesmo'
   };
 
@@ -620,30 +656,33 @@ function submitCommunityTip(e) {
   // 2. Se houver um produto existente no catálogo, atualiza o preço no mercado correspondente!
   let lowerText = text.toLowerCase();
   let matchedProduct = PRODUCTS.find(p => {
-    return lowerText.split(' ').some(word => word.length > 3 && p.name.toLowerCase().includes(word));
+    return lowerText.length > 2 && lowerText.split(' ').some(word => word.length > 3 && p.name.toLowerCase().includes(word));
   });
 
   if (matchedProduct && reportedPrice > 0) {
     matchedProduct.prices[marketObj.id] = reportedPrice;
     matchedProduct.communityReported = { author, marketName: marketName, realPrice: reportedPrice, date: 'Hoje' };
+    if (currentTipPhotoDataUrl) {
+      matchedProduct.image = currentTipPhotoDataUrl;
+    }
 
     // Salvar no localStorage de preços comunitários customizados
     const customPrices = JSON.parse(localStorage.getItem('economiza_colina_custom_prices')) || {};
-    customPrices[matchedProduct.id] = { marketId: marketObj.id, realPrice: reportedPrice, marketName };
+    customPrices[matchedProduct.id] = { marketId: marketObj.id, realPrice: reportedPrice, marketName, image: currentTipPhotoDataUrl || null };
     localStorage.setItem('economiza_colina_custom_prices', JSON.stringify(customPrices));
 
     if (window.cart && window.cart.showToast) {
       window.cart.showToast(`🎉 Foto enviada! Preço do ${matchedProduct.name} atualizado no ${marketName}!`);
     }
-  } else if (text && reportedPrice > 0) {
+  } else if ((text || hasPhoto) && reportedPrice > 0) {
     // 3. Se for um produto NOVO que não existe no catálogo estático, CRIA O CARD DO PRODUTO DINAMICAMENTE!
     const newProductId = 'user_prod_' + Date.now();
     const newProductCard = {
       id: newProductId,
-      name: text,
+      name: text || 'Oferta Fotografada',
       category: 'mercearia',
       unit: 'un',
-      image: 'assets/limpeza.png',
+      image: currentTipPhotoDataUrl || 'assets/limpeza.png',
       encarteId: 1,
       offerMarketId: marketObj.id,
       offerPrice: reportedPrice,
@@ -666,7 +705,7 @@ function submitCommunityTip(e) {
     localStorage.setItem('economiza_colina_user_created_products', JSON.stringify(customUserProducts));
 
     if (window.cart && window.cart.showToast) {
-      window.cart.showToast(`🎉 Nova oferta "${text}" (R$ ${reportedPrice.toFixed(2)}) publicada com sucesso no ${marketName}!`);
+      window.cart.showToast(`🎉 Nova oferta "${newProductCard.name}" (R$ ${reportedPrice.toFixed(2)}) publicada com sucesso no ${marketName}!`);
     }
   } else {
     if (window.cart && window.cart.showToast) {
@@ -675,8 +714,7 @@ function submitCommunityTip(e) {
   }
 
   // Ocultar pré-visualização e fechar modal
-  const previewContainer = document.getElementById('photoPreviewContainer');
-  if (previewContainer) previewContainer.style.display = 'none';
+  clearTipPhoto();
 
   renderCommunityTips();
   renderProducts();
@@ -1207,8 +1245,26 @@ function openPriceReportModal(productId) {
       </div>
 
       <div>
-        <label style="font-size: 0.82rem; font-weight: 700; color: #334155; display: block; margin-bottom: 4px;">3. Tirar Foto do Encarte / Etiqueta (Opcional):</label>
-        <input type="file" id="reportPhotoInput" accept="image/*" style="font-size: 0.8rem; width: 100%; padding: 6px; background: #f8fafc; border-radius: 8px; border: 1px dashed #cbd5e1;">
+        <label style="font-size: 0.82rem; font-weight: 700; color: #334155; display: block; margin-bottom: 6px;">3. Anexar Foto da Etiqueta / Preço (Opcional):</label>
+        <input type="file" id="reportPhotoFile" accept="image/*" onchange="handleReportPhotoSelect(event, 'gallery')" style="display: none;">
+        <input type="file" id="reportPhotoCamera" accept="image/*" capture="environment" onchange="handleReportPhotoSelect(event, 'camera')" style="display: none;">
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+          <button type="button" onclick="document.getElementById('reportPhotoFile').click()" style="background: #f8fafc; border: 1.5px dashed #cbd5e1; color: #334155; padding: 8px 6px; border-radius: 8px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px;">
+            <span>📁 Galeria / Arquivos</span>
+          </button>
+          <button type="button" onclick="document.getElementById('reportPhotoCamera').click()" style="background: #ecfdf5; border: 1.5px solid #10b981; color: #065f46; padding: 8px 6px; border-radius: 8px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px;">
+            <span>📸 Usar Câmera</span>
+          </button>
+        </div>
+
+        <div id="reportPhotoPreviewContainer" style="display: none; margin-top: 8px; text-align: center; background: #f8fafc; padding: 8px; border-radius: 8px; border: 1px solid #e2e8f0;">
+          <img id="reportPhotoPreviewImg" src="" alt="Foto anexada" style="max-height: 110px; border-radius: 6px; border: 1px solid #10b981; object-fit: contain;">
+          <div id="reportPhotoPreviewBadge" style="font-size: 0.74rem; color: #059669; font-weight: 700; margin-top: 2px;">✓ Foto selecionada!</div>
+          <button type="button" onclick="clearReportPhoto()" style="margin-top: 4px; background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; cursor: pointer;">
+            🗑️ Remover
+          </button>
+        </div>
       </div>
 
       <div style="background: #eff6ff; border: 1px solid #93c5fd; padding: 10px; border-radius: 8px; font-size: 0.78rem; color: #1e40af; line-height: 1.4;">
@@ -1230,7 +1286,43 @@ function openPriceReportModal(productId) {
   modal.style.display = 'flex';
 }
 
+function handleReportPhotoSelect(e, sourceType) {
+  const file = e.target.files && e.target.files[0];
+  const container = document.getElementById('reportPhotoPreviewContainer');
+  const img = document.getElementById('reportPhotoPreviewImg');
+  const badge = document.getElementById('reportPhotoPreviewBadge');
+
+  if (file && container && img) {
+    const reader = new FileReader();
+    reader.onload = function(evt) {
+      currentReportPhotoDataUrl = evt.target.result;
+      img.src = currentReportPhotoDataUrl;
+      container.style.display = 'block';
+      if (badge) {
+        badge.textContent = sourceType === 'camera'
+          ? '📸 Foto da Câmera capturada!'
+          : '📁 Foto da Galeria selecionada!';
+      }
+    };
+    reader.readAsDataURL(file);
+  }
+}
+
+function clearReportPhoto() {
+  currentReportPhotoDataUrl = null;
+  const container = document.getElementById('reportPhotoPreviewContainer');
+  const img = document.getElementById('reportPhotoPreviewImg');
+  const fileInput = document.getElementById('reportPhotoFile');
+  const cameraInput = document.getElementById('reportPhotoCamera');
+
+  if (fileInput) fileInput.value = '';
+  if (cameraInput) cameraInput.value = '';
+  if (img) img.src = '';
+  if (container) container.style.display = 'none';
+}
+
 function closePriceReportModal() {
+  clearReportPhoto();
   const modal = document.getElementById('priceReportModal');
   if (modal) {
     modal.classList.remove('active');
@@ -1259,9 +1351,12 @@ function submitPriceReport(event, productId) {
   if (product) {
     product.prices[marketId] = newPrice;
     product.communityReported = { marketName: marketObj.name, realPrice: newPrice, date: 'Hoje' };
+    if (currentReportPhotoDataUrl) {
+      product.image = currentReportPhotoDataUrl;
+    }
 
     const customPrices = JSON.parse(localStorage.getItem('economiza_colina_custom_prices')) || {};
-    customPrices[productId] = { marketId, realPrice: newPrice, marketName: marketObj.name };
+    customPrices[productId] = { marketId, realPrice: newPrice, marketName: marketObj.name, image: currentReportPhotoDataUrl || null };
     localStorage.setItem('economiza_colina_custom_prices', JSON.stringify(customPrices));
 
     const previousVote = hasUserVotedToday(productId);
