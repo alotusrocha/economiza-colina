@@ -672,17 +672,27 @@ function submitCommunityTip(e) {
     localStorage.setItem('economiza_colina_custom_prices', JSON.stringify(customPrices));
 
     if (window.cart && window.cart.showToast) {
-      window.cart.showToast(`🎉 Foto enviada! Preço do ${matchedProduct.name} atualizado no ${marketName}!`);
+      window.cart.showToast(`🎉 Preço do "${matchedProduct.name}" atualizado para R$ ${reportedPrice.toFixed(2)} no ${marketName}!`);
     }
   } else if ((text || hasPhoto) && reportedPrice > 0) {
     // 3. Se for um produto NOVO que não existe no catálogo estático, CRIA O CARD DO PRODUTO DINAMICAMENTE!
     const newProductId = 'user_prod_' + Date.now();
+
+    // Auto-detectar categoria inteligente pelo nome do produto
+    let detectedCategory = 'mercearia';
+    if (lowerText.includes('carne') || lowerText.includes('frango') || lowerText.includes('boi') || lowerText.includes('linguiça') || lowerText.includes('bife') || lowerText.includes('peixe') || lowerText.includes('costela')) detectedCategory = 'carnes';
+    else if (lowerText.includes('tomate') || lowerText.includes('banana') || lowerText.includes('maçã') || lowerText.includes('batata') || lowerText.includes('cebola') || lowerText.includes('alface') || lowerText.includes('ovo')) detectedCategory = 'hortifruti';
+    else if (lowerText.includes('cerveja') || lowerText.includes('refrigerante') || lowerText.includes('suco') || lowerText.includes('vinho') || lowerText.includes('água') || lowerText.includes('chopp') || lowerText.includes('refri')) detectedCategory = 'bebidas';
+    else if (lowerText.includes('sabão') || lowerText.includes('detergente') || lowerText.includes('amaciante') || lowerText.includes('papel') || lowerText.includes('limpeza') || lowerText.includes('desinfetante')) detectedCategory = 'limpeza';
+
+    const defaultImg = detectedCategory === 'carnes' ? 'assets/carne.png' : detectedCategory === 'hortifruti' ? 'assets/tomate.png' : detectedCategory === 'bebidas' ? 'assets/cerveja.png' : 'assets/limpeza.png';
+
     const newProductCard = {
       id: newProductId,
-      name: text || 'Oferta Fotografada',
-      category: 'mercearia',
+      name: text || 'Oferta Fotografada por Vizinho',
+      category: detectedCategory,
       unit: 'un',
-      image: currentTipPhotoDataUrl || 'assets/limpeza.png',
+      image: currentTipPhotoDataUrl || defaultImg,
       encarteId: 1,
       offerMarketId: marketObj.id,
       offerPrice: reportedPrice,
@@ -705,20 +715,31 @@ function submitCommunityTip(e) {
     localStorage.setItem('economiza_colina_user_created_products', JSON.stringify(customUserProducts));
 
     if (window.cart && window.cart.showToast) {
-      window.cart.showToast(`🎉 Nova oferta "${newProductCard.name}" (R$ ${reportedPrice.toFixed(2)}) publicada com sucesso no ${marketName}!`);
+      window.cart.showToast(`🎉 Nova oferta "${newProductCard.name}" (R$ ${reportedPrice.toFixed(2)}) adicionada à lista de produtos no ${marketName}!`);
     }
   } else {
     if (window.cart && window.cart.showToast) {
-      window.cart.showToast('📸 Foto/Oferta publicada com sucesso no mural do bairro!');
+      window.cart.showToast('📢 Dica enviada ao mural! Lembre-se de preencher o valor (R$) para o item virar um card no catálogo.');
     }
   }
 
   // Ocultar pré-visualização e fechar modal
   clearTipPhoto();
 
+  // Resetar filtros e busca para garantir que o novo produto apareça imediatamente na tela
+  searchQuery = '';
+  const searchInput = document.getElementById('searchInput');
+  if (searchInput) searchInput.value = '';
+  currentCategory = 'all';
+  currentMarket = 'all';
+  currentSource = 'all';
+
+  renderSupermarketChips();
+  renderCategories();
   renderCommunityTips();
   renderProducts();
   closeTipModal();
+  scrollToProducts();
 
   const tipForm = document.getElementById('tipForm');
   if (tipForm) tipForm.reset();
