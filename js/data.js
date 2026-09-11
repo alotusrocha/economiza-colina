@@ -195,17 +195,17 @@ const PRODUCTS = [
     "image": "assets/ovo.png",
     "encarteId": 1,
     "offerMarketId": "atacadao",
-    "offerPrice": 12.87,
+    "offerPrice": 11.84,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 12.87,
+      "atacadao": 11.84,
       "extrabom": 16.9,
       "carone": 17.5,
-      "assai": 13.15,
+      "assai": 12.1,
       "atacado_vem": 14.9
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacadão Serra | R$ 12,87",
+    "discountTag": "Menor preço no Atacadão Serra | R$ 11,84",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -216,17 +216,17 @@ const PRODUCTS = [
     "image": "assets/tomate.png",
     "encarteId": 1,
     "offerMarketId": "casagrande",
-    "offerPrice": 12.47,
+    "offerPrice": 11.1,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 14.9,
       "extrabom": 21.9,
       "carone": 22.5,
-      "casagrande": 12.47,
-      "bh": 13.03
+      "casagrande": 11.1,
+      "bh": 11.6
     },
     "featured": true,
-    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 12,47",
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 11,10",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -237,18 +237,18 @@ const PRODUCTS = [
     "image": "assets/tomate.png",
     "encarteId": 1,
     "offerMarketId": "extrabom",
-    "offerPrice": 4.13,
+    "offerPrice": 3.72,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 4.99,
-      "extrabom": 4.13,
+      "extrabom": 3.72,
       "carone": 7.5,
       "bh": 6.49,
       "assai": 5.49,
-      "casagrande": 4.27
+      "casagrande": 3.84
     },
     "featured": true,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 4,13",
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 3,72",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -259,17 +259,17 @@ const PRODUCTS = [
     "image": "assets/tomate.png",
     "encarteId": 1,
     "offerMarketId": "extrabom",
-    "offerPrice": 4.96,
+    "offerPrice": 4.46,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 5.99,
-      "extrabom": 4.96,
+      "extrabom": 4.46,
       "carone": 8.2,
-      "casagrande": 5.12,
+      "casagrande": 4.61,
       "atacado_vem": 6.5
     },
     "featured": true,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 4,96",
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 4,46",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -280,18 +280,18 @@ const PRODUCTS = [
     "image": "assets/tomate.png",
     "encarteId": 1,
     "offerMarketId": "casagrande",
-    "offerPrice": 4.17,
+    "offerPrice": 3.71,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 4.99,
       "extrabom": 6.99,
       "carone": 7.1,
-      "bh": 4.36,
+      "bh": 3.88,
       "assai": 5.29,
-      "casagrande": 4.17
+      "casagrande": 3.71
     },
     "featured": false,
-    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 4,17",
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 3,71",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -366,18 +366,18 @@ const PRODUCTS = [
     "image": "assets/frango.png",
     "encarteId": 1,
     "offerMarketId": "bh",
-    "offerPrice": 13.97,
+    "offerPrice": 12.85,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 15.98,
       "extrabom": 18.98,
       "carone": 19.9,
       "assai": 16.9,
-      "atacado_vem": 14.27,
-      "bh": 13.97
+      "atacado_vem": 13.13,
+      "bh": 12.85
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 13,97",
+    "discountTag": "Menor preço no Supermercados BH | R$ 12,85",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -388,18 +388,18 @@ const PRODUCTS = [
     "image": "assets/frango.png",
     "encarteId": 1,
     "offerMarketId": "bh",
-    "offerPrice": 9.17,
+    "offerPrice": 8.44,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 10.5,
       "extrabom": 13.9,
       "carone": 14.5,
       "casagrande": 12.9,
-      "bh": 9.17,
-      "atacado_vem": 9.37
+      "bh": 8.44,
+      "atacado_vem": 8.62
     },
     "featured": false,
-    "discountTag": "Menor preço no Supermercados BH | R$ 9,17",
+    "discountTag": "Menor preço no Supermercados BH | R$ 8,44",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -410,18 +410,18 @@ const PRODUCTS = [
     "image": "assets/frango.png",
     "encarteId": 1,
     "offerMarketId": "bh",
-    "offerPrice": 7.86,
+    "offerPrice": 7.23,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 8.99,
       "extrabom": 10.99,
       "carone": 11.9,
       "assai": 9.9,
-      "bh": 7.86,
-      "atacado_vem": 8.03
+      "bh": 7.23,
+      "atacado_vem": 7.39
     },
     "featured": false,
-    "discountTag": "Menor preço no Supermercados BH | R$ 7,86",
+    "discountTag": "Menor preço no Supermercados BH | R$ 7,23",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -496,18 +496,18 @@ const PRODUCTS = [
     "image": "assets/carne.png",
     "encarteId": 1,
     "offerMarketId": "extrabom",
-    "offerPrice": 43.13,
+    "offerPrice": 39.25,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 49.9,
-      "extrabom": 43.13,
-      "carone": 44.08,
+      "extrabom": 39.25,
+      "carone": 40.11,
       "assai": 51.9,
       "bh": 47.4,
-      "casagrande": 45.5
+      "casagrande": 41.4
     },
     "featured": false,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 43,13",
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 39,25",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -518,18 +518,18 @@ const PRODUCTS = [
     "image": "assets/tomate.png",
     "encarteId": 1,
     "offerMarketId": "casagrande",
-    "offerPrice": 15.04,
+    "offerPrice": 13.39,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 16.9,
       "extrabom": 21.9,
       "carone": 22.9,
-      "casagrande": 15.04,
+      "casagrande": 13.39,
       "atacado_vem": 17.9,
-      "bh": 15.72
+      "bh": 13.99
     },
     "featured": true,
-    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 15,04",
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 13,39",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -582,18 +582,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 1,
     "offerMarketId": "bh",
-    "offerPrice": 6.11,
+    "offerPrice": 5.56,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 6.99,
       "extrabom": 8.49,
       "carone": 8.99,
-      "bh": 6.11,
+      "bh": 5.56,
       "assai": 7.2,
-      "atacado_vem": 6.24
+      "atacado_vem": 5.68
     },
     "featured": false,
-    "discountTag": "Menor preço no Supermercados BH | R$ 6,11",
+    "discountTag": "Menor preço no Supermercados BH | R$ 5,56",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -646,18 +646,18 @@ const PRODUCTS = [
     "image": "assets/arroz.png",
     "encarteId": 1,
     "offerMarketId": "atacado_vem",
-    "offerPrice": 16.83,
+    "offerPrice": 15.82,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 17.18,
-      "extrabom": 18.79,
-      "carone": 19.33,
-      "assai": 17.0,
-      "atacado_vem": 16.83,
-      "bh": 17.54
+      "atacadao": 16.16,
+      "extrabom": 17.67,
+      "carone": 18.18,
+      "assai": 15.99,
+      "atacado_vem": 15.82,
+      "bh": 16.49
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacado Vem | R$ 16,83",
+    "discountTag": "Menor preço no Atacado Vem | R$ 15,82",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -668,18 +668,18 @@ const PRODUCTS = [
     "image": "assets/arroz.png",
     "encarteId": 1,
     "offerMarketId": "bh",
-    "offerPrice": 10.96,
+    "offerPrice": 10.19,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 11.32,
+      "atacadao": 10.52,
       "extrabom": 12.29,
       "carone": 13.5,
       "casagrande": 12.49,
-      "bh": 10.96,
-      "atacado_vem": 11.2
+      "bh": 10.19,
+      "atacado_vem": 10.41
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 10,96",
+    "discountTag": "Menor preço no Supermercados BH | R$ 10,19",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -690,18 +690,18 @@ const PRODUCTS = [
     "image": "assets/itens.jpeg",
     "encarteId": 1,
     "offerMarketId": "bh",
-    "offerPrice": 4.09,
+    "offerPrice": 3.72,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 4.69,
       "extrabom": 5.19,
       "carone": 5.49,
       "casagrande": 4.99,
-      "bh": 4.09,
-      "atacado_vem": 4.19
+      "bh": 3.72,
+      "atacado_vem": 3.8
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 4,09",
+    "discountTag": "Menor preço no Supermercados BH | R$ 3,72",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -733,17 +733,17 @@ const PRODUCTS = [
     "image": "assets/arroz.png",
     "encarteId": 1,
     "offerMarketId": "carone",
-    "offerPrice": 27.51,
+    "offerPrice": 25.31,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 29.9,
-      "extrabom": 28.4,
-      "carone": 27.51,
+      "extrabom": 26.13,
+      "carone": 25.31,
       "casagrande": 32.9,
       "bh": 30.9
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 27,51",
+    "discountTag": "Menor preço no Carone Supermercados | R$ 25,31",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -880,18 +880,18 @@ const PRODUCTS = [
     "image": "assets/itens.jpeg",
     "encarteId": 1,
     "offerMarketId": "bh",
-    "offerPrice": 6.94,
+    "offerPrice": 6.32,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 7.95,
       "extrabom": 8.99,
       "carone": 9.5,
-      "bh": 6.94,
+      "bh": 6.32,
       "assai": 8.2,
-      "atacado_vem": 7.1
+      "atacado_vem": 6.45
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 6,94",
+    "discountTag": "Menor preço no Supermercados BH | R$ 6,32",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -986,17 +986,17 @@ const PRODUCTS = [
     "image": "assets/cerveja.png",
     "encarteId": 1,
     "offerMarketId": "carone",
-    "offerPrice": 9.89,
+    "offerPrice": 8.9,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 10.99,
       "extrabom": 12.99,
-      "carone": 9.89,
+      "carone": 8.9,
       "casagrande": 11.99,
       "atacado_vem": 11.5
     },
     "featured": false,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 9,89",
+    "discountTag": "Menor preço no Carone Supermercados | R$ 8,90",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -1028,18 +1028,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 1,
     "offerMarketId": "atacado_vem",
-    "offerPrice": 2.75,
+    "offerPrice": 2.53,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "atacadao": 2.99,
       "extrabom": 3.29,
       "carone": 3.49,
       "casagrande": 3.19,
-      "atacado_vem": 2.75,
-      "assai": 2.81
+      "atacado_vem": 2.53,
+      "assai": 2.58
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacado Vem | R$ 2,75",
+    "discountTag": "Menor preço no Atacado Vem | R$ 2,53",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -1428,18 +1428,18 @@ const PRODUCTS = [
     "image": "assets/carne.png",
     "encarteId": 1,
     "offerMarketId": "atacado_vem",
-    "offerPrice": 55.46,
+    "offerPrice": 52.13,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "atacadao": 56.64,
-      "extrabom": 61.95,
-      "carone": 63.72,
-      "bh": 57.82,
-      "assai": 56.05,
-      "atacado_vem": 55.46
+      "atacadao": 53.24,
+      "extrabom": 58.23,
+      "carone": 59.9,
+      "bh": 54.35,
+      "assai": 52.69,
+      "atacado_vem": 52.13
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacado Vem | R$ 55,46",
+    "discountTag": "Menor preço no Atacado Vem | R$ 52,13",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -1512,16 +1512,16 @@ const PRODUCTS = [
     "image": "assets/arroz.png",
     "encarteId": 1,
     "offerMarketId": "carone",
-    "offerPrice": 16.54,
+    "offerPrice": 15.22,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 16.54,
-      "extrabom": 17.08,
+      "carone": 15.22,
+      "extrabom": 15.71,
       "atacadao": 18.9,
       "bh": 19.5
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 16,54",
+    "discountTag": "Menor preço no Carone Supermercados | R$ 15,22",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -1572,16 +1572,16 @@ const PRODUCTS = [
     "image": "assets/arroz.png",
     "encarteId": 1,
     "offerMarketId": "carone",
-    "offerPrice": 27.58,
+    "offerPrice": 25.37,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 27.58,
-      "extrabom": 28.48,
+      "carone": 25.37,
+      "extrabom": 26.2,
       "atacadao": 31.9,
       "assai": 32.5
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 27,58",
+    "discountTag": "Menor preço no Carone Supermercados | R$ 25,37",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -1592,16 +1592,16 @@ const PRODUCTS = [
     "image": "assets/cerveja.png",
     "encarteId": 1,
     "offerMarketId": "carone",
-    "offerPrice": 76.41,
+    "offerPrice": 68.77,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 76.41,
+      "carone": 68.77,
       "extrabom": 99.0,
       "atacadao": 89.9,
       "casagrande": 94.0
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 76,41",
+    "discountTag": "Menor preço no Carone Supermercados | R$ 68,77",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -1612,16 +1612,16 @@ const PRODUCTS = [
     "image": "assets/cerveja.png",
     "encarteId": 1,
     "offerMarketId": "carone",
-    "offerPrice": 65.61,
+    "offerPrice": 59.05,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 65.61,
+      "carone": 59.05,
       "extrabom": 85.0,
       "atacadao": 75.9,
       "bh": 79.9
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 65,61",
+    "discountTag": "Menor preço no Carone Supermercados | R$ 59,05",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -1632,16 +1632,16 @@ const PRODUCTS = [
     "image": "assets/cerveja.png",
     "encarteId": 1,
     "offerMarketId": "carone",
-    "offerPrice": 116.1,
+    "offerPrice": 104.49,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "carone": 116.1,
+      "carone": 104.49,
       "extrabom": 149.0,
       "atacadao": 135.0,
       "assai": 139.0
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 116,10",
+    "discountTag": "Menor preço no Carone Supermercados | R$ 104,49",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -1692,17 +1692,17 @@ const PRODUCTS = [
     "image": "assets/frango.png",
     "encarteId": 1,
     "offerMarketId": "bh",
-    "offerPrice": 11.34,
+    "offerPrice": 10.43,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 11.34,
+      "bh": 10.43,
       "extrabom": 14.98,
       "atacadao": 13.5,
       "carone": 14.9,
-      "atacado_vem": 11.59
+      "atacado_vem": 10.66
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 11,34",
+    "discountTag": "Menor preço no Supermercados BH | R$ 10,43",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -1713,17 +1713,17 @@ const PRODUCTS = [
     "image": "assets/frango.png",
     "encarteId": 1,
     "offerMarketId": "bh",
-    "offerPrice": 13.97,
+    "offerPrice": 12.85,
     "validity": "Válido até 15/09/2026",
     "prices": {
-      "bh": 13.97,
+      "bh": 12.85,
       "extrabom": 17.8,
       "atacadao": 16.5,
       "carone": 16.9,
-      "atacado_vem": 14.27
+      "atacado_vem": 13.13
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 13,97",
+    "discountTag": "Menor preço no Supermercados BH | R$ 12,85",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -1773,15 +1773,15 @@ const PRODUCTS = [
     "image": "assets/arroz.png",
     "encarteId": 1,
     "offerMarketId": "carone",
-    "offerPrice": 23.83,
+    "offerPrice": 21.92,
     "validity": "Válido até 15/09/2026",
     "prices": {
       "bh": 25.9,
-      "carone": 23.83,
-      "extrabom": 24.6
+      "carone": 21.92,
+      "extrabom": 22.64
     },
     "featured": true,
-    "discountTag": "Menor preço no Carone Supermercados | R$ 23,83",
+    "discountTag": "Menor preço no Carone Supermercados | R$ 21,92",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -2031,17 +2031,17 @@ const PRODUCTS = [
     "image": "assets/contrafile.png",
     "encarteId": 1,
     "offerMarketId": "extrabom",
-    "offerPrice": 43.22,
+    "offerPrice": 39.33,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "casagrande": 45.59,
-      "extrabom": 43.22,
-      "carone": 44.17,
+      "casagrande": 41.49,
+      "extrabom": 39.33,
+      "carone": 40.19,
       "bh": 52.9,
       "atacadao": 51.9
     },
     "featured": true,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 43,22",
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 39,33",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -2052,17 +2052,17 @@ const PRODUCTS = [
     "image": "assets/carne.png",
     "encarteId": 1,
     "offerMarketId": "casagrande",
-    "offerPrice": 15.48,
+    "offerPrice": 14.24,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
-      "casagrande": 15.48,
-      "extrabom": 15.99,
+      "casagrande": 14.24,
+      "extrabom": 14.71,
       "carone": 19.9,
       "bh": 18.49,
       "atacadao": 17.9
     },
     "featured": true,
-    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 15,48",
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 14,24",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -2115,18 +2115,18 @@ const PRODUCTS = [
     "image": "assets/itens.jpeg",
     "encarteId": 1,
     "offerMarketId": "assai",
-    "offerPrice": 7.51,
+    "offerPrice": 6.76,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "casagrande": 8.98,
       "extrabom": 9.9,
-      "carone": 7.85,
+      "carone": 7.06,
       "bh": 9.49,
       "atacadao": 9.2,
-      "assai": 7.51
+      "assai": 6.76
     },
     "featured": true,
-    "discountTag": "Menor preço no Assaí Atacadista | R$ 7,51",
+    "discountTag": "Menor preço no Assaí Atacadista | R$ 6,76",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -2137,18 +2137,18 @@ const PRODUCTS = [
     "image": "assets/frango.png",
     "encarteId": 1,
     "offerMarketId": "bh",
-    "offerPrice": 8.65,
+    "offerPrice": 7.96,
     "validity": "Ofertas Atualizadas de Hoje",
     "prices": {
       "casagrande": 9.9,
       "extrabom": 10.9,
       "carone": 11.9,
-      "bh": 8.65,
+      "bh": 7.96,
       "atacadao": 9.98,
-      "atacado_vem": 8.84
+      "atacado_vem": 8.13
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 8,65",
+    "discountTag": "Menor preço no Supermercados BH | R$ 7,96",
     "sourceType": "📄 Encarte Oficial BH 30 Anos"
   },
   {
@@ -2243,7 +2243,7 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 6,
     "offerMarketId": "atacado_vem",
-    "offerPrice": 13.28,
+    "offerPrice": 12.62,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 13.98,
@@ -2251,10 +2251,10 @@ const PRODUCTS = [
       "carone": 17.49,
       "casagrande": 16.5,
       "bh": 15.9,
-      "atacado_vem": 13.28
+      "atacado_vem": 12.62
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacado Vem | R$ 13,28",
+    "discountTag": "Menor preço no Atacado Vem | R$ 12,62",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -2265,18 +2265,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 6,
     "offerMarketId": "bh",
-    "offerPrice": 10.64,
+    "offerPrice": 10.11,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 11.2,
       "extrabom": 13.9,
       "carone": 14.2,
       "casagrande": 13.5,
-      "bh": 10.64,
+      "bh": 10.11,
       "atacado_vem": 11.9
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 10,64",
+    "discountTag": "Menor preço no Supermercados BH | R$ 10,11",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -2375,18 +2375,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 6,
     "offerMarketId": "bh",
-    "offerPrice": 1.99,
+    "offerPrice": 1.89,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 2.09,
       "extrabom": 2.89,
       "carone": 2.99,
       "casagrande": 2.79,
-      "bh": 1.99,
+      "bh": 1.89,
       "atacado_vem": 2.19
     },
     "featured": false,
-    "discountTag": "Menor preço no Supermercados BH | R$ 1,99",
+    "discountTag": "Menor preço no Supermercados BH | R$ 1,89",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -2441,7 +2441,7 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 6,
     "offerMarketId": "atacado_vem",
-    "offerPrice": 8.54,
+    "offerPrice": 8.11,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 8.99,
@@ -2449,10 +2449,10 @@ const PRODUCTS = [
       "carone": 11.49,
       "casagrande": 10.5,
       "bh": 9.9,
-      "atacado_vem": 8.54
+      "atacado_vem": 8.11
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacado Vem | R$ 8,54",
+    "discountTag": "Menor preço no Atacado Vem | R$ 8,11",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -2485,18 +2485,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 6,
     "offerMarketId": "bh",
-    "offerPrice": 15.11,
+    "offerPrice": 14.35,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 15.9,
       "extrabom": 18.9,
       "carone": 19.9,
       "casagrande": 17.9,
-      "bh": 15.11,
+      "bh": 14.35,
       "atacado_vem": 16.29
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 15,11",
+    "discountTag": "Menor preço no Supermercados BH | R$ 14,35",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -2529,18 +2529,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 6,
     "offerMarketId": "extrabom",
-    "offerPrice": 6.7,
+    "offerPrice": 6.43,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 6.98,
-      "extrabom": 6.7,
+      "extrabom": 6.43,
       "carone": 9.49,
       "casagrande": 8.5,
       "bh": 7.9,
       "atacado_vem": 7.29
     },
     "featured": true,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 6,70",
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 6,43",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -2595,18 +2595,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 7,
     "offerMarketId": "bh",
-    "offerPrice": 30.88,
+    "offerPrice": 29.34,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 32.5,
       "extrabom": 37.5,
       "carone": 38.9,
       "casagrande": 36.9,
-      "bh": 30.88,
+      "bh": 29.34,
       "atacado_vem": 33.5
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 30,88",
+    "discountTag": "Menor preço no Supermercados BH | R$ 29,34",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -2639,7 +2639,7 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 7,
     "offerMarketId": "atacado_vem",
-    "offerPrice": 5.21,
+    "offerPrice": 4.95,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 5.48,
@@ -2647,10 +2647,10 @@ const PRODUCTS = [
       "carone": 6.9,
       "casagrande": 6.2,
       "bh": 5.9,
-      "atacado_vem": 5.21
+      "atacado_vem": 4.95
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacado Vem | R$ 5,21",
+    "discountTag": "Menor preço no Atacado Vem | R$ 4,95",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -2683,18 +2683,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 7,
     "offerMarketId": "extrabom",
-    "offerPrice": 4.12,
+    "offerPrice": 3.96,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 4.29,
-      "extrabom": 4.12,
+      "extrabom": 3.96,
       "carone": 5.8,
       "casagrande": 5.2,
       "bh": 4.79,
       "atacado_vem": 4.49
     },
     "featured": false,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 4,12",
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 3,96",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -2705,18 +2705,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 7,
     "offerMarketId": "bh",
-    "offerPrice": 14.23,
+    "offerPrice": 13.52,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 14.98,
       "extrabom": 19.5,
       "carone": 20.9,
       "casagrande": 18.9,
-      "bh": 14.23,
+      "bh": 13.52,
       "atacado_vem": 15.5
     },
     "featured": false,
-    "discountTag": "Menor preço no Supermercados BH | R$ 14,23",
+    "discountTag": "Menor preço no Supermercados BH | R$ 13,52",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -2815,18 +2815,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 7,
     "offerMarketId": "bh",
-    "offerPrice": 11.38,
+    "offerPrice": 10.81,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 11.98,
       "extrabom": 15.9,
       "carone": 16.5,
       "casagrande": 14.9,
-      "bh": 11.38,
+      "bh": 10.81,
       "atacado_vem": 12.5
     },
     "featured": false,
-    "discountTag": "Menor preço no Supermercados BH | R$ 11,38",
+    "discountTag": "Menor preço no Supermercados BH | R$ 10,81",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -2837,18 +2837,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 7,
     "offerMarketId": "extrabom",
-    "offerPrice": 12.38,
+    "offerPrice": 11.88,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 12.9,
-      "extrabom": 12.38,
+      "extrabom": 11.88,
       "carone": 17.5,
       "casagrande": 15.9,
       "bh": 14.9,
       "atacado_vem": 13.5
     },
     "featured": true,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 12,38",
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 11,88",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -2925,18 +2925,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 7,
     "offerMarketId": "bh",
-    "offerPrice": 9.4,
+    "offerPrice": 8.93,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 9.9,
       "extrabom": 13.9,
       "carone": 14.5,
       "casagrande": 12.9,
-      "bh": 9.4,
+      "bh": 8.93,
       "atacado_vem": 10.5
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 9,40",
+    "discountTag": "Menor preço no Supermercados BH | R$ 8,93",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -2991,18 +2991,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 7,
     "offerMarketId": "extrabom",
-    "offerPrice": 67.1,
+    "offerPrice": 64.42,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 69.9,
-      "extrabom": 67.1,
+      "extrabom": 64.42,
       "carone": 108.9,
       "casagrande": 98.9,
       "bh": 89.9,
       "atacado_vem": 74.9
     },
     "featured": true,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 67,10",
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 64,42",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3035,18 +3035,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 7,
     "offerMarketId": "bh",
-    "offerPrice": 23.65,
+    "offerPrice": 22.47,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 24.9,
       "extrabom": 43.0,
       "carone": 44.9,
       "casagrande": 39.9,
-      "bh": 23.65,
+      "bh": 22.47,
       "atacado_vem": 27.9
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 23,65",
+    "discountTag": "Menor preço no Supermercados BH | R$ 22,47",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3145,18 +3145,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 8,
     "offerMarketId": "bh",
-    "offerPrice": 11.3,
+    "offerPrice": 10.73,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 11.9,
       "extrabom": 14.98,
       "carone": 15.5,
       "casagrande": 13.9,
-      "bh": 11.3,
+      "bh": 10.73,
       "atacado_vem": 12.2
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 11,30",
+    "discountTag": "Menor preço no Supermercados BH | R$ 10,73",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3233,7 +3233,7 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 8,
     "offerMarketId": "atacado_vem",
-    "offerPrice": 3.13,
+    "offerPrice": 2.97,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 3.29,
@@ -3241,10 +3241,10 @@ const PRODUCTS = [
       "carone": 4.2,
       "casagrande": 3.89,
       "bh": 3.59,
-      "atacado_vem": 3.13
+      "atacado_vem": 2.97
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacado Vem | R$ 3,13",
+    "discountTag": "Menor preço no Atacado Vem | R$ 2,97",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3255,18 +3255,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 8,
     "offerMarketId": "bh",
-    "offerPrice": 7.59,
+    "offerPrice": 7.21,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 7.99,
       "extrabom": 9.49,
       "carone": 9.9,
       "casagrande": 8.9,
-      "bh": 7.59,
+      "bh": 7.21,
       "atacado_vem": 8.19
     },
     "featured": false,
-    "discountTag": "Menor preço no Supermercados BH | R$ 7,59",
+    "discountTag": "Menor preço no Supermercados BH | R$ 7,21",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3299,18 +3299,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 8,
     "offerMarketId": "extrabom",
-    "offerPrice": 10.46,
+    "offerPrice": 10.04,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 10.9,
-      "extrabom": 10.46,
+      "extrabom": 10.04,
       "carone": 15.2,
       "casagrande": 13.9,
       "bh": 12.5,
       "atacado_vem": 11.5
     },
     "featured": true,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 10,46",
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 10,04",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3365,18 +3365,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 8,
     "offerMarketId": "bh",
-    "offerPrice": 18.9,
+    "offerPrice": 17.95,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 19.9,
       "extrabom": 22.98,
       "carone": 23.9,
       "casagrande": 21.9,
-      "bh": 18.9,
+      "bh": 17.95,
       "atacado_vem": 20.2
     },
     "featured": false,
-    "discountTag": "Menor preço no Supermercados BH | R$ 18,90",
+    "discountTag": "Menor preço no Supermercados BH | R$ 17,95",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3431,7 +3431,7 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 8,
     "offerMarketId": "atacado_vem",
-    "offerPrice": 8.07,
+    "offerPrice": 7.67,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 8.49,
@@ -3439,10 +3439,10 @@ const PRODUCTS = [
       "carone": 11.5,
       "casagrande": 10.2,
       "bh": 9.49,
-      "atacado_vem": 8.07
+      "atacado_vem": 7.67
     },
     "featured": true,
-    "discountTag": "Menor preço no Atacado Vem | R$ 8,07",
+    "discountTag": "Menor preço no Atacado Vem | R$ 7,67",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3453,18 +3453,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 10,
     "offerMarketId": "extrabom",
-    "offerPrice": 13.42,
+    "offerPrice": 12.88,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 13.98,
-      "extrabom": 13.42,
+      "extrabom": 12.88,
       "carone": 16.2,
       "casagrande": 14.9,
       "bh": 14.2,
       "atacado_vem": 14.0
     },
     "featured": true,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 13,42",
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 12,88",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3475,18 +3475,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 10,
     "offerMarketId": "bh",
-    "offerPrice": 28.48,
+    "offerPrice": 27.06,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 29.98,
       "extrabom": 36.98,
       "carone": 37.9,
       "casagrande": 34.9,
-      "bh": 28.48,
+      "bh": 27.06,
       "atacado_vem": 30.9
     },
     "featured": false,
-    "discountTag": "Menor preço no Supermercados BH | R$ 28,48",
+    "discountTag": "Menor preço no Supermercados BH | R$ 27,06",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3585,18 +3585,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 10,
     "offerMarketId": "bh",
-    "offerPrice": 6.26,
+    "offerPrice": 5.95,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 6.59,
       "extrabom": 7.98,
       "carone": 8.5,
       "casagrande": 7.8,
-      "bh": 6.26,
+      "bh": 5.95,
       "atacado_vem": 6.99
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 6,26",
+    "discountTag": "Menor preço no Supermercados BH | R$ 5,95",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3607,18 +3607,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 10,
     "offerMarketId": "extrabom",
-    "offerPrice": 6.33,
+    "offerPrice": 6.08,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 6.59,
-      "extrabom": 6.33,
+      "extrabom": 6.08,
       "carone": 8.5,
       "casagrande": 7.8,
       "bh": 7.49,
       "atacado_vem": 6.99
     },
     "featured": false,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 6,33",
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 6,08",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3629,7 +3629,7 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 10,
     "offerMarketId": "atacado_vem",
-    "offerPrice": 1.7,
+    "offerPrice": 1.61,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 1.79,
@@ -3637,10 +3637,10 @@ const PRODUCTS = [
       "carone": 2.7,
       "casagrande": 2.39,
       "bh": 2.19,
-      "atacado_vem": 1.7
+      "atacado_vem": 1.61
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacado Vem | R$ 1,70",
+    "discountTag": "Menor preço no Atacado Vem | R$ 1,61",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3695,18 +3695,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 10,
     "offerMarketId": "bh",
-    "offerPrice": 15.18,
+    "offerPrice": 14.42,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 15.98,
       "extrabom": 18.5,
       "carone": 19.2,
       "casagrande": 17.9,
-      "bh": 15.18,
+      "bh": 14.42,
       "atacado_vem": 16.2
     },
     "featured": true,
-    "discountTag": "Menor preço no Supermercados BH | R$ 15,18",
+    "discountTag": "Menor preço no Supermercados BH | R$ 14,42",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3761,18 +3761,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 10,
     "offerMarketId": "extrabom",
-    "offerPrice": 21.98,
+    "offerPrice": 21.1,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 22.9,
-      "extrabom": 21.98,
+      "extrabom": 21.1,
       "carone": 27.9,
       "casagrande": 24.9,
       "bh": 23.9,
       "atacado_vem": 23.2
     },
     "featured": true,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 21,98",
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 21,10",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3805,18 +3805,18 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 10,
     "offerMarketId": "bh",
-    "offerPrice": 3.18,
+    "offerPrice": 3.02,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 3.35,
       "extrabom": 3.98,
       "carone": 4.19,
       "casagrande": 3.79,
-      "bh": 3.18,
+      "bh": 3.02,
       "atacado_vem": 3.45
     },
     "featured": false,
-    "discountTag": "Menor preço no Supermercados BH | R$ 3,18",
+    "discountTag": "Menor preço no Supermercados BH | R$ 3,02",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
@@ -3827,7 +3827,7 @@ const PRODUCTS = [
     "image": "assets/limpeza.png",
     "encarteId": 10,
     "offerMarketId": "atacado_vem",
-    "offerPrice": 9.4,
+    "offerPrice": 8.93,
     "validity": "Válido 01/09 a 10/09/2026",
     "prices": {
       "atacadao": 9.9,
@@ -3835,10 +3835,10 @@ const PRODUCTS = [
       "carone": 11.9,
       "casagrande": 10.9,
       "bh": 10.2,
-      "atacado_vem": 9.4
+      "atacado_vem": 8.93
     },
     "featured": false,
-    "discountTag": "Menor preço no Atacado Vem | R$ 9,40",
+    "discountTag": "Menor preço no Atacado Vem | R$ 8,93",
     "sourceType": "📄 Encarte Oficial Atacadão"
   },
   {
