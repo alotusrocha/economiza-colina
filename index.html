@@ -35,7 +35,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20261028_v3">
+  <link rel="stylesheet" href="css/styles.css?v=20261028_v4">
 </head>
 
 <body>
@@ -408,7 +408,7 @@
     // Auto-limpeza de Service Worker e Cache antigo (Setembro -> Outubro/2026)
     (async function forceClearLegacySeptemberCache() {
       try {
-        const MIGRATION_KEY = 'economiza_colina_oct2026_migrated_v3';
+        const MIGRATION_KEY = 'economiza_colina_oct2026_migrated_v4';
         if (!localStorage.getItem(MIGRATION_KEY)) {
           if ('caches' in window) {
             const keys = await caches.keys();
@@ -424,9 +424,9 @@
       } catch (e) { }
     })();
   </script>
-  <script src="js/data.js?v=20261028_v3"></script>
-  <script src="js/cart.js?v=20261028_v3"></script>
-  <script src="js/app.js?v=20261028_v3"></script>
+  <script src="js/data.js?v=20261028_v4"></script>
+  <script src="js/cart.js?v=20261028_v4"></script>
+  <script src="js/app.js?v=20261028_v4"></script>
 </body>
 
 </html>

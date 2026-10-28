@@ -1472,8 +1472,8 @@ function closeSavingsCardModal() {
 // Registro do Service Worker PWA
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    if ('caches' in window) { caches.keys().then(names => names.forEach(n => { if (n !== 'economiza-colina-v5-out2026') caches.delete(n); })); }
-    navigator.serviceWorker.register('./sw.js?v=20261028_v2').then(reg => { reg.update();
+    if ('caches' in window) { caches.keys().then(names => names.forEach(n => { if (n !== 'economiza-colina-v6-out2026') caches.delete(n); })); }
+    navigator.serviceWorker.register('./sw.js?v=20261028_v4').then(reg => { reg.update();
       console.log('PWA ServiceWorker registrado com sucesso no Economiza Colina!');
     }).catch(err => {
       console.log('Falha ao registrar ServiceWorker PWA:', err);

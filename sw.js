@@ -1,4 +1,4 @@
-const CACHE_NAME = 'economiza-colina-v5-out2026';
+const CACHE_NAME = 'economiza-colina-v6-out2026';
 const ASSETS_TO_CACHE = [
   './assets/icon-192.png',
   './assets/icon-512.png',
