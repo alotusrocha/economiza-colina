@@ -1,13 +1,5 @@
-const CACHE_NAME = 'economiza-colina-v4-out2026';
+const CACHE_NAME = 'economiza-colina-v5-out2026';
 const ASSETS_TO_CACHE = [
-  './',
-  './index.html',
-  './video.html',
-  './manifest.json',
-  './css/styles.css',
-  './js/app.js',
-  './js/cart.js',
-  './js/data.js',
   './assets/icon-192.png',
   './assets/icon-512.png',
   './assets/apple-touch-icon.png',
@@ -52,11 +44,16 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const url = event.request.url;
 
-  // Para navegação HTML e código JS dinâmico (app.js, data.js), tenta a REDE primeiro (Network-First).
-  // Se houver conexão, entrega a versão mais nova atualizada do servidor. Se estiver offline, usa o Cache.
-  if (event.request.mode === 'navigate' || url.endsWith('.html') || url.endsWith('app.js') || url.endsWith('data.js')) {
+  // Para HTML, JS (data.js, app.js, cart.js), CSS e imagens de encartes, tenta SEMPRE a REDE primeiro (Network-First sem cache estático preso).
+  if (
+    event.request.mode === 'navigate' ||
+    url.includes('.html') ||
+    url.includes('.js') ||
+    url.includes('.css') ||
+    url.includes('WhatsApp')
+  ) {
     event.respondWith(
-      fetch(event.request)
+      fetch(event.request, { cache: 'no-store' })
         .then((networkResponse) => {
           if (networkResponse && networkResponse.status === 200) {
             const responseClone = networkResponse.clone();
@@ -73,7 +70,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Para os demais arquivos estáticos (CSS, imagens, ícones), utiliza Cache-First com Fallback na Rede
+  // Para ícones e ilustrações estáticas de categorias, utiliza Cache-First com Fallback na Rede
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
       if (cachedResponse) {

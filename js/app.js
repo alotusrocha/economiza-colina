@@ -38,7 +38,7 @@ function updateHeaderDate() {
     const months = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
     const currentMonth = months[now.getMonth()];
     const currentYear = now.getFullYear();
-    el.textContent = `Serra / ES • Atualizado em ${currentMonth}/${currentYear}`;
+    el.textContent = `📍 Colina de Laranjeiras • ${currentMonth}/${currentYear}`;
   }
 }
 
@@ -79,9 +79,9 @@ function updateSourceFilterCounts() {
   const btnAll = document.getElementById('source-filter-all');
   const btnEncarte = document.getElementById('source-filter-encarte');
   const btnScraper = document.getElementById('source-filter-scraper');
-  if (btnAll) btnAll.innerHTML = `🔍 Todas as Fontes (${totalCount})`;
-  if (btnEncarte) btnEncarte.innerHTML = `📄 Folhetos Promo (${encarteCount})`;
-  if (btnScraper) btnScraper.innerHTML = `🌐 Scrapers / APIs (${scraperCount})`;
+  if (btnAll) btnAll.innerHTML = `Todas (${totalCount})`;
+  if (btnEncarte) btnEncarte.innerHTML = `📄 Encartes (${encarteCount})`;
+  if (btnScraper) btnScraper.innerHTML = `🌐 Pesquisa Online (${scraperCount})`;
 }
 
 function filterBySource(sourceType) {
@@ -91,14 +91,14 @@ function filterBySource(sourceType) {
     if (btn) {
       if (s === sourceType) {
         btn.classList.add('active');
-        btn.style.background = 'rgba(255, 255, 255, 0.2)';
+        btn.style.background = '#0f172a';
         btn.style.color = 'white';
-        btn.style.borderColor = 'rgba(255, 255, 255, 0.4)';
+        btn.style.borderColor = '#0f172a';
       } else {
         btn.classList.remove('active');
-        btn.style.background = 'rgba(255, 255, 255, 0.08)';
-        btn.style.color = '#cbd5e1';
-        btn.style.borderColor = 'rgba(255, 255, 255, 0.2)';
+        btn.style.background = '#f1f5f9';
+        btn.style.color = '#475569';
+        btn.style.borderColor = '#cbd5e1';
       }
     }
   });
@@ -1472,7 +1472,8 @@ function closeSavingsCardModal() {
 // Registro do Service Worker PWA
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').then(() => {
+    if ('caches' in window) { caches.keys().then(names => names.forEach(n => { if (n !== 'economiza-colina-v5-out2026') caches.delete(n); })); }
+    navigator.serviceWorker.register('./sw.js?v=20261028_v2').then(reg => { reg.update();
       console.log('PWA ServiceWorker registrado com sucesso no Economiza Colina!');
     }).catch(err => {
       console.log('Falha ao registrar ServiceWorker PWA:', err);

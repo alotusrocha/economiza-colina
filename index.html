@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HBPYWFMXKQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-HBPYWFMXKQ');
@@ -13,8 +14,9 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Economiza Colina - O comparador de preços e promoções de supermercados exclusivo para moradores de Colina de Laranjeiras e imediações na Serra/ES. Encontre o melhor preço e economize nas compras!">
-  <title>Economiza Colina | Promoções e Preços de Supermercados em Colina de Laranjeiras</title>
+  <meta name="description"
+    content="Economiza Colina - Comparador de preços e promoções de supermercados em Colina de Laranjeiras e imediações na Serra/ES.">
+  <title>Economiza Colina | Comparador de Preços no Bairro</title>
 
   <!-- Favicon / Ícone da Aba e PWA -->
   <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
@@ -22,7 +24,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#10b981">
+  <meta name="theme-color" content="#0f172a">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -31,48 +33,38 @@
   <!-- Google Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=20261028_v3">
 </head>
+
 <body>
 
-  <!-- Top Announcement Bar -->
-  <div class="top-bar">
-    <div class="container top-bar-container">
-      <div class="top-bar-left">
-        <span class="location-badge">📍 Colina de Laranjeiras & Imediações</span>
-        <span class="top-bar-date" id="topBarUpdateDate">Serra / ES • Atualizado em Outubro/2026</span>
-      </div>
-      <div class="top-bar-right">
-        ✨ Economia média calculada de até R$ 120,00 na cesta semanal!
-      </div>
-    </div>
-  </div>
-
-  <!-- Main Header / Sticky Navigation -->
+  <!-- Clean Single Header / Sticky Navigation -->
   <header class="header-main">
     <div class="container">
-      <nav class="navbar">
+      <nav class="navbar" style="padding: 12px 0;">
         <a href="#" class="logo" id="mainLogoLink">
-          <div class="logo-icon">🛒</div>
+          <div class="logo-icon" style="width: 38px; height: 38px; font-size: 1.2rem;">🛒</div>
           <div class="logo-text">
-            <span class="logo-title">Economiza<span>Colina</span></span>
-            <span class="logo-subtitle">Comparador de Supermercados do Bairro</span>
+            <span class="logo-title" style="font-size: 1.2rem;">Economiza<span>Colina</span></span>
+            <span class="logo-subtitle" id="topBarUpdateDate">📍 Colina de Laranjeiras • Outubro/2026</span>
           </div>
         </a>
 
-        <div class="nav-actions">
-          <div class="user-rank-badge" id="userRankBadge" onclick="openRankingModal()" title="Ver Ranking da Comunidade de Colina">
-            🏆 <span class="rank-title">Caçador de Ofertas</span> <span class="rank-pts">120 pts</span>
-          </div>
-          <a href="video.html" class="btn-header btn-video" id="btnVideoNav">
-            ▶ <span class="btn-text">Assistir Vídeo (30s)</span>
-          </a>
-          <button class="btn-header btn-encartes" onclick="document.getElementById('encartesSection').scrollIntoView({behavior: 'smooth'})" id="btnEncartesNav">
-            📄 <span class="btn-text">Folhetos & Encartes</span>
+        <div class="nav-actions" style="gap: 8px;">
+          <button class="btn-header btn-encartes" onclick="openTipModal()" id="btnOpenTipModal"
+            style="padding: 7px 12px; font-size: 0.82rem;">
+            📸 <span class="btn-text">Publicar Preço</span>
           </button>
-          <button class="btn-header btn-cart" onclick="openCartModal()" id="btnOpenCart">
-            🛒 <span class="btn-text">Minha Cesta</span>
+          <button class="btn-header btn-encartes"
+            onclick="document.getElementById('encartesSection').scrollIntoView({behavior: 'smooth'})"
+            id="btnEncartesNav" style="padding: 7px 12px; font-size: 0.82rem;">
+            📄 <span class="btn-text">Encartes</span>
+          </button>
+          <button class="btn-header btn-cart" onclick="openCartModal()" id="btnOpenCart"
+            style="padding: 7px 14px; font-size: 0.84rem;">
+            🛒 <span class="btn-text">Cesta</span>
             <span class="cart-count" id="cartBadgeCount" style="display: none;">0</span>
           </button>
         </div>
@@ -80,154 +72,66 @@
     </div>
   </header>
 
-  <!-- Hero Section & Search -->
-  <section class="hero-section">
+  <!-- Clean & Compact Hero Section (Search + Supermarkets Only) -->
+  <section class="hero-section" style="padding: 20px 0 22px;">
     <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-title">Qual o supermercado mais barato para você comprar <span>hoje no bairro?</span></h1>
-        <p class="hero-subtitle">Compare ofertas dos encartes locais e descubra onde a sua cesta de compras sai mais barata em Colina de Laranjeiras e Laranjeiras.</p>
+      <div class="hero-content" style="max-width: 720px;">
+        <h1 class="hero-title" style="font-size: 1.55rem; margin-bottom: 12px;">
+          Compare preços nos supermercados <span>do bairro</span>
+        </h1>
 
         <!-- Search Bar -->
-        <form class="search-box-wrapper" id="searchForm" onsubmit="executeSearch(event); return false;">
-          <input type="text" class="search-input" id="searchInput" placeholder="Pesquise por produto (ex: Polpa de Tomate, Contrafilé, Arroz, Café, Detergente...)" aria-label="Pesquisar ofertas de produtos" oninput="onSearchInput(this.value)">
+        <form class="search-box-wrapper" id="searchForm" onsubmit="executeSearch(event); return false;"
+          style="margin-bottom: 12px;">
+          <input type="text" class="search-input" id="searchInput"
+            placeholder="O que você procura hoje? (ex: Arroz, Café, Contrafilé, Leite...)"
+            aria-label="Pesquisar ofertas de produtos" oninput="onSearchInput(this.value)">
           <button type="submit" class="search-btn" id="btnSearchSubmit" onclick="executeSearch(event)">
-            🔍 Pesquisar Ofertas
+            🔍 Buscar
           </button>
         </form>
 
-        <!-- Quick Presets Filters (Perfis de Compra) -->
-        <div style="display: flex; justify-content: center; gap: 8px; margin-top: 12px; flex-wrap: wrap;" id="presetFiltersContainer">
-          <button class="preset-filter-btn" onclick="applyPresetFilter('churrasco')" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #f8fafc; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
-            🥩 Churrasco do Fim de Semana
-          </button>
-          <button class="preset-filter-btn" onclick="applyPresetFilter('feira')" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #f8fafc; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
-            🥦 Feirão Hortifrúti
-          </button>
-          <button class="preset-filter-btn" onclick="applyPresetFilter('bebe')" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #f8fafc; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
-            👶 Fraldas & Linha Bebê
-          </button>
-          <button class="preset-filter-btn" onclick="applyPresetFilter('limpeza')" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #f8fafc; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
-            🧹 Faxina & Limpeza
-          </button>
-          <button class="preset-filter-btn" onclick="applyPresetFilter('cesta')" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #f8fafc; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
-            🌾 Cesta Básica
-          </button>
-        </div>
-
         <!-- Supermarkets Quick Filter Chips -->
-        <div class="market-chips" id="marketChipsContainer">
+        <div class="market-chips" id="marketChipsContainer" style="margin-top: 8px;">
           <!-- Renderizado via JS -->
         </div>
-
-        <!-- Source Transparency Filter (Transparência de Fontes: Folhetos vs APIs/Scrapers) -->
-        <div style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 14px; flex-wrap: wrap;" id="sourceFiltersContainer">
-          <span style="font-size: 0.78rem; color: #94a3b8; font-weight: 700;">Origem do Preço:</span>
-          <button class="source-filter-btn active" id="source-filter-all" onclick="filterBySource('all')" style="background: rgba(255, 255, 255, 0.2); color: white; border: 1px solid rgba(255, 255, 255, 0.4); padding: 5px 12px; border-radius: 16px; font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
-            🔍 Todas as Fontes (219)
-          </button>
-          <button class="source-filter-btn" id="source-filter-encarte" onclick="filterBySource('encarte')" style="background: rgba(255, 255, 255, 0.08); color: #cbd5e1; border: 1px solid rgba(255, 255, 255, 0.2); padding: 5px 12px; border-radius: 16px; font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
-            📄 Folhetos Promo (11)
-          </button>
-          <button class="source-filter-btn" id="source-filter-scraper" onclick="filterBySource('scraper')" style="background: rgba(255, 255, 255, 0.08); color: #cbd5e1; border: 1px solid rgba(255, 255, 255, 0.2); padding: 5px 12px; border-radius: 16px; font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
-            🌐 Scrapers / APIs (208)
-          </button>
-        </div>
-
-        <!-- Promo Video Banner Callout -->
-        <div style="margin-top: 24px; background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; border-radius: 16px; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
-          <div style="display: flex; align-items: center; gap: 12px; text-align: left;">
-            <div style="font-size: 2.2rem;">🎬</div>
-            <div>
-              <div style="font-weight: 800; font-size: 1rem; color: #34d399;">Novo por aqui? Veja como economizar em 30s!</div>
-              <div style="font-size: 0.82rem; color: #cbd5e1;">Assista ao nosso tutorial rápido com áudio sobre como achar o menor preço do bairro.</div>
-            </div>
-          </div>
-          <a href="video.html" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 10px 20px; border-radius: 20px; font-weight: 800; text-decoration: none; font-size: 0.88rem; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4); white-space: nowrap;">
-            ▶ Assistir Vídeo Explicativo
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Community Tips Bar -->
-  <section class="community-section">
-    <div class="container">
-      <div class="community-wrapper">
-        <div class="community-title">
-          <span>📢 Dica de Vizinho:</span>
-        </div>
-        <div id="communityTipsContainer" style="display: flex; gap: 10px;">
-          <!-- Renderizado via JS -->
-        </div>
-        <button class="btn-add-tip" onclick="openTipModal()" id="btnOpenTipModal">+ Publicar Oferta que Vi</button>
       </div>
     </div>
   </section>
 
   <!-- Main Content Area -->
-  <main class="container">
-
-    <!-- Smart Shopping List Optimizer Section -->
-    <section style="margin: 20px 0 24px;" aria-label="Otimizador de Lista de Compras do Cliente">
-      <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 20px; padding: 24px; color: white; box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.25); border: 1px solid #334155;">
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
-          <div>
-            <h2 style="font-size: 1.35rem; font-weight: 800; color: #f8fafc; display: flex; align-items: center; gap: 8px;">
-              <span>📝</span> Cole ou Digite sua Lista de Compras
-            </h2>
-            <p style="font-size: 0.86rem; color: #94a3b8; margin-top: 4px;">
-              O sistema analisa sua lista, busca os menores preços nos supermercados de Colina de Laranjeiras e calcula se é melhor comprar tudo em 1 só lugar ou dividir em 2 lojas!
-            </p>
-          </div>
-          <span style="background: rgba(16, 185, 129, 0.2); color: #34d399; font-weight: 800; font-size: 0.78rem; padding: 6px 12px; border-radius: 20px; border: 1px solid rgba(52, 211, 153, 0.3);">
-            ✨ Comparador Inteligente de Lista
-          </span>
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 20px;" class="list-optimizer-grid">
-          <!-- Input Column -->
-          <div>
-            <label for="listTextarea" style="font-size: 0.82rem; font-weight: 700; color: #cbd5e1; display: block; margin-bottom: 8px;">
-              Digite ou cole os produtos da sua lista:
-            </label>
-            <textarea id="listTextarea" rows="6" placeholder="Exemplo:&#10;Arroz 5kg&#10;Feijão preto&#10;Café&#10;Contrafilé&#10;Cerveja Amstel&#10;Sabão em pó&#10;Leite" style="width: 100%; background: #020617; border: 1px solid #334155; border-radius: 12px; padding: 12px; color: #f8fafc; font-size: 0.9rem; resize: vertical; font-family: inherit; box-sizing: border-box; outline: none;"></textarea>
-
-            <div style="display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap;">
-              <button id="btnOptimizeList" onclick="optimizeShoppingList()" style="flex: 1; background: linear-gradient(135deg, #e63946 0%, #d62828 100%); color: white; border: none; font-weight: 800; padding: 12px 18px; border-radius: 12px; cursor: pointer; font-size: 0.92rem; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3); transition: transform 0.2s;">
-                <span>⚡ Analisar e Comparar Minha Lista</span>
-              </button>
-              <button onclick="fillExampleList()" style="background: rgba(255, 255, 255, 0.1); color: #cbd5e1; border: 1px solid #475569; font-weight: 700; padding: 12px 14px; border-radius: 12px; cursor: pointer; font-size: 0.82rem; white-space: nowrap;">
-                📋 Carregar Exemplo
-              </button>
-            </div>
-          </div>
-
-          <!-- Results Column -->
-          <div id="listOptimizationResults" style="background: #020617; border: 1px solid #1e293b; border-radius: 12px; padding: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center;">
-            <div style="text-align: center; color: #64748b;">
-              <div style="font-size: 2.2rem; margin-bottom: 8px;">🛒</div>
-              <div style="font-weight: 700; font-size: 0.95rem; color: #94a3b8;">Aguardando sua lista de compras</div>
-              <div style="font-size: 0.8rem; margin-top: 4px;">Digite ou cole seus itens ao lado e clique em "Analisar e Comparar Minha Lista".</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <main class="container" style="padding-top: 14px;">
 
     <!-- Categories Filter Bar -->
     <section aria-label="Filtro de Categorias">
-      <div class="category-bar" id="categoriesBar">
+      <div class="category-bar" id="categoriesBar" style="margin: 6px 0 14px;">
         <!-- Renderizado via JS -->
       </div>
     </section>
 
-    <!-- Product Comparison Section -->
-    <section style="margin-top: 10px;">
-      <div class="section-header">
+    <!-- Product Comparison Section (First & Immediate!) -->
+    <section>
+      <div class="section-header"
+        style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
         <div>
-          <h2 class="section-title">🔥 Ofertas & Comparativo de Preços no Bairro</h2>
+          <h2 class="section-title" style="font-size: 1.25rem;">🏷️ Ofertas & Comparativo de Preços</h2>
           <span class="section-count" id="productCount">Carregando ofertas...</span>
+        </div>
+
+        <!-- Subtle Source Filter Pills -->
+        <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;" id="sourceFiltersContainer">
+          <button class="source-filter-btn active" id="source-filter-all" onclick="filterBySource('all')"
+            style="background: #0f172a; color: white; border: 1px solid #0f172a; padding: 4px 10px; border-radius: 14px; font-size: 0.74rem; font-weight: 700; cursor: pointer;">
+            Todas (219)
+          </button>
+          <button class="source-filter-btn" id="source-filter-encarte" onclick="filterBySource('encarte')"
+            style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 14px; font-size: 0.74rem; font-weight: 700; cursor: pointer;">
+            📄 Encartes (11)
+          </button>
+          <button class="source-filter-btn" id="source-filter-scraper" onclick="filterBySource('scraper')"
+            style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 14px; font-size: 0.74rem; font-weight: 700; cursor: pointer;">
+            🌐 Pesquisa Online (208)
+          </button>
         </div>
       </div>
 
@@ -237,17 +141,82 @@
       </div>
     </section>
 
-    <!-- Brochure / Encartes Section -->
-    <section class="encartes-section" id="encartesSection">
+    <!-- Brochure / Encartes Section (Below Products) -->
+    <section class="encartes-section" id="encartesSection" style="margin-top: 36px;">
       <div class="encartes-header">
         <div>
-          <h2 style="font-size: 1.4rem; font-weight: 800; color: white;">📄 Folhetos & Encartes Digitais Baixados</h2>
-          <p style="color: #94a3b8; font-size: 0.88rem; margin-top: 4px;">Folheie os encartes oficiais baixados dos supermercados da região de Colina de Laranjeiras.</p>
+          <h2 style="font-size: 1.3rem; font-weight: 800; color: white;">📄 Encartes Oficiais de Outubro/2026</h2>
+          <p style="color: #94a3b8; font-size: 0.85rem; margin-top: 4px;">Toque em um encarte para ampliar e conferir as
+            promoções na íntegra.</p>
         </div>
       </div>
 
       <div class="encartes-grid" id="encartesGrid">
         <!-- Renderizado via JS -->
+      </div>
+    </section>
+
+    <!-- Smart Shopping List Optimizer Section (Moved to Footer / Bottom Area Below Promotional Prices) -->
+    <section id="listOptimizerSection" style="margin: 32px 0 28px;"
+      aria-label="Otimizador de Lista de Compras do Cliente">
+      <div
+        style="background: #ffffff; border-radius: 18px; padding: 24px; color: #0f172a; box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06); border: 1px solid #e2e8f0;">
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+          <div>
+            <h2
+              style="font-size: 1.2rem; font-weight: 800; color: #0f172a; display: flex; align-items: center; gap: 8px;">
+              <span>📝</span> Comparar Lista de Compras Completa
+            </h2>
+            <p style="font-size: 0.84rem; color: #64748b; margin-top: 2px;">
+              Cole vários itens de uma vez para descobrir em qual supermercado sua compra inteira sai mais barata.
+            </p>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 20px;" class="list-optimizer-grid">
+          <!-- Input Column -->
+          <div>
+            <textarea id="listTextarea" rows="5"
+              placeholder="Digite ou cole um item por linha:&#10;Arroz 5kg&#10;Feijão preto&#10;Café&#10;Leite&#10;Manteiga"
+              style="width: 100%; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 12px; color: #0f172a; font-size: 0.88rem; resize: vertical; font-family: inherit; box-sizing: border-box; outline: none;"></textarea>
+
+            <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
+              <button id="btnOptimizeList" onclick="optimizeShoppingList()"
+                style="flex: 1; background: #10b981; color: white; border: none; font-weight: 700; padding: 10px 16px; border-radius: 10px; cursor: pointer; font-size: 0.88rem; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                <span>⚡ Calcular Melhor Mercado</span>
+              </button>
+              <button onclick="fillExampleList()"
+                style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; font-weight: 600; padding: 10px 14px; border-radius: 10px; cursor: pointer; font-size: 0.82rem; white-space: nowrap;">
+                📋 Testar Exemplo
+              </button>
+            </div>
+          </div>
+
+          <!-- Results Column -->
+          <div id="listOptimizationResults"
+            style="background: #0f172a; border: 1px solid #1e293b; border-radius: 12px; padding: 16px; min-height: 150px; display: flex; flex-direction: column; justify-content: center;">
+            <div style="text-align: center; color: #94a3b8;">
+              <div style="font-size: 1.8rem; margin-bottom: 6px;">🛒</div>
+              <div style="font-weight: 700; font-size: 0.9rem; color: #cbd5e1;">Resultado da comparação</div>
+              <div style="font-size: 0.78rem; margin-top: 4px;">Cole sua lista ao lado e clique em "Calcular Melhor
+                Mercado".</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clean Community Footer Bar -->
+    <section class="community-section" style="border-radius: 14px; margin-bottom: 24px; border: 1px solid #e2e8f0;">
+      <div class="community-wrapper" style="padding: 10px 16px;">
+        <div class="community-title">
+          <span>📢 Mural de Vizinhos:</span>
+        </div>
+        <div id="communityTipsContainer" style="display: flex; gap: 10px; flex: 1;">
+          <!-- Renderizado via JS -->
+        </div>
+        <button class="btn-add-tip" onclick="openTipModal()">+ Informar Oferta</button>
       </div>
     </section>
 
@@ -271,10 +240,12 @@
         <button class="btn-whatsapp" onclick="cart.shareWhatsApp()" id="btnShareWhatsApp">
           📲 Enviar Lista WhatsApp
         </button>
-        <button class="btn-header" onclick="cart.openSavingsCard()" id="btnGenerateCard" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #000; font-weight: 800; padding: 12px 16px; border-radius: 10px; border: none; cursor: pointer;">
+        <button class="btn-header" onclick="cart.openSavingsCard()" id="btnGenerateCard"
+          style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #000; font-weight: 800; padding: 12px 16px; border-radius: 10px; border: none; cursor: pointer;">
           📸 Gerar Cartão de Economia Vizinho
         </button>
-        <button class="btn-header" onclick="cart.exportPDF()" id="btnExportPDF" style="background: #0f172a; color: white; border: 1px solid #334155; padding: 12px 16px;">
+        <button class="btn-header" onclick="cart.exportPDF()" id="btnExportPDF"
+          style="background: #0f172a; color: white; border: 1px solid #334155; padding: 12px 16px;">
           📄 Salvar PDF / Imprimir
         </button>
       </div>
@@ -283,7 +254,8 @@
 
   <!-- MODAL: Cartão Visual de Economia para WhatsApp / Stories -->
   <div class="modal-overlay" id="savingsCardModal" role="dialog" aria-labelledby="savingsCardTitle">
-    <div class="modal-container" style="max-width: 450px; background: #0f172a; color: white; text-align: center; border: 1px solid #334155;">
+    <div class="modal-container"
+      style="max-width: 450px; background: #0f172a; color: white; text-align: center; border: 1px solid #334155;">
       <div class="modal-header" style="border-bottom: 1px solid #334155;">
         <div class="modal-title" id="savingsCardTitle" style="color: #34d399;">
           ✨ Cartão de Economia do Bairro
@@ -293,76 +265,6 @@
 
       <div class="modal-body" id="savingsCardModalBody" style="padding: 20px;">
         <!-- Renderizado dinamicamente pelo cart.js -->
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL: Ranking de Moradores & Gamificação de Colina -->
-  <div class="modal-overlay" id="rankingModal" role="dialog" aria-labelledby="rankingTitle">
-    <div class="modal-container" style="max-width: 480px;">
-      <div class="modal-header">
-        <div class="modal-title" id="rankingTitle">
-          🏆 Ranking de Moradores Economizadores
-        </div>
-        <button class="btn-close-modal" onclick="closeRankingModal()" aria-label="Fechar Modal">&times;</button>
-      </div>
-
-      <div class="modal-body" style="padding: 20px;">
-        <div style="text-align: center; margin-bottom: 16px;">
-          <div style="font-size: 2.2rem; margin-bottom: 4px;">🥇</div>
-          <h3 style="font-size: 1.1rem; color: #0f172a; font-weight: 800;">Caçadores de Ofertas de Colina</h3>
-          <p style="font-size: 0.84rem; color: #64748b;">Ganhe pontos ao confirmar preços (👍), reportar novas ofertas (📸) e ajudar o bairro a economizar!</p>
-        </div>
-
-        <div class="ranking-list" style="display: flex; flex-direction: column; gap: 10px;">
-          <div style="display: flex; align-items: center; justify-content: space-between; background: #fef3c7; border: 1px solid #f59e0b; padding: 10px 14px; border-radius: 12px;">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 1.3rem;">🥇</span>
-              <div>
-                <div style="font-weight: 800; font-size: 0.9rem; color: #78350f;">Rodrigo S. (Colina I)</div>
-                <div style="font-size: 0.76rem; color: #92400e;">18 ofertas confirmadas</div>
-              </div>
-            </div>
-            <span style="font-weight: 800; color: #b45309; font-size: 0.9rem;">340 pts</span>
-          </div>
-
-          <div style="display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; border: 1px solid #cbd5e1; padding: 10px 14px; border-radius: 12px;">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 1.3rem;">🥈</span>
-              <div>
-                <div style="font-weight: 800; font-size: 0.9rem; color: #334155;">Mariana K. (Shopping Montserrat)</div>
-                <div style="font-size: 0.76rem; color: #64748b;">14 ofertas confirmadas</div>
-              </div>
-            </div>
-            <span style="font-weight: 800; color: #475569; font-size: 0.9rem;">260 pts</span>
-          </div>
-
-          <div style="display: flex; align-items: center; justify-content: space-between; background: #ffedd5; border: 1px solid #fdba74; padding: 10px 14px; border-radius: 12px;">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 1.3rem;">🥉</span>
-              <div>
-                <div style="font-weight: 800; font-size: 0.9rem; color: #7c2d12;">Lucas M. (Laranjeiras)</div>
-                <div style="font-size: 0.76rem; color: #9a3412;">9 ofertas confirmadas</div>
-              </div>
-            </div>
-            <span style="font-weight: 800; color: #c2410c; font-size: 0.9rem;">180 pts</span>
-          </div>
-
-          <div style="display: flex; align-items: center; justify-content: space-between; background: #ecfdf5; border: 1px solid #10b981; padding: 10px 14px; border-radius: 12px; margin-top: 6px;">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 1.3rem;">⭐</span>
-              <div>
-                <div style="font-weight: 800; font-size: 0.9rem; color: #065f46;">Você (Morador)</div>
-                <div style="font-size: 0.76rem; color: #047857;">4 interações hoje</div>
-              </div>
-            </div>
-            <span style="font-weight: 800; color: #059669; font-size: 0.9rem;">120 pts</span>
-          </div>
-        </div>
-
-        <button onclick="closeRankingModal(); openTipModal();" style="width: 100%; margin-top: 16px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; border: none; padding: 12px; border-radius: 12px; font-weight: 800; cursor: pointer;">
-          + Ganhar Pontos Publicando Oferta
-        </button>
       </div>
     </div>
   </div>
@@ -394,17 +296,22 @@
       </div>
 
       <div class="modal-body">
-        <form id="tipForm" name="ofertas-comunidade" method="POST" data-netlify="true" enctype="multipart/form-data" onsubmit="submitCommunityTip(event)">
+        <form id="tipForm" name="ofertas-comunidade" method="POST" data-netlify="true" enctype="multipart/form-data"
+          onsubmit="submitCommunityTip(event)">
           <input type="hidden" name="form-name" value="ofertas-comunidade">
 
           <div style="margin-bottom: 14px;">
-            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Seu Nome (Morador):</label>
-            <input type="text" id="tipAuthor" name="author" placeholder="Ex: Rodrigo S. - Colina" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;" required>
+            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Seu Nome
+              (Morador):</label>
+            <input type="text" id="tipAuthor" name="author" placeholder="Ex: Rodrigo S. - Colina"
+              style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;" required>
           </div>
 
           <div style="margin-bottom: 14px;">
-            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Supermercado:</label>
-            <select id="tipMarket" name="market" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; font-weight: 700;">
+            <label
+              style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Supermercado:</label>
+            <select id="tipMarket" name="market"
+              style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; font-weight: 700;">
               <option value="carone">Supermercados Carone (Colina de Laranjeiras)</option>
               <option value="extrabom">Extrabom (Shopping Montserrat)</option>
               <option value="atacadao">Atacadão (Colina BR-101)</option>
@@ -416,44 +323,60 @@
           </div>
 
           <div style="margin-bottom: 14px;">
-            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">🏷️ Preço da Oferta na Etiqueta (R$):</label>
-            <input type="number" step="0.01" min="0.01" id="tipPrice" name="price" placeholder="Ex: 24.79" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #059669; font-size: 1rem; font-weight: 800; color: #047857; background: #ecfdf5;">
-            <div style="font-size: 0.72rem; color: #059669; margin-top: 3px; font-weight: 600;">* Obrigatório para gerar o card na lista de ofertas comparadas do bairro</div>
+            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">🏷️ Preço da Oferta
+              na Etiqueta (R$):</label>
+            <input type="number" step="0.01" min="0.01" id="tipPrice" name="price" placeholder="Ex: 24.79" required
+              style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #059669; font-size: 1rem; font-weight: 800; color: #047857; background: #ecfdf5;">
+            <div style="font-size: 0.72rem; color: #059669; margin-top: 3px; font-weight: 600;">* Obrigatório para gerar
+              o card na lista de ofertas comparadas do bairro</div>
           </div>
 
           <div style="margin-bottom: 14px;">
-            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 6px;">📸 Foto da Etiqueta / Produto (Opcional):</label>
+            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 6px;">📸 Foto da Etiqueta
+              / Produto (Opcional):</label>
 
             <!-- Inputs de Arquivo Ocultos -->
-            <input type="file" id="tipPhotoFile" name="photo" accept="image/*" onchange="handleTipPhotoSelect(event, 'gallery')" style="display: none;">
-            <input type="file" id="tipPhotoCamera" name="photo_camera" accept="image/*" capture="environment" onchange="handleTipPhotoSelect(event, 'camera')" style="display: none;">
+            <input type="file" id="tipPhotoFile" name="photo" accept="image/*"
+              onchange="handleTipPhotoSelect(event, 'gallery')" style="display: none;">
+            <input type="file" id="tipPhotoCamera" name="photo_camera" accept="image/*" capture="environment"
+              onchange="handleTipPhotoSelect(event, 'camera')" style="display: none;">
 
             <!-- Botões de Escolha Dupla -->
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-              <button type="button" onclick="document.getElementById('tipPhotoFile').click()" style="background: #f8fafc; border: 1.5px dashed #059669; color: #047857; padding: 10px 6px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <button type="button" onclick="document.getElementById('tipPhotoFile').click()"
+                style="background: #f8fafc; border: 1.5px dashed #059669; color: #047857; padding: 10px 6px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
                 <span>📁 Escolher Arquivo</span>
               </button>
-              <button type="button" onclick="document.getElementById('tipPhotoCamera').click()" style="background: #ecfdf5; border: 1.5px solid #10b981; color: #065f46; padding: 10px 6px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <button type="button" onclick="document.getElementById('tipPhotoCamera').click()"
+                style="background: #ecfdf5; border: 1.5px solid #10b981; color: #065f46; padding: 10px 6px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
                 <span>📸 Usar Câmera</span>
               </button>
             </div>
 
-            <div id="photoPreviewContainer" style="display: none; margin-top: 10px; text-align: center; background: #f8fafc; padding: 10px; border-radius: 10px; border: 1px solid #e2e8f0;">
-              <img id="photoPreviewImg" src="" alt="Pré-visualização da etiqueta" style="max-height: 140px; border-radius: 8px; border: 2px solid #10b981; margin-top: 4px; object-fit: contain;">
-              <div id="photoPreviewBadge" style="font-size: 0.76rem; color: #059669; font-weight: 700; margin-top: 4px;">✓ Foto selecionada com sucesso!</div>
-              <button type="button" onclick="clearTipPhoto()" style="margin-top: 6px; background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; padding: 4px 10px; border-radius: 6px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">
+            <div id="photoPreviewContainer"
+              style="display: none; margin-top: 10px; text-align: center; background: #f8fafc; padding: 10px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <img id="photoPreviewImg" src="" alt="Pré-visualização da etiqueta"
+                style="max-height: 140px; border-radius: 8px; border: 2px solid #10b981; margin-top: 4px; object-fit: contain;">
+              <div id="photoPreviewBadge"
+                style="font-size: 0.76rem; color: #059669; font-weight: 700; margin-top: 4px;">✓ Foto selecionada com
+                sucesso!</div>
+              <button type="button" onclick="clearTipPhoto()"
+                style="margin-top: 6px; background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; padding: 4px 10px; border-radius: 6px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">
                 🗑️ Remover Foto
               </button>
             </div>
           </div>
 
           <div style="margin-bottom: 18px;">
-            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Qual a oferta / produto que você viu?</label>
-            <textarea id="tipText" name="text" rows="2" placeholder="Ex: Azeite de Oliveira Serra 500ml" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;"></textarea>
+            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Qual a oferta /
+              produto que você viu?</label>
+            <textarea id="tipText" name="text" rows="2" placeholder="Ex: Azeite Extra Virgem 500ml" required
+              style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;"></textarea>
           </div>
 
-          <button type="submit" style="width: 100%; background: linear-gradient(135deg, #10b981 0%, #047857 100%); color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;">
-            <span>📸 Publicar Foto / Oferta para o Bairro</span>
+          <button type="submit"
+            style="width: 100%; background: linear-gradient(135deg, #10b981 0%, #047857 100%); color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <span>📸 Publicar Oferta no Bairro</span>
           </button>
         </form>
       </div>
@@ -462,12 +385,16 @@
 
   <!-- MODAL: Informar ou Corrigir Preço do Morador -->
   <div class="modal-overlay" id="priceReportModal" role="dialog" aria-labelledby="priceReportTitle">
-    <div class="modal-container" style="max-width: 460px; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);">
-      <div class="modal-header" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 16px 20px;">
-        <div class="modal-title" id="priceReportTitle" style="color: #38bdf8; font-weight: 800; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;">
+    <div class="modal-container"
+      style="max-width: 460px; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);">
+      <div class="modal-header"
+        style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 16px 20px;">
+        <div class="modal-title" id="priceReportTitle"
+          style="color: #38bdf8; font-weight: 800; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;">
           <span>📢</span> Informar Preço Real Encontrado
         </div>
-        <button class="btn-close-modal" onclick="closePriceReportModal()" aria-label="Fechar Modal" style="color: white; font-size: 1.5rem; background: transparent; border: none; cursor: pointer;">&times;</button>
+        <button class="btn-close-modal" onclick="closePriceReportModal()" aria-label="Fechar Modal"
+          style="color: white; font-size: 1.5rem; background: transparent; border: none; cursor: pointer;">&times;</button>
       </div>
 
       <div class="modal-body" id="priceReportModalBody" style="padding: 20px;">
@@ -476,9 +403,30 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="js/data.js"></script>
-  <script src="js/cart.js"></script>
-  <script src="js/app.js"></script>
+  <!-- Scripts com Cache-Busting de Outubro/2026 -->
+  <script>
+    // Auto-limpeza de Service Worker e Cache antigo (Setembro -> Outubro/2026)
+    (async function forceClearLegacySeptemberCache() {
+      try {
+        const MIGRATION_KEY = 'economiza_colina_oct2026_migrated_v3';
+        if (!localStorage.getItem(MIGRATION_KEY)) {
+          if ('caches' in window) {
+            const keys = await caches.keys();
+            await Promise.all(keys.map(k => caches.delete(k)));
+          }
+          if ('serviceWorker' in navigator) {
+            const regs = await navigator.serviceWorker.getRegistrations();
+            await Promise.all(regs.map(r => r.unregister()));
+          }
+          localStorage.setItem(MIGRATION_KEY, 'true');
+          window.location.reload(true);
+        }
+      } catch (e) { }
+    })();
+  </script>
+  <script src="js/data.js?v=20261028_v3"></script>
+  <script src="js/cart.js?v=20261028_v3"></script>
+  <script src="js/app.js?v=20261028_v3"></script>
 </body>
+
 </html>
