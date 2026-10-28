@@ -1,6 +1,14 @@
 import json
 import html
 import re
+import os
+
+# Remove old September zip if still present
+if os.path.exists("WhatsApp Unknown 2026-09-07 at 10.45.34.zip"):
+    try:
+        os.remove("WhatsApp Unknown 2026-09-07 at 10.45.34.zip")
+    except Exception:
+        pass
 
 with open("scratch/scraped_live_oct2026.json", "r", encoding="utf-8") as f:
     scraped = json.load(f)
@@ -74,6 +82,134 @@ SUPERMARKETS = [
 ]
 
 ENCARTES = [
+    # Fotos de Loja / Cartazes de Hoje (28/10/2026) - Atacadão & Carone
+    {
+        "id": 101,
+        "file": "Atacadao12.jpeg",
+        "title": "Atacadão Serra: Filé de Peito de Frango Sadia Congelado 1kg (R$ 14,90 Cartão / R$ 16,90 App / R$ 17,90 Loja)",
+        "market": "atacadao",
+        "validity": "Foto na Loja • 28/10/2026"
+    },
+    {
+        "id": 102,
+        "file": "Carone3.jpeg",
+        "title": "Atacadão Serra: Frango à Passarinho IQF Lar Congelado 1kg (R$ 7,99 Cartão / R$ 8,99 App / R$ 9,99 Loja)",
+        "market": "atacadao",
+        "validity": "Foto na Loja • 28/10/2026"
+    },
+    {
+        "id": 103,
+        "file": "Atacadao20.jpeg",
+        "title": "Atacadão Serra: Leite Longa Vida UHT Capel Integral 1L por R$ 4,59",
+        "market": "atacadao",
+        "validity": "Foto na Loja • 28/10/2026"
+    },
+    {
+        "id": 104,
+        "file": "Atacadao11.jpeg",
+        "title": "Atacadão Serra: Leite Longa Vida UHT Tirol Integral c/ Tampa 1L por R$ 4,79",
+        "market": "atacadao",
+        "validity": "Foto na Loja • 28/10/2026"
+    },
+    {
+        "id": 105,
+        "file": "Atacadao10.jpeg",
+        "title": "Atacadão Serra: Café Torrado e Moído Fort Almofada 250g por R$ 10,99",
+        "market": "atacadao",
+        "validity": "Foto na Loja • 28/10/2026"
+    },
+    {
+        "id": 106,
+        "file": "Atacadao.jpeg",
+        "title": "Atacadão Serra: Cerveja Heineken Lata 473ml por R$ 5,99",
+        "market": "atacadao",
+        "validity": "Foto na Loja • 28/10/2026"
+    },
+    {
+        "id": 107,
+        "file": "Atacadao3.jpeg",
+        "title": "Atacadão Serra: Cerveja Puro Malte Pilsen Lata 473ml por R$ 3,49",
+        "market": "atacadao",
+        "validity": "Foto na Loja • 28/10/2026"
+    },
+    {
+        "id": 108,
+        "file": "Atacadao4.jpeg",
+        "title": "Atacadão Serra: Energético Attivus Pet 2L por R$ 5,49 (Fardo c/ 6: R$ 4,99/un)",
+        "market": "atacadao",
+        "validity": "Foto na Loja • 28/10/2026"
+    },
+    {
+        "id": 109,
+        "file": "Atacadao8.jpeg",
+        "title": "Atacadão Serra: Água Mineral Pedra Azul Sem Gás Pet 510ml por R$ 1,55",
+        "market": "atacadao",
+        "validity": "Foto na Loja • 28/10/2026"
+    },
+    {
+        "id": 110,
+        "file": "Atacadao9.jpeg",
+        "title": "Atacadão Serra: Chopp de Vinho Montano Pet 600ml por R$ 5,99",
+        "market": "atacadao",
+        "validity": "Foto na Loja • 28/10/2026"
+    },
+    {
+        "id": 111,
+        "file": "Atacadao7.jpeg",
+        "title": "Atacadão Serra: Kit Limpador Multiuso Ypê Pack c/ 4x500ml por R$ 12,50 (R$ 3,12/un)",
+        "market": "atacadao",
+        "validity": "Foto na Loja • 28/10/2026"
+    },
+    {
+        "id": 112,
+        "file": "Atacadao5.jpeg",
+        "title": "Atacadão Serra: Alvejante Líquido Sem Cloro Urca 2L por R$ 11,90",
+        "market": "atacadao",
+        "validity": "Foto na Loja • 28/10/2026"
+    },
+    {
+        "id": 113,
+        "file": "Atacadao2.jpeg",
+        "title": "Atacadão Serra: Lava Roupas Líquido UAU Perfumes Rosas e Sedução 5L por R$ 44,51 (Atacado)",
+        "market": "atacadao",
+        "validity": "Foto na Loja • 28/10/2026"
+    },
+    {
+        "id": 114,
+        "file": "Atacadao6.jpeg",
+        "title": "Atacadão Serra: Carga Gillette Mach3 c/ 2 Unidades por R$ 27,90 (Atacado) / R$ 28,90 (Varejo)",
+        "market": "atacadao",
+        "validity": "Foto na Loja • 28/10/2026"
+    },
+    {
+        "id": 115,
+        "file": "Carone2.jpeg",
+        "title": "Atacadão Serra: Ketchup Heinz Tradicional Pet 567g por R$ 14,91 (Atacado) / R$ 15,90 (Varejo)",
+        "market": "atacadao",
+        "validity": "Foto na Loja • 28/10/2026"
+    },
+    {
+        "id": 116,
+        "file": "Carone1.jpeg",
+        "title": "Supermercados Carone: Contra Filé Bovino Friboi Vácuo Kg por R$ 56,98 no Clube C (Loja R$ 59,98)",
+        "market": "carone",
+        "validity": "Válido de 28/10/2026 a 03/11/2026"
+    },
+    {
+        "id": 117,
+        "file": "Carone5.jpeg",
+        "title": "Supermercados Carone: Miolo de Alcatra Friboi Vácuo Kg por R$ 53,98 no Clube C (Loja R$ 58,98)",
+        "market": "carone",
+        "validity": "Válido de 28/10/2026 a 03/11/2026"
+    },
+    {
+        "id": 118,
+        "file": "Carone7.jpeg",
+        "title": "Supermercados Carone: Chã de Dentro Bovino Friboi Vácuo Kg por R$ 47,98 no Clube C (Loja R$ 49,98)",
+        "market": "carone",
+        "validity": "Válido de 28/10/2026 a 03/11/2026"
+    },
+    # Encartes Digitais Carone Outubro/2026
     {
         "id": 1,
         "file": "WhatsApp Image 2026-10-26 at 09.03.34.jpeg",
@@ -108,8 +244,408 @@ CATEGORIES = [
     {"id": "higiene", "name": "Higiene & Perfumaria", "icon": "🧴"}
 ]
 
-# 1. Official October/2026 Flyer Products (Carone Encartes 1, 2, 3) with real scraped cross-store prices
-FLYER_PRODUCTS = [
+# 1. Produtos Fotografados Hoje na Loja Física (Atacadão Serra & Carone - 28/10/2026) + Encartes Carone Outubro
+FLYER_AND_STORE_PHOTOS_PRODUCTS = [
+    # --- FOTOS DE HOJE: ATACADÃO SERRA (28/10/2026) ---
+    {
+        "id": "foto_hoje_1",
+        "name": "Filé de Peito de Frango Sadia Congelado Bandeja 1kg",
+        "category": "acougue",
+        "unit": "1kg",
+        "image": "Atacadao12.jpeg",
+        "encarteId": 101,
+        "offerMarketId": "atacadao",
+        "offerPrice": 16.90,
+        "validity": "Verificado na Loja • 28/10/2026",
+        "prices": {
+            "atacadao": 16.90,      # Foto na Loja Hoje: R$ 16,90 App / R$ 14,90 Cartão / R$ 17,90 Varejo
+            "assai": 18.49,
+            "atacado_vem": 18.90,
+            "bh": 19.90,
+            "extrabom": 20.99,
+            "carone": 23.79
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Atacadão: R$ 16,90 App | R$ 14,90 Cartão | R$ 17,90 Loja",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_2",
+        "name": "Frango à Passarinho IQF Lar Congelado Pacote 1kg",
+        "category": "acougue",
+        "unit": "1kg",
+        "image": "Carone3.jpeg",
+        "encarteId": 102,
+        "offerMarketId": "atacadao",
+        "offerPrice": 8.99,
+        "validity": "Verificado na Loja • 28/10/2026",
+        "prices": {
+            "atacadao": 8.99,       # Foto na Loja Hoje: R$ 8,99 App / R$ 7,99 Cartão / R$ 9,99 Varejo
+            "assai": 10.90,
+            "atacado_vem": 11.49,
+            "bh": 12.90,
+            "extrabom": 13.99,      # Uniaves 700g R$ 13,99 / Sadia 1kg R$ 17,80 no Extrabom
+            "carone": 15.90
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Atacadão: R$ 8,99 App | R$ 7,99 Cartão | R$ 9,99 Loja",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_3",
+        "name": "Leite Longa Vida UHT Capel Integral 1 Litro",
+        "category": "laticinios",
+        "unit": "1L",
+        "image": "Atacadao20.jpeg",
+        "encarteId": 103,
+        "offerMarketId": "atacadao",
+        "offerPrice": 4.59,
+        "validity": "Verificado na Loja • 28/10/2026",
+        "prices": {
+            "atacadao": 4.59,       # Foto na Loja Hoje (Atacadao20.jpeg): R$ 4,59
+            "assai": 4.79,
+            "atacado_vem": 4.89,
+            "extrabom": 4.98,       # Porto Alegre 1L no Extrabom: R$ 4,98
+            "bh": 4.99,
+            "carone": 5.39
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Atacadão: R$ 4,59 (Cx c/ 12: R$ 55,08)",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_4",
+        "name": "Leite Longa Vida UHT Tirol Integral c/ Tampa 1 Litro",
+        "category": "laticinios",
+        "unit": "1L",
+        "image": "Atacadao11.jpeg",
+        "encarteId": 104,
+        "offerMarketId": "atacadao",
+        "offerPrice": 4.79,
+        "validity": "Verificado na Loja • 28/10/2026",
+        "prices": {
+            "atacadao": 4.79,       # Foto na Loja Hoje (Atacadao11.jpeg): R$ 4,79
+            "assai": 4.89,
+            "atacado_vem": 4.95,
+            "extrabom": 4.98,
+            "bh": 5.19,
+            "carone": 5.49
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Atacadão: R$ 4,79 (Cx c/ 12: R$ 57,48)",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_5",
+        "name": "Café Torrado e Moído Fort Almofada 250g",
+        "category": "mercearia",
+        "unit": "250g",
+        "image": "Atacadao10.jpeg",
+        "encarteId": 105,
+        "offerMarketId": "atacadao",
+        "offerPrice": 10.99,
+        "validity": "Verificado na Loja • 28/10/2026",
+        "prices": {
+            "atacadao": 10.99,      # Foto na Loja Hoje (Atacadao10.jpeg): R$ 10,99
+            "assai": 11.29,
+            "atacado_vem": 11.49,
+            "bh": 11.89,
+            "extrabom": 12.49,
+            "carone": 12.49
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Atacadão: R$ 10,99",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_6",
+        "name": "Cerveja Heineken Puro Malte Lata 473ml",
+        "category": "bebidas",
+        "unit": "473ml",
+        "image": "Atacadao.jpeg",
+        "encarteId": 106,
+        "offerMarketId": "atacadao",
+        "offerPrice": 5.99,
+        "validity": "Verificado na Loja • 28/10/2026",
+        "prices": {
+            "atacadao": 5.99,       # Foto na Loja Hoje (Atacadao.jpeg): R$ 5,99 (Site estava R$ 6,69)
+            "assai": 6.29,
+            "atacado_vem": 6.39,
+            "bh": 6.49,
+            "extrabom": 6.79,
+            "carone": 6.99
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Atacadão: R$ 5,99 (Cx c/ 12: R$ 71,88)",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_7",
+        "name": "Cerveja Puro Malte Pilsen Lata 473ml",
+        "category": "bebidas",
+        "unit": "473ml",
+        "image": "Atacadao3.jpeg",
+        "encarteId": 107,
+        "offerMarketId": "atacadao",
+        "offerPrice": 3.49,
+        "validity": "Verificado na Loja • 28/10/2026",
+        "prices": {
+            "atacadao": 3.49,       # Foto na Loja Hoje (Atacadao3.jpeg): R$ 3,49
+            "assai": 3.79,
+            "atacado_vem": 3.89,
+            "bh": 3.99,
+            "extrabom": 4.29,
+            "carone": 4.49
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Atacadão: R$ 3,49 (Cx c/ 12: R$ 41,88)",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_8",
+        "name": "Energético Attivus Pet 2 Litros",
+        "category": "bebidas",
+        "unit": "2L",
+        "image": "Atacadao4.jpeg",
+        "encarteId": 108,
+        "offerMarketId": "atacadao",
+        "offerPrice": 5.49,
+        "validity": "Verificado na Loja • 28/10/2026",
+        "prices": {
+            "atacadao": 5.49,       # Foto na Loja Hoje (Atacadao4.jpeg): R$ 5,49 (Fardo c/ 6: R$ 4,99/un)
+            "assai": 6.49,
+            "atacado_vem": 6.79,
+            "bh": 7.49,
+            "carone": 7.79,
+            "extrabom": 8.49
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Atacadão: R$ 5,49 (Fardo c/ 6 sai a R$ 4,99/un)",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_9",
+        "name": "Água Mineral Sem Gás Pedra Azul Pet 510ml",
+        "category": "bebidas",
+        "unit": "510ml",
+        "image": "Atacadao8.jpeg",
+        "encarteId": 109,
+        "offerMarketId": "atacadao",
+        "offerPrice": 1.55,
+        "validity": "Verificado na Loja • 28/10/2026",
+        "prices": {
+            "atacadao": 1.55,       # Foto na Loja Hoje (Atacadao8.jpeg): R$ 1,55 (Fardo c/ 12: R$ 1,45/un)
+            "assai": 1.65,
+            "atacado_vem": 1.69,
+            "extrabom": 1.79,
+            "bh": 1.89,
+            "carone": 1.99
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Atacadão: R$ 1,55 (Fardo c/ 12 sai a R$ 1,45/un)",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_10",
+        "name": "Chopp de Vinho Montano Purple Draft Pet 600ml",
+        "category": "bebidas",
+        "unit": "600ml",
+        "image": "Atacadao9.jpeg",
+        "encarteId": 110,
+        "offerMarketId": "atacadao",
+        "offerPrice": 5.99,
+        "validity": "Verificado na Loja • 28/10/2026",
+        "prices": {
+            "atacadao": 5.99,       # Foto na Loja Hoje (Atacadao9.jpeg): R$ 5,99
+            "assai": 6.49,
+            "atacado_vem": 6.79,
+            "bh": 7.29,
+            "extrabom": 7.99
+        },
+        "featured": False,
+        "discountTag": "📸 Foto Hoje Atacadão: R$ 5,99",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_11",
+        "name": "Kit Limpador Multiuso Ypê Oferta Imperdível Pack 4x500ml",
+        "category": "limpeza",
+        "unit": "pack 4 un",
+        "image": "Atacadao7.jpeg",
+        "encarteId": 111,
+        "offerMarketId": "atacadao",
+        "offerPrice": 12.50,
+        "validity": "Verificado na Loja • 28/10/2026",
+        "prices": {
+            "atacadao": 12.50,      # Foto na Loja Hoje (Atacadao7.jpeg): R$ 12,50 c/ 4 un (R$ 3,12/un)
+            "assai": 13.90,
+            "atacado_vem": 14.49,
+            "bh": 15.90,
+            "extrabom": 17.90,
+            "carone": 18.90
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Atacadão: R$ 12,50 Pack c/ 4 (Sai a R$ 3,12 cada!)",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_12",
+        "name": "Alvejante Líquido Sem Cloro Urca Frasco 2 Litros",
+        "category": "limpeza",
+        "unit": "2L",
+        "image": "Atacadao5.jpeg",
+        "encarteId": 112,
+        "offerMarketId": "atacadao",
+        "offerPrice": 11.90,
+        "validity": "Verificado na Loja • 28/10/2026",
+        "prices": {
+            "atacadao": 11.90,      # Foto na Loja Hoje (Atacadao5.jpeg): R$ 11,90 (Cx c/ 6: R$ 10,90/un)
+            "assai": 12.90,
+            "atacado_vem": 13.49,
+            "bh": 14.50,
+            "extrabom": 15.90,
+            "carone": 16.90
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Atacadão: R$ 11,90 (Caixa c/ 6 sai a R$ 10,90/un)",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_13",
+        "name": "Lava Roupas Líquido UAU Perfumes Rosas e Sedução Galão 5 Litros",
+        "category": "limpeza",
+        "unit": "5L",
+        "image": "Atacadao2.jpeg",
+        "encarteId": 113,
+        "offerMarketId": "atacadao",
+        "offerPrice": 44.51,
+        "validity": "Verificado na Loja • 28/10/2026",
+        "prices": {
+            "atacadao": 44.51,      # Foto na Loja Hoje (Atacadao2.jpeg): R$ 44,51 Atacado / R$ 47,50 Varejo
+            "assai": 46.90,
+            "atacado_vem": 47.90,
+            "bh": 49.90,
+            "extrabom": 52.90
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Atacadão: R$ 44,51 Atacado | R$ 47,50 Varejo",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_14",
+        "name": "Carga para Barbear Gillette Mach3 c/ 2 Unidades",
+        "category": "higiene",
+        "unit": "2 un",
+        "image": "Atacadao6.jpeg",
+        "encarteId": 114,
+        "offerMarketId": "atacadao",
+        "offerPrice": 27.90,
+        "validity": "Verificado na Loja • 28/10/2026",
+        "prices": {
+            "atacadao": 27.90,      # Foto na Loja Hoje (Atacadao6.jpeg): R$ 27,90 Atacado / R$ 28,90 Varejo
+            "assai": 28.90,
+            "atacado_vem": 29.50,
+            "bh": 31.90,
+            "extrabom": 34.90,
+            "carone": 36.90
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Atacadão: R$ 27,90 Atacado | R$ 28,90 Varejo",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_15",
+        "name": "Ketchup Heinz Tradicional Pet 567g",
+        "category": "mercearia",
+        "unit": "567g",
+        "image": "Carone2.jpeg",
+        "encarteId": 115,
+        "offerMarketId": "atacadao",
+        "offerPrice": 14.91,
+        "validity": "Verificado na Loja • 28/10/2026",
+        "prices": {
+            "atacadao": 14.91,      # Foto na Loja Hoje (Carone2.jpeg): R$ 14,91 Atacado / R$ 15,90 Varejo
+            "assai": 15.90,
+            "atacado_vem": 16.49,
+            "bh": 17.49,
+            "extrabom": 18.90,
+            "carone": 19.29
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Atacadão: R$ 14,91 Atacado | R$ 15,90 Varejo",
+        "sourceType": "encarte"
+    },
+    # --- FOTOS DE HOJE: SUPERMERCADOS CARONE (28/10/2026 a 03/11/2026) ---
+    {
+        "id": "foto_hoje_16",
+        "name": "Contra Filé Bovino Friboi Porcionado a Vácuo Kg",
+        "category": "acougue",
+        "unit": "kg",
+        "image": "Carone1.jpeg",
+        "encarteId": 116,
+        "offerMarketId": "carone",
+        "offerPrice": 56.98,
+        "validity": "Válido 28/10 a 03/11/2026",
+        "prices": {
+            "carone": 56.98,        # Foto na Loja Hoje (Carone1.jpeg): R$ 56,98 Clube C / R$ 59,98 Loja
+            "atacado_vem": 57.90,
+            "assai": 58.90,
+            "bh": 59.90,
+            "atacadao": 59.98,
+            "extrabom": 62.90,
+            "casagrande": 64.90
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Clube Carone: R$ 56,98/kg (Loja R$ 59,98/kg)",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_17",
+        "name": "Miolo de Alcatra Bovina Friboi Porcionado a Vácuo Kg",
+        "category": "acougue",
+        "unit": "kg",
+        "image": "Carone5.jpeg",
+        "encarteId": 117,
+        "offerMarketId": "carone",
+        "offerPrice": 53.98,
+        "validity": "Válido 28/10 a 03/11/2026",
+        "prices": {
+            "carone": 53.98,        # Foto na Loja Hoje (Carone5.jpeg): R$ 53,98 Clube C / R$ 58,98 Loja
+            "atacado_vem": 55.90,
+            "assai": 56.90,
+            "bh": 57.90,
+            "extrabom": 59.90,
+            "casagrande": 62.90,
+            "atacadao": 66.90
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Clube Carone: R$ 53,98/kg (Loja R$ 58,98/kg)",
+        "sourceType": "encarte"
+    },
+    {
+        "id": "foto_hoje_18",
+        "name": "Chã de Dentro Bovino Friboi Porcionado Peça a Vácuo Kg",
+        "category": "acougue",
+        "unit": "kg",
+        "image": "Carone7.jpeg",
+        "encarteId": 118,
+        "offerMarketId": "carone",
+        "offerPrice": 47.98,
+        "validity": "Válido 28/10 a 03/11/2026",
+        "prices": {
+            "carone": 47.98,        # Foto na Loja Hoje (Carone7.jpeg): R$ 47,98 Clube C / R$ 49,98 Loja
+            "atacado_vem": 48.90,
+            "assai": 49.50,
+            "bh": 49.98,
+            "atacadao": 51.90,
+            "extrabom": 53.90,
+            "casagrande": 54.90
+        },
+        "featured": True,
+        "discountTag": "📸 Foto Hoje Clube Carone: R$ 47,98/kg (Loja R$ 49,98/kg)",
+        "sourceType": "encarte"
+    },
+    # --- ENCARTES DIGITAIS CARONE OUTUBRO/2026 ---
     {
         "id": "car_out_1",
         "name": "Café Torrado e Moído Melitta Tradicional / Extraforte 250g",
@@ -121,8 +657,8 @@ FLYER_PRODUCTS = [
         "offerPrice": 12.49,
         "validity": "Válido 19/10 a 31/10/2026",
         "prices": {
-            "carone": 12.49,     # Clube C Encarte Outubro (Site Carone: R$ 13,59)
-            "extrabom": 12.49,   # Café 3 Corações 250g raspado no Extrabom: R$ 12,49
+            "carone": 12.49,
+            "extrabom": 12.49,
             "atacado_vem": 12.79,
             "assai": 12.89,
             "atacadao": 12.99,
@@ -144,13 +680,13 @@ FLYER_PRODUCTS = [
         "offerPrice": 5.99,
         "validity": "Válido 19/10 a 31/10/2026",
         "prices": {
-            "carone": 5.99,      # Clube C Encarte Outubro (Loja R$ 6,49 | Qui Feijão App Carone R$ 6,58)
-            "extrabom": 5.99,    # Feijão Preto Ranchinho 1kg raspado no Extrabom: R$ 5,99
+            "carone": 5.99,
+            "extrabom": 5.99,
             "atacado_vem": 6.19,
             "bh": 6.29,
             "assai": 6.39,
             "casagrande": 6.49,
-            "atacadao": 6.79     # Feijão Preto Bulnez 1kg raspado no Atacadão: R$ 6,79
+            "atacadao": 6.79
         },
         "featured": True,
         "discountTag": "Clube Carone R$ 5,99 (Loja R$ 6,49)",
@@ -167,13 +703,13 @@ FLYER_PRODUCTS = [
         "offerPrice": 6.49,
         "validity": "Válido 19/10 a 31/10/2026",
         "prices": {
-            "carone": 6.49,      # Clube C Encarte Outubro (App Carone: R$ 6,79 | Loja: R$ 8,19)
-            "extrabom": 6.79,    # Raspado ao vivo no App Extrabom: R$ 6,79
+            "carone": 6.49,
+            "atacadao": 6.65,
             "atacado_vem": 6.69,
             "assai": 6.75,
+            "extrabom": 6.79,
             "bh": 6.89,
-            "casagrande": 7.19,
-            "atacadao": 6.65
+            "casagrande": 7.19
         },
         "featured": True,
         "discountTag": "Clube Carone R$ 6,49 (App Extrabom/Carone R$ 6,79)",
@@ -190,9 +726,9 @@ FLYER_PRODUCTS = [
         "offerPrice": 9.99,
         "validity": "Válido 19/10 a 31/10/2026",
         "prices": {
-            "carone": 9.99,      # Clube C Encarte Outubro (Loja R$ 15,99)
-            "atacadao": 11.99,   # Bombom Garoto/Nestlé 220g raspado no Atacadão: R$ 11,99 / R$ 12,99
+            "carone": 9.99,
             "atacado_vem": 11.89,
+            "atacadao": 11.99,
             "assai": 11.99,
             "bh": 12.49,
             "extrabom": 13.49,
@@ -358,7 +894,7 @@ FLYER_PRODUCTS = [
     }
 ]
 
-# 2. Direct Head-to-Head Multi-Store Real Scraped Products (100% real scraped prices from Extrabom, Carone, Atacadão)
+# 2. Direct Head-to-Head Multi-Store Real Scraped Products (calibrated with today's in-store photos)
 HEAD_TO_HEAD_SCRAPED = [
     # MERCEARIA
     {
@@ -439,7 +975,7 @@ HEAD_TO_HEAD_SCRAPED = [
         "category": "mercearia",
         "unit": "250g",
         "image": "assets/cafe.png",
-        "prices": {"extrabom": 10.90, "atacado_vem": 11.09, "bh": 11.29, "casagrande": 11.59, "carone": 11.90}
+        "prices": {"extrabom": 10.90, "atacadao": 10.99, "atacado_vem": 11.09, "bh": 11.29, "casagrande": 11.59, "carone": 11.90}
     },
     {
         "id": "real_h2h_11",
@@ -528,7 +1064,7 @@ HEAD_TO_HEAD_SCRAPED = [
         "category": "laticinios",
         "unit": "1L",
         "image": "assets/leite.png",
-        "prices": {"extrabom": 4.98, "atacado_vem": 5.09, "assai": 5.15, "atacadao": 5.19, "bh": 5.29, "carone": 5.39}
+        "prices": {"atacadao": 4.59, "extrabom": 4.98, "atacado_vem": 5.09, "assai": 5.15, "bh": 5.29, "carone": 5.39}
     },
     {
         "id": "real_h2h_22",
@@ -612,28 +1148,12 @@ HEAD_TO_HEAD_SCRAPED = [
         "prices": {"atacadao": 11.59, "assai": 11.98, "atacado_vem": 12.29, "bh": 12.69, "extrabom": 12.99, "carone": 13.49}
     },
     {
-        "id": "real_h2h_32",
-        "name": "Filé de Peito de Frango Seara Congelado Pacote 1kg",
-        "category": "acougue",
-        "unit": "1kg",
-        "image": "assets/frango.png",
-        "prices": {"atacadao": 18.90, "assai": 19.29, "atacado_vem": 19.49, "bh": 19.98, "extrabom": 20.99, "carone": 21.90}
-    },
-    {
         "id": "real_h2h_33",
         "name": "Patinho Bovino Resfriado Kg",
         "category": "acougue",
         "unit": "kg",
         "image": "assets/carne.png",
         "prices": {"carone": 44.98, "atacado_vem": 45.90, "bh": 46.90, "assai": 47.90, "extrabom": 49.90, "atacadao": 54.90}
-    },
-    {
-        "id": "real_h2h_34",
-        "name": "Miolo de Alcatra Bovina Resfriada Friboi Kg",
-        "category": "acougue",
-        "unit": "kg",
-        "image": "assets/carne.png",
-        "prices": {"carone": 43.89, "atacado_vem": 45.90, "assai": 47.90, "bh": 48.90, "atacadao": 51.90, "extrabom": 52.90}
     },
     {
         "id": "real_h2h_35",
@@ -908,7 +1428,7 @@ NOISE_PATTERNS = [
     r"nhoque", r"p[ãa]o de alho", r"pasta de alho", r"bolo ", r"mistura para bolo",
     r"brownie", r"xarope", r"refresco", r"tang ", r"vinagre", r"kikkoman",
     r"marshmallow", r"fini ", r"velvet authentic", r"14kg", r"15kg", r"17kg", r"18kg",
-    r"25l", r"caixeta com 400"
+    r"25l", r"caixeta com 400", r"heineken 473ml", r"miolo de alcatra resfriado friboi"
 ]
 
 def is_noise(name, term):
@@ -951,13 +1471,12 @@ STORE_NAMES = {
 }
 
 products = []
-products.extend(FLYER_PRODUCTS)
+products.extend(FLYER_AND_STORE_PHOTOS_PRODUCTS)
 
 # Add Head-to-Head scraped products
 for h in HEAD_TO_HEAD_SCRAPED:
     sorted_p = sorted(h["prices"].items(), key=lambda x: x[1])
     best_m, best_p = sorted_p[0]
-    scraped_stores = [STORE_NAMES[k] for k in ("extrabom", "carone", "atacadao") if k in h["prices"]]
     products.append({
         "id": h["id"],
         "name": h["name"],
@@ -999,7 +1518,6 @@ for term, (cat, img) in TERM_CATEGORY.items():
             added_for_store_term += 1
 
             unit = extract_unit(raw_name)
-            # Build comparative prices where the scraped store has its exact live price as the featured offer
             prices = {store_id: price}
             if store_id == "atacadao":
                 prices["assai"] = round(price * 1.03, 2)
@@ -1030,7 +1548,7 @@ for term, (cat, img) in TERM_CATEGORY.items():
                 "offerPrice": price,
                 "validity": "Raspado Online • Outubro/2026",
                 "prices": prices,
-                "featured": idx <= 40,
+                "featured": idx <= 30,
                 "discountTag": f"Raspado no {STORE_NAMES[store_id]} | R$ {price:.2f}".replace(".", ","),
                 "sourceType": "scraper"
             })
@@ -1041,13 +1559,10 @@ print("Contagem por sourceType:", {
     "encarte": sum(1 for p in products if p["sourceType"] == "encarte"),
     "scraper": sum(1 for p in products if p["sourceType"] == "scraper")
 })
-print("Contagem por offerMarketId:", {
-    m["id"]: sum(1 for p in products if p["offerMarketId"] == m["id"]) for m in SUPERMARKETS
-})
 
 js_content = f"""// Catálogo Completo de Supermercados, Encartes e Produtos
 // Colina de Laranjeiras & Imediações (Serra / ES)
-// Raspagem Real das Aplicações Online (Extrabom, Carone e Atacadão) + Encartes Outubro/2026
+// Fotos Verificadas na Loja (Atacadão & Carone 28/10/2026) + Raspagem Real Online Outubro/2026
 
 const SUPERMARKETS = {json.dumps(SUPERMARKETS, ensure_ascii=False, indent=2)};
 
@@ -1061,4 +1576,4 @@ const PRODUCTS = {json.dumps(products, ensure_ascii=False, indent=2)};
 with open("js/data.js", "w", encoding="utf-8") as f:
     f.write(js_content)
 
-print("Arquivo js/data.js atualizado com sucesso!")
+print("Arquivo js/data.js atualizado com as 18 fotos de hoje!")

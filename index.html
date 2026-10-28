@@ -35,7 +35,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20261028_v4">
+  <link rel="stylesheet" href="css/styles.css?v=20261028_v5">
 </head>
 
 <body>
@@ -54,8 +54,8 @@
 
         <div class="nav-actions" style="gap: 8px;">
           <button class="btn-header btn-encartes" onclick="openTipModal()" id="btnOpenTipModal"
-            style="padding: 7px 12px; font-size: 0.82rem;">
-            📸 <span class="btn-text">Publicar Preço</span>
+            style="padding: 7px 14px; font-size: 0.84rem; background: #10b981; color: white; border-color: #059669; font-weight: 800;">
+            ➕ <span class="btn-text">Adicionar Produto</span>
           </button>
           <button class="btn-header btn-encartes"
             onclick="document.getElementById('encartesSection').scrollIntoView({behavior: 'smooth'})"
@@ -118,19 +118,23 @@
           <span class="section-count" id="productCount">Carregando ofertas...</span>
         </div>
 
-        <!-- Subtle Source Filter Pills -->
-        <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;" id="sourceFiltersContainer">
+        <!-- Subtle Source Filter Pills + Botão Adicionar Produto -->
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;" id="sourceFiltersContainer">
+          <button onclick="openTipModal()"
+            style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; border: none; padding: 6px 14px; border-radius: 14px; font-size: 0.78rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; gap: 4px; box-shadow: 0 2px 8px rgba(16, 185, 129, 0.25);">
+            ➕ Adicionar Produto
+          </button>
           <button class="source-filter-btn active" id="source-filter-all" onclick="filterBySource('all')"
             style="background: #0f172a; color: white; border: 1px solid #0f172a; padding: 4px 10px; border-radius: 14px; font-size: 0.74rem; font-weight: 700; cursor: pointer;">
-            Todas (219)
+            Todas (543)
           </button>
           <button class="source-filter-btn" id="source-filter-encarte" onclick="filterBySource('encarte')"
             style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 14px; font-size: 0.74rem; font-weight: 700; cursor: pointer;">
-            📄 Encartes (11)
+            📸 Fotos Loja & Encartes (29)
           </button>
           <button class="source-filter-btn" id="source-filter-scraper" onclick="filterBySource('scraper')"
             style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 14px; font-size: 0.74rem; font-weight: 700; cursor: pointer;">
-            🌐 Pesquisa Online (208)
+            🌐 Pesquisa Online (514)
           </button>
         </div>
       </div>
@@ -285,14 +289,14 @@
     </div>
   </div>
 
-  <!-- MODAL: Publicar Dica da Comunidade -->
+  <!-- MODAL: Adicionar Produto / Oferta na Listagem -->
   <div class="modal-overlay" id="tipModal" role="dialog" aria-labelledby="tipModalTitle">
     <div class="modal-container" style="max-width: 480px;">
-      <div class="modal-header">
-        <div class="modal-title" id="tipModalTitle">
-          📸 Reportar Oferta / Dica de Vizinho
+      <div class="modal-header" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white;">
+        <div class="modal-title" id="tipModalTitle" style="color: #34d399; font-weight: 800;">
+          ➕ Adicionar Produto na Lista
         </div>
-        <button class="btn-close-modal" onclick="closeTipModal()" aria-label="Fechar Modal">&times;</button>
+        <button class="btn-close-modal" onclick="closeTipModal()" aria-label="Fechar Modal" style="color: white;">&times;</button>
       </div>
 
       <div class="modal-body">
@@ -301,38 +305,68 @@
           <input type="hidden" name="form-name" value="ofertas-comunidade">
 
           <div style="margin-bottom: 14px;">
-            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Seu Nome
-              (Morador):</label>
-            <input type="text" id="tipAuthor" name="author" placeholder="Ex: Rodrigo S. - Colina"
-              style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;" required>
+            <label style="display: block; font-weight: 800; font-size: 0.88rem; color: #0f172a; margin-bottom: 4px;">
+              1. 🛒 Produto (Nome, Marca e Peso/Volume): *
+            </label>
+            <input type="text" id="tipText" name="text"
+              placeholder="Ex: Leite Integral Capel 1L, Cerveja Heineken 473ml..." required
+              style="width: 100%; padding: 11px 12px; border-radius: 8px; border: 1.5px solid #94a3b8; font-size: 0.95rem; font-weight: 700; color: #0f172a;">
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 10px; margin-bottom: 14px;">
+            <div>
+              <label style="display: block; font-weight: 800; font-size: 0.88rem; color: #0f172a; margin-bottom: 4px;">
+                2. 💰 Preço (R$): *
+              </label>
+              <input type="number" step="0.01" min="0.01" id="tipPrice" name="price" placeholder="Ex: 4.59" required
+                style="width: 100%; padding: 10px 12px; border-radius: 8px; border: 1.5px solid #059669; font-size: 1.05rem; font-weight: 800; color: #047857; background: #ecfdf5;">
+            </div>
+
+            <div>
+              <label style="display: block; font-weight: 800; font-size: 0.88rem; color: #0f172a; margin-bottom: 4px;">
+                3. 🏪 Supermercado: *
+              </label>
+              <select id="tipMarket" name="market"
+                style="width: 100%; padding: 11px 10px; border-radius: 8px; border: 1.5px solid #cbd5e1; font-weight: 700; font-size: 0.88rem; color: #0f172a;">
+                <option value="atacadao">Atacadão Serra (BR-101)</option>
+                <option value="carone">Carone (Colina de Laranjeiras)</option>
+                <option value="extrabom">Extrabom (Montserrat)</option>
+                <option value="bh">Supermercados BH (Laranjeiras)</option>
+                <option value="assai">Assaí Atacadista</option>
+                <option value="casagrande">Rede Casagrande (Barcelona)</option>
+                <option value="atacado_vem">Atacado Vem (Norte-Sul)</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 10px; margin-bottom: 14px;">
+            <div>
+              <label style="display: block; font-weight: 700; font-size: 0.8rem; color: #475569; margin-bottom: 4px;">
+                📂 Categoria:
+              </label>
+              <select id="tipCategory" name="category"
+                style="width: 100%; padding: 8px 10px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 0.84rem; font-weight: 600;">
+                <option value="auto">✨ Auto-detectar pelo nome</option>
+                <option value="mercearia">🌾 Mercearia & Matinais</option>
+                <option value="acougue">🥩 Açougue & Carnes</option>
+                <option value="laticinios">🧀 Laticínios & Frios</option>
+                <option value="hortifruti">🥦 Hortifrúti & Frutas</option>
+                <option value="bebidas">🥤 Bebidas & Cervejas</option>
+                <option value="limpeza">🧹 Limpeza & Casa</option>
+                <option value="higiene">🧴 Higiene & Perfumaria</option>
+              </select>
+            </div>
+            <div>
+              <label style="display: block; font-weight: 700; font-size: 0.8rem; color: #475569; margin-bottom: 4px;">
+                ⚖️ Unidade (Opcional):
+              </label>
+              <input type="text" id="tipUnit" name="unit" placeholder="Ex: 1kg, 1L, 473ml"
+                style="width: 100%; padding: 8px 10px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 0.84rem;">
+            </div>
           </div>
 
           <div style="margin-bottom: 14px;">
-            <label
-              style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Supermercado:</label>
-            <select id="tipMarket" name="market"
-              style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; font-weight: 700;">
-              <option value="carone">Supermercados Carone (Colina de Laranjeiras)</option>
-              <option value="extrabom">Extrabom (Shopping Montserrat)</option>
-              <option value="atacadao">Atacadão (Colina BR-101)</option>
-              <option value="casagrande">Rede Casagrande (Bairro Barcelona)</option>
-              <option value="bh">Supermercados BH (Laranjeiras)</option>
-              <option value="assai">Assaí Atacadista</option>
-              <option value="atacado_vem">Atacado Vem (Norte-Sul)</option>
-            </select>
-          </div>
-
-          <div style="margin-bottom: 14px;">
-            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">🏷️ Preço da Oferta
-              na Etiqueta (R$):</label>
-            <input type="number" step="0.01" min="0.01" id="tipPrice" name="price" placeholder="Ex: 24.79" required
-              style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #059669; font-size: 1rem; font-weight: 800; color: #047857; background: #ecfdf5;">
-            <div style="font-size: 0.72rem; color: #059669; margin-top: 3px; font-weight: 600;">* Obrigatório para gerar
-              o card na lista de ofertas comparadas do bairro</div>
-          </div>
-
-          <div style="margin-bottom: 14px;">
-            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 6px;">📸 Foto da Etiqueta
+            <label style="display: block; font-weight: 700; font-size: 0.8rem; color: #475569; margin-bottom: 6px;">📸 Foto da Etiqueta
               / Produto (Opcional):</label>
 
             <!-- Inputs de Arquivo Ocultos -->
@@ -344,11 +378,11 @@
             <!-- Botões de Escolha Dupla -->
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
               <button type="button" onclick="document.getElementById('tipPhotoFile').click()"
-                style="background: #f8fafc; border: 1.5px dashed #059669; color: #047857; padding: 10px 6px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
-                <span>📁 Escolher Arquivo</span>
+                style="background: #f8fafc; border: 1.5px dashed #059669; color: #047857; padding: 8px 6px; border-radius: 8px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                <span>📁 Escolher Foto</span>
               </button>
               <button type="button" onclick="document.getElementById('tipPhotoCamera').click()"
-                style="background: #ecfdf5; border: 1.5px solid #10b981; color: #065f46; padding: 10px 6px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                style="background: #ecfdf5; border: 1.5px solid #10b981; color: #065f46; padding: 8px 6px; border-radius: 8px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
                 <span>📸 Usar Câmera</span>
               </button>
             </div>
@@ -367,16 +401,15 @@
             </div>
           </div>
 
-          <div style="margin-bottom: 18px;">
-            <label style="display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px;">Qual a oferta /
-              produto que você viu?</label>
-            <textarea id="tipText" name="text" rows="2" placeholder="Ex: Azeite Extra Virgem 500ml" required
-              style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;"></textarea>
+          <div style="margin-bottom: 16px;">
+            <label style="display: block; font-weight: 700; font-size: 0.8rem; color: #475569; margin-bottom: 4px;">👤 Seu Nome (Opcional):</label>
+            <input type="text" id="tipAuthor" name="author" placeholder="Ex: Morador de Colina (Opcional)"
+              style="width: 100%; padding: 8px 10px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 0.85rem;">
           </div>
 
           <button type="submit"
-            style="width: 100%; background: linear-gradient(135deg, #10b981 0%, #047857 100%); color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;">
-            <span>📸 Publicar Oferta no Bairro</span>
+            style="width: 100%; background: linear-gradient(135deg, #10b981 0%, #047857 100%); color: white; border: none; padding: 13px; border-radius: 10px; font-weight: 800; font-size: 0.96rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);">
+            <span>➕ Inserir Produto na Listagem Agora</span>
           </button>
         </form>
       </div>
@@ -408,7 +441,7 @@
     // Auto-limpeza de Service Worker e Cache antigo (Setembro -> Outubro/2026)
     (async function forceClearLegacySeptemberCache() {
       try {
-        const MIGRATION_KEY = 'economiza_colina_oct2026_migrated_v4';
+        const MIGRATION_KEY = 'economiza_colina_oct2026_migrated_v5';
         if (!localStorage.getItem(MIGRATION_KEY)) {
           if ('caches' in window) {
             const keys = await caches.keys();
@@ -424,9 +457,9 @@
       } catch (e) { }
     })();
   </script>
-  <script src="js/data.js?v=20261028_v4"></script>
-  <script src="js/cart.js?v=20261028_v4"></script>
-  <script src="js/app.js?v=20261028_v4"></script>
+  <script src="js/data.js?v=20261028_v5"></script>
+  <script src="js/cart.js?v=20261028_v5"></script>
+  <script src="js/app.js?v=20261028_v5"></script>
 </body>
 
 </html>

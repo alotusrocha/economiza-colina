@@ -74,13 +74,16 @@ function renderSupermarketChips() {
 // Filtro por Fonte da Informação (Folheto Promo vs Scraper/API)
 function updateSourceFilterCounts() {
   const totalCount = PRODUCTS.length;
-  const encarteCount = PRODUCTS.filter(p => (p.sourceType || (p.encarteId ? 'encarte' : 'scraper')) === 'encarte').length;
+  const encarteCount = PRODUCTS.filter(p => {
+    const st = p.sourceType || (p.encarteId ? 'encarte' : 'scraper');
+    return st === 'encarte' || st === 'community';
+  }).length;
   const scraperCount = PRODUCTS.filter(p => (p.sourceType || (p.encarteId ? 'encarte' : 'scraper')) === 'scraper').length;
   const btnAll = document.getElementById('source-filter-all');
   const btnEncarte = document.getElementById('source-filter-encarte');
   const btnScraper = document.getElementById('source-filter-scraper');
   if (btnAll) btnAll.innerHTML = `Todas (${totalCount})`;
-  if (btnEncarte) btnEncarte.innerHTML = `📄 Encartes (${encarteCount})`;
+  if (btnEncarte) btnEncarte.innerHTML = `📸 Fotos Loja & Encartes (${encarteCount})`;
   if (btnScraper) btnScraper.innerHTML = `🌐 Pesquisa Online (${scraperCount})`;
 }
 
@@ -165,7 +168,8 @@ function renderProducts() {
   let filtered = PRODUCTS.filter(product => {
     const matchesCategory = currentCategory === 'all' || product.category === currentCategory;
     const matchesMarket = currentMarket === 'all' || product.prices[currentMarket] !== undefined;
-    const matchesSource = currentSource === 'all' || (product.sourceType || 'encarte') === currentSource;
+    const pSource = product.sourceType || (product.encarteId ? 'encarte' : 'scraper');
+    const matchesSource = currentSource === 'all' || pSource === currentSource || (currentSource === 'encarte' && pSource === 'community');
 
     let matchesSearch = true;
     if (queryTokens.length > 0) {
@@ -212,9 +216,15 @@ function renderProducts() {
 
     const iconConfig = getProductIconConfig(product);
     const sourceType = product.sourceType || (product.encarteId ? 'encarte' : 'scraper');
-    const sourceBadgeHTML = sourceType === 'encarte'
-      ? `<span class="tag-encarte" onclick="openEncarteModal(${product.encarteId || 1})" style="background: #fef3c7; color: #92400e; border: 1px solid #f59e0b; cursor: pointer;" title="Preço Oficial do Folheto Promocional">📄 Folheto Promo</span>`
-      : `<span class="tag-encarte" style="background: #e0f2fe; color: #0369a1; border: 1px solid #38bdf8;" title="Preço do Site Oficial / API Scraper">🌐 API / Site</span>`;
+    let sourceBadgeHTML = '';
+    if (sourceType === 'community') {
+      sourceBadgeHTML = `<span class="tag-encarte" style="background: #dcfce7; color: #166534; border: 1px solid #22c55e;" title="Produto adicionado por colaborador no mercado">👤 Colaboração</span>`;
+    } else if (sourceType === 'encarte') {
+      const isStorePhoto = product.encarteId && product.encarteId >= 100;
+      sourceBadgeHTML = `<span class="tag-encarte" onclick="openEncarteModal(${product.encarteId || 1})" style="background: #fef3c7; color: #92400e; border: 1px solid #f59e0b; cursor: pointer;" title="Clique para ver a foto real na loja ou encarte">${isStorePhoto ? '📸 Foto na Loja' : '📄 Folheto Promo'}</span>`;
+    } else {
+      sourceBadgeHTML = `<span class="tag-encarte" style="background: #e0f2fe; color: #0369a1; border: 1px solid #38bdf8;" title="Preço do Site Oficial / API Scraper">🌐 API / Site</span>`;
+    }
 
     const discountBadgeText = savingsPercent > 0 ? `🔥 -${savingsPercent}% Econ.` : `🏆 Oferta do Bairro`;
 
@@ -623,37 +633,34 @@ function submitCommunityTip(e) {
   const marketSelect = document.getElementById('tipMarket');
   const priceInput = document.getElementById('tipPrice');
   const textInput = document.getElementById('tipText');
+  const categorySelect = document.getElementById('tipCategory');
+  const unitInput = document.getElementById('tipUnit');
 
   const author = (authorInput && authorInput.value.trim()) || 'Morador de Colina';
-  const marketId = (marketSelect && marketSelect.value) || 'carone';
+  const marketId = (marketSelect && marketSelect.value) || 'atacadao';
   const marketObj = SUPERMARKETS.find(m => m.id === marketId) || SUPERMARKETS[0];
   const marketName = marketObj.name;
   const text = (textInput && textInput.value.trim()) || '';
-  const priceVal = priceInput ? parseFloat(priceInput.value) : 0;
+  const rawPriceStr = priceInput ? String(priceInput.value).replace(',', '.') : '0';
+  const priceVal = parseFloat(rawPriceStr);
+  const selectedCategory = (categorySelect && categorySelect.value) || 'auto';
+  const customUnit = (unitInput && unitInput.value.trim()) || '';
   const hasPhoto = !!currentTipPhotoDataUrl;
 
-  if (!text && !hasPhoto && (!priceVal || priceVal <= 0)) {
+  if (!text || isNaN(priceVal) || priceVal <= 0) {
     if (window.cart && window.cart.showToast) {
-      window.cart.showToast('⚠️ Por favor, informe o nome do produto ou envie uma foto!');
+      window.cart.showToast('⚠️ Informe o nome do produto e um preço válido!');
     }
     return;
   }
 
-  // Tentar extrair preço do campo de entrada OU do texto da oferta
-  let reportedPrice = priceVal;
-  if (!reportedPrice || isNaN(reportedPrice) || reportedPrice <= 0) {
-    let priceMatch = text.match(/R\$\s*(\d+[.,]\d{2})/i) || text.match(/(\d+[.,]\d{2})/);
-    if (priceMatch) {
-      reportedPrice = parseFloat(priceMatch[1].replace(',', '.'));
-    }
-  }
-
-  const priceText = reportedPrice > 0 ? ` - R$ ${reportedPrice.toFixed(2)}` : '';
+  const reportedPrice = Math.round(priceVal * 100) / 100;
+  const priceText = ` - R$ ${reportedPrice.toFixed(2)}`;
   const displayText = hasPhoto
-    ? `📸 [Foto Anexada] ${text ? text : 'Preço fotografado'}${priceText}`
+    ? `📸 [Foto Anexada] ${text}${priceText}`
     : `${text}${priceText}`;
 
-  // 1. Salvar dica real de comunidade na barra "Dica de Vizinho"
+  // 1. Salvar registro no mural "Dica de Vizinho"
   const newTip = {
     author: `${author} (${marketName.split(' ')[0]})`,
     market: marketName,
@@ -666,73 +673,92 @@ function submitCommunityTip(e) {
   realTips.unshift(newTip);
   localStorage.setItem('economiza_colina_real_tips', JSON.stringify(realTips));
 
-  // 2. Se houver um produto existente no catálogo, atualiza o preço no mercado correspondente!
-  let lowerText = text.toLowerCase();
-  let matchedProduct = PRODUCTS.find(p => {
-    return lowerText.length > 2 && lowerText.split(' ').some(word => word.length > 3 && p.name.toLowerCase().includes(word));
-  });
+  // 2. Verificar apenas se há um produto com EXATAMENTE o mesmo nome normalizado
+  const normInput = normalizeString(text);
+  const exactIndex = PRODUCTS.findIndex(p => normalizeString(p.name) === normInput);
 
-  if (matchedProduct && reportedPrice > 0) {
+  if (exactIndex !== -1) {
+    const matchedProduct = PRODUCTS[exactIndex];
     matchedProduct.prices[marketObj.id] = reportedPrice;
+    matchedProduct.offerMarketId = marketObj.id;
+    matchedProduct.offerPrice = reportedPrice;
+    matchedProduct.validity = 'Atualizado Hoje • Outubro/2026';
     matchedProduct.communityReported = { author, marketName: marketName, realPrice: reportedPrice, date: 'Hoje' };
     if (currentTipPhotoDataUrl) {
       matchedProduct.image = currentTipPhotoDataUrl;
     }
 
-    // Salvar no localStorage de preços comunitários customizados
+    // Move o produto atualizado para o topo da listagem para visualização imediata
+    PRODUCTS.splice(exactIndex, 1);
+    PRODUCTS.unshift(matchedProduct);
+
     const customPrices = JSON.parse(localStorage.getItem('economiza_colina_custom_prices')) || {};
     customPrices[matchedProduct.id] = { marketId: marketObj.id, realPrice: reportedPrice, marketName, image: currentTipPhotoDataUrl || null };
     localStorage.setItem('economiza_colina_custom_prices', JSON.stringify(customPrices));
 
     if (window.cart && window.cart.showToast) {
-      window.cart.showToast(`🎉 Preço do "${matchedProduct.name}" atualizado para R$ ${reportedPrice.toFixed(2)} no ${marketName}!`);
+      window.cart.showToast(`✅ Preço de "${matchedProduct.name}" atualizado para R$ ${reportedPrice.toFixed(2)} no ${marketName}!`);
     }
-  } else if ((text || hasPhoto) && reportedPrice > 0) {
-    // 3. Se for um produto NOVO que não existe no catálogo estático, CRIA O CARD DO PRODUTO DINAMICAMENTE!
+  } else {
+    // 3. Criar e exibir imediatamente o novo produto no topo da listagem!
     const newProductId = 'user_prod_' + Date.now();
+    const lowerText = text.toLowerCase();
 
-    // Auto-detectar categoria inteligente pelo nome do produto
-    let detectedCategory = 'mercearia';
-    if (lowerText.includes('carne') || lowerText.includes('frango') || lowerText.includes('boi') || lowerText.includes('linguiça') || lowerText.includes('bife') || lowerText.includes('peixe') || lowerText.includes('costela')) detectedCategory = 'carnes';
-    else if (lowerText.includes('tomate') || lowerText.includes('banana') || lowerText.includes('maçã') || lowerText.includes('batata') || lowerText.includes('cebola') || lowerText.includes('alface') || lowerText.includes('ovo')) detectedCategory = 'hortifruti';
-    else if (lowerText.includes('cerveja') || lowerText.includes('refrigerante') || lowerText.includes('suco') || lowerText.includes('vinho') || lowerText.includes('água') || lowerText.includes('chopp') || lowerText.includes('refri')) detectedCategory = 'bebidas';
-    else if (lowerText.includes('sabão') || lowerText.includes('detergente') || lowerText.includes('amaciante') || lowerText.includes('papel') || lowerText.includes('limpeza') || lowerText.includes('desinfetante')) detectedCategory = 'limpeza';
+    let detectedCategory = selectedCategory !== 'auto' ? selectedCategory : 'mercearia';
+    if (selectedCategory === 'auto') {
+      if (lowerText.includes('carne') || lowerText.includes('frango') || lowerText.includes('filé') || lowerText.includes('file') || lowerText.includes('alcatra') || lowerText.includes('chã') || lowerText.includes('patinho') || lowerText.includes('acém') || lowerText.includes('linguiça') || lowerText.includes('bife') || lowerText.includes('peixe') || lowerText.includes('costela') || lowerText.includes('bacon') || lowerText.includes('salsicha')) detectedCategory = 'acougue';
+      else if (lowerText.includes('leite') || lowerText.includes('queijo') || lowerText.includes('manteiga') || lowerText.includes('margarina') || lowerText.includes('iogurte') || lowerText.includes('requeijão') || lowerText.includes('presunto')) detectedCategory = 'laticinios';
+      else if (lowerText.includes('tomate') || lowerText.includes('banana') || lowerText.includes('maçã') || lowerText.includes('batata') || lowerText.includes('cebola') || lowerText.includes('alface') || lowerText.includes('ovo') || lowerText.includes('laranja') || lowerText.includes('limão') || lowerText.includes('alho')) detectedCategory = 'hortifruti';
+      else if (lowerText.includes('cerveja') || lowerText.includes('refrigerante') || lowerText.includes('suco') || lowerText.includes('vinho') || lowerText.includes('água') || lowerText.includes('agua') || lowerText.includes('chopp') || lowerText.includes('energético') || lowerText.includes('energetico') || lowerText.includes('vodka')) detectedCategory = 'bebidas';
+      else if (lowerText.includes('sabão') || lowerText.includes('lava roupas') || lowerText.includes('detergente') || lowerText.includes('amaciante') || lowerText.includes('alvejante') || lowerText.includes('multiuso') || lowerText.includes('desinfetante') || lowerText.includes('água sanitária') || lowerText.includes('saco de lixo')) detectedCategory = 'limpeza';
+      else if (lowerText.includes('sabonete') || lowerText.includes('shampoo') || lowerText.includes('condicionador') || lowerText.includes('creme dental') || lowerText.includes('desodorante') || lowerText.includes('fralda') || lowerText.includes('papel higiênico') || lowerText.includes('gillette') || lowerText.includes('absorvente')) detectedCategory = 'higiene';
+    }
 
-    const defaultImg = detectedCategory === 'carnes' ? 'assets/carne.png' : detectedCategory === 'hortifruti' ? 'assets/tomate.png' : detectedCategory === 'bebidas' ? 'assets/cerveja.png' : 'assets/limpeza.png';
+    let detectedUnit = customUnit;
+    if (!detectedUnit) {
+      const unitMatch = text.match(/\b(\d+(?:[.,]\d+)?\s*(?:kg|g|ml|l|un|und|rolos))\b/i);
+      detectedUnit = unitMatch ? unitMatch[1].toLowerCase() : (lowerText.includes(' kg') ? 'kg' : 'un');
+    }
+
+    const defaultImgMap = {
+      acougue: 'assets/carne.png',
+      laticinios: 'assets/leite.png',
+      hortifruti: 'assets/hortifruti.png',
+      bebidas: 'assets/cerveja.png',
+      limpeza: 'assets/limpeza.png',
+      higiene: 'assets/limpeza.png',
+      mercearia: 'assets/arroz.png'
+    };
 
     const newProductCard = {
       id: newProductId,
-      name: text || 'Oferta Fotografada por Vizinho',
+      name: text,
       category: detectedCategory,
-      unit: 'un',
-      image: currentTipPhotoDataUrl || defaultImg,
-      encarteId: 1,
+      unit: detectedUnit,
+      image: currentTipPhotoDataUrl || defaultImgMap[detectedCategory] || 'assets/itens.jpeg',
+      encarteId: null,
       offerMarketId: marketObj.id,
       offerPrice: reportedPrice,
-      validity: 'Publicado por Morador Hoje',
+      validity: 'Adicionado Hoje • Outubro/2026',
       prices: {
         [marketObj.id]: reportedPrice
       },
       featured: true,
-      discountTag: `📸 Oferta do Vizinho (${author})`,
+      discountTag: `👤 Adicionado por ${author} no ${marketName}`,
       sourceType: 'community',
       communityReported: { author, marketName, realPrice: reportedPrice, date: 'Hoje' }
     };
 
-    // Adiciona ao topo dos produtos
+    // Adiciona ao topo dos produtos para aparecer em 1º lugar
     PRODUCTS.unshift(newProductCard);
 
-    // Salva produtos criados pelos moradores no localStorage
+    // Salva produtos criados no localStorage
     const customUserProducts = JSON.parse(localStorage.getItem('economiza_colina_user_created_products')) || [];
     customUserProducts.unshift(newProductCard);
     localStorage.setItem('economiza_colina_user_created_products', JSON.stringify(customUserProducts));
 
     if (window.cart && window.cart.showToast) {
-      window.cart.showToast(`🎉 Nova oferta "${newProductCard.name}" (R$ ${reportedPrice.toFixed(2)}) adicionada à lista de produtos no ${marketName}!`);
-    }
-  } else {
-    if (window.cart && window.cart.showToast) {
-      window.cart.showToast('📢 Dica enviada ao mural! Lembre-se de preencher o valor (R$) para o item virar um card no catálogo.');
+      window.cart.showToast(`🎉 Produto "${newProductCard.name}" (R$ ${reportedPrice.toFixed(2)} - ${marketName}) adicionado no topo da lista!`);
     }
   }
 
@@ -747,6 +773,7 @@ function submitCommunityTip(e) {
   currentMarket = 'all';
   currentSource = 'all';
 
+  updateSourceFilterCounts();
   renderSupermarketChips();
   renderCategories();
   renderCommunityTips();
@@ -1472,8 +1499,8 @@ function closeSavingsCardModal() {
 // Registro do Service Worker PWA
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    if ('caches' in window) { caches.keys().then(names => names.forEach(n => { if (n !== 'economiza-colina-v6-out2026') caches.delete(n); })); }
-    navigator.serviceWorker.register('./sw.js?v=20261028_v4').then(reg => { reg.update();
+    if ('caches' in window) { caches.keys().then(names => names.forEach(n => { if (n !== 'economiza-colina-v7-out2026') caches.delete(n); })); }
+    navigator.serviceWorker.register('./sw.js?v=20261028_v5').then(reg => { reg.update();
       console.log('PWA ServiceWorker registrado com sucesso no Economiza Colina!');
     }).catch(err => {
       console.log('Falha ao registrar ServiceWorker PWA:', err);
