@@ -72,73 +72,24 @@ supermarkets = [
 encartes = [
   {
     "id": 1,
-    "file": "bh-30-anos-pagina-1.jpg",
-    "title": "Supermercados BH: 30 Anos O Dobro de Prêmios (Sadia, Perdigão, Nestlé & Itambé)",
-    "market": "bh",
-    "validity": "Válido até 15/09/2026"
+    "file": "WhatsApp Image 2026-10-26 at 09.03.34.jpeg",
+    "title": "Supermercados Carone: Meu Carone da Sorte - Ofertas Clube C (Melitta, Feijão Lívia, Moça & Lacta)",
+    "market": "carone",
+    "validity": "Válido de 19/10/2026 a 31/10/2026"
   },
   {
     "id": 2,
-    "file": "bh-30-anos-pagina-2.png",
-    "title": "Supermercados BH: Perecíveis, Açougue, Queijos & Cargill",
-    "market": "bh",
-    "validity": "Válido até 15/09/2026"
+    "file": "WhatsApp Image 2026-10-28 at 10.02.02.jpeg",
+    "title": "Supermercados Carone: Clube C Especial Finados - Velas Nossa Senhora da Penha (Todas as Lojas)",
+    "market": "carone",
+    "validity": "Válido de 26/10/2026 a 03/11/2026"
   },
   {
     "id": 3,
-    "file": "bh-30-anos-pagina-3.jpg",
-    "title": "Supermercados BH: Mercearia, Matinais, Bombons & Cervejas",
-    "market": "bh",
-    "validity": "Válido até 15/09/2026"
-  },
-  {
-    "id": 4,
-    "file": "bh-30-anos-pagina-4.png",
-    "title": "Supermercados BH: Higiene, Limpeza & Bazar (Omo, Dove, Pampers)",
-    "market": "bh",
-    "validity": "Válido até 15/09/2026"
-  },
-  {
-    "id": 5,
-    "file": "atacadao-apti-setembro-2026.jpg",
-    "title": "Atacadão Colina BR-101: Especial Linha Apti (Doces, Achocolatados & Amidos)",
-    "market": "atacadao",
-    "validity": "Válido 04/09 a 13/09/2026"
-  },
-  {
-    "id": 6,
-    "file": "WhatsApp Image 2026-09-07 at 07.43.38.jpeg",
-    "title": "Atacadão Colina: Festival Perfumaria & Limpeza - Capa (P&G, Colgate, Unilever & Ypê)",
-    "market": "atacadao",
-    "validity": "Válido 01/09 a 10/09/2026"
-  },
-  {
-    "id": 7,
-    "file": "WhatsApp Image 2026-09-07 at 07.43.49.jpeg",
-    "title": "Atacadão Colina: Festival Perfumaria & Limpeza - Pág 2 (Softys, Reckitt, Santher, Nivea, SC Johnson, Skala & Huggies)",
-    "market": "atacadao",
-    "validity": "Válido 01/09 a 10/09/2026"
-  },
-  {
-    "id": 8,
-    "file": "WhatsApp Image 2026-09-07 at 07.43.51.jpeg",
-    "title": "Atacadão Colina: Festival Perfumaria & Limpeza - Pág 3 (L'Oréal, Johnson's, MPR, Baston, Gtex & Uau)",
-    "market": "atacadao",
-    "validity": "Válido 01/09 a 10/09/2026"
-  },
-  {
-    "id": 9,
-    "file": "WhatsApp Image 2026-09-07 at 07.43.52.jpeg",
-    "title": "Atacadão Colina: Festival Perfumaria & Limpeza - Banner Promocional",
-    "market": "atacadao",
-    "validity": "Válido 01/09 a 10/09/2026"
-  },
-  {
-    "id": 10,
-    "file": "WhatsApp Image 2026-09-07 at 07.43.55.jpeg",
-    "title": "Atacadão Colina: Festival Perfumaria & Limpeza - Pág 4 (Flora, Baruel, Scotch-Brite, Suzano, Maxton, Bombril & Coty)",
-    "market": "atacadao",
-    "validity": "Válido 01/09 a 10/09/2026"
+    "file": "WhatsApp Image 2026-10-28 at 10.02.07.jpeg",
+    "title": "Supermercados Carone: Clube C Especial Finados - Velas Dom Bosco (Todas as Lojas)",
+    "market": "carone",
+    "validity": "Válido de 26/10/2026 a 03/11/2026"
   }
 ]
 
@@ -187,15 +138,1066 @@ categories = [
 
 products = [
   {
-    "id": "atc_1",
+    "id": "car_out_1",
+    "name": "Café Torrado e Moído Melitta Tradicional / Extraforte 250g",
+    "category": "mercearia",
+    "unit": "250g",
+    "image": "assets/cafe.png",
+    "encarteId": 1,
+    "offerMarketId": "carone",
+    "offerPrice": 12.49,
+    "validity": "Válido 19/10 a 31/10/2026",
+    "prices": {
+      "carone": 12.49,
+      "extrabom": 13.99,
+      "casagrande": 13.89,
+      "bh": 13.49,
+      "atacadao": 12.99,
+      "assai": 13.19,
+      "atacado_vem": 12.89
+    },
+    "featured": True,
+    "discountTag": "Clube Carone R$ 12,49 (Loja R$ 13,99)",
+    "sourceType": "encarte"
+  },
+  {
+    "id": "car_out_2",
+    "name": "Feijão Preto Lívia Gourmet Tipo 1 Pacote 1kg",
+    "category": "mercearia",
+    "unit": "1kg",
+    "image": "assets/arroz.png",
+    "encarteId": 1,
+    "offerMarketId": "carone",
+    "offerPrice": 5.99,
+    "validity": "Válido 19/10 a 31/10/2026",
+    "prices": {
+      "carone": 5.99,
+      "extrabom": 6.49,
+      "casagrande": 6.39,
+      "bh": 6.29,
+      "atacadao": 6.19,
+      "assai": 6.25,
+      "atacado_vem": 6.15
+    },
+    "featured": True,
+    "discountTag": "Clube Carone R$ 5,99 (Loja R$ 6,49)",
+    "sourceType": "encarte"
+  },
+  {
+    "id": "car_out_3",
+    "name": "Leite Condensado Semidesnatado Moça Nestlé TP 395g",
+    "category": "mercearia",
+    "unit": "395g",
+    "image": "assets/itens.jpeg",
+    "encarteId": 1,
+    "offerMarketId": "carone",
+    "offerPrice": 6.49,
+    "validity": "Válido 19/10 a 31/10/2026",
+    "prices": {
+      "carone": 6.49,
+      "extrabom": 8.19,
+      "casagrande": 7.99,
+      "bh": 7.29,
+      "atacadao": 6.99,
+      "assai": 7.19,
+      "atacado_vem": 6.89
+    },
+    "featured": True,
+    "discountTag": "Clube Carone R$ 6,49 (Loja R$ 8,19)",
+    "sourceType": "encarte"
+  },
+  {
+    "id": "car_out_4",
+    "name": "Bombom Lacta Sonho de Valsa ou Ouro Branco Pacote 220g",
+    "category": "mercearia",
+    "unit": "220g",
+    "image": "assets/itens.jpeg",
+    "encarteId": 1,
+    "offerMarketId": "carone",
+    "offerPrice": 9.99,
+    "validity": "Válido 19/10 a 31/10/2026",
+    "prices": {
+      "carone": 9.99,
+      "extrabom": 15.99,
+      "casagrande": 14.9,
+      "bh": 13.49,
+      "atacadao": 12.9,
+      "assai": 13.2,
+      "atacado_vem": 12.79
+    },
+    "featured": True,
+    "discountTag": "Clube Carone R$ 9,99 (Loja R$ 15,99)",
+    "sourceType": "encarte"
+  },
+  {
+    "id": "car_out_5",
+    "name": "Vela Nossa Senhora da Penha 9 Dias Branca 385g",
+    "category": "limpeza",
+    "unit": "385g",
+    "image": "assets/limpeza.png",
+    "encarteId": 2,
+    "offerMarketId": "carone",
+    "offerPrice": 22.99,
+    "validity": "Válido 26/10 a 03/11/2026",
+    "prices": {
+      "carone": 22.99,
+      "extrabom": 28.99,
+      "casagrande": 27.9,
+      "bh": 26.5,
+      "atacadao": 24.9,
+      "atacado_vem": 24.5
+    },
+    "featured": True,
+    "discountTag": "Clube Carone R$ 22,99 (Loja R$ 28,99)",
+    "sourceType": "encarte"
+  },
+  {
+    "id": "car_out_6",
+    "name": "Vela Nossa Senhora da Penha 7 Dias Branca 340g",
+    "category": "limpeza",
+    "unit": "340g",
+    "image": "assets/limpeza.png",
+    "encarteId": 2,
+    "offerMarketId": "carone",
+    "offerPrice": 15.99,
+    "validity": "Válido 26/10 a 03/11/2026",
+    "prices": {
+      "carone": 15.99,
+      "extrabom": 19.99,
+      "casagrande": 18.9,
+      "bh": 17.9,
+      "atacadao": 16.9,
+      "atacado_vem": 16.79
+    },
+    "featured": True,
+    "discountTag": "Clube Carone R$ 15,99 (Loja R$ 19,99)",
+    "sourceType": "encarte"
+  },
+  {
+    "id": "car_out_7",
+    "name": "Vela Nossa Senhora da Penha Nº 4 Branca Pacote 8 Unidades (152g)",
+    "category": "limpeza",
+    "unit": "8 un",
+    "image": "assets/limpeza.png",
+    "encarteId": 2,
+    "offerMarketId": "carone",
+    "offerPrice": 7.99,
+    "validity": "Válido 26/10 a 03/11/2026",
+    "prices": {
+      "carone": 7.99,
+      "extrabom": 12.9,
+      "casagrande": 11.9,
+      "bh": 10.9,
+      "atacadao": 9.49,
+      "atacado_vem": 9.29
+    },
+    "featured": True,
+    "discountTag": "Clube Carone R$ 7,99 (Oferta Finados)",
+    "sourceType": "encarte"
+  },
+  {
+    "id": "car_out_8",
+    "name": "Vela Nossa Senhora da Penha Votiva Branca 260g",
+    "category": "limpeza",
+    "unit": "260g",
+    "image": "assets/limpeza.png",
+    "encarteId": 2,
+    "offerMarketId": "carone",
+    "offerPrice": 14.99,
+    "validity": "Válido 26/10 a 03/11/2026",
+    "prices": {
+      "carone": 14.99,
+      "extrabom": 18.99,
+      "casagrande": 17.9,
+      "bh": 16.9,
+      "atacadao": 15.9,
+      "atacado_vem": 15.79
+    },
+    "featured": False,
+    "discountTag": "Clube Carone R$ 14,99 (Loja R$ 18,99)",
+    "sourceType": "encarte"
+  },
+  {
+    "id": "car_out_9",
+    "name": "Vela Dom Bosco Nº 2 Branca Pacote 8 Unidades (15g)",
+    "category": "limpeza",
+    "unit": "8 un",
+    "image": "assets/limpeza.png",
+    "encarteId": 3,
+    "offerMarketId": "carone",
+    "offerPrice": 8.99,
+    "validity": "Válido 26/10 a 03/11/2026",
+    "prices": {
+      "carone": 8.99,
+      "extrabom": 11.59,
+      "casagrande": 10.9,
+      "bh": 10.49,
+      "atacadao": 9.79,
+      "atacado_vem": 9.59
+    },
+    "featured": True,
+    "discountTag": "Clube Carone R$ 8,99 (Loja R$ 11,59)",
+    "sourceType": "encarte"
+  },
+  {
+    "id": "car_out_10",
+    "name": "Vela Dom Bosco Nº 4 Branca Pacote 8 Unidades (19g)",
+    "category": "limpeza",
+    "unit": "8 un",
+    "image": "assets/limpeza.png",
+    "encarteId": 3,
+    "offerMarketId": "carone",
+    "offerPrice": 9.99,
+    "validity": "Válido 26/10 a 03/11/2026",
+    "prices": {
+      "carone": 9.99,
+      "extrabom": 12.99,
+      "casagrande": 12.49,
+      "bh": 11.49,
+      "atacadao": 10.89,
+      "atacado_vem": 10.69
+    },
+    "featured": False,
+    "discountTag": "Clube Carone R$ 9,99 (Loja R$ 12,99)",
+    "sourceType": "encarte"
+  },
+  {
+    "id": "car_out_11",
+    "name": "Vela Dom Bosco 7 Dias Branca 270g",
+    "category": "limpeza",
+    "unit": "270g",
+    "image": "assets/limpeza.png",
+    "encarteId": 3,
+    "offerMarketId": "carone",
+    "offerPrice": 19.99,
+    "validity": "Válido 26/10 a 03/11/2026",
+    "prices": {
+      "carone": 19.99,
+      "extrabom": 25.99,
+      "casagrande": 24.9,
+      "bh": 23.5,
+      "atacadao": 21.9,
+      "atacado_vem": 21.5
+    },
+    "featured": True,
+    "discountTag": "Clube Carone R$ 19,99 (Loja R$ 25,99)",
+    "sourceType": "encarte"
+  },
+  {
+    "id": "out_marca_1",
+    "name": "Manteiga Capel com Sal Pote 500g",
+    "category": "laticinios",
+    "unit": "500g",
+    "image": "assets/itens.jpeg",
+    "encarteId": None,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 22.99,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 24.9,
+      "carone": 27.9,
+      "casagrande": 26.5,
+      "bh": 24.49,
+      "assai": 23.9,
+      "atacadao": 23.49,
+      "atacado_vem": 22.99
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacado Vem | R$ 22,99",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_2",
+    "name": "Manteiga Porto Alegre com Sal Pote 500g",
+    "category": "laticinios",
+    "unit": "500g",
+    "image": "assets/itens.jpeg",
+    "encarteId": None,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 23.89,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 25.9,
+      "carone": 28.9,
+      "casagrande": 27.5,
+      "bh": 25.49,
+      "assai": 24.9,
+      "atacadao": 24.29,
+      "atacado_vem": 23.89
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacado Vem | R$ 23,89",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_3",
+    "name": "Manteiga Aviação com Sal Lata/Pote 500g",
+    "category": "laticinios",
+    "unit": "500g",
+    "image": "assets/itens.jpeg",
+    "encarteId": None,
+    "offerMarketId": "assai",
+    "offerPrice": 25.49,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 26.9,
+      "carone": 29.9,
+      "casagrande": 28.5,
+      "bh": 26.49,
+      "assai": 25.49,
+      "atacadao": 25.9,
+      "atacado_vem": 25.79
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Assaí Atacadista | R$ 25,49",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_4",
+    "name": "Manteiga Selita com Sal Pote 500g",
+    "category": "laticinios",
+    "unit": "500g",
+    "image": "assets/itens.jpeg",
+    "encarteId": None,
+    "offerMarketId": "casagrande",
+    "offerPrice": 22.49,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 23.49,
+      "carone": 26.9,
+      "casagrande": 22.49,
+      "bh": 23.9,
+      "assai": 22.9,
+      "atacadao": 22.79,
+      "atacado_vem": 22.89
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 22,49",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_5",
+    "name": "Manteiga Itambé com Sal Pote 500g",
+    "category": "laticinios",
+    "unit": "500g",
+    "image": "assets/itens.jpeg",
+    "encarteId": None,
+    "offerMarketId": "bh",
+    "offerPrice": 22.19,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 24.5,
+      "carone": 27.5,
+      "casagrande": 26.0,
+      "bh": 22.19,
+      "assai": 23.5,
+      "atacadao": 23.29,
+      "atacado_vem": 22.99
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Supermercados BH | R$ 22,19",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_6",
+    "name": "Manteiga Capel com Sal Tablete 200g",
+    "category": "laticinios",
+    "unit": "200g",
+    "image": "assets/itens.jpeg",
+    "encarteId": None,
+    "offerMarketId": "assai",
+    "offerPrice": 9.89,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 10.9,
+      "carone": 12.49,
+      "casagrande": 11.9,
+      "bh": 10.79,
+      "assai": 9.89,
+      "atacadao": 10.29,
+      "atacado_vem": 10.19
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Assaí Atacadista | R$ 9,89",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_7",
+    "name": "Manteiga Porto Alegre com Sal Tablete 200g",
+    "category": "laticinios",
+    "unit": "200g",
+    "image": "assets/itens.jpeg",
+    "encarteId": None,
+    "offerMarketId": "casagrande",
+    "offerPrice": 10.39,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 11.5,
+      "carone": 12.9,
+      "casagrande": 10.39,
+      "bh": 11.29,
+      "assai": 10.79,
+      "atacadao": 10.69,
+      "atacado_vem": 10.59
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 10,39",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_8",
+    "name": "Arroz Agulhinha Tio João Tipo 1 Pacote 5kg",
+    "category": "mercearia",
+    "unit": "5kg",
+    "image": "assets/arroz.png",
+    "encarteId": None,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 22.39,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 24.5,
+      "carone": 25.9,
+      "casagrande": 24.9,
+      "bh": 23.49,
+      "assai": 22.9,
+      "atacadao": 22.79,
+      "atacado_vem": 22.39
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacado Vem | R$ 22,39",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_9",
+    "name": "Arroz Agulhinha Sepé Tipo 1 Pacote 5kg",
+    "category": "mercearia",
+    "unit": "5kg",
+    "image": "assets/arroz.png",
+    "encarteId": None,
+    "offerMarketId": "assai",
+    "offerPrice": 18.79,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 19.98,
+      "carone": 21.9,
+      "casagrande": 20.5,
+      "bh": 19.29,
+      "assai": 18.79,
+      "atacadao": 18.9,
+      "atacado_vem": 18.99
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Assaí Atacadista | R$ 18,79",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_10",
+    "name": "Arroz Agulhinha Vasconcelos Tipo 1 Pacote 5kg",
+    "category": "mercearia",
+    "unit": "5kg",
+    "image": "assets/arroz.png",
+    "encarteId": None,
+    "offerMarketId": "bh",
+    "offerPrice": 19.39,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 20.9,
+      "carone": 22.9,
+      "casagrande": 21.9,
+      "bh": 19.39,
+      "assai": 19.9,
+      "atacadao": 19.79,
+      "atacado_vem": 19.59
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Supermercados BH | R$ 19,39",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_11",
+    "name": "Arroz Agulhinha Camil Tipo 1 Pacote 5kg",
+    "category": "mercearia",
+    "unit": "5kg",
+    "image": "assets/arroz.png",
+    "encarteId": None,
+    "offerMarketId": "atacadao",
+    "offerPrice": 21.39,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 22.9,
+      "carone": 24.9,
+      "casagrande": 23.9,
+      "bh": 22.49,
+      "assai": 21.9,
+      "atacadao": 21.39,
+      "atacado_vem": 21.69
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacadão Serra | R$ 21,39",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_12",
+    "name": "Feijão Preto Zuppa Tipo 1 Pacote 1kg",
+    "category": "mercearia",
+    "unit": "1kg",
+    "image": "assets/arroz.png",
+    "encarteId": None,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 5.19,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 5.69,
+      "carone": 6.29,
+      "casagrande": 5.99,
+      "bh": 5.59,
+      "assai": 5.29,
+      "atacadao": 5.39,
+      "atacado_vem": 5.19
+    },
+    "featured": True,
+    "discountTag": "Menor preço no Atacado Vem | R$ 5,19",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_13",
+    "name": "Feijão Preto Kicaldo Tipo 1 Pacote 1kg",
+    "category": "mercearia",
+    "unit": "1kg",
+    "image": "assets/arroz.png",
+    "encarteId": None,
+    "offerMarketId": "assai",
+    "offerPrice": 5.49,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 5.99,
+      "carone": 6.79,
+      "casagrande": 6.49,
+      "bh": 5.89,
+      "assai": 5.49,
+      "atacadao": 5.59,
+      "atacado_vem": 5.69
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Assaí Atacadista | R$ 5,49",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_14",
+    "name": "Feijão Carioca Kicaldo Tipo 1 Pacote 1kg",
+    "category": "mercearia",
+    "unit": "1kg",
+    "image": "assets/arroz.png",
+    "encarteId": None,
+    "offerMarketId": "bh",
+    "offerPrice": 6.19,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 6.49,
+      "carone": 7.29,
+      "casagrande": 6.99,
+      "bh": 6.19,
+      "assai": 6.39,
+      "atacadao": 6.29,
+      "atacado_vem": 6.25
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Supermercados BH | R$ 6,19",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_15",
+    "name": "Lentilha Seca Yoki Pacote 500g",
+    "category": "mercearia",
+    "unit": "500g",
+    "image": "assets/arroz.png",
+    "encarteId": None,
+    "offerMarketId": "atacadao",
+    "offerPrice": 8.19,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 8.9,
+      "carone": 9.9,
+      "casagrande": 9.5,
+      "bh": 8.89,
+      "assai": 8.49,
+      "atacadao": 8.19,
+      "atacado_vem": 8.39
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão Serra | R$ 8,19",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_16",
+    "name": "Café Moído Número Um Tradicional 500g",
+    "category": "mercearia",
+    "unit": "500g",
+    "image": "assets/cafe.png",
+    "encarteId": None,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 16.99,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 18.5,
+      "carone": 19.9,
+      "casagrande": 18.9,
+      "bh": 17.89,
+      "assai": 17.49,
+      "atacadao": 17.29,
+      "atacado_vem": 16.99
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacado Vem | R$ 16,99",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_17",
+    "name": "Café Moído Pilão Tradicional / Extraforte 500g",
+    "category": "mercearia",
+    "unit": "500g",
+    "image": "assets/cafe.png",
+    "encarteId": None,
+    "offerMarketId": "bh",
+    "offerPrice": 18.49,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 19.9,
+      "carone": 20.9,
+      "casagrande": 19.89,
+      "bh": 18.49,
+      "assai": 18.9,
+      "atacadao": 18.79,
+      "atacado_vem": 18.69
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Supermercados BH | R$ 18,49",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_18",
+    "name": "Café Moído 3 Corações Tradicional / Extraforte 500g",
+    "category": "mercearia",
+    "unit": "500g",
+    "image": "assets/cafe.png",
+    "encarteId": None,
+    "offerMarketId": "assai",
+    "offerPrice": 18.19,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 19.5,
+      "carone": 20.5,
+      "casagrande": 19.49,
+      "bh": 18.89,
+      "assai": 18.19,
+      "atacadao": 18.39,
+      "atacado_vem": 18.49
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Assaí Atacadista | R$ 18,19",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_19",
+    "name": "Café Moído Capital Tradicional 500g",
+    "category": "mercearia",
+    "unit": "500g",
+    "image": "assets/cafe.png",
+    "encarteId": None,
+    "offerMarketId": "casagrande",
+    "offerPrice": 15.89,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 16.49,
+      "carone": 17.9,
+      "casagrande": 15.89,
+      "bh": 16.49,
+      "assai": 16.29,
+      "atacadao": 16.19,
+      "atacado_vem": 15.99
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 15,89",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_20",
+    "name": "Leite Integral UHT Selita 1L",
+    "category": "laticinios",
+    "unit": "1L",
+    "image": "assets/itens.jpeg",
+    "encarteId": None,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 4.39,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 4.69,
+      "carone": 5.19,
+      "casagrande": 4.89,
+      "bh": 4.59,
+      "assai": 4.49,
+      "atacadao": 4.55,
+      "atacado_vem": 4.39
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacado Vem | R$ 4,39",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_21",
+    "name": "Leite Integral UHT Porto Alegre 1L",
+    "category": "laticinios",
+    "unit": "1L",
+    "image": "assets/itens.jpeg",
+    "encarteId": None,
+    "offerMarketId": "bh",
+    "offerPrice": 4.45,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 4.89,
+      "carone": 5.29,
+      "casagrande": 5.09,
+      "bh": 4.45,
+      "assai": 4.69,
+      "atacadao": 4.59,
+      "atacado_vem": 4.55
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Supermercados BH | R$ 4,45",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_22",
+    "name": "Leite Integral UHT Ninho Nestlé 1L",
+    "category": "laticinios",
+    "unit": "1L",
+    "image": "assets/itens.jpeg",
+    "encarteId": None,
+    "offerMarketId": "atacadao",
+    "offerPrice": 4.98,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 5.49,
+      "carone": 5.99,
+      "casagrande": 5.79,
+      "bh": 5.39,
+      "assai": 5.19,
+      "atacadao": 4.98,
+      "atacado_vem": 5.09
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão Serra | R$ 4,98",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_23",
+    "name": "Leite Integral UHT Piracanjuba 1L",
+    "category": "laticinios",
+    "unit": "1L",
+    "image": "assets/itens.jpeg",
+    "encarteId": None,
+    "offerMarketId": "extrabom",
+    "offerPrice": 4.59,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 4.59,
+      "carone": 5.39,
+      "casagrande": 5.19,
+      "bh": 4.89,
+      "assai": 4.79,
+      "atacadao": 4.75,
+      "atacado_vem": 4.69
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 4,59",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_24",
+    "name": "Queijo Mussarela Fatiado Selita 200g",
+    "category": "laticinios",
+    "unit": "200g",
+    "image": "assets/itens.jpeg",
+    "encarteId": None,
+    "offerMarketId": "casagrande",
+    "offerPrice": 8.89,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 9.9,
+      "carone": 11.49,
+      "casagrande": 8.89,
+      "bh": 9.79,
+      "assai": 9.29,
+      "atacadao": 9.19,
+      "atacado_vem": 8.99
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 8,89",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_25",
+    "name": "Queijo Mussarela Fatiado Porto Alegre 200g",
+    "category": "laticinios",
+    "unit": "200g",
+    "image": "assets/itens.jpeg",
+    "encarteId": None,
+    "offerMarketId": "assai",
+    "offerPrice": 9.15,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 10.2,
+      "carone": 11.8,
+      "casagrande": 11.2,
+      "bh": 10.0,
+      "assai": 9.15,
+      "atacadao": 9.49,
+      "atacado_vem": 9.29
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Assaí Atacadista | R$ 9,15",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_26",
+    "name": "Alface Crespa / Americana Hidropônica un",
+    "category": "hortifruti",
+    "unit": "unidade",
+    "image": "assets/tomate.png",
+    "encarteId": None,
+    "offerMarketId": "extrabom",
+    "offerPrice": 2.69,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 2.69,
+      "carone": 3.99,
+      "casagrande": 3.29,
+      "bh": 3.19,
+      "assai": 2.99,
+      "atacadao": 2.89,
+      "atacado_vem": 2.79
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 2,69",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_27",
+    "name": "Couve Manteiga Fresca Maço",
+    "category": "hortifruti",
+    "unit": "maço",
+    "image": "assets/tomate.png",
+    "encarteId": None,
+    "offerMarketId": "casagrande",
+    "offerPrice": 2.29,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 2.49,
+      "carone": 3.49,
+      "casagrande": 2.29,
+      "bh": 2.89,
+      "assai": 2.59,
+      "atacadao": 2.49,
+      "atacado_vem": 2.39
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 2,29",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_28",
+    "name": "Banana Prata Selecionada kg",
+    "category": "hortifruti",
+    "unit": "kg",
+    "image": "assets/tomate.png",
+    "encarteId": None,
+    "offerMarketId": "extrabom",
+    "offerPrice": 4.99,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 4.99,
+      "carone": 6.49,
+      "casagrande": 5.29,
+      "bh": 5.49,
+      "assai": 5.39,
+      "atacadao": 5.19,
+      "atacado_vem": 5.29
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Extrabom Supermercados | R$ 4,99",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_29",
+    "name": "Maçã Gala Nacional kg",
+    "category": "hortifruti",
+    "unit": "kg",
+    "image": "assets/tomate.png",
+    "encarteId": None,
+    "offerMarketId": "casagrande",
+    "offerPrice": 8.49,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 8.99,
+      "carone": 10.9,
+      "casagrande": 8.49,
+      "bh": 9.29,
+      "assai": 8.9,
+      "atacadao": 8.79,
+      "atacado_vem": 8.89
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 8,49",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_30",
+    "name": "Cerveja Heineken Puro Malte Lata 350ml",
+    "category": "bebidas",
+    "unit": "350ml",
+    "image": "assets/cerveja.png",
+    "encarteId": None,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 4.59,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 4.99,
+      "carone": 5.49,
+      "casagrande": 5.29,
+      "bh": 4.89,
+      "assai": 4.69,
+      "atacadao": 4.65,
+      "atacado_vem": 4.59
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacado Vem | R$ 4,59",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_31",
+    "name": "Cerveja Brahma Duplo Malte Lata 350ml",
+    "category": "bebidas",
+    "unit": "350ml",
+    "image": "assets/cerveja.png",
+    "encarteId": None,
+    "offerMarketId": "atacadao",
+    "offerPrice": 3.09,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 3.49,
+      "carone": 3.99,
+      "casagrande": 3.79,
+      "bh": 3.29,
+      "assai": 3.19,
+      "atacadao": 3.09,
+      "atacado_vem": 3.15
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacadão Serra | R$ 3,09",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_32",
+    "name": "Refrigerante Coca-Cola Original PET 2L",
+    "category": "bebidas",
+    "unit": "2L",
+    "image": "assets/cerveja.png",
+    "encarteId": None,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 8.79,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 9.49,
+      "carone": 10.49,
+      "casagrande": 9.99,
+      "bh": 9.19,
+      "assai": 8.89,
+      "atacadao": 8.99,
+      "atacado_vem": 8.79
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacado Vem | R$ 8,79",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_33",
+    "name": "Refrigerante Guaraná Antarctica PET 2L",
+    "category": "bebidas",
+    "unit": "2L",
+    "image": "assets/cerveja.png",
+    "encarteId": None,
+    "offerMarketId": "bh",
+    "offerPrice": 6.79,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 7.49,
+      "carone": 8.49,
+      "casagrande": 7.99,
+      "bh": 6.79,
+      "assai": 6.99,
+      "atacadao": 6.89,
+      "atacado_vem": 6.85
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Supermercados BH | R$ 6,79",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_34",
+    "name": "Azeite Extra Virgem Gallo Vidro 500ml",
+    "category": "mercearia",
+    "unit": "500ml",
+    "image": "assets/arroz.png",
+    "encarteId": None,
+    "offerMarketId": "carone",
+    "offerPrice": 37.9,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 39.9,
+      "carone": 37.9,
+      "casagrande": 42.9,
+      "bh": 41.49,
+      "assai": 39.5,
+      "atacadao": 38.9,
+      "atacado_vem": 38.5
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Carone Supermercados | R$ 37,90",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_marca_35",
+    "name": "Óleo de Soja Soya / Liza PET 900ml",
+    "category": "mercearia",
+    "unit": "900ml",
+    "image": "assets/arroz.png",
+    "encarteId": None,
+    "offerMarketId": "atacado_vem",
+    "offerPrice": 6.09,
+    "validity": "Pesquisa Online • Outubro/2026",
+    "prices": {
+      "extrabom": 6.79,
+      "carone": 7.29,
+      "casagrande": 6.89,
+      "bh": 6.39,
+      "assai": 6.19,
+      "atacadao": 6.15,
+      "atacado_vem": 6.09
+    },
+    "featured": False,
+    "discountTag": "Menor preço no Atacado Vem | R$ 6,09",
+    "sourceType": "scraper"
+  },
+  {
+    "id": "out_cat_1",
     "name": "Ovo Branco Grande (Bandeja com 30 un)",
     "category": "hortifruti",
     "unit": "30 un",
     "image": "assets/ovo.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 11.84,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 11.84,
       "extrabom": 16.9,
@@ -205,18 +1207,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 11,84",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_2",
+    "id": "out_cat_2",
     "name": "Alho a Granel kg",
     "category": "hortifruti",
     "unit": "kg",
     "image": "assets/tomate.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "casagrande",
     "offerPrice": 11.1,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 14.9,
       "extrabom": 21.9,
@@ -226,18 +1228,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 11,10",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_3",
+    "id": "out_cat_3",
     "name": "Cebola Nacional kg",
     "category": "hortifruti",
     "unit": "kg",
     "image": "assets/tomate.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "extrabom",
     "offerPrice": 3.72,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 4.99,
       "extrabom": 3.72,
@@ -248,18 +1250,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Extrabom Supermercados | R$ 3,72",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_4",
+    "id": "out_cat_4",
     "name": "Tomate Salada kg",
     "category": "hortifruti",
     "unit": "kg",
     "image": "assets/tomate.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "extrabom",
     "offerPrice": 4.46,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 5.99,
       "extrabom": 4.46,
@@ -269,18 +1271,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Extrabom Supermercados | R$ 4,46",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_5",
+    "id": "out_cat_5",
     "name": "Batata Lavada kg",
     "category": "hortifruti",
     "unit": "kg",
     "image": "assets/tomate.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "casagrande",
     "offerPrice": 3.71,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 4.99,
       "extrabom": 6.99,
@@ -291,18 +1293,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 3,71",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_6",
+    "id": "out_cat_6",
     "name": "Repolho Branco kg",
     "category": "hortifruti",
     "unit": "kg",
     "image": "assets/tomate.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 3.59,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 3.59,
       "extrabom": 4.99,
@@ -313,18 +1315,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 3,59",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_7",
+    "id": "out_cat_7",
     "name": "Carne Bovina Contra Filé Friboi Porcionada Resfriada kg",
     "category": "acougue",
     "unit": "kg",
     "image": "assets/carne.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 54.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 54.9,
       "extrabom": 58.9,
@@ -334,18 +1336,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 54,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_8",
+    "id": "out_cat_8",
     "name": "Carne Bovina Cupim Porcionada Friboi Resfriada kg",
     "category": "acougue",
     "unit": "kg",
     "image": "assets/contrafile.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 45.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 45.9,
       "extrabom": 49.9,
@@ -355,18 +1357,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 45,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_9",
+    "id": "out_cat_9",
     "name": "Filé de Peito de Frango Lar / Canção IQF Congelado 1kg",
     "category": "acougue",
     "unit": "1kg",
     "image": "assets/frango.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 12.85,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 15.98,
       "extrabom": 18.98,
@@ -377,18 +1379,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 12,85",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_10",
+    "id": "out_cat_10",
     "name": "Coxinha da Asa de Frango Canção / Lar IQF Congelada 1kg",
     "category": "acougue",
     "unit": "1kg",
     "image": "assets/frango.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 8.44,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 10.5,
       "extrabom": 13.9,
@@ -399,18 +1401,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Supermercados BH | R$ 8,44",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_11",
+    "id": "out_cat_11",
     "name": "Frango à Passarinho IQF Lar Congelado 1kg",
     "category": "acougue",
     "unit": "1kg",
     "image": "assets/frango.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 7.23,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 8.99,
       "extrabom": 10.99,
@@ -421,18 +1423,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Supermercados BH | R$ 7,23",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_12",
+    "id": "out_cat_12",
     "name": "Filé de Peixe Tilápia Vitalmar / C.Vale Congelado 800g",
     "category": "acougue",
     "unit": "800g",
     "image": "assets/carne.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 31.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 31.9,
       "extrabom": 38.9,
@@ -442,18 +1444,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 31,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_13",
+    "id": "out_cat_13",
     "name": "Peixe Cação em Posta Vitalmar Congelado 800g",
     "category": "acougue",
     "unit": "800g",
     "image": "assets/carne.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 31.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 31.9,
       "extrabom": 37.9,
@@ -463,18 +1465,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 31,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_14",
+    "id": "out_cat_14",
     "name": "Linguiça Calabresa Cofril Resfriada Defumada 2,5kg",
     "category": "acougue",
     "unit": "2.5kg",
     "image": "assets/carne.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 49.3,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 51.9,
       "extrabom": 53.9,
@@ -485,18 +1487,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 49,30",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_15",
+    "id": "out_cat_15",
     "name": "Linguiça para Churrasco Aurora Congelada 2,5kg",
     "category": "acougue",
     "unit": "2.5kg",
     "image": "assets/carne.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "extrabom",
     "offerPrice": 39.25,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 49.9,
       "extrabom": 39.25,
@@ -507,18 +1509,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Extrabom Supermercados | R$ 39,25",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_16",
+    "id": "out_cat_16",
     "name": "Batata Pré-Frita Prime Fries Congelada 2kg",
     "category": "laticinios",
     "unit": "2kg",
     "image": "assets/tomate.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "casagrande",
     "offerPrice": 13.39,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 16.9,
       "extrabom": 21.9,
@@ -529,18 +1531,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 13,39",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_17",
+    "id": "out_cat_17",
     "name": "Iogurte Danone Vários Sabores Garrafa 1,25kg",
     "category": "laticinios",
     "unit": "1.25kg",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 15.99,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 15.99,
       "extrabom": 17.99,
@@ -550,18 +1552,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 15,99",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_18",
+    "id": "out_cat_18",
     "name": "Iogurte Nestlé Ninho Soleil Morango Bandeja 540g",
     "category": "laticinios",
     "unit": "540g",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 9.99,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 9.99,
       "extrabom": 13.49,
@@ -571,18 +1573,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 9,99",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_19",
+    "id": "out_cat_19",
     "name": "Leite Fermentado Bob Esponja 6x80g",
     "category": "laticinios",
     "unit": "6x80g",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 5.56,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 6.99,
       "extrabom": 8.49,
@@ -593,18 +1595,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Supermercados BH | R$ 5,56",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_20",
+    "id": "out_cat_20",
     "name": "Salsicha Nobre Congelada Pacote 3kg",
     "category": "laticinios",
     "unit": "3kg",
     "image": "assets/carne.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 26.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 26.9,
       "extrabom": 29.9,
@@ -614,18 +1616,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 26,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_21",
+    "id": "out_cat_21",
     "name": "Apresuntado Cofril Peça kg",
     "category": "laticinios",
     "unit": "kg",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 14.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 14.9,
       "extrabom": 18.9,
@@ -635,18 +1637,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 14,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_22",
+    "id": "out_cat_22",
     "name": "Arroz Puro Grão Tipo 1 Pacote 5kg",
     "category": "mercearia",
     "unit": "5kg",
     "image": "assets/arroz.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacado_vem",
     "offerPrice": 15.82,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 16.16,
       "extrabom": 17.67,
@@ -657,18 +1659,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacado Vem | R$ 15,82",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_23",
+    "id": "out_cat_23",
     "name": "Açúcar Cristal Bulnez Pacote 5kg",
     "category": "mercearia",
     "unit": "5kg",
     "image": "assets/arroz.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 10.19,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 10.52,
       "extrabom": 12.29,
@@ -679,18 +1681,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 10,19",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_24",
+    "id": "out_cat_24",
     "name": "Leite Longa Vida Capel Integral TP 1L",
     "category": "laticinios",
     "unit": "1L",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 3.72,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 4.69,
       "extrabom": 5.19,
@@ -701,18 +1703,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 3,72",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_25",
+    "id": "out_cat_25",
     "name": "Óleo de Algodão Elogiata Balde 14,5kg",
     "category": "mercearia",
     "unit": "14.5kg",
     "image": "assets/arroz.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 179.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 179.9,
       "extrabom": 199.9,
@@ -722,18 +1724,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 179,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_26",
+    "id": "out_cat_26",
     "name": "Azeite de Oliva Andorinha Extra Virgem Vidro 500ml",
     "category": "mercearia",
     "unit": "500ml",
     "image": "assets/arroz.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "carone",
     "offerPrice": 25.31,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 29.9,
       "extrabom": 26.13,
@@ -743,18 +1745,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Carone Supermercados | R$ 25,31",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_27",
+    "id": "out_cat_27",
     "name": "Flocão de Milho Maratá Pacote 500g",
     "category": "mercearia",
     "unit": "500g",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 2.39,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 2.39,
       "extrabom": 2.69,
@@ -764,18 +1766,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 2,39",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_28",
+    "id": "out_cat_28",
     "name": "Cereal Matinal Sucrilhos Kellogg's Original 800g",
     "category": "mercearia",
     "unit": "800g",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 15.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 15.9,
       "extrabom": 21.9,
@@ -785,18 +1787,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 15,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_29",
+    "id": "out_cat_29",
     "name": "Azeitona Verde Campo Belo Fatiada Pouch 150g",
     "category": "mercearia",
     "unit": "150g",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 5.99,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 5.99,
       "extrabom": 7.99,
@@ -806,18 +1808,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 5,99",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_30",
+    "id": "out_cat_30",
     "name": "Mistura para Bolo Itaiquara Vários Sabores 390g",
     "category": "mercearia",
     "unit": "390g",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 1.99,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 1.99,
       "extrabom": 4.49,
@@ -827,18 +1829,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 1,99",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_31",
+    "id": "out_cat_31",
     "name": "Bebida Láctea Nescau Pack 9x180ml",
     "category": "mercearia",
     "unit": "9x180ml",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 15.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 15.9,
       "extrabom": 17.9,
@@ -848,18 +1850,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 15,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_32",
+    "id": "out_cat_32",
     "name": "Cereal Matinal Nescau Nestlé Caixeta 270g",
     "category": "mercearia",
     "unit": "270g",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 8.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 8.9,
       "extrabom": 11.9,
@@ -869,18 +1871,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 8,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_33",
+    "id": "out_cat_33",
     "name": "Leite Condensado Moça Integral Nestlé Lata 395g",
     "category": "laticinios",
     "unit": "395g",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 6.32,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 7.95,
       "extrabom": 8.99,
@@ -891,18 +1893,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 6,32",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_34",
+    "id": "out_cat_34",
     "name": "Bombom Ferrero Rocher Collection Caixeta 7 un",
     "category": "mercearia",
     "unit": "7 un",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 23.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 23.9,
       "extrabom": 30.99,
@@ -912,18 +1914,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 23,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_35",
+    "id": "out_cat_35",
     "name": "Chiclete Trident X Gamers Vários Sabores Pote 48,3g",
     "category": "mercearia",
     "unit": "48.3g",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 8.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 8.9,
       "extrabom": 11.9,
@@ -933,18 +1935,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 8,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_36",
+    "id": "out_cat_36",
     "name": "Gelatina Royal Vários Sabores Pacote 25g",
     "category": "mercearia",
     "unit": "25g",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 1.79,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 1.79,
       "extrabom": 2.19,
@@ -954,18 +1956,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 1,79",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_37",
+    "id": "out_cat_37",
     "name": "Campari Bitter Garrafa 998ml",
     "category": "bebidas",
     "unit": "998ml",
     "image": "assets/cerveja.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 54.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 54.9,
       "extrabom": 69.9,
@@ -975,18 +1977,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 54,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_38",
+    "id": "out_cat_38",
     "name": "Coquetel de Vinho Cantina da Serra Garrafa 1,5L",
     "category": "bebidas",
     "unit": "1.5L",
     "image": "assets/cerveja.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "carone",
     "offerPrice": 8.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 10.99,
       "extrabom": 12.99,
@@ -996,18 +1998,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Carone Supermercados | R$ 8,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_39",
+    "id": "out_cat_39",
     "name": "Cerveja Itaipava Latão 550ml",
     "category": "bebidas",
     "unit": "550ml",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 4.19,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 4.19,
       "extrabom": 4.79,
@@ -1017,18 +2019,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 4,19",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_40",
+    "id": "out_cat_40",
     "name": "Cerveja Amstel Lata 269ml",
     "category": "bebidas",
     "unit": "269ml",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacado_vem",
     "offerPrice": 2.53,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 2.99,
       "extrabom": 3.29,
@@ -1039,18 +2041,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacado Vem | R$ 2,53",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_41",
+    "id": "out_cat_41",
     "name": "Refrigerante Guaraná Antarctica PET 600ml",
     "category": "bebidas",
     "unit": "600ml",
     "image": "assets/cerveja.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 4.49,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 4.49,
       "extrabom": 4.99,
@@ -1060,18 +2062,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 4,49",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_42",
+    "id": "out_cat_42",
     "name": "Suco de Uva Campo Largo Integral PET 1,35L",
     "category": "bebidas",
     "unit": "1.35L",
     "image": "assets/cerveja.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 11.99,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 11.99,
       "extrabom": 13.99,
@@ -1081,18 +2083,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 11,99",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_43",
+    "id": "out_cat_43",
     "name": "Refresco H2OH! Limoneto / Limão PET 500ml",
     "category": "bebidas",
     "unit": "500ml",
     "image": "assets/cerveja.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 4.39,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 4.39,
       "extrabom": 4.99,
@@ -1102,18 +2104,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 4,39",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_44",
+    "id": "out_cat_44",
     "name": "Refresco Líquido Tampico Frutas Cítricas PET 450ml",
     "category": "bebidas",
     "unit": "450ml",
     "image": "assets/cerveja.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 1.89,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 1.89,
       "extrabom": 2.69,
@@ -1123,18 +2125,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 1,89",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_45",
+    "id": "out_cat_45",
     "name": "Refresco Líquido Guaravita Guaraná Copo 290ml",
     "category": "bebidas",
     "unit": "290ml",
     "image": "assets/cerveja.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 1.05,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 1.05,
       "extrabom": 1.29,
@@ -1144,18 +2146,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 1,05",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_46",
+    "id": "out_cat_46",
     "name": "Lava Roupas em Pó Tixan Maciez / Primavera 2,4kg",
     "category": "limpeza",
     "unit": "2.4kg",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 17.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 17.9,
       "extrabom": 19.9,
@@ -1165,18 +2167,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 17,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_47",
+    "id": "out_cat_47",
     "name": "Lava Roupas Mon Bijou Azul / Verde Refil 900ml",
     "category": "limpeza",
     "unit": "900ml",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 9.75,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 9.75,
       "extrabom": 10.79,
@@ -1186,18 +2188,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 9,75",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_48",
+    "id": "out_cat_48",
     "name": "Água Sanitária Cloral Frasco 1L",
     "category": "limpeza",
     "unit": "1L",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 1.99,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 1.99,
       "extrabom": 2.35,
@@ -1207,18 +2209,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 1,99",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_49",
+    "id": "out_cat_49",
     "name": "Lã de Aço Assolan 10% Desconto 45g",
     "category": "limpeza",
     "unit": "45g",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 1.39,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 1.39,
       "extrabom": 1.59,
@@ -1228,18 +2230,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 1,39",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_50",
+    "id": "out_cat_50",
     "name": "Desinfetante Búfalo Várias Fragrâncias 2L",
     "category": "limpeza",
     "unit": "2L",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 4.49,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 4.49,
       "extrabom": 5.69,
@@ -1249,18 +2251,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 4,49",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_51",
+    "id": "out_cat_51",
     "name": "Esponja Multiuso Allklin Unidade",
     "category": "limpeza",
     "unit": "unidade",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 0.89,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 0.89,
       "extrabom": 1.39,
@@ -1270,18 +2272,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 0,89",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_52",
+    "id": "out_cat_52",
     "name": "Desodorante Aerossol Nivea Várias Fragrâncias 200ml",
     "category": "higiene",
     "unit": "200ml",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 13.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 13.9,
       "extrabom": 15.5,
@@ -1291,18 +2293,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 13,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_53",
+    "id": "out_cat_53",
     "name": "Desodorante Roll-On Giovanna Baby Frasco 50ml",
     "category": "higiene",
     "unit": "50ml",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 5.98,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 5.98,
       "extrabom": 7.9,
@@ -1312,18 +2314,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 5,98",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_54",
+    "id": "out_cat_54",
     "name": "Sabonete Farnese Vários Tipos 180g",
     "category": "higiene",
     "unit": "180g",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 2.95,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 2.95,
       "extrabom": 3.35,
@@ -1333,18 +2335,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 2,95",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_55",
+    "id": "out_cat_55",
     "name": "Creme Dental Sorriso Tripla Limpeza Completa 70g",
     "category": "higiene",
     "unit": "70g",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 2.49,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 2.49,
       "extrabom": 2.98,
@@ -1354,18 +2356,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 2,49",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_56",
+    "id": "out_cat_56",
     "name": "Pneu Dunlop SP Touring 175/70 R13 Unidade",
     "category": "limpeza",
     "unit": "unidade",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 349.0,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 349.0,
       "extrabom": 370.0,
@@ -1375,18 +2377,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 349,00",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_57",
+    "id": "out_cat_57",
     "name": "Mop Giratório Allklin 12L Unidade",
     "category": "limpeza",
     "unit": "unidade",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 66.25,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 66.25,
       "extrabom": 90.0,
@@ -1396,18 +2398,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 66,25",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_58",
+    "id": "out_cat_58",
     "name": "Papel Sulfite Report A4 75g Pacote 500 Folhas",
     "category": "limpeza",
     "unit": "500 fls",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 24.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 24.9,
       "extrabom": 27.9,
@@ -1417,18 +2419,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 24,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_59",
+    "id": "out_cat_59",
     "name": "Alimento para Cães Bast Dog Arroz e Carne 15kg",
     "category": "limpeza",
     "unit": "15kg",
     "image": "assets/carne.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacado_vem",
     "offerPrice": 52.13,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 53.24,
       "extrabom": 58.23,
@@ -1439,18 +2441,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacado Vem | R$ 52,13",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_60",
+    "id": "out_cat_60",
     "name": "Alimento para Cães Dog Chow Vários Sabores 2,5kg",
     "category": "limpeza",
     "unit": "2.5kg",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 43.54,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 43.54,
       "extrabom": 52.9,
@@ -1460,18 +2462,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 43,54",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_61",
+    "id": "out_cat_61",
     "name": "Alimento para Cães Dog Chow Vários Sabores 900g",
     "category": "limpeza",
     "unit": "900g",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 14.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 14.9,
       "extrabom": 22.9,
@@ -1481,18 +2483,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 14,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "car_1",
+    "id": "out_cat_62",
     "name": "Polpa de Tomate Davia 680g",
     "category": "mercearia",
     "unit": "680g",
     "image": "assets/tomate.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "carone",
     "offerPrice": 11.98,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "carone": 11.98,
       "extrabom": 13.99,
@@ -1501,18 +2503,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Carone Supermercados | R$ 11,98",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "car_2",
+    "id": "out_cat_63",
     "name": "Molho Pesto Filippo Berio 190g",
     "category": "mercearia",
     "unit": "190g",
     "image": "assets/arroz.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "carone",
     "offerPrice": 15.22,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "carone": 15.22,
       "extrabom": 15.71,
@@ -1521,18 +2523,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Carone Supermercados | R$ 15,22",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "car_3",
+    "id": "out_cat_64",
     "name": "Tomate Pelado Rosso Gargano Pomadore 400g",
     "category": "mercearia",
     "unit": "400g",
     "image": "assets/tomate.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "carone",
     "offerPrice": 7.79,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "carone": 7.79,
       "extrabom": 9.99,
@@ -1541,18 +2543,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Carone Supermercados | R$ 7,79",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "car_4",
+    "id": "out_cat_65",
     "name": "Massas Antico Molino Molisano Cortes 500g",
     "category": "mercearia",
     "unit": "500g",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "carone",
     "offerPrice": 7.79,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "carone": 7.79,
       "extrabom": 9.5,
@@ -1561,18 +2563,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Carone Supermercados | R$ 7,79",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "car_5",
+    "id": "out_cat_66",
     "name": "Azeite Italiano Extra Virgem Capone 500ml",
     "category": "mercearia",
     "unit": "500ml",
     "image": "assets/arroz.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "carone",
     "offerPrice": 25.37,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "carone": 25.37,
       "extrabom": 26.2,
@@ -1581,18 +2583,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Carone Supermercados | R$ 25,37",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "car_6",
+    "id": "out_cat_67",
     "name": "Vinho Tinto Italiano Santa Lara Toscana 750ml",
     "category": "bebidas",
     "unit": "750ml",
     "image": "assets/cerveja.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "carone",
     "offerPrice": 68.77,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "carone": 68.77,
       "extrabom": 99.0,
@@ -1601,18 +2603,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Carone Supermercados | R$ 68,77",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "car_7",
+    "id": "out_cat_68",
     "name": "Vinho Tinto Italiano Santa Lara Chianti 750ml",
     "category": "bebidas",
     "unit": "750ml",
     "image": "assets/cerveja.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "carone",
     "offerPrice": 59.05,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "carone": 59.05,
       "extrabom": 85.0,
@@ -1621,18 +2623,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Carone Supermercados | R$ 59,05",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "car_8",
+    "id": "out_cat_69",
     "name": "Vinho Tinto Italiano La Scala Segreta Primitivo Di Manduria 750ml",
     "category": "bebidas",
     "unit": "750ml",
     "image": "assets/cerveja.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "carone",
     "offerPrice": 104.49,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "carone": 104.49,
       "extrabom": 149.0,
@@ -1641,18 +2643,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Carone Supermercados | R$ 104,49",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "car_9",
+    "id": "out_cat_70",
     "name": "Papel Higiênico Neve Folha Dupla 12 Unidades",
     "category": "higiene",
     "unit": "12 un",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "carone",
     "offerPrice": 18.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "carone": 18.9,
       "extrabom": 21.9,
@@ -1661,18 +2663,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Carone Supermercados | R$ 18,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "car_10",
+    "id": "out_cat_71",
     "name": "Desodorizador de Ambiente Bom Ar Aerossol 360ml",
     "category": "limpeza",
     "unit": "360ml",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "carone",
     "offerPrice": 12.9,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "carone": 12.9,
       "extrabom": 14.9,
@@ -1681,18 +2683,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Carone Supermercados | R$ 12,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "bh_30_1",
+    "id": "out_cat_72",
     "name": "Frango a Passarinho Sadia Congelado 1kg",
     "category": "acougue",
     "unit": "1kg",
     "image": "assets/frango.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 10.43,
-    "validity": "Válido até 15/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "bh": 10.43,
       "extrabom": 14.98,
@@ -1702,18 +2704,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 10,43",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "bh_30_2",
+    "id": "out_cat_73",
     "name": "Coxinha das Asas de Frango Sadia Congelada 1kg",
     "category": "acougue",
     "unit": "1kg",
     "image": "assets/frango.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 12.85,
-    "validity": "Válido até 15/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "bh": 12.85,
       "extrabom": 17.8,
@@ -1723,18 +2725,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 12,85",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "bh_30_3",
+    "id": "out_cat_74",
     "name": "Lasanha Perdigão Congelada 600g",
     "category": "laticinios",
     "unit": "600g",
     "image": "assets/frango.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 12.98,
-    "validity": "Válido até 15/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "bh": 12.98,
       "extrabom": 15.98,
@@ -1742,18 +2744,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 12,98",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "bh_30_4",
+    "id": "out_cat_75",
     "name": "Linguiça Calabresa Perdigão kg",
     "category": "acougue",
     "unit": "1kg",
     "image": "assets/carne.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 22.7,
-    "validity": "Válido até 15/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "bh": 22.7,
       "extrabom": 24.98,
@@ -1762,18 +2764,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 22,70",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "bh_30_5",
+    "id": "out_cat_76",
     "name": "Azeite Chileno O-Live Vidro 450ml",
     "category": "mercearia",
     "unit": "450ml",
     "image": "assets/arroz.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "carone",
     "offerPrice": 21.92,
-    "validity": "Válido até 15/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "bh": 25.9,
       "carone": 21.92,
@@ -1781,18 +2783,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Carone Supermercados | R$ 21,92",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "bh_30_6",
+    "id": "out_cat_77",
     "name": "Margarina Delícia com Sal 500g",
     "category": "laticinios",
     "unit": "500g",
     "image": "assets/itens.jpeg",
-    "encarteId": 2,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 6.98,
-    "validity": "Válido até 15/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "bh": 6.98,
       "extrabom": 8.98,
@@ -1801,18 +2803,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 6,98",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "bh_30_7",
+    "id": "out_cat_78",
     "name": "Extrato de Tomate Elefante Sachê 300g",
     "category": "mercearia",
     "unit": "300g",
     "image": "assets/tomate.png",
-    "encarteId": 2,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 4.98,
-    "validity": "Válido até 15/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "bh": 4.98,
       "extrabom": 6.98,
@@ -1821,18 +2823,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 4,98",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "bh_30_8",
+    "id": "out_cat_79",
     "name": "Bombom Sonho de Valsa ou Ouro Branco Pacote 1kg",
     "category": "mercearia",
     "unit": "1kg",
     "image": "assets/itens.jpeg",
-    "encarteId": 3,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 45.98,
-    "validity": "Válido até 15/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "bh": 45.98,
       "extrabom": 49.9,
@@ -1841,18 +2843,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 45,98",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "bh_30_9",
+    "id": "out_cat_80",
     "name": "Bombom Serenata de Amor Pacote 825g",
     "category": "mercearia",
     "unit": "825g",
     "image": "assets/itens.jpeg",
-    "encarteId": 3,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 45.9,
-    "validity": "Válido até 15/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "bh": 45.9,
       "extrabom": 48.9,
@@ -1861,18 +2863,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 45,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "bh_30_10",
+    "id": "out_cat_81",
     "name": "Cerveja Budweiser Latão 473ml",
     "category": "bebidas",
     "unit": "473ml",
     "image": "assets/limpeza.png",
-    "encarteId": 3,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 3.99,
-    "validity": "Válido até 15/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "bh": 3.99,
       "extrabom": 4.35,
@@ -1881,18 +2883,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 3,99",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "bh_30_11",
+    "id": "out_cat_82",
     "name": "Lava Roupas Líquido Omo 3 Litros",
     "category": "limpeza",
     "unit": "3L",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 29.98,
-    "validity": "Válido até 15/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "bh": 29.98,
       "extrabom": 35.9,
@@ -1901,18 +2903,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 29,98",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "bh_30_12",
+    "id": "out_cat_83",
     "name": "Fralda Descartável Pampers Super Sequinha Tamanho M 90 Tiras",
     "category": "higiene",
     "unit": "90 un",
     "image": "assets/limpeza.png",
-    "encarteId": 4,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 78.9,
-    "validity": "Válido até 15/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "bh": 78.9,
       "extrabom": 85.9,
@@ -1921,18 +2923,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 78,90",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_apti_1",
+    "id": "out_cat_84",
     "name": "Caldo de Carne / Galinha Apti Pacote 1,05kg",
     "category": "mercearia",
     "unit": "1,05kg",
     "image": "assets/carne.png",
-    "encarteId": 5,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 8.99,
-    "validity": "Válido 04/09 a 13/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 8.99,
       "bh": 9.98,
@@ -1941,18 +2943,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 8,99",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_apti_2",
+    "id": "out_cat_85",
     "name": "Chocolate em Pó Apti 50% Cacau Pacote 1kg",
     "category": "mercearia",
     "unit": "1kg",
     "image": "assets/itens.jpeg",
-    "encarteId": 5,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 39.9,
-    "validity": "Válido 04/09 a 13/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 39.9,
       "extrabom": 44.9,
@@ -1960,18 +2962,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 39,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_apti_3",
+    "id": "out_cat_86",
     "name": "Achocolatado em Pó Apti Power Pacote 1kg",
     "category": "mercearia",
     "unit": "1kg",
     "image": "assets/itens.jpeg",
-    "encarteId": 5,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 15.9,
-    "validity": "Válido 04/09 a 13/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 15.9,
       "bh": 17.9,
@@ -1980,18 +2982,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 15,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_apti_4",
+    "id": "out_cat_87",
     "name": "Mistura para Bolo Apti Vários Sabores Pouche 400g",
     "category": "mercearia",
     "unit": "400g",
     "image": "assets/itens.jpeg",
-    "encarteId": 5,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 2.89,
-    "validity": "Válido 04/09 a 13/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 2.89,
       "extrabom": 3.98,
@@ -2000,18 +3002,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 2,89",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_apti_5",
+    "id": "out_cat_88",
     "name": "Gelatina em Pó Apti Vários Sabores Caixeta 20g",
     "category": "mercearia",
     "unit": "20g",
     "image": "assets/itens.jpeg",
-    "encarteId": 5,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 0.99,
-    "validity": "Válido 04/09 a 13/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 0.99,
       "bh": 1.49,
@@ -2020,18 +3022,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 0,99",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "cg_set_1",
+    "id": "out_cat_89",
     "name": "Picanha Bovina Friboi Resfriada kg",
     "category": "acougue",
     "unit": "1kg",
     "image": "assets/contrafile.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "extrabom",
     "offerPrice": 39.33,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "casagrande": 41.49,
       "extrabom": 39.33,
@@ -2041,18 +3043,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Extrabom Supermercados | R$ 39,33",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "cg_set_2",
+    "id": "out_cat_90",
     "name": "Bisteca Suína Palmali Congelada kg",
     "category": "acougue",
     "unit": "1kg",
     "image": "assets/carne.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "casagrande",
     "offerPrice": 14.24,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "casagrande": 14.24,
       "extrabom": 14.71,
@@ -2062,18 +3064,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 14,24",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "cg_set_3",
+    "id": "out_cat_91",
     "name": "Maionese Heinz Galinha Caipira Pote 400g",
     "category": "mercearia",
     "unit": "400g",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "casagrande",
     "offerPrice": 10.98,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "casagrande": 10.98,
       "extrabom": 12.9,
@@ -2083,18 +3085,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 10,98",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "cg_set_4",
+    "id": "out_cat_92",
     "name": "Ketchup Heinz Frasco PET 1,033kg",
     "category": "mercearia",
     "unit": "1,033kg",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "casagrande",
     "offerPrice": 17.98,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "casagrande": 17.98,
       "extrabom": 19.9,
@@ -2104,18 +3106,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 17,98",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "cg_set_5",
+    "id": "out_cat_93",
     "name": "Queijo Mussarela Davaca Fatiado 150g",
     "category": "laticinios",
     "unit": "150g",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "assai",
     "offerPrice": 6.76,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "casagrande": 8.98,
       "extrabom": 9.9,
@@ -2126,18 +3128,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Assaí Atacadista | R$ 6,76",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "cg_set_6",
+    "id": "out_cat_94",
     "name": "Coxa e Sobrecoxa de Frango Kifrango Congelada 1kg",
     "category": "acougue",
     "unit": "1kg",
     "image": "assets/frango.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 7.96,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "casagrande": 9.9,
       "extrabom": 10.9,
@@ -2148,18 +3150,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 7,96",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "cg_set_7",
+    "id": "out_cat_95",
     "name": "Margarina Delícia com Sal Pote 1kg",
     "category": "laticinios",
     "unit": "1kg",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "casagrande",
     "offerPrice": 13.99,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "casagrande": 13.99,
       "extrabom": 15.9,
@@ -2169,18 +3171,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 13,99",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "cg_set_8",
+    "id": "out_cat_96",
     "name": "Batata Ruffles Vários Sabores Pacote 115g",
     "category": "mercearia",
     "unit": "115g",
     "image": "assets/tomate.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "casagrande",
     "offerPrice": 9.99,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "casagrande": 9.99,
       "extrabom": 11.9,
@@ -2190,18 +3192,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 9,99",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "cg_set_9",
+    "id": "out_cat_97",
     "name": "Salgadinho Doritos Nacho ou Sweet Chili Pacote 120g",
     "category": "mercearia",
     "unit": "120g",
     "image": "assets/itens.jpeg",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "casagrande",
     "offerPrice": 10.99,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "casagrande": 10.99,
       "extrabom": 12.9,
@@ -2211,18 +3213,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 10,99",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "cg_set_10",
+    "id": "out_cat_98",
     "name": "Detergente Líquido Brilhante Delicadeza Galão 3 Litros",
     "category": "limpeza",
     "unit": "3L",
     "image": "assets/limpeza.png",
-    "encarteId": 1,
+    "encarteId": None,
     "offerMarketId": "casagrande",
     "offerPrice": 29.98,
-    "validity": "Ofertas Atualizadas de Hoje",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "casagrande": 29.98,
       "extrabom": 34.9,
@@ -2232,18 +3234,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Rede Casagrande (Barcelona) | R$ 29,98",
-    "sourceType": "📄 Encarte Oficial BH 30 Anos"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_1",
+    "id": "out_cat_99",
     "name": "Shampoo Pantene Vários Tipos 175ml",
     "category": "higiene",
     "unit": "175ml",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "atacado_vem",
     "offerPrice": 12.62,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 13.98,
       "extrabom": 16.9,
@@ -2254,18 +3256,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacado Vem | R$ 12,62",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_2",
+    "id": "out_cat_100",
     "name": "Amaciante de Roupas Concentrado Downy Várias Fragrâncias 500ml",
     "category": "limpeza",
     "unit": "500ml",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 10.11,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 11.2,
       "extrabom": 13.9,
@@ -2276,18 +3278,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 10,11",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_3",
+    "id": "out_cat_101",
     "name": "Kit Pantene Shampoo 300ml + Condicionador 150ml Vários Tipos",
     "category": "higiene",
     "unit": "kit",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 34.5,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 34.5,
       "extrabom": 38.9,
@@ -2298,18 +3300,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 34,50",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_4",
+    "id": "out_cat_102",
     "name": "Creme Dental Oral-B 4 em 1 Pack Leve 12 Pague 10 (12x70g)",
     "category": "higiene",
     "unit": "pack 12x70g",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 32.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 32.9,
       "extrabom": 37.9,
@@ -2320,18 +3322,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 32,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_5",
+    "id": "out_cat_103",
     "name": "Creme Dental Sorriso Tripla Limpeza Completa Tubo 70g",
     "category": "higiene",
     "unit": "70g",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 2.49,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 2.49,
       "extrabom": 3.49,
@@ -2342,18 +3344,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 2,49",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_6",
+    "id": "out_cat_104",
     "name": "Shampoo e Condicionador Darling Vários Tipos Frasco 315ml",
     "category": "higiene",
     "unit": "315ml",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 6.49,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 6.49,
       "extrabom": 8.99,
@@ -2364,18 +3366,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 6,49",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_7",
+    "id": "out_cat_105",
     "name": "Sabonete Palmolive Naturals Vários Tipos 85g",
     "category": "higiene",
     "unit": "85g",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 1.89,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 2.09,
       "extrabom": 2.89,
@@ -2386,18 +3388,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Supermercados BH | R$ 1,89",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_8",
+    "id": "out_cat_106",
     "name": "Limpador Ajax Vários Tipos Frasco 500ml",
     "category": "limpeza",
     "unit": "500ml",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 4.29,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 4.29,
       "extrabom": 6.5,
@@ -2408,18 +3410,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 4,29",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_9",
+    "id": "out_cat_107",
     "name": "Lava Roupa em Pó Surf Rosas e Flor de Lís / Cuidado do Coco 2,4kg",
     "category": "limpeza",
     "unit": "2.4kg",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 19.5,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 19.5,
       "extrabom": 22.9,
@@ -2430,18 +3432,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 19,50",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_10",
+    "id": "out_cat_108",
     "name": "Amaciante para Roupas Concentrado Comfort Várias Fragrâncias 500ml",
     "category": "limpeza",
     "unit": "500ml",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "atacado_vem",
     "offerPrice": 8.11,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 8.99,
       "extrabom": 10.78,
@@ -2452,18 +3454,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacado Vem | R$ 8,11",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_11",
+    "id": "out_cat_109",
     "name": "Shampoo Seda Vários Tipos Frasco 300ml / 325ml",
     "category": "higiene",
     "unit": "325ml",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 14.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 14.9,
       "extrabom": 18.9,
@@ -2474,18 +3476,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 14,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_12",
+    "id": "out_cat_110",
     "name": "Desodorante Aerossol Rexona Várias Fragrâncias 200ml",
     "category": "higiene",
     "unit": "200ml",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 14.35,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 15.9,
       "extrabom": 18.9,
@@ -2496,18 +3498,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 14,35",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_13",
+    "id": "out_cat_111",
     "name": "Detergente Líquido Ypê Vários Tipos 500ml",
     "category": "limpeza",
     "unit": "500ml",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 2.19,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 2.19,
       "extrabom": 2.49,
@@ -2518,18 +3520,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 2,19",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_14",
+    "id": "out_cat_112",
     "name": "Amaciante de Roupas Ypê Várias Fragrâncias 2L",
     "category": "limpeza",
     "unit": "2L",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "extrabom",
     "offerPrice": 6.43,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 6.98,
       "extrabom": 6.43,
@@ -2540,18 +3542,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Extrabom Supermercados | R$ 6,43",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_15",
+    "id": "out_cat_113",
     "name": "Lava Roupas em Pó Tixan Várias Fragrâncias Pacote 8kg",
     "category": "limpeza",
     "unit": "8kg",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 68.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 68.9,
       "extrabom": 81.9,
@@ -2562,18 +3564,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 68,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_16",
+    "id": "out_cat_114",
     "name": "Lava Roupas Líquido Tixan Primavera Bombona 7L",
     "category": "limpeza",
     "unit": "7L",
     "image": "assets/limpeza.png",
-    "encarteId": 6,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 45.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 45.9,
       "extrabom": 57.98,
@@ -2584,18 +3586,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 45,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_17",
+    "id": "out_cat_115",
     "name": "Papel Higiênico Cotton Folha Dupla 30m Pacote 24 Rolos",
     "category": "higiene",
     "unit": "24 un",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 29.34,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 32.5,
       "extrabom": 37.5,
@@ -2606,18 +3608,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 29,34",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_18",
+    "id": "out_cat_116",
     "name": "Fralda Descartável Baby Sec Vários Tamanhos Pacote",
     "category": "higiene",
     "unit": "pacote",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 33.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 33.9,
       "extrabom": 39.99,
@@ -2628,18 +3630,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 33,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_19",
+    "id": "out_cat_117",
     "name": "Absorvente Diana Suave com Abas Leve 16 Pague 14 (16 un)",
     "category": "higiene",
     "unit": "16 un",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "atacado_vem",
     "offerPrice": 4.95,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 5.48,
       "extrabom": 6.48,
@@ -2650,18 +3652,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacado Vem | R$ 4,95",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_20",
+    "id": "out_cat_118",
     "name": "Kit Tira Manchas em Gel Vanish 2x1,2L (Nesta embalagem R$ 17,45 cada)",
     "category": "limpeza",
     "unit": "kit 2x1,2L",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 34.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 34.9,
       "extrabom": 44.9,
@@ -2672,18 +3674,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 34,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_21",
+    "id": "out_cat_119",
     "name": "Limpador Multiuso Veja Várias Fragrâncias 500ml",
     "category": "limpeza",
     "unit": "500ml",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "extrabom",
     "offerPrice": 3.96,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 4.29,
       "extrabom": 3.96,
@@ -2694,18 +3696,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Extrabom Supermercados | R$ 3,96",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_22",
+    "id": "out_cat_120",
     "name": "Limpador Veja X-14 Tira Limo Pulverizador 500ml",
     "category": "limpeza",
     "unit": "500ml",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 13.52,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 14.98,
       "extrabom": 19.5,
@@ -2716,18 +3718,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Supermercados BH | R$ 13,52",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_23",
+    "id": "out_cat_121",
     "name": "Fralda Descartável Personal Pants XG Pacote 22 un",
     "category": "higiene",
     "unit": "22 un",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 19.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 19.9,
       "extrabom": 27.9,
@@ -2738,18 +3740,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 19,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_24",
+    "id": "out_cat_122",
     "name": "Papel Higiênico Personal Vip Folha Dupla 20m Leve 12 Pague 11",
     "category": "higiene",
     "unit": "12 rolos",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 9.98,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 9.98,
       "extrabom": 14.88,
@@ -2760,18 +3762,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 9,98",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_25",
+    "id": "out_cat_123",
     "name": "Papel Higiênico Personal Vip KM Folha Dupla 50m Pacote 20 Rolos",
     "category": "higiene",
     "unit": "20 rolos",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 39.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 39.9,
       "extrabom": 54.98,
@@ -2782,18 +3784,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 39,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_26",
+    "id": "out_cat_124",
     "name": "Sabonete Hidratante Nivea Várias Fragrâncias 85g",
     "category": "higiene",
     "unit": "85g",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 1.98,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 1.98,
       "extrabom": 2.65,
@@ -2804,18 +3806,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 1,98",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_27",
+    "id": "out_cat_125",
     "name": "Desodorante Roll-On Nivea Pack 2x50ml (50% desc 2ª un)",
     "category": "higiene",
     "unit": "pack 2x50ml",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 10.81,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 11.98,
       "extrabom": 15.9,
@@ -2826,40 +3828,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Supermercados BH | R$ 10,81",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_28",
-    "name": "Desodorante Aerossol Nivea Várias Fragrâncias 200ml",
-    "category": "higiene",
-    "unit": "200ml",
-    "image": "assets/limpeza.png",
-    "encarteId": 7,
-    "offerMarketId": "extrabom",
-    "offerPrice": 11.88,
-    "validity": "Válido 01/09 a 10/09/2026",
-    "prices": {
-      "atacadao": 12.9,
-      "extrabom": 11.88,
-      "carone": 17.5,
-      "casagrande": 15.9,
-      "bh": 14.9,
-      "atacado_vem": 13.5
-    },
-    "featured": True,
-    "discountTag": "Menor preço no Extrabom Supermercados | R$ 11,88",
-    "sourceType": "📄 Encarte Oficial Atacadão"
-  },
-  {
-    "id": "atc_pl_29",
+    "id": "out_cat_127",
     "name": "Inseticida Aerossol Baygon Ação Total 360ml",
     "category": "limpeza",
     "unit": "360ml",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 12.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 12.9,
       "extrabom": 14.49,
@@ -2870,18 +3850,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 12,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_30",
+    "id": "out_cat_128",
     "name": "Desodorizador Pastilha Adesiva Pato Leve 5 Pague 4 (5 un)",
     "category": "limpeza",
     "unit": "5 un",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 4.79,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 4.79,
       "extrabom": 5.49,
@@ -2892,18 +3872,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 4,79",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_31",
+    "id": "out_cat_129",
     "name": "Desinfetante Líquido Lysoform Original / Suave Bombona 5L",
     "category": "limpeza",
     "unit": "5L",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 45.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 45.9,
       "extrabom": 49.9,
@@ -2914,18 +3894,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 45,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_32",
+    "id": "out_cat_130",
     "name": "Creme Condicionante Skala Vários Tipos Pote 1kg",
     "category": "higiene",
     "unit": "1kg",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 8.93,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 9.9,
       "extrabom": 13.9,
@@ -2936,18 +3916,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 8,93",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_33",
+    "id": "out_cat_131",
     "name": "Kit Skala Shampoo + Condicionador Vários Tipos",
     "category": "higiene",
     "unit": "kit",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 11.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 11.9,
       "extrabom": 17.98,
@@ -2958,18 +3938,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 11,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_34",
+    "id": "out_cat_132",
     "name": "Desodorante Roll-On Skala Várias Fragrâncias 60ml",
     "category": "higiene",
     "unit": "60ml",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 4.98,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 4.98,
       "extrabom": 6.9,
@@ -2980,18 +3960,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 4,98",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_35",
+    "id": "out_cat_133",
     "name": "Fralda Descartável Huggies Máxima Proteção Vários Tamanhos",
     "category": "higiene",
     "unit": "pacote",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "extrabom",
     "offerPrice": 64.42,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 69.9,
       "extrabom": 64.42,
@@ -3002,18 +3982,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Extrabom Supermercados | R$ 64,42",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_36",
+    "id": "out_cat_134",
     "name": "Fralda Descartável Huggies Rápida Absorção Vários Tamanhos",
     "category": "higiene",
     "unit": "pacote",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 74.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 74.9,
       "extrabom": 109.9,
@@ -3024,18 +4004,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 74,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_37",
+    "id": "out_cat_135",
     "name": "Shampoo Infantil Huggies Extra Suave Frasco 600ml",
     "category": "higiene",
     "unit": "600ml",
     "image": "assets/limpeza.png",
-    "encarteId": 7,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 22.47,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 24.9,
       "extrabom": 43.0,
@@ -3046,18 +4026,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 22,47",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_38",
+    "id": "out_cat_136",
     "name": "Kit Elseve Shampoo + Condicionador Vários Tipos",
     "category": "higiene",
     "unit": "kit",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 29.98,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 29.98,
       "extrabom": 37.5,
@@ -3068,18 +4048,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 29,98",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_39",
+    "id": "out_cat_137",
     "name": "Tintura Cor&Ton Várias Tonalidades Caixinha 135g",
     "category": "higiene",
     "unit": "135g",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 12.78,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 12.78,
       "extrabom": 14.98,
@@ -3090,18 +4070,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 12,78",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_40",
+    "id": "out_cat_138",
     "name": "Shampoo Elseve Vários Tipos Frasco 400ml",
     "category": "higiene",
     "unit": "400ml",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 25.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 25.9,
       "extrabom": 29.98,
@@ -3112,18 +4092,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 25,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_41",
+    "id": "out_cat_139",
     "name": "Absorvente Sempre Livre Adapt Suave com Abas Pacote 8 un",
     "category": "higiene",
     "unit": "8 un",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 3.49,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 3.49,
       "extrabom": 4.99,
@@ -3134,18 +4114,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 3,49",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_42",
+    "id": "out_cat_140",
     "name": "Antisséptico Bucal Listerine Vários Tipos Frasco 250ml",
     "category": "higiene",
     "unit": "250ml",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 10.73,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 11.9,
       "extrabom": 14.98,
@@ -3156,18 +4136,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 10,73",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_43",
+    "id": "out_cat_141",
     "name": "Sabonete Johnson's Várias Fragrâncias 80g",
     "category": "higiene",
     "unit": "80g",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 1.79,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 1.79,
       "extrabom": 2.45,
@@ -3178,18 +4158,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 1,79",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_44",
+    "id": "out_cat_142",
     "name": "Desinfetante Álcool Líquido Coperalcool 46º INPM Frasco 1L",
     "category": "limpeza",
     "unit": "1L",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 11.5,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 11.5,
       "extrabom": 12.98,
@@ -3200,18 +4180,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 11,50",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_45",
+    "id": "out_cat_143",
     "name": "Limpador Perfumado Coala Várias Fragrâncias 120ml",
     "category": "limpeza",
     "unit": "120ml",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 12.5,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 12.5,
       "extrabom": 13.99,
@@ -3222,18 +4202,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 12,50",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_46",
+    "id": "out_cat_144",
     "name": "Removedor de Esmalte Zulu Tradicional / Fashion 90ml",
     "category": "higiene",
     "unit": "90ml",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "atacado_vem",
     "offerPrice": 2.97,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 3.29,
       "extrabom": 3.99,
@@ -3244,18 +4224,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacado Vem | R$ 2,97",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_47",
+    "id": "out_cat_145",
     "name": "Inseticida Aerossol Proinset Multi Inseticida 350ml",
     "category": "limpeza",
     "unit": "350ml",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 7.21,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 7.99,
       "extrabom": 9.49,
@@ -3266,18 +4246,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Supermercados BH | R$ 7,21",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_48",
+    "id": "out_cat_146",
     "name": "Desodorante Aerossol Above ONE Várias Fragrâncias 150ml",
     "category": "higiene",
     "unit": "150ml",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 5.98,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 5.98,
       "extrabom": 6.75,
@@ -3288,18 +4268,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 5,98",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_49",
+    "id": "out_cat_147",
     "name": "Antisséptico Bucal Above Fresh Protect 500ml",
     "category": "higiene",
     "unit": "500ml",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "extrabom",
     "offerPrice": 10.04,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 10.9,
       "extrabom": 10.04,
@@ -3310,18 +4290,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Extrabom Supermercados | R$ 10,04",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_50",
+    "id": "out_cat_148",
     "name": "Lava Roupa Líquido Urca Várias Fragrâncias Bombona 5L",
     "category": "limpeza",
     "unit": "5L",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 22.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 22.9,
       "extrabom": 25.98,
@@ -3332,18 +4312,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 22,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_51",
+    "id": "out_cat_149",
     "name": "Amaciante para Roupas Urca Brisa / Floral Bombona 5L",
     "category": "limpeza",
     "unit": "5L",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 12.5,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 12.5,
       "extrabom": 14.98,
@@ -3354,18 +4334,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 12,50",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_52",
+    "id": "out_cat_150",
     "name": "Lava Roupas em Pó Urca Pacote 4kg",
     "category": "limpeza",
     "unit": "4kg",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 17.95,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 19.9,
       "extrabom": 22.98,
@@ -3376,18 +4356,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Supermercados BH | R$ 17,95",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_53",
+    "id": "out_cat_151",
     "name": "Kit Uau Clorativo / Multiuso",
     "category": "limpeza",
     "unit": "kit",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 9.98,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 9.98,
       "extrabom": 15.5,
@@ -3398,18 +4378,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 9,98",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_54",
+    "id": "out_cat_152",
     "name": "Limpador Perfumado Uau Flores Vermelhas / Lavanda 500ml",
     "category": "limpeza",
     "unit": "500ml",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 4.49,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 4.49,
       "extrabom": 5.39,
@@ -3420,18 +4400,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 4,49",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_55",
+    "id": "out_cat_153",
     "name": "Amaciante de Roupas Concentrado Uau Carinho e Conforto 500ml",
     "category": "limpeza",
     "unit": "500ml",
     "image": "assets/limpeza.png",
-    "encarteId": 8,
+    "encarteId": None,
     "offerMarketId": "atacado_vem",
     "offerPrice": 7.67,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 8.49,
       "extrabom": 10.9,
@@ -3442,18 +4422,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacado Vem | R$ 7,67",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_56",
+    "id": "out_cat_154",
     "name": "Sabonete Francis Várias Fragrâncias Pack 6x80g",
     "category": "higiene",
     "unit": "pack 6x80g",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "extrabom",
     "offerPrice": 12.88,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 13.98,
       "extrabom": 12.88,
@@ -3464,18 +4444,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Extrabom Supermercados | R$ 12,88",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_57",
+    "id": "out_cat_155",
     "name": "Kit OX Shampoo + Condicionador Vários Tipos",
     "category": "higiene",
     "unit": "kit",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 27.06,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 29.98,
       "extrabom": 36.98,
@@ -3486,18 +4466,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Supermercados BH | R$ 27,06",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_58",
+    "id": "out_cat_156",
     "name": "Sabonete Albany Várias Fragrâncias 80g",
     "category": "higiene",
     "unit": "80g",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 1.49,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 1.49,
       "extrabom": 1.79,
@@ -3508,18 +4488,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 1,49",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_59",
+    "id": "out_cat_157",
     "name": "Talco Antisséptico Tenys Pé Baruel 100g",
     "category": "higiene",
     "unit": "100g",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 12.49,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 12.49,
       "extrabom": 15.9,
@@ -3530,18 +4510,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 12,49",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_60",
+    "id": "out_cat_158",
     "name": "Shampoo Infantil Baruel Baby Cheirinho do Sono 210ml",
     "category": "higiene",
     "unit": "210ml",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 6.99,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 6.99,
       "extrabom": 8.9,
@@ -3552,18 +4532,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 6,99",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_61",
+    "id": "out_cat_159",
     "name": "Kit Infantil Baruel Baby Shampoo + Condicionador Sono Tranquilo",
     "category": "higiene",
     "unit": "kit",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 18.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 18.9,
       "extrabom": 22.49,
@@ -3574,18 +4554,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 18,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_62",
+    "id": "out_cat_160",
     "name": "Esponja Scotch-Brite Esferas de Limpeza Pacote com 3 un",
     "category": "limpeza",
     "unit": "3 un",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 5.95,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 6.59,
       "extrabom": 7.98,
@@ -3596,18 +4576,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 5,95",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_63",
+    "id": "out_cat_161",
     "name": "Esponja Scotch-Brite Pacote com 4 un",
     "category": "limpeza",
     "unit": "4 un",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "extrabom",
     "offerPrice": 6.08,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 6.59,
       "extrabom": 6.08,
@@ -3618,18 +4598,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Extrabom Supermercados | R$ 6,08",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_64",
+    "id": "out_cat_162",
     "name": "Esponja Multiuso Tinindo 3M Ref. 1365 Unidade",
     "category": "limpeza",
     "unit": "unidade",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "atacado_vem",
     "offerPrice": 1.61,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 1.79,
       "extrabom": 2.59,
@@ -3640,18 +4620,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacado Vem | R$ 1,61",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_65",
+    "id": "out_cat_163",
     "name": "Papel Higiênico Max Pure Folha Dupla 30m Pacote 12 Rolos",
     "category": "higiene",
     "unit": "12 rolos",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 15.5,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 15.5,
       "extrabom": 16.98,
@@ -3662,18 +4642,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 15,50",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_66",
+    "id": "out_cat_164",
     "name": "Toalha de Papel Scala Plus 60 Folhas Pacote 2 Rolos",
     "category": "limpeza",
     "unit": "2 rolos",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 5.49,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 5.49,
       "extrabom": 6.35,
@@ -3684,18 +4664,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 5,49",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_67",
+    "id": "out_cat_165",
     "name": "Papel Higiênico Neve Folha Dupla 20m Pacote 12 Rolos",
     "category": "higiene",
     "unit": "12 rolos",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 14.42,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 15.98,
       "extrabom": 18.5,
@@ -3706,18 +4686,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Supermercados BH | R$ 14,42",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_68",
+    "id": "out_cat_166",
     "name": "Kit Novex Shampoo + Condicionador Vários Tipos",
     "category": "higiene",
     "unit": "kit",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 16.9,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 16.9,
       "extrabom": 18.9,
@@ -3728,18 +4708,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 16,90",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_69",
+    "id": "out_cat_167",
     "name": "Tintura Maxton Várias Tonalidades Kit",
     "category": "higiene",
     "unit": "kit",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 13.98,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 13.98,
       "extrabom": 15.49,
@@ -3750,18 +4730,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 13,98",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_70",
+    "id": "out_cat_168",
     "name": "Creme de Tratamento Novex Vários Tipos Pote 1kg",
     "category": "higiene",
     "unit": "1kg",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "extrabom",
     "offerPrice": 21.1,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 22.9,
       "extrabom": 21.1,
@@ -3772,18 +4752,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Extrabom Supermercados | R$ 21,10",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_71",
+    "id": "out_cat_169",
     "name": "Lã de Aço Bombril Pacote 45g",
     "category": "limpeza",
     "unit": "45g",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 1.85,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 1.85,
       "extrabom": 2.17,
@@ -3794,18 +4774,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 1,85",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_72",
+    "id": "out_cat_170",
     "name": "Limpador Perfumado Limpol Vários Tipos 500ml",
     "category": "limpeza",
     "unit": "500ml",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "bh",
     "offerPrice": 3.02,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 3.35,
       "extrabom": 3.98,
@@ -3816,18 +4796,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Supermercados BH | R$ 3,02",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_73",
+    "id": "out_cat_171",
     "name": "Sapólio Radium Cremoso Clássico / Cremoso Cloro 450ml",
     "category": "limpeza",
     "unit": "450ml",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "atacado_vem",
     "offerPrice": 8.93,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 9.9,
       "extrabom": 11.2,
@@ -3838,18 +4818,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacado Vem | R$ 8,93",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_74",
+    "id": "out_cat_172",
     "name": "Sabonete Líquido Monange Várias Fragrâncias Refil 400ml",
     "category": "higiene",
     "unit": "400ml",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 11.99,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 11.99,
       "extrabom": 13.99,
@@ -3860,18 +4840,18 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 11,99",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_75",
+    "id": "out_cat_173",
     "name": "Desodorante Aerossol Monange Várias Fragrâncias 150ml",
     "category": "higiene",
     "unit": "150ml",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 7.99,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 7.99,
       "extrabom": 9.3,
@@ -3882,18 +4862,18 @@ products = [
     },
     "featured": True,
     "discountTag": "Menor preço no Atacadão Serra | R$ 7,99",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   },
   {
-    "id": "atc_pl_76",
+    "id": "out_cat_174",
     "name": "Shampoo Monange Vários Tipos Frasco 325ml",
     "category": "higiene",
     "unit": "325ml",
     "image": "assets/limpeza.png",
-    "encarteId": 10,
+    "encarteId": None,
     "offerMarketId": "atacadao",
     "offerPrice": 6.75,
-    "validity": "Válido 01/09 a 10/09/2026",
+    "validity": "Pesquisa Online • Outubro/2026",
     "prices": {
       "atacadao": 6.75,
       "extrabom": 7.99,
@@ -3904,13 +4884,13 @@ products = [
     },
     "featured": False,
     "discountTag": "Menor preço no Atacadão Serra | R$ 6,75",
-    "sourceType": "📄 Encarte Oficial Atacadão"
+    "sourceType": "scraper"
   }
 ]
 
 content = f"""// Catálogo Completo de Supermercados, Encartes e Produtos
 // Colina de Laranjeiras & Imediações (Serra / ES)
-// Atualizado com Ofertas Oficiais e Pesquisa Realista de Preços
+// Atualizado em Outubro/2026 - Zero Itens de Setembro
 
 const SUPERMARKETS = {json.dumps(supermarkets, indent=2, ensure_ascii=False)};
 

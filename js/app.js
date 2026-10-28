@@ -8,6 +8,7 @@ let searchQuery = '';
 document.addEventListener('DOMContentLoaded', () => {
   updateHeaderDate();
   applyStoredCustomPrices();
+  updateSourceFilterCounts();
   renderSupermarketChips();
   renderCategories();
   renderProducts();
@@ -71,6 +72,18 @@ function renderSupermarketChips() {
 }
 
 // Filtro por Fonte da Informação (Folheto Promo vs Scraper/API)
+function updateSourceFilterCounts() {
+  const totalCount = PRODUCTS.length;
+  const encarteCount = PRODUCTS.filter(p => (p.sourceType || (p.encarteId ? 'encarte' : 'scraper')) === 'encarte').length;
+  const scraperCount = PRODUCTS.filter(p => (p.sourceType || (p.encarteId ? 'encarte' : 'scraper')) === 'scraper').length;
+  const btnAll = document.getElementById('source-filter-all');
+  const btnEncarte = document.getElementById('source-filter-encarte');
+  const btnScraper = document.getElementById('source-filter-scraper');
+  if (btnAll) btnAll.innerHTML = `🔍 Todas as Fontes (${totalCount})`;
+  if (btnEncarte) btnEncarte.innerHTML = `📄 Folhetos Promo (${encarteCount})`;
+  if (btnScraper) btnScraper.innerHTML = `🌐 Scrapers / APIs (${scraperCount})`;
+}
+
 function filterBySource(sourceType) {
   currentSource = sourceType;
   ['all', 'encarte', 'scraper'].forEach(s => {
@@ -810,6 +823,11 @@ function getProductIconConfig(product) {
   // 7. Doces
   if (name.includes('chocolate') || name.includes('bombom') || name.includes('bis') || name.includes('biscoito') || name.includes('doce') || name.includes('rosquinha') || name.includes('wafer')) {
     return { icon: '🍫', label: 'Doces & Chocolates', bg: 'linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%)', border: '#f472b6', textColor: '#831843' };
+  }
+
+  // 7.5 Velas & Artigos Religiosos / Finados
+  if (name.includes('vela ') || name.startsWith('vela')) {
+    return { icon: '🕯️', label: 'Velas & Bazar', bg: 'linear-gradient(135deg, #fef9c3 0%, #fde68a 100%)', border: '#fcd34d', textColor: '#78350f' };
   }
 
   // 8. Limpeza

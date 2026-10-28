@@ -38,7 +38,7 @@ except ImportError:
 
 # Mapeamento de ids válidos de supermercados no sistema
 SUPERMARKET_IDS = [
-    'extrabom', 'carone', 'perim', 'atacadao', 'assai', 'ok_super', 'epa', 'casagrande'
+    'extrabom', 'carone', 'casagrande', 'bh', 'assai', 'atacadao', 'atacado_vem'
 ]
 
 # Prompt detalhado para extração multimodal via Gemini Vision
@@ -372,7 +372,8 @@ def main():
                 "validity": validity_str,
                 "prices": prices_dict,
                 "featured": p.get("featured", False),
-                "discountTag": p.get("discountTag", f"Oferta {market_id.capitalize()} R$ {price:.2f}".replace('.', ','))
+                "discountTag": p.get("discountTag", f"Oferta {market_id.capitalize()} R$ {price:.2f}".replace('.', ',')),
+                "sourceType": "encarte"
             })
 
         print()

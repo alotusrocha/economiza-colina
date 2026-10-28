@@ -249,13 +249,14 @@ def processar_e_formatar_produtos(raw_products):
             "category": category,
             "unit": p.get('unit', 'unidade'),
             "image": p.get('image') or default_images.get(category, default_images['mercearia']),
-            "encarteId": 1,
+            "encarteId": None,
             "offerMarketId": best_market,
             "offerPrice": best_price,
-            "validity": "Consulta Online (Preços de Hoje)",
+            "validity": "Pesquisa Online • Outubro/2026",
             "prices": valid_prices,
             "featured": idx <= 10, # Primeiros 10 em destaque
-            "discountTag": f"Menor preço no {market_name} R$ {best_price:.2f}".replace('.', ',')
+            "discountTag": f"Menor preço no {market_name} R$ {best_price:.2f}".replace('.', ','),
+            "sourceType": "scraper"
         })
 
     return formatted_products

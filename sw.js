@@ -1,4 +1,4 @@
-const CACHE_NAME = 'economiza-colina-v3';
+const CACHE_NAME = 'economiza-colina-v4-out2026';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -52,9 +52,9 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const url = event.request.url;
 
-  // Para navegação HTML e código JS dinâmico (app.js), tenta a REDE primeiro (Network-First).
+  // Para navegação HTML e código JS dinâmico (app.js, data.js), tenta a REDE primeiro (Network-First).
   // Se houver conexão, entrega a versão mais nova atualizada do servidor. Se estiver offline, usa o Cache.
-  if (event.request.mode === 'navigate' || url.endsWith('.html') || url.endsWith('app.js')) {
+  if (event.request.mode === 'navigate' || url.endsWith('.html') || url.endsWith('app.js') || url.endsWith('data.js')) {
     event.respondWith(
       fetch(event.request)
         .then((networkResponse) => {
